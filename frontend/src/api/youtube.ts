@@ -6,14 +6,14 @@ const API = axios.create({
 });
 
 export const getTrends = (params?: object) => 
-    API.get<{ success: boolean; data: Trend[] }>("/trends", {params});
+    API.get<{ success: boolean; data: Trend[] }>("api/youtube/trends", {params});
 
 export const refreshTrends = (params?: object) => 
-    API.get<{success: boolean; data: Trend[] }>("/trends/refresh",{params});
+    API.get<{success: boolean; data: Trend[] }>("api/youtube/trends/refresh",{params});
 
 export const getCategories = (params?: object) => 
-    API.get<{success: boolean; data: Category[]}>("/categories",{params});
+    API.get<{success: boolean; data: Category[]}>("api/youtube/categories",{params});
 
 export const refreshCategories = (params?: object) =>
-    API.get<{success: boolean; data: Category[]}>("/categories/refresh",{params});
+    API.get<{success: boolean; data: Category[]}>("api/youtube/categories/refresh",{params});
 
