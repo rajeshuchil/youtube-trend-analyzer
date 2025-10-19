@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     'http://localhost:5173',                    // Local development
-    'https://your-frontend-domain.vercel.app'  // Vercel production
+    'https://youtube-trend-analyzer-frontend.vercel.app'  // Vercel production
   ]
 }));
 
