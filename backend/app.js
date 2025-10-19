@@ -8,11 +8,17 @@ import youtubeRoutes from './Routes/youtubeRoutes.js';
 dotenv.config();
 const app = express();
 
-app.use(cors());
-app.use(express.json());
 
+app.use(express.json());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',                    // Local development
+    'https://your-frontend-domain.vercel.app'  // Vercel production
+  ]
+}));
 
 app.use('/api/youtube', youtubeRoutes);
+
 
 
 export default app;

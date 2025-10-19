@@ -2,7 +2,7 @@ import axios from "axios";
 import type { Trend , Category } from "../types";
 
 const API = axios.create({
-    baseURL: "http://localhost:5000/api/youtube",
+    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
 });
 
 export const getTrends = (params?: object) => 
