@@ -181,6 +181,30 @@ img {
 .search-input {
   flex: 1;
   min-width: 200px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  min-width: 150px;
+}
+
+.filter-select:focus,
+.search-input:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
 }
 
 .clear-filters-btn {
@@ -450,6 +474,39 @@ img {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+  }
+
+  /* Trends Page Mobile Styles */
+  .trend-badge {
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+  
+  .trend-title {
+    font-size: 14px;
+    padding-right: 50px;
+  }
+  
+  .trend-category {
+    font-size: 13px;
+  }
+  
+  .trend-stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .trend-metrics {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .trend-action {
+    font-size: 11px;
+    padding: 8px;
   }
 
   /* Active Filters */
@@ -1230,6 +1287,31 @@ section {
   .container {
     padding: 0 0.5rem;
   }
+
+  /* Extra Small Trends Styles */
+  .trend-badge {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+  
+  .trend-title {
+    font-size: 13px;
+    padding-right: 40px;
+  }
+  
+  .trend-category {
+    font-size: 12px;
+  }
+  
+  .trend-metrics {
+    font-size: 11px;
+    gap: 8px;
+  }
+  
+  .trend-action {
+    font-size: 10px;
+    padding: 6px;
+  }
 }
 
 /* Mobile landscape orientation */
@@ -1256,6 +1338,65 @@ section {
   .categories-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
+}
+
+/* Trends Page Specific Styles */
+.trend-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #28a745;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.trend-title {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 60px;
+}
+
+.trend-category {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.trend-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.trend-metrics {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trend-action {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+  border: 1px dashed #dee2e6;
 }
 
 /* Improve accessibility and touch targets */

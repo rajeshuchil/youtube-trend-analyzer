@@ -179,51 +179,21 @@ export default function Trends() {
   }, [trends]);
 
   return (
-    <div
-      style={{
-        padding: "20px",
-        backgroundColor: "#f8f9fa",
-        minHeight: "100vh",
-      }}
-    >
-      {/* Filter Section - Matching Categories UI */}
-      <div
-        style={{
-          display: "flex",
-          gap: "15px",
-          marginBottom: "20px",
-          alignItems: "center",
-          backgroundColor: "white",
-          padding: "15px",
-          borderRadius: "8px",
-          boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-        }}
-      >
+    <div className="App">
+      {/* Filter Section - Using responsive CSS classes */}
+      <div className="filter-section">
         <input
           type="text"
           placeholder="Search trends..."
           value={keyword}
           onChange={handleSearchChange}
-          style={{
-            padding: "8px 12px",
-            border: "1px solid #ddd",
-            borderRadius: "4px",
-            fontSize: "14px",
-            flex: 1,
-            minWidth: "200px",
-          }}
+          className="search-input"
         />
 
         <select
           value={categoryId}
           onChange={handleCategoryChange}
-          style={{
-            padding: "8px 12px",
-            border: "1px solid #ddd",
-            borderRadius: "4px",
-            fontSize: "14px",
-            minWidth: "150px",
-          }}
+          className="filter-select"
         >
           <option value="">All Categories</option>
           {categories.map((c) => (
@@ -236,13 +206,7 @@ export default function Trends() {
         <select
           value={regionCode}
           onChange={handleRegionChange}
-          style={{
-            padding: "8px 12px",
-            border: "1px solid #ddd",
-            borderRadius: "4px",
-            fontSize: "14px",
-            minWidth: "150px",
-          }}
+          className="filter-select"
         >
           <option value="">All Regions</option>
           <option value="US">United States</option>
@@ -256,18 +220,7 @@ export default function Trends() {
         </select>
 
         {(keyword || categoryId || regionCode) && (
-          <button
-            onClick={clearFilters}
-            style={{
-              padding: "8px 16px",
-              backgroundColor: "#6c757d",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-              fontSize: "14px",
-            }}
-          >
+          <button onClick={clearFilters} className="btn-secondary">
             Clear All
           </button>
         )}
@@ -275,32 +228,15 @@ export default function Trends() {
         <button
           onClick={refresh}
           disabled={loading}
-          style={{
-            padding: "8px 16px",
-            backgroundColor: "#28a745",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer",
-            fontSize: "14px",
-            opacity: loading ? 0.6 : 1,
-          }}
+          className="btn-primary"
+          style={{ opacity: loading ? 0.6 : 1 }}
         >
           {loading ? "⟳ Loading..." : "↻ Refresh"}
         </button>
       </div>
 
-      {/* Stats Bar - Similar to Categories */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "10px",
-          marginBottom: "20px",
-          fontSize: "14px",
-          color: "#6c757d",
-        }}
-      >
+      {/* Stats Bar - Using CSS classes */}
+      <div className="status-bar">
         <span>📊 Showing {filteredTrends.length} trends</span>
         {categoryId && (
           <>
@@ -383,131 +319,46 @@ export default function Trends() {
         </div>
       )}
 
-      {/* Trends Grid - Matching Categories Card Layout */}
+      {/* Trends Grid - Using responsive CSS classes */}
       {!loading && (
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(400px, 1fr))",
-            gap: "20px",
-          }}
-        >
+        <div className="trend-cards">
           {filteredTrends.length > 0
             ? filteredTrends.map((trend, index) => (
                 <div
                   key={trend.topicId || index}
-                  style={{
-                    backgroundColor: "white",
-                    padding: "20px",
-                    borderRadius: "8px",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-                    border: "1px solid #e9ecef",
-                    transition: "all 0.3s ease",
-                    cursor: "pointer",
-                    position: "relative",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "translateY(-2px)";
-                    e.currentTarget.style.boxShadow =
-                      "0 4px 15px rgba(0,0,0,0.15)";
-                    e.currentTarget.style.borderColor = "#28a745";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow =
-                      "0 2px 8px rgba(0,0,0,0.1)";
-                    e.currentTarget.style.borderColor = "#e9ecef";
-                  }}
+                  className="trend-card"
                   onClick={() => trend.url && window.open(trend.url, "_blank")}
                 >
                   {/* Trend Ranking Badge */}
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "15px",
-                      right: "15px",
-                      backgroundColor: "#28a745",
-                      color: "white",
-                      padding: "4px 8px",
-                      borderRadius: "12px",
-                      fontSize: "12px",
-                      fontWeight: "600",
-                    }}
-                  >
+                  <div className="trend-badge">
                     #{index + 1}
                   </div>
 
                   {/* Trend Title */}
-                  <h3
-                    style={{
-                      margin: "0 0 10px 0",
-                      fontSize: "16px",
-                      fontWeight: "600",
-                      color: "#333",
-                      lineHeight: "1.4",
-                      display: "-webkit-box",
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: "vertical",
-                      overflow: "hidden",
-                      paddingRight: "60px",
-                    }}
-                  >
+                  <h3 className="trend-title">
                     {trend.title}
                   </h3>
 
                   {/* Category Info */}
-                  <p
-                    style={{
-                      margin: "0 0 15px 0",
-                      fontSize: "14px",
-                      color: "#6c757d",
-                      fontWeight: "500",
-                    }}
-                  >
+                  <p className="trend-category">
                     Category: {trend.category || "General"}
                   </p>
 
                   {/* Trend Stats */}
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                      fontSize: "12px",
-                      color: "#6c757d",
-                      marginBottom: "15px",
-                    }}
-                  >
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "15px",
-                      }}
-                    >
-                      <span>
-                        👀 {trend.metrics?.views?.toLocaleString() || "N/A"}{" "}
-                        views
+                  <div className="trend-stats">
+                    <div className="trend-metrics">
+                      <span className="views">
+                        👀 {trend.metrics?.views?.toLocaleString() || "N/A"} views
                       </span>
-                      <span>
+                      <span className="likes">
                         👍 {trend.metrics?.likes?.toLocaleString() || "N/A"}
                       </span>
                     </div>
-                    <span>📅 {trend.timestamp || "Recent"}</span>
+                    <span className="published-date">📅 {trend.timestamp || "Recent"}</span>
                   </div>
 
                   {/* Click to View */}
-                  <div
-                    style={{
-                      padding: "10px",
-                      backgroundColor: "#f8f9fa",
-                      borderRadius: "4px",
-                      textAlign: "center",
-                      fontSize: "12px",
-                      color: "#6c757d",
-                      border: "1px dashed #dee2e6",
-                    }}
-                  >
+                  <div className="trend-action">
                     Click to view on YouTube →
                   </div>
                 </div>
