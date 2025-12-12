@@ -2,6 +2,8 @@ import { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import type { Trend, Category } from "../types";
 import { getTrends, refreshTrends, getCategories } from "../api/youtube";
+import { StaggeredGrid, itemVariants } from "../components/StaggeredGrid";
+import { AnimatedCard } from "../components/AnimatedCard";
 
 export default function Trends() {
   const [searchParams] = useSearchParams();
@@ -319,67 +321,68 @@ export default function Trends() {
         </div>
       )}
 
-      {/* Trends Grid - Using responsive CSS classes */}
+      {/* Trends Grid - Using responsive CSS classes with animations */}
       {!loading && (
-        <div className="trend-cards">
+        <StaggeredGrid className="trend-cards">
           {filteredTrends.length > 0
             ? filteredTrends.map((trend, index) => (
-                <div
-                  key={trend.topicId || index}
-                  className="trend-card"
-                  onClick={() => trend.url && window.open(trend.url, "_blank")}
-                >
-                  {/* Trend Ranking Badge */}
-                  <div className="trend-badge">
-                    #{index + 1}
-                  </div>
-
-                  {/* Trend Title */}
-                  <h3 className="trend-title">
-                    {trend.title}
-                  </h3>
-
-                  {/* Category Info */}
-                  <p className="trend-category">
-                    Category: {trend.category || "General"}
-                  </p>
-
-                  {/* Trend Stats */}
-                  <div className="trend-stats">
-                    <div className="trend-metrics">
-                      <span className="views">
-                        👀 {trend.metrics?.views?.toLocaleString() || "N/A"} views
-                      </span>
-                      <span className="likes">
-                        👍 {trend.metrics?.likes?.toLocaleString() || "N/A"}
-                      </span>
-                    </div>
-                    <span className="published-date">📅 {trend.timestamp || "Recent"}</span>
-                  </div>
-
-                  {/* Click to View */}
-                  <div className="trend-action">
-                    Click to view on YouTube →
-                  </div>
+              <AnimatedCard
+                key={trend.topicId || index}
+                variants={itemVariants}
+                className="trend-card"
+                onClick={() => trend.url && window.open(trend.url, "_blank")}
+              >
+                {/* Trend Ranking Badge */}
+                <div className="trend-badge">
+                  #{index + 1}
                 </div>
-              ))
+
+                {/* Trend Title */}
+                <h3 className="trend-title">
+                  {trend.title}
+                </h3>
+
+                {/* Category Info */}
+                <p className="trend-category">
+                  Category: {trend.category || "General"}
+                </p>
+
+                {/* Trend Stats */}
+                <div className="trend-stats">
+                  <div className="trend-metrics">
+                    <span className="views">
+                      👀 {trend.metrics?.views?.toLocaleString() || "N/A"} views
+                    </span>
+                    <span className="likes">
+                      👍 {trend.metrics?.likes?.toLocaleString() || "N/A"}
+                    </span>
+                  </div>
+                  <span className="published-date">📅 {trend.timestamp || "Recent"}</span>
+                </div>
+
+                {/* Click to View */}
+                <div className="trend-action">
+                  Click to view on YouTube →
+                </div>
+              </AnimatedCard>
+            ))
             : !error && (
-                <div
-                  style={{
-                    gridColumn: "1 / -1",
-                    textAlign: "center",
-                    padding: "40px",
-                    backgroundColor: "white",
-                    borderRadius: "8px",
-                    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                  }}
-                >
-                  <p style={{ color: "#6c757d", margin: 0 }}>
-                    No trends found. Try adjusting your filters.
-                  </p>
-                </div>
-              )}
-        </div>
+              <div
+                style={{
+                  gridColumn: "1 / -1",
+                  textAlign: "center",
+                  padding: "40px",
+                  backgroundColor: "white",
+                  borderRadius: "8px",
+                  boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+                }}
+              >
+                <p style={{ color: "#6c757d", margin: 0 }}>
+                  No trends found. Try adjusting your filters.
+                </p>
+              </div>
+            )}
+        </StaggeredGrid>
       )}
     </div>
   );

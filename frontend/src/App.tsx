@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import Trends from "./pages/Trends";
 import Categories from "./pages/categories";
+import { PageTransition } from "./components/PageTransition";
 import "./App.css";
 
 export default function App() {
@@ -11,9 +12,9 @@ export default function App() {
       <Navbar />
       <div className="main-content">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/trends" element={<Trends />}></Route>
-          <Route path="/categories" element={<Categories />}></Route>
+          <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+          <Route path="/trends" element={<PageTransition><Trends /></PageTransition>} />
+          <Route path="/categories" element={<PageTransition><Categories /></PageTransition>} />
         </Routes>
       </div>
     </div>
