@@ -1,207 +1,151 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useMemo, useEffect } from "react";
 import { getTrends, getCategories } from "../api/youtube";
-import type { Trend, Category } from "../types";
+import { useCachedData } from "../hooks/useCachedData";
+import { HeroSection } from "../features/home/components/HeroSection";
+import { HeroCards } from "../features/home/components/HeroCards";
+import type { HeroCardData } from "../features/home/components/HeroCards";
+import { TrendingStrip } from "../features/home/components/TrendingStrip";
+import { CategoriesPreview } from "../features/home/components/CategoriesPreview";
+import { FeaturesSection } from "../features/home/components/FeaturesSection";
+import { CTASection } from "../features/home/components/CTASection";
 
 export default function Home() {
-  const [featuredTrends, setFeaturedTrends] = useState<Trend[]>([]);
-  const [topCategories, setTopCategories] = useState<Category[]>([]);
-  const [stats, setStats] = useState({
-    totalVideos: 0,
-    totalCategories: 0,
-    hotCategories: 0,
+  console.log("[Home] Component rendered"); // Debug log
+
+  /**
+   * OPTIMIZATION 1: Parallel API calls with caching
+   * Previously: Sequential (trends → categories)
+   * Now: Parallel + cached with stale-while-revalidate
+   */
+  const {
+    data: trendsData,
+    isLoading: trendsLoading,
+    isValidating: trendsValidating,
+    error: trendsError,
+  } = useCachedData({
+    fetcher: async () => {
+      const res = await getTrends({ regionCode: "US", maxResults: 6 });
+      return res.data?.success ? res.data.data || [] : [];
+    },
+    endpoint: "trends",
+    params: { regionCode: "US", maxResults: 6 },
+    ttl: 5 * 60 * 1000, // Fresh for 5 minutes
+    staleWhileRevalidate: 30 * 60 * 1000, // Serve stale for 30 minutes while revalidating
+    revalidateOnFocus: true,
   });
-  const [loading, setLoading] = useState(true);
 
+  const {
+    data: categoriesData,
+    isLoading: categoriesLoading,
+    isValidating: categoriesValidating,
+    error: categoriesError,
+  } = useCachedData({
+    fetcher: async () => {
+      const res = await getCategories({ regionCode: "US" });
+      return res.data?.success ? res.data.data || [] : [];
+    },
+    endpoint: "categories",
+    params: { regionCode: "US" },
+    ttl: 10 * 60 * 1000, // Fresh for 10 minutes (categories change less frequently)
+    staleWhileRevalidate: 60 * 60 * 1000, // Serve stale for 1 hour
+    revalidateOnFocus: true,
+  });
+
+  // Log errors for debugging
   useEffect(() => {
-    const loadHomeData = async () => {
-      try {
-        // Load featured trends (top 6)
-        const trendsRes = await getTrends({ regionCode: "US", maxResults: 6 });
-        if (trendsRes.data?.success) {
-          setFeaturedTrends(trendsRes.data.data.slice(0, 6));
-          setStats((prev) => ({
-            ...prev,
-            totalVideos: trendsRes.data.data.length,
-          }));
-        }
+    if (trendsError) console.error("Trends fetch error:", trendsError);
+    if (categoriesError)
+      console.error("Categories fetch error:", categoriesError);
+  }, [trendsError, categoriesError]);
 
-        // Load categories
-        const categoriesRes = await getCategories({ regionCode: "US" });
-        if (categoriesRes.data?.success) {
-          const categories = categoriesRes.data.data.slice(0, 8);
-          setTopCategories(categories);
-          setStats((prev) => ({
-            ...prev,
-            totalCategories: categories.length,
-            hotCategories: Math.floor(categories.length * 0.3),
-          }));
-        }
-      } catch (error) {
-        console.error("Error loading home data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  /**
+   * OPTIMIZATION 2: Memoized derived state
+   * Prevents unnecessary recalculations on every render
+   */
+  const featuredTrends = useMemo(() => {
+    return trendsData?.slice(0, 6) || [];
+  }, [trendsData]);
 
-    loadHomeData();
+  const topCategories = useMemo(() => {
+    return categoriesData?.slice(0, 8) || [];
+  }, [categoriesData]);
+
+  /**
+   * Hero Cards Data
+   * Editorial-style insight cards that appear below the hero
+   */
+  const heroCards: HeroCardData[] = useMemo(() => {
+    return [
+      {
+        id: "1",
+        pill: "TRENDING",
+        headline: "FASTEST GROWING\nGAMING VIDEO\nTHIS WEEK",
+        href: "/trends?category=gaming",
+        analyticsTag: "hero-card-trending",
+      },
+      {
+        id: "2",
+        pill: "CATEGORY",
+        headline: "TOP PERFORMING\nCATEGORY TODAY",
+        href: "/categories",
+        analyticsTag: "hero-card-category",
+      },
+      {
+        id: "3",
+        pill: "INSIGHT",
+        headline: "MOST WATCHED\nCHANNEL INSIGHT",
+        href: "/trends",
+        analyticsTag: "hero-card-insight",
+      },
+      {
+        id: "4",
+        pill: "ANALYSIS",
+        headline: "VIRAL CONTENT\nBREAKDOWN REPORT",
+        href: "/trends?sortBy=views",
+        analyticsTag: "hero-card-analysis",
+      },
+    ];
   }, []);
 
-  if (loading) {
-    return (
-      <div className="home-loading">
-        <div className="loading-spinner"></div>
-        <p>Loading trending content...</p>
-      </div>
-    );
-  }
+  /**
+   * OPTIMIZATION 4: Background revalidation indicator
+   * Show subtle indicator when refreshing in background
+   */
+  const isRevalidating = trendsValidating || categoriesValidating;
 
   return (
     <div className="home-container">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">
-            YouTube Trend <span className="highlight">Analyzer</span>
-          </h1>
-          <p className="hero-subtitle">
-            Discover what's trending on YouTube across different regions and
-            categories. Get real-time insights into viral content and emerging
-            trends worldwide.
-          </p>
-          <div className="hero-actions">
-            <Link to="/trends" className="btn btn-primary">
-              🔥 Explore Trends
-            </Link>
-            <Link to="/categories" className="btn btn-secondary">
-              📂 Browse Categories
-            </Link>
-          </div>
+      {/* Background revalidation indicator */}
+      {isRevalidating && (
+        <div className="revalidation-indicator">
+          <div className="revalidation-pulse"></div>
+          Updating data...
         </div>
-        <div className="hero-stats">
-          <div className="stat-card">
-            <h3>{stats.totalVideos}</h3>
-            <p>Trending Videos</p>
-          </div>
-          <div className="stat-card">
-            <h3>{stats.totalCategories}</h3>
-            <p>Categories</p>
-          </div>
-          <div className="stat-card">
-            <h3>{stats.hotCategories}</h3>
-            <p>Hot Categories</p>
-          </div>
-        </div>
-      </section>
+      )}
 
-      {/* Featured Trends Section */}
-      <section className="featured-section">
-        <div className="section-header">
-          <h2>🔥 Trending Now</h2>
-          <Link to="/trends" className="view-all-link">
-            View All Trends →
-          </Link>
-        </div>
-        <div className="featured-grid">
-          {featuredTrends.map((trend, index) => (
-            <div key={trend.topicId || index} className="featured-card">
-              <div className="featured-rank">#{index + 1}</div>
-              <div className="featured-content">
-                <h3 className="featured-title">{trend.title}</h3>
-                <p className="featured-channel">
-                  Category: {trend.category || "General"}
-                </p>
-                <div className="featured-stats">
-                  <span className="views">
-                    👀 {trend.metrics?.views?.toLocaleString() || "N/A"} views
-                  </span>
-                  <span className="published">
-                    📅 {trend.timestamp || "Recent"}
-                  </span>
-                </div>
-              </div>
-              <div className="featured-arrow">→</div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Hero Section - Asmodee-Inspired Full-Bleed Image */}
+      <HeroSection />
+
+      {/* Hero Cards - Editorial Insight Cards */}
+      <HeroCards cards={heroCards} />
+
+      {/* Trending Videos - 4 Cards (Asmodee-style) */}
+      <TrendingStrip
+        trends={featuredTrends.slice(0, 4)}
+        isLoading={trendsLoading}
+      />
 
       {/* Categories Preview */}
-      <section className="categories-preview">
-        <div className="section-header">
-          <h2>📂 Popular Categories</h2>
-          <Link to="/categories" className="view-all-link">
-            View All Categories →
-          </Link>
-        </div>
-        <div className="categories-grid">
-          {topCategories.map((category) => (
-            <Link
-              key={category.id}
-              to={`/trends?categoryId=${
-                category.id
-              }&categoryTitle=${encodeURIComponent(category.title)}`}
-              className="category-preview-card"
-            >
-              <div className="category-icon">🎬</div>
-              <h4>{category.title}</h4>
-              <p>Explore trending content</p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <CategoriesPreview
+        categories={topCategories}
+        isLoading={categoriesLoading}
+      />
 
       {/* Features Section */}
-      <section className="features-section">
-        <h2>Why Use Our Trend Analyzer?</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            <div className="feature-icon">🌍</div>
-            <h3>Global Insights</h3>
-            <p>
-              Track trends across 8+ countries and regions to understand global
-              and local preferences.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">⚡</div>
-            <h3>Real-time Data</h3>
-            <p>
-              Get up-to-date trending information with smart caching for optimal
-              performance.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">🔍</div>
-            <h3>Smart Filtering</h3>
-            <p>
-              Filter by categories, search keywords, and sort by various metrics
-              to find what matters.
-            </p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">📊</div>
-            <h3>Analytics Dashboard</h3>
-            <p>
-              Visual insights and statistics to help you understand trending
-              patterns and opportunities.
-            </p>
-          </div>
-        </div>
-      </section>
+      <FeaturesSection />
 
       {/* CTA Section */}
-      <section className="cta-section">
-        <div className="cta-content">
-          <h2>Ready to Discover What's Trending?</h2>
-          <p>
-            Join thousands of content creators, marketers, and trend enthusiasts
-          </p>
-          <Link to="/trends" className="btn btn-primary btn-large">
-            🚀 Start Exploring
-          </Link>
-        </div>
-      </section>
+      <CTASection />
     </div>
   );
 }

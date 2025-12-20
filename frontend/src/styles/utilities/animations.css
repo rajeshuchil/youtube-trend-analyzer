@@ -1,0 +1,75 @@
+/* Animation Utilities */
+
+/* Scroll Animations */
+.animate-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger animation for child elements */
+.featured-grid .featured-card,
+.categories-grid .category-preview-card,
+.features-grid .feature-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-visible .featured-card,
+.is-visible .category-preview-card,
+.is-visible .feature-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.is-visible .featured-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.is-visible .featured-card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.is-visible .featured-card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.is-visible .featured-card:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.is-visible .featured-card:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.is-visible .featured-card:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.is-visible .category-preview-card:nth-child(n) {
+    transition-delay: calc(0.1s * var(--index, 1));
+}
+
+.is-visible .feature-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.is-visible .feature-card:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.is-visible .feature-card:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.is-visible .feature-card:nth-child(4) {
+    transition-delay: 0.4s;
+}

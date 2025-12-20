@@ -2,9 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import Trends from "./pages/Trends";
-import Categories from "./pages/categories";
+import Categories from "./pages/Categories";
 import { PageTransition } from "./components/PageTransition";
-import "./App.css";
 
 export default function App() {
   return (

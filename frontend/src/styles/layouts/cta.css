@@ -1,0 +1,29 @@
+/* CTA Section */
+
+.cta-section {
+    background: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    padding: var(--space-5xl) var(--space-2xl);
+    text-align: center;
+    position: relative;
+}
+
+.cta-content {
+    max-width: var(--max-width-md);
+    margin: 0 auto;
+}
+
+.cta-title {
+    font-size: var(--font-size-6xl);
+    font-weight: var(--font-weight-black);
+    margin-bottom: var(--space-md);
+    line-height: var(--line-height-tight);
+    letter-spacing: -0.02em;
+}
+
+.cta-subtitle {
+    margin-bottom: var(--space-2xl);
+    opacity: 0.8;
+    font-size: var(--font-size-xl);
+    line-height: var(--line-height-relaxed);
+}
