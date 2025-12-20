@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import { getCategories, refreshCategories, getTrends } from "../api/youtube";
+import { getCategories, refreshCategories } from "../api/youtube";
+import { parseApiError } from "../api/errorHandler";
 import type { Category } from "../types";
 
 interface CategoryWithStats extends Category {
@@ -30,30 +31,14 @@ export default function Categories() {
 
       const res = await getCategories({ regionCode: regionCode || "US" });
       if (res.data && res.data.success) {
-        const categoriesWithStats = await Promise.all(
-          (res.data.data || []).map(async (category: Category) => {
-            // Get trending count for each category
-            try {
-              const trendsRes = await getTrends({
-                regionCode,
-                categoryId: category.id,
-                maxResults: 50,
-              });
-              const trendingCount = trendsRes.data?.data?.length || 0;
-              return {
-                ...category,
-                trendingCount,
-                isHot: trendingCount >= 5, // Mark as hot if 5+ trending videos
-                totalViews: Math.floor(Math.random() * 1000000), // Mock data for now
-              };
-            } catch {
-              return {
-                ...category,
-                trendingCount: 0,
-                isHot: false,
-                totalViews: 0,
-              };
-            }
+        // Don't fetch trends for each category - too many API calls!
+        // Just use the category data we have
+        const categoriesWithStats = (res.data.data || []).map(
+          (category: Category) => ({
+            ...category,
+            trendingCount: category.trendingCount || 0,
+            isHot: (category.trendingCount || 0) >= 5,
+            totalViews: 0,
           })
         );
 
@@ -62,14 +47,18 @@ export default function Categories() {
       } else {
         throw new Error("Failed to fetch categories");
       }
-    } catch (err: any) {
-      console.error("Error fetching categories:", err);
-      setError(err.message || "Failed to load categories. Please try again.");
-      setCategories([]);
+    } catch (err) {
+      const error = parseApiError(err);
+      console.error("[Categories] Error fetching categories:", error);
+      setError(error.message);
+      // Don't clear existing categories on error
+      if (categories.length === 0) {
+        setCategories([]);
+      }
     } finally {
       setLoading(false);
     }
-  }, [regionCode]);
+  }, [regionCode, categories.length]);
 
   const refresh = async () => {
     try {
@@ -83,11 +72,10 @@ export default function Categories() {
       } else {
         throw new Error("Failed to refresh categories");
       }
-    } catch (err: any) {
-      console.error("Error refreshing categories:", err);
-      setError(
-        err.message || "Failed to refresh categories. Please try again."
-      );
+    } catch (err) {
+      const error = parseApiError(err);
+      console.error("[Categories] Error refreshing categories:", error);
+      setError(error.message);
     } finally {
       setLoading(false);
     }
@@ -100,14 +88,14 @@ export default function Categories() {
     // Apply search filter
     if (searchTerm.trim()) {
       filtered = filtered.filter((category) =>
-        category.title.toLowerCase().includes(searchTerm.toLowerCase())
+        category.name.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
     // Apply sorting
     switch (sortBy) {
       case "name":
-        filtered.sort((a, b) => a.title.localeCompare(b.title));
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
         break;
       case "trending":
         filtered.sort(
@@ -143,7 +131,7 @@ export default function Categories() {
   const handleCategoryClick = (category: CategoryWithStats) => {
     navigate(
       `/trends?categoryId=${category.id}&categoryTitle=${encodeURIComponent(
-        category.title
+        category.name
       )}&region=${regionCode}`
     );
   };
@@ -276,64 +264,64 @@ export default function Categories() {
         <div className="trend-cards">
           {filteredCategories.length > 0
             ? filteredCategories.map((category) => (
-                <div
-                  key={category.id}
-                  className="trend-card"
-                  onClick={() => handleCategoryClick(category)}
-                  style={{ cursor: "pointer" }}
-                >
-                  {/* Hot Badge */}
-                  {category.isHot && (
-                    <div
-                      style={{
-                        position: "absolute",
-                        top: "10px",
-                        right: "10px",
-                        background: "#ff4444",
-                        color: "white",
-                        padding: "4px 8px",
-                        borderRadius: "12px",
-                        fontSize: "12px",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      🔥 HOT
-                    </div>
-                  )}
-
-                  <h3>{category.title}</h3>
-                  <div className="channel-name">
-                    ID: {category.id} • Region: {category.regionCode}
-                  </div>
-
-                  <div className="stats">
-                    <span className="views">
-                      📺 {category.trendingCount || 0} trending
-                    </span>
-                    <span className="published-date">
-                      👀 {category.totalViews?.toLocaleString() || 0} views
-                    </span>
-                  </div>
-
+              <div
+                key={category.id}
+                className="trend-card"
+                onClick={() => handleCategoryClick(category)}
+                style={{ cursor: "pointer" }}
+              >
+                {/* Hot Badge */}
+                {category.isHot && (
                   <div
                     style={{
-                      marginTop: "10px",
-                      padding: "8px 12px",
-                      background: "#f0f0f0",
-                      borderRadius: "6px",
+                      position: "absolute",
+                      top: "10px",
+                      right: "10px",
+                      background: "#ff4444",
+                      color: "white",
+                      padding: "4px 8px",
+                      borderRadius: "12px",
                       fontSize: "12px",
-                      textAlign: "center",
+                      fontWeight: "bold",
                     }}
                   >
-                    Click to view trending videos →
+                    🔥 HOT
                   </div>
+                )}
+
+                <h3>{category.name}</h3>
+                <div className="channel-name">
+                  ID: {category.id} • Region: {category.regionCode}
                 </div>
-              ))
+
+                <div className="stats">
+                  <span className="views">
+                    📺 {category.trendingCount || 0} trending
+                  </span>
+                  <span className="published-date">
+                    👀 {category.totalViews?.toLocaleString() || 0} views
+                  </span>
+                </div>
+
+                <div
+                  style={{
+                    marginTop: "10px",
+                    padding: "8px 12px",
+                    background: "#f0f0f0",
+                    borderRadius: "6px",
+                    fontSize: "12px",
+                    textAlign: "center",
+                  }}
+                >
+                  Click to view trending videos →
+                </div>
+              </div>
+            ))
             : !error && (
-                <div className="loading">
-                  <p>No categories found. Try adjusting your search.</p>
-                </div>
-              )}
+              <div className="loading">
+                <p>No categories found. Try adjusting your search.</p>
+              </div>
+            )}
         </div>
       )}
     </div>

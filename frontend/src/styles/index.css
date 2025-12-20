@@ -1,0 +1,34 @@
+/* ===== MODULAR CSS ORCHESTRATOR ===== */
+/* Import order is important for proper CSS cascade */
+
+/* ===== BASE LAYER ===== */
+/* Design tokens and fundamental resets must load first */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* ===== COMPONENTS ===== */
+/* Reusable UI components */
+@import './components/navigation.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/filters.css';
+@import './components/skeleton.css';
+@import './components/indicators.css';
+
+/* ===== LAYOUTS ===== */
+/* Page structure and sections */
+@import './layouts/hero.css';
+@import './layouts/sections.css';
+@import './layouts/grids.css';
+@import './layouts/cta.css';
+
+/* ===== PAGES ===== */
+/* Page-specific styles */
+@import './pages/home.css';
+@import './pages/trends.css';
+
+/* ===== UTILITIES ===== */
+/* Animations and responsive overrides load last */
+@import './utilities/animations.css';
+@import './utilities/responsive.css';

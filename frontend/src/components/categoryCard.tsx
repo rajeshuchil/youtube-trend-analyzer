@@ -7,7 +7,7 @@ interface Props {
 export default function CategoryCard({ category }: Props) {
   return (
     <div className="card">
-      <h3>{category.title}</h3>
+      <h3>{category.name}</h3>
       <small>ID: {category.id}</small>
       <p>Region: {category.regionCode}</p>
     </div>

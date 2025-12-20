@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import type { Trend, Category } from "../types";
 import { getTrends, refreshTrends, getCategories } from "../api/youtube";
+import { parseApiError } from "../api/errorHandler";
 import { StaggeredGrid, itemVariants } from "../components/StaggeredGrid";
 import { AnimatedCard } from "../components/AnimatedCard";
 
@@ -38,11 +39,15 @@ export default function Trends() {
       } else {
         throw new Error("Failed to fetch trends");
       }
-    } catch (err: any) {
-      console.error("Error fetching trends:", err);
-      setError(err.message || "Failed to load trends. Please try again.");
-      setTrends([]);
-      setFilteredTrends([]);
+    } catch (err) {
+      const error = parseApiError(err);
+      console.error("[Trends] Error fetching trends:", error);
+      setError(error.message);
+      // Don't clear existing trends on error - keep showing old data
+      if (trends.length === 0) {
+        setTrends([]);
+        setFilteredTrends([]);
+      }
     } finally {
       setLoading(false);
     }
@@ -67,9 +72,10 @@ export default function Trends() {
       } else {
         throw new Error("Failed to refresh trends");
       }
-    } catch (err: any) {
-      console.error("Error refreshing trends:", err);
-      setError(err.message || "Failed to refresh trends. Please try again.");
+    } catch (err) {
+      const error = parseApiError(err);
+      console.error("[Trends] Error refreshing trends:", error);
+      setError(error.message);
     } finally {
       setLoading(false);
     }
@@ -81,8 +87,9 @@ export default function Trends() {
       if (res.data && res.data.success) {
         setCategories(res.data.data || []);
       }
-    } catch (err: any) {
-      console.error("Error fetching categories:", err);
+    } catch (err) {
+      const error = parseApiError(err);
+      console.error("[Trends] Error fetching categories:", error);
       // Don't show error for categories, just use empty array
     }
   };
@@ -102,7 +109,7 @@ export default function Trends() {
       filterTrends(value, categoryId);
     }, 300);
 
-    setDebounceTimeout(newTimeout);
+    setDebounceTimeout(newTimeout as unknown as number);
   };
 
   // Filter trends based on keyword and category
@@ -157,7 +164,7 @@ export default function Trends() {
     }, 100);
   };
 
-  // Initialize from URL parameters
+  // Initialize from URL parameters and load data once
   useEffect(() => {
     const categoryParam = searchParams.get("categoryId");
     const regionParam = searchParams.get("region");
@@ -168,12 +175,12 @@ export default function Trends() {
     if (regionParam) {
       setRegionCode(regionParam);
     }
-  }, [searchParams]);
 
-  useEffect(() => {
+    // Load data once on mount
     loadTrends();
     loadCategories();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only run on mount
 
   // Update filtered trends when trends change
   useEffect(() => {
@@ -200,7 +207,7 @@ export default function Trends() {
           <option value="">All Categories</option>
           {categories.map((c) => (
             <option key={c.id} value={c.id}>
-              {c.title}
+              {c.name}
             </option>
           ))}
         </select>
@@ -245,7 +252,7 @@ export default function Trends() {
             <span>|</span>
             <span>
               🔥{" "}
-              {categories.find((c) => c.id === categoryId)?.title ||
+              {categories.find((c) => c.id === categoryId)?.name ||
                 "Selected Category"}
             </span>
           </>
@@ -333,14 +340,10 @@ export default function Trends() {
                 onClick={() => trend.url && window.open(trend.url, "_blank")}
               >
                 {/* Trend Ranking Badge */}
-                <div className="trend-badge">
-                  #{index + 1}
-                </div>
+                <div className="trend-badge">#{index + 1}</div>
 
                 {/* Trend Title */}
-                <h3 className="trend-title">
-                  {trend.title}
-                </h3>
+                <h3 className="trend-title">{trend.title}</h3>
 
                 {/* Category Info */}
                 <p className="trend-category">
@@ -351,19 +354,20 @@ export default function Trends() {
                 <div className="trend-stats">
                   <div className="trend-metrics">
                     <span className="views">
-                      👀 {trend.metrics?.views?.toLocaleString() || "N/A"} views
+                      👀 {trend.metrics?.views?.toLocaleString() || "N/A"}{" "}
+                      views
                     </span>
                     <span className="likes">
                       👍 {trend.metrics?.likes?.toLocaleString() || "N/A"}
                     </span>
                   </div>
-                  <span className="published-date">📅 {trend.timestamp || "Recent"}</span>
+                  <span className="published-date">
+                    📅 {trend.timestamp || "Recent"}
+                  </span>
                 </div>
 
                 {/* Click to View */}
-                <div className="trend-action">
-                  Click to view on YouTube →
-                </div>
+                <div className="trend-action">Click to view on YouTube →</div>
               </AnimatedCard>
             ))
             : !error && (

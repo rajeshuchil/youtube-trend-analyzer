@@ -11,22 +11,23 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <Link to="/" className="nav-brand">
-          📈 YouTube Trend Analyzer
+          <span className="brand-name">Trend Analyzer</span>
+          <span className="brand-subtitle">YouTube Insights</span>
         </Link>
         <ul className="nav-links">
           <li>
             <Link to="/" className={isActive("/")}>
-              🏠 Home
+              Home
             </Link>
           </li>
           <li>
             <Link to="/trends" className={isActive("/trends")}>
-              🔥 Trends
+              Trends
             </Link>
           </li>
           <li>
             <Link to="/categories" className={isActive("/categories")}>
-              📂 Categories
+              Categories
             </Link>
           </li>
         </ul>

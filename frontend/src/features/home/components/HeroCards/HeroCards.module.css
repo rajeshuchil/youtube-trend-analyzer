@@ -1,0 +1,132 @@
+/* Hero Cards Container */
+.heroCards {
+    position: relative;
+    z-index: 10;
+    margin-top: -200px;
+    /* Half of card overlaps hero image */
+    padding-bottom: 80px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.scroller {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+/* Individual Card */
+.card {
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    padding: 28px;
+    width: 280px;
+    flex: 0 0 280px;
+    height: 220px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.card:focus-visible {
+    outline: 3px solid #0066ff;
+    outline-offset: 4px;
+}
+
+/* Card Header */
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+/* Pill Label */
+.pill {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/* Arrow Icon */
+.arrow {
+    width: 20px;
+    height: 20px;
+    stroke: #000000;
+    stroke-width: 2;
+    fill: none;
+    flex-shrink: 0;
+}
+
+/* Headline Text */
+.headline {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: -0.02em;
+    margin: 0;
+    word-break: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+    .scroller {
+        overflow-x: visible;
+    }
+
+    .card {
+        min-width: 300px;
+        max-width: 340px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .scroller {
+        gap: 32px;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+}
