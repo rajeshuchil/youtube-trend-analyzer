@@ -3,8 +3,11 @@ import { useSearchParams } from "react-router-dom";
 import type { Trend, Category } from "../types";
 import { getTrends, refreshTrends, getCategories } from "../api/youtube";
 import { parseApiError } from "../api/errorHandler";
-import { StaggeredGrid, itemVariants } from "../components/StaggeredGrid";
-import { AnimatedCard } from "../components/AnimatedCard";
+import { DashboardLayout } from "@/layouts/DashboardLayout";
+import { HorizontalRow } from "@/components/dashboard/HorizontalRow";
+import { VideoCard } from "@/components/dashboard/VideoCard";
+import { Button } from "@/components/ui/button";
+import { RefreshCw, X } from "lucide-react";
 
 export default function Trends() {
   const [searchParams] = useSearchParams();
@@ -43,7 +46,6 @@ export default function Trends() {
       const error = parseApiError(err);
       console.error("[Trends] Error fetching trends:", error);
       setError(error.message);
-      // Don't clear existing trends on error - keep showing old data
       if (trends.length === 0) {
         setTrends([]);
         setFilteredTrends([]);
@@ -90,21 +92,17 @@ export default function Trends() {
     } catch (err) {
       const error = parseApiError(err);
       console.error("[Trends] Error fetching categories:", error);
-      // Don't show error for categories, just use empty array
     }
   };
 
-  // Debounced search functionality
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setkeyword(value);
 
-    // Clear existing timeout
     if (debounceTimeout) {
       clearTimeout(debounceTimeout);
     }
 
-    // Set new timeout for debounced search
     const newTimeout = setTimeout(() => {
       filterTrends(value, categoryId);
     }, 300);
@@ -112,12 +110,10 @@ export default function Trends() {
     setDebounceTimeout(newTimeout as unknown as number);
   };
 
-  // Filter trends based on keyword and category
   const filterTrends = useCallback(
     (searchKeyword: string, selectedCategory: string) => {
       let filtered = [...trends];
 
-      // Filter by keyword
       if (searchKeyword.trim()) {
         filtered = filtered.filter(
           (trend) =>
@@ -126,7 +122,6 @@ export default function Trends() {
         );
       }
 
-      // Filter by category (this would be applied during API call, but kept for consistency)
       if (selectedCategory) {
         filtered = filtered.filter(
           (trend) => trend.category === selectedCategory
@@ -138,7 +133,6 @@ export default function Trends() {
     [trends]
   );
 
-  // Clear all filters
   const clearFilters = () => {
     setkeyword("");
     setCategoryId("");
@@ -146,25 +140,21 @@ export default function Trends() {
     setFilteredTrends(trends);
   };
 
-  // Handle category change
   const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
     setCategoryId(value);
     filterTrends(keyword, value);
   };
 
-  // Handle region change and reload data
   const handleRegionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
     setRegionCode(value);
-    // Reload categories and trends for new region
     setTimeout(() => {
       loadCategories();
       loadTrends();
     }, 100);
   };
 
-  // Initialize from URL parameters and load data once
   useEffect(() => {
     const categoryParam = searchParams.get("categoryId");
     const regionParam = searchParams.get("region");
@@ -176,218 +166,169 @@ export default function Trends() {
       setRegionCode(regionParam);
     }
 
-    // Load data once on mount
     loadTrends();
     loadCategories();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Only run on mount
+  }, []);
 
-  // Update filtered trends when trends change
   useEffect(() => {
     setFilteredTrends(trends);
   }, [trends]);
 
+  // Group trends by category for horizontal rows
+  const trendsByCategory = filteredTrends.reduce((acc, trend) => {
+    const category = trend.category || "General";
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(trend);
+    return acc;
+  }, {} as Record<string, Trend[]>);
+
   return (
-    <div className="App">
-      {/* Filter Section - Using responsive CSS classes */}
-      <div className="filter-section">
-        <input
-          type="text"
-          placeholder="Search trends..."
-          value={keyword}
-          onChange={handleSearchChange}
-          className="search-input"
-        />
+    <DashboardLayout>
+      <div className="min-h-screen bg-[#0a0a0a] py-8">
+        {/* Header Section */}
+        <div className="px-8 mb-8">
+          <h1 className="text-white text-4xl font-bold mb-6">Trending Videos</h1>
 
-        <select
-          value={categoryId}
-          onChange={handleCategoryChange}
-          className="filter-select"
-        >
-          <option value="">All Categories</option>
-          {categories.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.name}
-            </option>
-          ))}
-        </select>
+          {/* Filters */}
+          <div className="flex flex-wrap gap-4 items-center mb-6">
+            {/* Search */}
+            <div className="flex-1 min-w-[300px]">
+              <input
+                type="text"
+                placeholder="Search trends..."
+                value={keyword}
+                onChange={handleSearchChange}
+                className="w-full px-4 py-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg text-white placeholder:text-[#9ca3af] focus:border-[#f5c518] focus:outline-none focus:ring-1 focus:ring-[#f5c518]"
+              />
+            </div>
 
-        <select
-          value={regionCode}
-          onChange={handleRegionChange}
-          className="filter-select"
-        >
-          <option value="">All Regions</option>
-          <option value="US">United States</option>
-          <option value="IN">India</option>
-          <option value="GB">United Kingdom</option>
-          <option value="JP">Japan</option>
-          <option value="CA">Canada</option>
-          <option value="AU">Australia</option>
-          <option value="DE">Germany</option>
-          <option value="FR">France</option>
-        </select>
+            {/* Category Filter */}
+            <select
+              value={categoryId}
+              onChange={handleCategoryChange}
+              className="px-4 py-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg text-white focus:border-[#f5c518] focus:outline-none focus:ring-1 focus:ring-[#f5c518]"
+            >
+              <option value="">All Categories</option>
+              {categories.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
 
-        {(keyword || categoryId || regionCode) && (
-          <button onClick={clearFilters} className="btn-secondary">
-            Clear All
-          </button>
-        )}
+            {/* Region Filter */}
+            <select
+              value={regionCode}
+              onChange={handleRegionChange}
+              className="px-4 py-2 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg text-white focus:border-[#f5c518] focus:outline-none focus:ring-1 focus:ring-[#f5c518]"
+            >
+              <option value="">All Regions</option>
+              <option value="US">United States</option>
+              <option value="IN">India</option>
+              <option value="GB">United Kingdom</option>
+              <option value="JP">Japan</option>
+              <option value="CA">Canada</option>
+              <option value="AU">Australia</option>
+              <option value="DE">Germany</option>
+              <option value="FR">France</option>
+            </select>
 
-        <button
-          onClick={refresh}
-          disabled={loading}
-          className="btn-primary"
-          style={{ opacity: loading ? 0.6 : 1 }}
-        >
-          {loading ? "⟳ Loading..." : "↻ Refresh"}
-        </button>
-      </div>
-
-      {/* Stats Bar - Using CSS classes */}
-      <div className="status-bar">
-        <span>📊 Showing {filteredTrends.length} trends</span>
-        {categoryId && (
-          <>
-            <span>|</span>
-            <span>
-              🔥{" "}
-              {categories.find((c) => c.id === categoryId)?.name ||
-                "Selected Category"}
-            </span>
-          </>
-        )}
-        {regionCode && (
-          <>
-            <span>|</span>
-            <span>🌍 {regionCode}</span>
-          </>
-        )}
-        <div style={{ marginLeft: "auto" }}>
-          {lastUpdated && <span>Last updated: {lastUpdated}</span>}
-        </div>
-      </div>
-
-      {/* Error Message */}
-      {error && (
-        <div
-          style={{
-            backgroundColor: "#f8d7da",
-            border: "1px solid #f5c6cb",
-            color: "#721c24",
-            padding: "15px",
-            borderRadius: "8px",
-            marginBottom: "20px",
-            textAlign: "center",
-          }}
-        >
-          <p>⚠️ {error}</p>
-          <button
-            onClick={loadTrends}
-            style={{
-              padding: "8px 16px",
-              backgroundColor: "#dc3545",
-              color: "white",
-              border: "none",
-              borderRadius: "4px",
-              cursor: "pointer",
-              marginTop: "10px",
-            }}
-          >
-            Try Again
-          </button>
-        </div>
-      )}
-
-      {/* Loading State */}
-      {loading && (
-        <div
-          style={{
-            textAlign: "center",
-            padding: "40px",
-            backgroundColor: "white",
-            borderRadius: "8px",
-            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-          }}
-        >
-          <div
-            style={{
-              display: "inline-block",
-              width: "40px",
-              height: "40px",
-              border: "4px solid #f3f3f3",
-              borderTop: "4px solid #28a745",
-              borderRadius: "50%",
-              animation: "spin 1s linear infinite",
-              marginBottom: "15px",
-            }}
-          ></div>
-          <p style={{ color: "#6c757d", margin: 0 }}>
-            Loading trending videos...
-          </p>
-        </div>
-      )}
-
-      {/* Trends Grid - Using responsive CSS classes with animations */}
-      {!loading && (
-        <StaggeredGrid className="trend-cards">
-          {filteredTrends.length > 0
-            ? filteredTrends.map((trend, index) => (
-              <AnimatedCard
-                key={trend.topicId || index}
-                variants={itemVariants}
-                className="trend-card"
-                onClick={() => trend.url && window.open(trend.url, "_blank")}
+            {/* Clear Filters */}
+            {(keyword || categoryId || regionCode) && (
+              <Button
+                variant="ghost"
+                onClick={clearFilters}
+                className="text-white hover:bg-white/10"
               >
-                {/* Trend Ranking Badge */}
-                <div className="trend-badge">#{index + 1}</div>
-
-                {/* Trend Title */}
-                <h3 className="trend-title">{trend.title}</h3>
-
-                {/* Category Info */}
-                <p className="trend-category">
-                  Category: {trend.category || "General"}
-                </p>
-
-                {/* Trend Stats */}
-                <div className="trend-stats">
-                  <div className="trend-metrics">
-                    <span className="views">
-                      👀 {trend.metrics?.views?.toLocaleString() || "N/A"}{" "}
-                      views
-                    </span>
-                    <span className="likes">
-                      👍 {trend.metrics?.likes?.toLocaleString() || "N/A"}
-                    </span>
-                  </div>
-                  <span className="published-date">
-                    📅 {trend.timestamp || "Recent"}
-                  </span>
-                </div>
-
-                {/* Click to View */}
-                <div className="trend-action">Click to view on YouTube →</div>
-              </AnimatedCard>
-            ))
-            : !error && (
-              <div
-                style={{
-                  gridColumn: "1 / -1",
-                  textAlign: "center",
-                  padding: "40px",
-                  backgroundColor: "white",
-                  borderRadius: "8px",
-                  boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-                }}
-              >
-                <p style={{ color: "#6c757d", margin: 0 }}>
-                  No trends found. Try adjusting your filters.
-                </p>
-              </div>
+                <X className="h-4 w-4 mr-2" />
+                Clear
+              </Button>
             )}
-        </StaggeredGrid>
-      )}
-    </div>
+
+            {/* Refresh Button */}
+            <Button
+              variant="secondary"
+              onClick={refresh}
+              disabled={loading}
+              className="bg-[#f5c518] text-black hover:bg-[#f5c518]/90 font-semibold"
+            >
+              <RefreshCw className={`h-4 w-4 mr-2 ${loading ? "animate-spin" : ""}`} />
+              Refresh
+            </Button>
+          </div>
+
+          {/* Stats Bar */}
+          <div className="flex items-center gap-4 text-[#9ca3af] text-sm">
+            <span>📊 {filteredTrends.length} trends</span>
+            {categoryId && (
+              <>
+                <span>•</span>
+                <span>
+                  🔥 {categories.find((c) => c.id === categoryId)?.name || "Selected Category"}
+                </span>
+              </>
+            )}
+            {regionCode && (
+              <>
+                <span>•</span>
+                <span>🌍 {regionCode}</span>
+              </>
+            )}
+            {lastUpdated && (
+              <span className="ml-auto">Last updated: {lastUpdated}</span>
+            )}
+          </div>
+        </div>
+
+        {/* Error Message */}
+        {error && (
+          <div className="mx-8 mb-6 p-4 bg-red-900/20 border border-red-900/50 rounded-lg">
+            <p className="text-red-400 text-center">⚠️ {error}</p>
+            <div className="flex justify-center mt-3">
+              <Button
+                variant="destructive"
+                onClick={loadTrends}
+                className="bg-red-600 hover:bg-red-700"
+              >
+                Try Again
+              </Button>
+            </div>
+          </div>
+        )}
+
+        {/* Loading State */}
+        {loading && (
+          <div className="flex items-center justify-center h-96">
+            <div className="text-white text-xl">Loading trending videos...</div>
+          </div>
+        )}
+
+        {/* Trends by Category */}
+        {!loading && Object.keys(trendsByCategory).length > 0 ? (
+          Object.entries(trendsByCategory).map(([category, categoryTrends]) => (
+            <HorizontalRow key={category} title={`${category} Trending`}>
+              {categoryTrends.map((trend, index) => (
+                <VideoCard
+                  key={trend.topicId}
+                  trend={trend}
+                  index={index}
+                  onClick={() => window.open(trend.url, "_blank")}
+                />
+              ))}
+            </HorizontalRow>
+          ))
+        ) : (
+          !loading &&
+          !error && (
+            <div className="flex items-center justify-center h-96">
+              <p className="text-[#9ca3af] text-lg">
+                No trends found. Try adjusting your filters.
+              </p>
+            </div>
+          )
+        )}
+      </div>
+    </DashboardLayout>
   );
 }

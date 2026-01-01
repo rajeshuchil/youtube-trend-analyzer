@@ -50,6 +50,12 @@ export function useCachedData<T>(
 
   const lastFetchTime = useRef<number>(0);
   const isMounted = useRef(true);
+  const revalidateOnMountRef = useRef(revalidateOnMount);
+
+  // Update ref when prop changes
+  useEffect(() => {
+    revalidateOnMountRef.current = revalidateOnMount;
+  }, [revalidateOnMount]);
 
   /**
    * Fetch fresh data from API
@@ -101,14 +107,14 @@ export function useCachedData<T>(
    */
   const loadData = useCallback(async () => {
     console.log(`[useCachedData] Loading data for ${endpoint}`, params);
-    
+
     // Try to get from cache first
     const cached = cache.get<T>(endpoint, params, { ttl, staleWhileRevalidate });
-    
-    console.log(`[useCachedData] Cache result for ${endpoint}:`, { 
-      hasData: !!cached.data, 
-      isStale: cached.isStale, 
-      expired: cached.expired 
+
+    console.log(`[useCachedData] Cache result for ${endpoint}:`, {
+      hasData: !!cached.data,
+      isStale: cached.isStale,
+      expired: cached.expired
     });
 
     if (cached.data && !cached.expired) {
@@ -116,8 +122,8 @@ export function useCachedData<T>(
       setData(cached.data);
       setIsLoading(false);
 
-      // If data is stale, revalidate in background
-      if (cached.isStale && revalidateOnMount) {
+      // If data is stale, revalidate in background (use ref to avoid dependency)
+      if (cached.isStale && revalidateOnMountRef.current) {
         console.log(`[useCachedData] Revalidating stale data for ${endpoint}`);
         fetchData(false);
       }
@@ -126,7 +132,7 @@ export function useCachedData<T>(
       console.log(`[useCachedData] Fetching fresh data for ${endpoint}`);
       await fetchData(true);
     }
-  }, [endpoint, params, ttl, staleWhileRevalidate, revalidateOnMount, fetchData]);
+  }, [endpoint, params, ttl, staleWhileRevalidate, fetchData]);
 
   /**
    * Manually update cache with new data
