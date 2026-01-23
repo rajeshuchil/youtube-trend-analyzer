@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, TrendingUp } from "lucide-react";
 import { scaleOnHover, glowOnHover, cardEntrance } from "@/lib/animations";
 import { RatingBadge } from "./RatingBadge";
+import { calculateEngagementScore, formatNumber, calculateTrendDuration } from "@/utils/analytics";
 import type { Trend } from "@/types";
 
 interface VideoCardProps {
@@ -11,12 +12,9 @@ interface VideoCardProps {
 }
 
 export function VideoCard({ trend, onClick, index = 0 }: VideoCardProps) {
-    // Format view count
-    const formatViews = (views: number): string => {
-        if (views >= 1000000) return `${(views / 1000000).toFixed(1)}M`;
-        if (views >= 1000) return `${(views / 1000).toFixed(1)}K`;
-        return views.toString();
-    };
+    // Calculate engagement metrics
+    const engagementScore = calculateEngagementScore(trend);
+    const trendDuration = calculateTrendDuration(trend.fetchedAt || new Date());
 
     return (
         <motion.div
@@ -51,6 +49,12 @@ export function VideoCard({ trend, onClick, index = 0 }: VideoCardProps) {
                     <Play className="h-16 w-16 text-white" fill="white" />
                 </div>
 
+                {/* Engagement Score Badge */}
+                <div className="absolute top-2 left-2 bg-[#f5c518]/90 backdrop-blur-sm px-2 py-1 rounded-md flex items-center gap-1">
+                    <TrendingUp className="h-3 w-3 text-black" />
+                    <span className="text-black text-xs font-bold">{engagementScore.toFixed(1)}</span>
+                </div>
+
                 {/* Rating Badge */}
                 <div className="absolute top-2 right-2">
                     <RatingBadge
@@ -58,6 +62,11 @@ export function VideoCard({ trend, onClick, index = 0 }: VideoCardProps) {
                         likes={trend.metrics.likes}
                         comments={trend.metrics.comments}
                     />
+                </div>
+
+                {/* Trending Duration */}
+                <div className="absolute bottom-2 right-2 bg-black/70 backdrop-blur-sm px-2 py-1 rounded-md">
+                    <span className="text-white text-xs">Trending: {trendDuration}</span>
                 </div>
             </motion.div>
 
@@ -70,7 +79,7 @@ export function VideoCard({ trend, onClick, index = 0 }: VideoCardProps) {
                     {trend.title}
                 </h3>
                 <div className="flex items-center gap-2 text-xs text-[#9ca3af]">
-                    <span>{formatViews(trend.metrics.views)} views</span>
+                    <span>{formatNumber(trend.metrics.views)} views</span>
                     <span>•</span>
                     <span className="capitalize">{trend.category}</span>
                 </div>

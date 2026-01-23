@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { getTrends } from "@/api/youtube";
 import { parseApiError } from "@/api/errorHandler";
 import { DashboardLayout } from "@/layouts/DashboardLayout";
@@ -7,6 +7,9 @@ import { HorizontalRow } from "@/components/dashboard/HorizontalRow";
 import { VideoCard } from "@/components/dashboard/VideoCard";
 import { ContinueWatching } from "@/components/dashboard/ContinueWatching";
 import { SearchBar } from "@/components/common/SearchBar";
+import { StatCard } from "@/components/stats/StatCard";
+import { TrendingUp, Globe, FolderOpen, Clock } from "lucide-react";
+import { groupByCategory } from "@/utils/analytics";
 import type { Trend } from "@/types";
 
 export default function Dashboard() {
@@ -53,6 +56,21 @@ export default function Dashboard() {
         return acc;
     }, {} as Record<string, Trend[]>);
 
+    // Analytics stats
+    const stats = useMemo(() => {
+        const categories = groupByCategory(trends);
+        const topCategory = categories[0]?.category || "N/A";
+        const uniqueRegions = new Set(trends.map(t => t.regionCode)).size;
+
+        return {
+            totalTrends: trends.length,
+            regions: uniqueRegions || 1,
+            categories: categories.length,
+            topCategory,
+            lastUpdated: trends[0]?.fetchedAt ? new Date(trends[0].fetchedAt).toLocaleTimeString() : "N/A"
+        };
+    }, [trends]);
+
     return (
         <DashboardLayout>
             <div className="min-h-screen bg-[#0a0a0a]">
@@ -65,6 +83,38 @@ export default function Dashboard() {
                 <div className="px-8 py-6">
                     <SearchBar />
                 </div>
+
+                {/* Stats Overview */}
+                {!loading && trends.length > 0 && (
+                    <div className="px-8 mb-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <StatCard
+                                title="Total Trends"
+                                value={stats.totalTrends}
+                                icon={TrendingUp}
+                                description="Trending videos tracked"
+                            />
+                            <StatCard
+                                title="Regions"
+                                value={stats.regions}
+                                icon={Globe}
+                                description="Countries analyzed"
+                            />
+                            <StatCard
+                                title="Categories"
+                                value={stats.categories}
+                                icon={FolderOpen}
+                                description={`Top: ${stats.topCategory}`}
+                            />
+                            <StatCard
+                                title="Last Updated"
+                                value={stats.lastUpdated}
+                                icon={Clock}
+                                description="Real-time data"
+                            />
+                        </div>
+                    </div>
+                )}
 
                 {/* Error Message */}
                 {error && (
