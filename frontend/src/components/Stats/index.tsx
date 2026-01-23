@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styles from './Stats.module.css'
 
 function Stats() {
@@ -32,17 +33,58 @@ function Stats() {
         }
     ]
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15
+            }
+        }
+    }
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5
+            }
+        }
+    }
+
     return (
         <section className={`${styles.stats} section-light`}>
             <div className="container">
-                <div className={styles['stats-header']}>
+                <motion.div
+                    className={styles['stats-header']}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
                     <p className={styles['stats-subtitle']}>Powerful data at your fingertips</p>
                     <h2 className={styles['stats-title']}>Real features, real data</h2>
-                </div>
+                </motion.div>
 
-                <div className={styles['stats-grid']}>
+                <motion.div
+                    className={styles['stats-grid']}
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                >
                     {stats.map((stat, index) => (
-                        <div key={index} className={`${styles['stat-card']} card`}>
+                        <motion.div
+                            key={index}
+                            className={`${styles['stat-card']} card`}
+                            variants={cardVariants}
+                            whileHover={{
+                                y: -8,
+                                transition: { duration: 0.2 }
+                            }}
+                        >
                             <div className={styles['stat-icon']}>{stat.icon}</div>
                             <div className={styles['stat-number']}>
                                 {stat.number}
@@ -50,9 +92,9 @@ function Stats() {
                             </div>
                             <div className={styles['stat-label']}>{stat.label}</div>
                             <div className={styles['stat-sublabel']}>{stat.sublabel}</div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )

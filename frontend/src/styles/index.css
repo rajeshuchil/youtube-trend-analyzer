@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* CSS Reset and Global Styles */
 * {
   margin: 0;
@@ -14,36 +18,36 @@
   --color-accent-orange: #F97316;
   --color-accent-green: #10B981;
   --color-accent-blue: #3B82F6;
-  
+
   /* Backgrounds */
   --color-dark-bg: #1a1a1a;
   --color-darker-bg: #0f0f0f;
   --color-footer-bg: #2a2a2a;
   --color-light-bg: #ffffff;
   --color-gray-bg: #f5f5f5;
-  
+
   /* Text */
   --color-text-primary: #ffffff;
   --color-text-secondary: #a0a0a0;
   --color-text-dark: #1a1a1a;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   /* Border radius */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  
+
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
@@ -61,7 +65,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
@@ -203,8 +212,10 @@ section {
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
   }
-  
-  .grid-2, .grid-3, .grid-4 {
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 }

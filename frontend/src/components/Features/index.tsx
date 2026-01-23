@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styles from './Features.module.css'
 
 function Features() {
@@ -34,27 +35,68 @@ function Features() {
         }
     ]
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1
+            }
+        }
+    }
+
+    const cardVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.5
+            }
+        }
+    }
+
     return (
         <section id="features" className={`${styles.features} section-light`}>
             <div className="container">
-                <div className={styles['features-header']}>
+                <motion.div
+                    className={styles['features-header']}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h2 className={styles['features-title']}>Powerful features for content creators</h2>
                     <p className={styles['features-subtitle']}>
                         Everything you need to understand YouTube trends and grow your channel
                     </p>
-                </div>
+                </motion.div>
 
-                <div className={styles['features-grid']}>
+                <motion.div
+                    className={styles['features-grid']}
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
                     {features.map((feature, index) => (
-                        <div key={index} className={`${styles['feature-card']} card`}>
+                        <motion.div
+                            key={index}
+                            className={`${styles['feature-card']} card`}
+                            variants={cardVariants}
+                            whileHover={{
+                                y: -12,
+                                transition: { duration: 0.3 }
+                            }}
+                        >
                             <div className={styles['feature-image']}>
                                 <img src={feature.image} alt={feature.title} />
                             </div>
                             <h3 className={styles['feature-title']}>{feature.title}</h3>
                             <p className={styles['feature-description']}>{feature.description}</p>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )
