@@ -28,8 +28,8 @@ function Hero() {
 
             <div className={styles['hero-badge']}>
                 <div className={styles['badge-stars']}>⭐⭐⭐⭐⭐</div>
-                <div className={styles['badge-text']}>Trusted by the world's greatest Creators</div>
-                <div className={styles['badge-count']}>10M+ creators</div>
+                <div className={styles['badge-text']}>Trusted by content creators worldwide</div>
+                <div className={styles['badge-count']}>Join thousands of creators</div>
             </div>
         </section>
     )

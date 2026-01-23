@@ -3,32 +3,32 @@ import styles from './Stats.module.css'
 function Stats() {
     const stats = [
         {
-            icon: '👁️',
-            number: '79',
-            suffix: '%',
-            label: 'more',
-            sublabel: 'views per video'
+            icon: '🌍',
+            number: '8',
+            suffix: '',
+            label: 'countries',
+            sublabel: 'regional coverage'
         },
         {
             icon: '⚡',
-            number: '10',
-            suffix: 'x',
-            label: 'faster',
-            sublabel: 'than manual methods'
+            number: '1',
+            suffix: 'hr',
+            label: 'cache',
+            sublabel: 'fresh data updates'
         },
         {
-            icon: '📈',
-            number: '32',
-            suffix: '%',
-            label: 'more',
-            sublabel: 'subscribers growth'
+            icon: '📊',
+            number: '50',
+            suffix: '+',
+            label: 'videos',
+            sublabel: 'per trending query'
         },
         {
-            icon: '✨',
-            number: '10',
-            suffix: 'M+',
-            label: 'users',
-            sublabel: 'creators like you'
+            icon: '🎯',
+            number: '24',
+            suffix: '/7',
+            label: 'access',
+            sublabel: 'always available'
         }
     ]
 
@@ -36,8 +36,8 @@ function Stats() {
         <section className={`${styles.stats} section-light`}>
             <div className="container">
                 <div className={styles['stats-header']}>
-                    <p className={styles['stats-subtitle']}>Built to help creators grow faster</p>
-                    <h2 className={styles['stats-title']}>YouTube Trend Analyzer users see real results</h2>
+                    <p className={styles['stats-subtitle']}>Powerful data at your fingertips</p>
+                    <h2 className={styles['stats-title']}>Real features, real data</h2>
                 </div>
 
                 <div className={styles['stats-grid']}>

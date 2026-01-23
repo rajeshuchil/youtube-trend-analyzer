@@ -3,19 +3,9 @@ import styles from './Features.module.css'
 function Features() {
     const features = [
         {
-            image: '/images/feature_engagement_scoring.png',
-            title: 'Engagement Scoring',
-            description: 'Calculate video engagement scores based on views, likes, and comments to identify top-performing content.'
-        },
-        {
             image: '/images/feature_regional_analysis.png',
             title: 'Cross-Regional Analysis',
-            description: 'Compare trending videos across 8+ countries including US, UK, India, Japan, and more.'
-        },
-        {
-            image: '/images/feature_trend_duration.png',
-            title: 'Trend Duration Tracking',
-            description: 'Monitor how long videos stay trending with timeline visualization and performance tracking.'
+            description: 'Compare trending videos across 8 countries including US, UK, India, Japan, Canada, Australia, Germany, and France.'
         },
         {
             image: '/images/feature_category_insights.png',
@@ -28,9 +18,19 @@ function Features() {
             description: 'Get fresh trending data with intelligent caching and manual refresh options.'
         },
         {
+            image: '/images/feature_engagement_scoring.png',
+            title: 'Engagement Metrics',
+            description: 'View detailed engagement metrics including views, likes, and comments for each trending video.'
+        },
+        {
             image: '/images/feature_topic_extraction.png',
-            title: 'AI Topic Extraction',
-            description: 'Discover trending topics and keywords with AI-powered content analysis.'
+            title: 'Keyword Search',
+            description: 'Search for trending videos by specific keywords or topics to find relevant content.'
+        },
+        {
+            image: '/images/feature_trend_duration.png',
+            title: 'Smart Data Caching',
+            description: 'Fast data access with intelligent caching that refreshes hourly for optimal performance.'
         }
     ]
 
