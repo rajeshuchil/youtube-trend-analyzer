@@ -38,7 +38,6 @@ function Sidebar() {
             <h1 className="text-lg font-bold text-gray-900 tracking-tight">
               trendscope
             </h1>
-            <p className="text-xs text-gray-500">Analytics Dashboard</p>
           </div>
         </a>
       </div>

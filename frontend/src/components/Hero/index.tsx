@@ -13,8 +13,22 @@ const floatRight = {
 function Hero() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Top Section - Light Mint Green Background */}
-      <section className="relative flex-1 bg-[#C8E6C9] flex items-center justify-center py-16 px-8 min-h-[65vh] overflow-hidden">
+      {/* Top Section - Light Mint Green Background with Confetti Pattern */}
+      <section className="relative flex-1 flex items-center justify-center py-16 px-8 min-h-[65vh] overflow-hidden">
+        {/* Background Image - Confetti Pattern */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: "url('/images/download (1).jpeg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+
+        {/* Gradient Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#C8E6C9]/70 via-[#A5D6A7]/60 to-[#81C784]/50" />
+
         {/* Left Floating Image */}
         <motion.img
           src="/images/Screenshot from 2026-01-25 03-19-52.png"
