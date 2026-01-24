@@ -9,16 +9,22 @@ function SmoothScroll({ children }: SmoothScrollProps) {
     const lenisRef = useRef<Lenis | null>(null)
 
     useEffect(() => {
-        // Initialize Lenis with mobile-optimized settings
+        // Detect Brave browser
+        const isBrave = !!(navigator as any).brave && typeof (navigator as any).brave.isBrave === 'function'
+
+        // Brave-specific optimized settings to prevent sticky/magnet scroll behavior
         const lenis = new Lenis({
-            duration: 1.2,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            duration: isBrave ? 0.8 : 1.2, // Shorter duration for Brave
+            easing: isBrave
+                ? (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t // Smoother easing for Brave
+                : (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             orientation: 'vertical',
             gestureOrientation: 'vertical',
             smoothWheel: true,
-            wheelMultiplier: 1,
-            touchMultiplier: 3, // Increased for less "draggy" feel on touch
+            wheelMultiplier: isBrave ? 0.8 : 1, // Reduced for Brave
+            touchMultiplier: 3,
             infinite: false,
+            syncTouch: isBrave, // Enable touch sync for Brave
         })
 
         lenisRef.current = lenis

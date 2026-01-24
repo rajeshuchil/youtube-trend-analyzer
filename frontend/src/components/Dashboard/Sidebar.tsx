@@ -18,7 +18,7 @@ function Sidebar() {
                 <div className="flex items-center gap-3">
                     <span className="text-2xl">📊</span>
                     <div>
-                        <h1 className="text-lg font-bold bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
+                        <h1 className="text-lg font-bold bg-gradient-to-r from-lime-400 to-green-500 bg-clip-text text-transparent">
                             YouTube Trends
                         </h1>
                         <p className="text-xs text-gray-500">Analytics</p>

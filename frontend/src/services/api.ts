@@ -1,4 +1,14 @@
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+// Automatically detect environment and use appropriate API
+// In development: uses localhost
+// In production: uses VITE_API_URL from Vercel environment variables
+const isDevelopment = import.meta.env.DEV
+
+const LOCAL_API = 'http://localhost:5000'
+const PRODUCTION_API = import.meta.env.VITE_API_URL || 'https://youtube-trend-analyzer-ry6z.onrender.com'
+
+const API_BASE_URL = isDevelopment ? LOCAL_API : PRODUCTION_API
+
+console.log(`🔗 API Mode: ${isDevelopment ? 'Development (localhost)' : 'Production'} - Using: ${API_BASE_URL}`)
 
 // Backend API response format
 export interface BackendVideo {
