@@ -1,69 +1,77 @@
 import { motion } from 'framer-motion'
-import styles from './Hero.module.css'
 
 function Hero() {
     return (
-        <section className={`${styles.hero} section-dark`}>
-            <div className={`container ${styles['hero-container']}`}>
-                <motion.div
-                    className={styles['hero-content']}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                >
-                    <motion.h1
-                        className={styles['hero-title']}
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+            <div className="container mx-auto px-8 py-16 max-w-7xl relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    {/* Hero Content */}
+                    <motion.div
+                        className="max-w-2xl"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        The ultimate <br />
-                        <span className="text-gradient">YouTube trend</span> <br />
-                        analyzer
-                    </motion.h1>
-                    <motion.p
-                        className={styles['hero-subtitle']}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
+                        <motion.h1
+                            className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-8 text-white"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2 }}
+                        >
+                            The ultimate <br />
+                            <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent">
+                                YouTube trend
+                            </span> <br />
+                            analyzer
+                        </motion.h1>
+                        <motion.p
+                            className="text-lg text-gray-400 leading-relaxed mb-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                        >
+                            Whether you're starting out or scaling up, YouTube Trend Analyzer gives you the
+                            insights and data to grow faster and create content your audience truly loves.
+                        </motion.p>
+                        <motion.a
+                            href="#features"
+                            className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg transition-all hover:bg-yellow-300 hover:shadow-xl"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.6 }}
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                        >
+                            Explore Features
+                        </motion.a>
+                    </motion.div>
+
+                    {/* Hero Image */}
+                    <motion.div
+                        className="relative animate-float"
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3 }}
                     >
-                        Whether you're starting out or scaling up, YouTube Trend Analyzer gives you the
-                        insights and data to grow faster and create content your audience truly loves.
-                    </motion.p>
-                    <motion.a
-                        href="#features"
-                        className="btn btn-primary"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.6 }}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Explore Features
-                    </motion.a>
-                </motion.div>
-                <motion.div
-                    className={styles['hero-image']}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8, delay: 0.3 }}
-                >
-                    <img
-                        src="/images/hero_dashboard_preview.png"
-                        alt="YouTube Trend Analyzer Dashboard"
-                    />
-                </motion.div>
+                        <img
+                            src="/images/hero_dashboard_preview.png"
+                            alt="YouTube Trend Analyzer Dashboard"
+                            className="w-full rounded-2xl shadow-2xl shadow-indigo-500/30"
+                        />
+                    </motion.div>
+                </div>
             </div>
 
+            {/* Badge */}
             <motion.div
-                className={styles['hero-badge']}
+                className="absolute bottom-[10%] left-1/2 -translate-x-1/2 bg-gray-800/95 backdrop-blur-lg px-12 py-6 rounded-xl text-center shadow-2xl z-20 lg:block hidden"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
             >
-                <div className={styles['badge-stars']}>⭐⭐⭐⭐⭐</div>
-                <div className={styles['badge-text']}>Trusted by content creators worldwide</div>
-                <div className={styles['badge-count']}>Join thousands of creators</div>
+                <div className="text-2xl mb-2">⭐⭐⭐⭐⭐</div>
+                <div className="text-white font-semibold mb-1">Trusted by content creators worldwide</div>
+                <div className="text-gray-400 text-sm">Join thousands of creators</div>
             </motion.div>
         </section>
     )

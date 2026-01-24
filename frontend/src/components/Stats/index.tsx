@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import styles from './Stats.module.css'
 
 function Stats() {
     const stats = [
@@ -55,21 +54,25 @@ function Stats() {
     }
 
     return (
-        <section className={`${styles.stats} section-light`}>
-            <div className="container">
+        <section className="py-24 bg-white">
+            <div className="container mx-auto px-8 max-w-7xl">
                 <motion.div
-                    className={styles['stats-header']}
+                    className="text-center mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <p className={styles['stats-subtitle']}>Powerful data at your fingertips</p>
-                    <h2 className={styles['stats-title']}>Real features, real data</h2>
+                    <p className="text-indigo-600 font-semibold mb-2 uppercase tracking-wide text-sm">
+                        Powerful data at your fingertips
+                    </p>
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                        Real features, real data
+                    </h2>
                 </motion.div>
 
                 <motion.div
-                    className={styles['stats-grid']}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -78,20 +81,24 @@ function Stats() {
                     {stats.map((stat, index) => (
                         <motion.div
                             key={index}
-                            className={`${styles['stat-card']} card`}
+                            className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 text-center border border-gray-100"
                             variants={cardVariants}
                             whileHover={{
                                 y: -8,
                                 transition: { duration: 0.2 }
                             }}
                         >
-                            <div className={styles['stat-icon']}>{stat.icon}</div>
-                            <div className={styles['stat-number']}>
+                            <div className="text-5xl mb-4">{stat.icon}</div>
+                            <div className="text-5xl font-bold text-gray-900 mb-2">
                                 {stat.number}
-                                <span className={styles['stat-suffix']}>{stat.suffix}</span>
+                                <span className="text-3xl text-indigo-600">{stat.suffix}</span>
                             </div>
-                            <div className={styles['stat-label']}>{stat.label}</div>
-                            <div className={styles['stat-sublabel']}>{stat.sublabel}</div>
+                            <div className="text-lg font-semibold text-gray-700 mb-1 capitalize">
+                                {stat.label}
+                            </div>
+                            <div className="text-sm text-gray-500">
+                                {stat.sublabel}
+                            </div>
                         </motion.div>
                     ))}
                 </motion.div>

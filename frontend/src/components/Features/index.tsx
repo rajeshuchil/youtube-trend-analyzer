@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import styles from './Features.module.css'
 
 function Features() {
     const features = [
@@ -57,23 +56,25 @@ function Features() {
     }
 
     return (
-        <section id="features" className={`${styles.features} section-light`}>
-            <div className="container">
+        <section id="features" className="py-24 bg-gray-50">
+            <div className="container mx-auto px-8 max-w-7xl">
                 <motion.div
-                    className={styles['features-header']}
+                    className="text-center mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h2 className={styles['features-title']}>Powerful features for content creators</h2>
-                    <p className={styles['features-subtitle']}>
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Powerful features for content creators
+                    </h2>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                         Everything you need to understand YouTube trends and grow your channel
                     </p>
                 </motion.div>
 
                 <motion.div
-                    className={styles['features-grid']}
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -82,18 +83,26 @@ function Features() {
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
-                            className={`${styles['feature-card']} card`}
+                            className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
                             variants={cardVariants}
                             whileHover={{
                                 y: -12,
                                 transition: { duration: 0.3 }
                             }}
                         >
-                            <div className={styles['feature-image']}>
-                                <img src={feature.image} alt={feature.title} />
+                            <div className="mb-6 rounded-xl overflow-hidden">
+                                <img
+                                    src={feature.image}
+                                    alt={feature.title}
+                                    className="w-full h-48 object-cover"
+                                />
                             </div>
-                            <h3 className={styles['feature-title']}>{feature.title}</h3>
-                            <p className={styles['feature-description']}>{feature.description}</p>
+                            <h3 className="text-xl font-bold text-gray-900 mb-3">
+                                {feature.title}
+                            </h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                {feature.description}
+                            </p>
                         </motion.div>
                     ))}
                 </motion.div>
