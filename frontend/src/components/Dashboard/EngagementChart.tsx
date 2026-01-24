@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts'
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
 
@@ -14,42 +15,67 @@ interface EngagementChartProps {
 
 function EngagementChart({ data }: EngagementChartProps) {
     return (
-        <Card className="bg-gray-900/50 border-white/10">
-            <CardHeader>
-                <CardTitle className="text-white">Engagement by Category</CardTitle>
-            </CardHeader>
-            <CardContent>
-                <ResponsiveContainer width="100%" height={300}>
-                    <BarChart data={data}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
-                        <XAxis
-                            dataKey="category"
-                            stroke="#9ca3af"
-                            tick={{ fill: '#9ca3af' }}
-                        />
-                        <YAxis
-                            stroke="#9ca3af"
-                            tick={{ fill: '#9ca3af' }}
-                        />
-                        <Tooltip
-                            contentStyle={{
-                                backgroundColor: '#1a1a1a',
-                                border: '1px solid rgba(255,255,255,0.1)',
-                                borderRadius: '8px',
-                                color: '#fff'
-                            }}
-                        />
-                        <Legend
-                            formatter={(value) => <span className="text-gray-300">{value}</span>}
-                        />
-                        <Bar dataKey="views" fill="#8B5CF6" radius={[4, 4, 0, 0]} />
-                        <Bar dataKey="likes" fill="#3B82F6" radius={[4, 4, 0, 0]} />
-                        <Bar dataKey="comments" fill="#06B6D4" radius={[4, 4, 0, 0]} />
-                    </BarChart>
-                </ResponsiveContainer>
-            </CardContent>
-        </Card>
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+        >
+            <Card className="bg-gray-900/50 border-white/10 hover:border-white/20 transition-all duration-300">
+                <CardHeader>
+                    <CardTitle className="text-white">Engagement by Category</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ResponsiveContainer width="100%" height={300}>
+                        <BarChart data={data}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                            <XAxis
+                                dataKey="category"
+                                stroke="#9ca3af"
+                                tick={{ fill: '#9ca3af' }}
+                            />
+                            <YAxis
+                                stroke="#9ca3af"
+                                tick={{ fill: '#9ca3af' }}
+                            />
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#1a1a1a',
+                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    borderRadius: '8px',
+                                    color: '#fff'
+                                }}
+                            />
+                            <Legend
+                                formatter={(value) => <span className="text-gray-300">{value}</span>}
+                            />
+                            <Bar
+                                dataKey="views"
+                                fill="#8B5CF6"
+                                radius={[4, 4, 0, 0]}
+                                animationBegin={0}
+                                animationDuration={800}
+                            />
+                            <Bar
+                                dataKey="likes"
+                                fill="#3B82F6"
+                                radius={[4, 4, 0, 0]}
+                                animationBegin={100}
+                                animationDuration={800}
+                            />
+                            <Bar
+                                dataKey="comments"
+                                fill="#06B6D4"
+                                radius={[4, 4, 0, 0]}
+                                animationBegin={200}
+                                animationDuration={800}
+                            />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </CardContent>
+            </Card>
+        </motion.div>
     )
 }
 
 export default EngagementChart
+

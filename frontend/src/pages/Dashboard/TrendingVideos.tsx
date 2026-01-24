@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { useTrends } from '../../hooks/useTrends'
 import VideoCard from '../../components/Dashboard/VideoCard'
+import VideoPlayerModal from '../../components/Dashboard/VideoPlayerModal'
 import FilterBar from '../../components/Dashboard/FilterBar'
 import { Skeleton } from '../../components/ui/skeleton'
 import { Button } from '../../components/ui/button'
@@ -18,10 +19,11 @@ function formatNumber(num: number): string {
 }
 
 function TrendingVideos() {
-    const [selectedRegion] = useState('US')
+    const [selectedRegion, setSelectedRegion] = useState('US')
     const [selectedCategory, setSelectedCategory] = useState('all')
     const [sortBy, setSortBy] = useState('views')
     const [currentPage, setCurrentPage] = useState(1)
+    const [selectedVideo, setSelectedVideo] = useState<{ id: string; title: string } | null>(null)
     const itemsPerPage = 12
 
     const { data, isLoading, error } = useTrends(selectedRegion)
@@ -48,6 +50,7 @@ function TrendingVideos() {
 
             return {
                 id: video.topicId,
+                videoId: videoId,
                 title: video.title,
                 thumbnail: thumbnailUrl,
                 category: categoryName,
@@ -96,7 +99,7 @@ function TrendingVideos() {
     // Reset to page 1 when filters change
     useMemo(() => {
         setCurrentPage(1)
-    }, [selectedCategory, sortBy])
+    }, [selectedCategory, sortBy, selectedRegion])
 
     if (isLoading) {
         return (
@@ -141,6 +144,8 @@ function TrendingVideos() {
 
                 {/* Filters */}
                 <FilterBar
+                    selectedRegion={selectedRegion}
+                    onRegionChange={setSelectedRegion}
                     selectedCategory={selectedCategory}
                     onCategoryChange={setSelectedCategory}
                     sortBy={sortBy}
@@ -150,7 +155,11 @@ function TrendingVideos() {
                 {/* Video Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                     {paginatedVideos.map((video) => (
-                        <VideoCard key={video.id} {...video} />
+                        <VideoCard
+                            key={video.id}
+                            {...video}
+                            onClick={() => setSelectedVideo({ id: video.videoId, title: video.title })}
+                        />
                     ))}
                 </div>
 

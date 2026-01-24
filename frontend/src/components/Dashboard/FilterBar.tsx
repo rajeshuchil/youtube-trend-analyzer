@@ -1,14 +1,25 @@
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
-import { Filter, ArrowUpDown } from 'lucide-react'
+import { Filter, ArrowUpDown, Globe } from 'lucide-react'
 
 interface FilterBarProps {
     selectedCategory: string
     onCategoryChange: (category: string) => void
     sortBy: string
     onSortChange: (sort: string) => void
+    selectedRegion?: string
+    onRegionChange?: (region: string) => void
 }
 
-function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange }: FilterBarProps) {
+function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, selectedRegion, onRegionChange }: FilterBarProps) {
+    const regions = [
+        { value: 'US', label: '🇺🇸 United States' },
+        { value: 'GB', label: '🇬🇧 United Kingdom' },
+        { value: 'CA', label: '🇨🇦 Canada' },
+        { value: 'IN', label: '🇮🇳 India' },
+        { value: 'JP', label: '🇯🇵 Japan' },
+        { value: 'AU', label: '🇦🇺 Australia' },
+    ]
+
     const categories = [
         { value: 'all', label: 'All Categories' },
         { value: '10', label: 'Music' },
@@ -29,7 +40,30 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange }:
     ]
 
     return (
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex flex-wrap items-center gap-4 mb-6">
+            {/* Region Filter */}
+            {selectedRegion && onRegionChange && (
+                <div className="flex items-center gap-2">
+                    <Globe className="w-4 h-4 text-gray-400" />
+                    <Select value={selectedRegion} onValueChange={onRegionChange}>
+                        <SelectTrigger className="w-[200px] bg-gray-900 border-white/10 text-white">
+                            <SelectValue placeholder="Select region" />
+                        </SelectTrigger>
+                        <SelectContent className="bg-gray-900 border-white/10">
+                            {regions.map((region) => (
+                                <SelectItem
+                                    key={region.value}
+                                    value={region.value}
+                                    className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
+                                >
+                                    {region.label}
+                                </SelectItem>
+                            ))}
+                        </SelectContent>
+                    </Select>
+                </div>
+            )}
+
             {/* Category Filter */}
             <div className="flex items-center gap-2">
                 <Filter className="w-4 h-4 text-gray-400" />
@@ -42,7 +76,7 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange }:
                             <SelectItem
                                 key={cat.value}
                                 value={cat.value}
-                                className="text-white hover:bg-white/5"
+                                className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
                             >
                                 {cat.label}
                             </SelectItem>
@@ -63,7 +97,7 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange }:
                             <SelectItem
                                 key={option.value}
                                 value={option.value}
-                                className="text-white hover:bg-white/5"
+                                className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
                             >
                                 {option.label}
                             </SelectItem>
