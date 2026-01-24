@@ -6,6 +6,7 @@ import Overview from './pages/Dashboard/Overview'
 import TrendingVideos from './pages/Dashboard/TrendingVideos'
 import Categories from './pages/Dashboard/Categories'
 import Search from './pages/Dashboard/Search'
+import Settings from './pages/Dashboard/Settings'
 
 const queryClient = new QueryClient()
 
@@ -20,7 +21,7 @@ function App() {
                         <Route path="trending" element={<TrendingVideos />} />
                         <Route path="categories" element={<Categories />} />
                         <Route path="search" element={<Search />} />
-                        <Route path="settings" element={<div className="p-8 text-white">Settings Page - Coming Soon</div>} />
+                        <Route path="settings" element={<Settings />} />
                     </Route>
                 </Routes>
             </Router>
