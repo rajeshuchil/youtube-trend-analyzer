@@ -1,4 +1,5 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { useTrends } from '../../hooks/useTrends'
 import VideoCard from '../../components/Dashboard/VideoCard'
 import VideoPlayerModal from '../../components/Dashboard/VideoPlayerModal'
@@ -19,12 +20,21 @@ function formatNumber(num: number): string {
 }
 
 function TrendingVideos() {
+    const [searchParams] = useSearchParams()
     const [selectedRegion, setSelectedRegion] = useState('US')
     const [selectedCategory, setSelectedCategory] = useState('all')
     const [sortBy, setSortBy] = useState('views')
     const [currentPage, setCurrentPage] = useState(1)
     const [selectedVideo, setSelectedVideo] = useState<{ id: string; title: string } | null>(null)
     const itemsPerPage = 12
+
+    // Apply category filter from URL if present
+    useEffect(() => {
+        const categoryFromUrl = searchParams.get('category')
+        if (categoryFromUrl) {
+            setSelectedCategory(categoryFromUrl)
+        }
+    }, [searchParams])
 
     const { data, isLoading, error } = useTrends(selectedRegion)
 

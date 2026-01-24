@@ -1,6 +1,9 @@
 import { useState, useMemo } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useTrends } from '../../hooks/useTrends'
 import CategoryCard from '../../components/Dashboard/CategoryCard'
+import RegionFilter from '../../components/Dashboard/RegionFilter'
+import VideoPlayerModal from '../../components/Dashboard/VideoPlayerModal'
 import { Skeleton } from '../../components/ui/skeleton'
 
 // Helper function to format large numbers
@@ -15,7 +18,9 @@ function formatNumber(num: number): string {
 }
 
 function Categories() {
-    const [selectedRegion] = useState('US')
+    const navigate = useNavigate()
+    const [selectedRegion, setSelectedRegion] = useState('US')
+    const [selectedVideo, setSelectedVideo] = useState<{ id: string; title: string } | null>(null)
     const { data, isLoading, error } = useTrends(selectedRegion)
 
     // Process category data
@@ -48,27 +53,49 @@ function Categories() {
             'People & Blogs': '#A855F7',
         }
 
-        // Aggregate by category
-        const categoryMap: Record<string, { count: number, totalViews: number }> = {}
+        // Aggregate by category with top videos
+        const categoryMap: Record<string, {
+            count: number,
+            totalViews: number,
+            videos: Array<{ id: string, videoId: string, title: string, thumbnail: string, views: number, likes: number, comments: number }>
+        }> = {}
 
         data.data.forEach(video => {
             const catName = categoryNames[video.category] || 'Other'
+            const videoId = video.topicId || video.url.split('v=')[1]?.split('&')[0] || 'default'
             if (!categoryMap[catName]) {
-                categoryMap[catName] = { count: 0, totalViews: 0 }
+                categoryMap[catName] = { count: 0, totalViews: 0, videos: [] }
             }
             categoryMap[catName].count++
             categoryMap[catName].totalViews += video.metrics.views
+            categoryMap[catName].videos.push({
+                id: video.topicId,
+                videoId: videoId,
+                title: video.title,
+                thumbnail: `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`,
+                views: video.metrics.views,
+                likes: video.metrics.likes,
+                comments: video.metrics.comments
+            })
         })
 
         // Convert to array and sort by video count
         return Object.entries(categoryMap)
-            .map(([name, stats]) => ({
-                name,
-                videoCount: stats.count,
-                totalViews: formatNumber(stats.totalViews),
-                totalViewsRaw: stats.totalViews,
-                color: categoryColors[name] || '#6B7280'
-            }))
+            .map(([name, stats]) => {
+                // Sort videos by views and get top 3
+                const topVideos = stats.videos
+                    .sort((a, b) => b.views - a.views)
+                    .slice(0, 3)
+
+                return {
+                    name,
+                    videoCount: stats.count,
+                    totalViews: formatNumber(stats.totalViews),
+                    totalViewsRaw: stats.totalViews,
+                    color: categoryColors[name] || '#6B7280',
+                    topVideos
+                }
+            })
             .sort((a, b) => b.videoCount - a.videoCount)
     }, [data])
 
@@ -105,20 +132,44 @@ function Categories() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-white mb-2">
-                        Categories
-                    </h1>
+                    <div className="flex items-center justify-between mb-4">
+                        <h1 className="text-4xl font-bold text-white">
+                            Categories
+                        </h1>
+                        <RegionFilter
+                            value={selectedRegion}
+                            onChange={setSelectedRegion}
+                        />
+                    </div>
                     <p className="text-gray-400">
-                        Analyze performance across {categoryStats.length} content categories
+                        Analyze performance across {categoryStats.length} content categories in {selectedRegion}
                     </p>
                 </div>
 
                 {/* Category Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {categoryStats.map((category) => (
-                        <CategoryCard key={category.name} {...category} />
+                        <CategoryCard
+                            key={category.name}
+                            {...category}
+                            onClick={() => {
+                                // Navigate to Trending Videos page with category filter
+                                navigate(`/dashboard/trending?category=${encodeURIComponent(category.name)}`)
+                            }}
+                            onVideoClick={(videoId, title) => {
+                                setSelectedVideo({ id: videoId, title })
+                            }}
+                        />
                     ))}
                 </div>
+
+                {/* Video Player Modal */}
+                <VideoPlayerModal
+                    videoId={selectedVideo?.id || ''}
+                    title={selectedVideo?.title || ''}
+                    isOpen={!!selectedVideo}
+                    onClose={() => setSelectedVideo(null)}
+                />
 
                 {/* Summary Stats */}
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
