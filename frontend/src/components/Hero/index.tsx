@@ -132,37 +132,6 @@ function Hero() {
       </section>
 
       {/* Bottom Section - White Background with Logo */}
-      <section className="bg-white py-10 px-8 border-t border-gray-200">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            {/* Left: Logo */}
-            <motion.div
-              className="flex items-center gap-3"
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <span className="text-5xl font-bold text-gray-900">📊</span>
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-                YouTube Trends
-                <span className="text-xs align-super">®</span>
-              </h2>
-            </motion.div>
-
-            {/* Right: Tagline */}
-            <motion.div
-              className="text-center md:text-right"
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-            >
-              <p className="text-2xl md:text-3xl font-normal text-gray-900">
-                Effortless Trend Analysis
-              </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
