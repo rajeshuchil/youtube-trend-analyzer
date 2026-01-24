@@ -22,26 +22,26 @@ function VideoCard({ title, thumbnail, category, views, likes, comments, onClick
             whileHover={{ y: -4 }}
             transition={{ duration: 0.2 }}
         >
-            <Card className="bg-gray-900/50 border-white/10 overflow-hidden hover:border-purple-500/30 transition-all">
+            <Card className="bg-white border border-gray-200 overflow-hidden hover:border-teal-300 transition-all">
                 {/* Thumbnail */}
-                <div className="relative aspect-video bg-gray-800 group cursor-pointer" onClick={onClick}>
+                <div className="relative aspect-video bg-gray-200 group cursor-pointer" onClick={onClick}>
                     <img
                         src={thumbnail}
                         alt={title}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                            e.currentTarget.src = 'https://via.placeholder.com/320x180/1a1a1a/666666?text=No+Thumbnail'
+                            e.currentTarget.src = 'https://via.placeholder.com/320x180/f5f5f5/999999?text=No+Thumbnail'
                         }}
                     />
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <div className="w-16 h-16 rounded-full bg-purple-600/90 flex items-center justify-center">
+                        <div className="w-16 h-16 rounded-full bg-teal-500 flex items-center justify-center">
                             <Play className="w-8 h-8 text-white ml-1" fill="white" />
                         </div>
                     </div>
                     {/* Category Badge */}
                     <div className="absolute top-2 right-2">
-                        <span className="px-2 py-1 text-xs font-medium bg-purple-600/90 text-white rounded">
+                        <span className="px-2 py-1 text-xs font-medium bg-teal-500 text-white rounded">
                             {category}
                         </span>
                     </div>
@@ -49,12 +49,12 @@ function VideoCard({ title, thumbnail, category, views, likes, comments, onClick
 
                 <CardContent className="p-4">
                     {/* Title */}
-                    <h3 className="text-white font-semibold mb-3 line-clamp-2 hover:text-purple-400 transition-colors cursor-pointer">
+                    <h3 className="text-gray-900 font-semibold mb-3 line-clamp-2 hover:text-teal-600 transition-colors cursor-pointer">
                         {title}
                     </h3>
 
                     {/* Stats */}
-                    <div className="flex items-center gap-4 text-sm text-gray-400">
+                    <div className="flex items-center gap-4 text-sm text-gray-600">
                         <div className="flex items-center gap-1">
                             <Eye className="w-4 h-4" />
                             <span>{views}</span>

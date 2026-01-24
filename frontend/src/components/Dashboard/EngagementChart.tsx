@@ -20,51 +20,51 @@ function EngagementChart({ data }: EngagementChartProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
         >
-            <Card className="bg-gray-900/50 border-white/10 hover:border-white/20 transition-all duration-300">
+            <Card className="bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300">
                 <CardHeader>
-                    <CardTitle className="text-white">Engagement by Category</CardTitle>
+                    <CardTitle className="text-gray-900">Engagement by Category</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={data}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.1)" />
+                            <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.1)" />
                             <XAxis
                                 dataKey="category"
-                                stroke="#9ca3af"
-                                tick={{ fill: '#9ca3af' }}
+                                stroke="#6b7280"
+                                tick={{ fill: '#6b7280' }}
                             />
                             <YAxis
-                                stroke="#9ca3af"
-                                tick={{ fill: '#9ca3af' }}
+                                stroke="#6b7280"
+                                tick={{ fill: '#6b7280' }}
                             />
                             <Tooltip
                                 contentStyle={{
-                                    backgroundColor: '#1a1a1a',
-                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    backgroundColor: '#ffffff',
+                                    border: '1px solid rgba(0,0,0,0.1)',
                                     borderRadius: '8px',
-                                    color: '#fff'
+                                    color: '#1a1a1a'
                                 }}
                             />
                             <Legend
-                                formatter={(value) => <span className="text-gray-300">{value}</span>}
+                                formatter={(value) => <span className="text-gray-700">{value}</span>}
                             />
                             <Bar
                                 dataKey="views"
-                                fill="#8B5CF6"
+                                fill="#06B6D4"
                                 radius={[4, 4, 0, 0]}
                                 animationBegin={0}
                                 animationDuration={800}
                             />
                             <Bar
                                 dataKey="likes"
-                                fill="#3B82F6"
+                                fill="#EC4899"
                                 radius={[4, 4, 0, 0]}
                                 animationBegin={100}
                                 animationDuration={800}
                             />
                             <Bar
                                 dataKey="comments"
-                                fill="#06B6D4"
+                                fill="#A855F7"
                                 radius={[4, 4, 0, 0]}
                                 animationBegin={200}
                                 animationDuration={800}

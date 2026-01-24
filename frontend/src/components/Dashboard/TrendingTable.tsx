@@ -34,11 +34,12 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
 
     const getCategoryColor = (category: string) => {
         const colors: Record<string, string> = {
-            'Gaming': 'bg-purple-500/20 text-purple-300 border-purple-500/30',
-            'Music': 'bg-blue-500/20 text-blue-300 border-blue-500/30',
-            'Entertainment': 'bg-cyan-500/20 text-cyan-300 border-cyan-500/30',
-            'Education': 'bg-green-500/20 text-green-300 border-green-500/30',
-            'News': 'bg-orange-500/20 text-orange-300 border-orange-500/30',
+            'Gaming': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+            'Music': 'bg-violet-500/20 text-violet-400 border-violet-500/30',
+            'Entertainment': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+            'Education': 'bg-teal-500/20 text-teal-400 border-teal-500/30',
+            'News & Politics': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
+            'Sports': 'bg-pink-500/20 text-pink-400 border-pink-500/30',
         }
         return colors[category] || 'bg-gray-500/20 text-gray-300 border-gray-500/30'
     }
@@ -80,16 +81,16 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
 
     return (
         <div className="space-y-4">
-            <div className="bg-gray-900/50 rounded-xl border border-white/10 overflow-x-auto">
+            <div className="bg-white rounded-xl border border-gray-200 overflow-x-auto">
                 <Table>
                     <TableHeader>
-                        <TableRow className="border-white/10 hover:bg-transparent">
-                            <TableHead className="text-gray-400">Video</TableHead>
-                            <TableHead className="text-gray-400">Category</TableHead>
-                            <TableHead className="text-gray-400 text-right">Views</TableHead>
-                            <TableHead className="text-gray-400 text-right">Likes</TableHead>
-                            <TableHead className="text-gray-400 text-right">Comments</TableHead>
-                            <TableHead className="text-gray-400 text-right">Engagement</TableHead>
+                        <TableRow className="border-gray-200 hover:bg-transparent">
+                            <TableHead className="text-gray-600">Video</TableHead>
+                            <TableHead className="text-gray-600">Category</TableHead>
+                            <TableHead className="text-gray-600 text-right">Views</TableHead>
+                            <TableHead className="text-gray-600 text-right">Likes</TableHead>
+                            <TableHead className="text-gray-600 text-right">Comments</TableHead>
+                            <TableHead className="text-gray-600 text-right">Engagement</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -97,7 +98,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                             {currentVideos.map((video, index) => (
                                 <motion.tr
                                     key={`${currentPage}-${video.id}`}
-                                    className="border-white/10 hover:bg-white/5 transition-colors cursor-pointer"
+                                    className="border-gray-200 hover:bg-gray-50 transition-colors cursor-pointer"
                                     onClick={() => onVideoClick?.({ id: video.videoId || video.id, title: video.title })}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -110,7 +111,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                                             alt={video.title}
                                             className="w-16 h-12 rounded-lg object-cover"
                                         />
-                                        <span className="text-white font-medium line-clamp-2 max-w-md">
+                                        <span className="text-gray-900 font-medium line-clamp-2 max-w-md">
                                             {video.title}
                                         </span>
                                     </TableCell>
@@ -119,18 +120,18 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                                             {video.category}
                                         </Badge>
                                     </TableCell>
-                                    <TableCell className="text-right text-gray-300">{video.views}</TableCell>
-                                    <TableCell className="text-right text-gray-300">{video.likes}</TableCell>
-                                    <TableCell className="text-right text-gray-300">{video.comments}</TableCell>
+                                    <TableCell className="text-right text-gray-700">{video.views}</TableCell>
+                                    <TableCell className="text-right text-gray-700">{video.likes}</TableCell>
+                                    <TableCell className="text-right text-gray-700">{video.comments}</TableCell>
                                     <TableCell className="text-right">
                                         <div className="flex items-center justify-end gap-2">
-                                            <div className="w-20 h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div className="w-20 h-2 bg-gray-200 rounded-full overflow-hidden">
                                                 <div
-                                                    className="h-full bg-gradient-to-r from-purple-500 to-blue-500"
+                                                    className="h-full bg-gradient-to-r from-teal-500 to-cyan-500"
                                                     style={{ width: `${Math.min(video.engagement / 10, 100)}%` }}
                                                 />
                                             </div>
-                                            <span className="text-gray-300 text-sm w-12">{video.engagement}K</span>
+                                            <span className="text-gray-700 text-sm w-12">{video.engagement}K</span>
                                         </div>
                                     </TableCell>
                                 </motion.tr>
@@ -143,7 +144,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
             {/* Pagination Controls */}
             {totalPages > 1 && (
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-2">
-                    <div className="text-sm text-gray-400 text-center sm:text-left">
+                    <div className="text-sm text-gray-600 text-center sm:text-left">
                         Showing {startIndex + 1}-{Math.min(endIndex, videos.length)} of {videos.length} videos
                     </div>
 
@@ -153,7 +154,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                             size="sm"
                             onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
                             disabled={currentPage === 1}
-                            className="bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-gray-900 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             <ChevronLeft className="h-4 w-4 sm:mr-1" />
                             <span className="hidden sm:inline">Previous</span>
@@ -172,8 +173,8 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                                         size="sm"
                                         onClick={() => setCurrentPage(page as number)}
                                         className={`min-w-[2.5rem] ${currentPage === page
-                                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white border-transparent hover:from-purple-600 hover:to-blue-600'
-                                            : 'bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white'
+                                            ? 'bg-teal-500 text-white border-transparent hover:bg-teal-600'
+                                            : 'bg-white border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-gray-900'
                                             }`}
                                     >
                                         {page}
@@ -183,7 +184,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                         </div>
 
                         {/* Mobile page indicator */}
-                        <div className="md:hidden px-3 py-1 bg-gray-900/50 border border-white/10 rounded text-sm text-gray-300">
+                        <div className="md:hidden px-3 py-1 bg-white border border-gray-200 rounded text-sm text-gray-700">
                             {currentPage} / {totalPages}
                         </div>
 
@@ -192,7 +193,7 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                             size="sm"
                             onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
                             disabled={currentPage === totalPages}
-                            className="bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 hover:text-gray-900 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             <span className="hidden sm:inline">Next</span>
                             <ChevronRight className="h-4 w-4 sm:ml-1" />

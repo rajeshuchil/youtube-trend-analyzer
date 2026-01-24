@@ -79,11 +79,11 @@ function CategoryCard({
             whileHover={{ scale: isExpanded ? 1 : 1.02, y: isExpanded ? 0 : -4 }}
             transition={{ duration: 0.2 }}
         >
-            <Card className="bg-gray-900/50 border-white/10 hover:border-purple-500/30 transition-all cursor-pointer">
+            <Card className="bg-white border border-gray-200 hover:border-teal-300 transition-all cursor-pointer">
                 <CardHeader className="pb-3">
                     <div className="flex items-center justify-between">
                         <CardTitle
-                            className="text-lg text-white hover:text-purple-400 transition-colors"
+                            className="text-lg text-gray-900 hover:text-teal-600 transition-colors"
                             onClick={handleCardClick}
                         >
                             {name}
@@ -100,7 +100,7 @@ function CategoryCard({
                                     animate={{ rotate: isExpanded ? 180 : 0 }}
                                     transition={{ duration: 0.3 }}
                                 >
-                                    <ChevronDown className="w-4 h-4 text-gray-400" />
+                                    <ChevronDown className="w-4 h-4 text-gray-500" />
                                 </motion.button>
                             )}
                         </div>
@@ -110,29 +110,29 @@ function CategoryCard({
                     <div className="space-y-3">
                         {/* Video Count */}
                         <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-2 text-gray-400">
+                            <div className="flex items-center gap-2 text-gray-600">
                                 <Video className="w-4 h-4" />
                                 <span className="text-sm">Videos</span>
                             </div>
-                            <span className="text-white font-semibold">{videoCount}</span>
+                            <span className="text-gray-900 font-semibold">{videoCount}</span>
                         </div>
 
                         {/* Total Views */}
                         <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-2 text-gray-400">
+                            <div className="flex items-center gap-2 text-gray-600">
                                 <Eye className="w-4 h-4" />
                                 <span className="text-sm">Views</span>
                             </div>
-                            <span className="text-white font-semibold">{totalViews}</span>
+                            <span className="text-gray-900 font-semibold">{totalViews}</span>
                         </div>
 
                         {/* Performance Bar */}
                         <div className="pt-2">
                             <div className="flex items-center gap-2 mb-2">
-                                <TrendingUp className="w-3 h-3 text-gray-400" />
-                                <span className="text-xs text-gray-400">Performance</span>
+                                <TrendingUp className="w-3 h-3 text-gray-500" />
+                                <span className="text-xs text-gray-500">Performance</span>
                             </div>
-                            <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                            <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                                 <motion.div
                                     className="h-full rounded-full"
                                     style={{
@@ -155,23 +155,23 @@ function CategoryCard({
                                     transition={{ duration: 0.3 }}
                                     className="overflow-hidden"
                                 >
-                                    <div className="pt-4 border-t border-white/10 space-y-4">
+                                    <div className="pt-4 border-t border-gray-200 space-y-4">
                                         {/* Average Metrics */}
                                         <div className="grid grid-cols-2 gap-3">
-                                            <div className="bg-gray-800/50 rounded p-2">
-                                                <div className="text-xs text-gray-400 mb-1">Avg Views</div>
-                                                <div className="text-sm font-semibold text-white">{formatNumber(avgViews)}</div>
+                                            <div className="bg-gray-50 rounded p-2">
+                                                <div className="text-xs text-gray-600 mb-1">Avg Views</div>
+                                                <div className="text-sm font-semibold text-gray-900">{formatNumber(avgViews)}</div>
                                             </div>
-                                            <div className="bg-gray-800/50 rounded p-2">
-                                                <div className="text-xs text-gray-400 mb-1">Engagement</div>
-                                                <div className="text-sm font-semibold text-white">{engagementRate}%</div>
+                                            <div className="bg-gray-50 rounded p-2">
+                                                <div className="text-xs text-gray-600 mb-1">Engagement</div>
+                                                <div className="text-sm font-semibold text-gray-900">{engagementRate}%</div>
                                             </div>
                                         </div>
 
                                         {/* Top Videos */}
                                         {topVideos.length > 0 && (
                                             <div>
-                                                <h4 className="text-xs font-semibold text-gray-400 mb-2">Top Videos</h4>
+                                                <h4 className="text-xs font-semibold text-gray-600 mb-2">Top Videos</h4>
                                                 <div className="space-y-2">
                                                     {topVideos.slice(0, 3).map((video, index) => (
                                                         <motion.div
@@ -179,17 +179,17 @@ function CategoryCard({
                                                             initial={{ opacity: 0, x: -10 }}
                                                             animate={{ opacity: 1, x: 0 }}
                                                             transition={{ delay: index * 0.1 }}
-                                                            className="flex gap-2 group cursor-pointer hover:bg-white/5 rounded p-1 transition-colors"
+                                                            className="flex gap-2 group cursor-pointer hover:bg-gray-50 rounded p-1 transition-colors"
                                                             onClick={(e) => handleVideoClick(e, video.videoId, video.title)}
                                                         >
                                                             {/* Thumbnail */}
-                                                            <div className="relative w-20 h-12 flex-shrink-0 rounded overflow-hidden bg-gray-800">
+                                                            <div className="relative w-20 h-12 flex-shrink-0 rounded overflow-hidden bg-gray-200">
                                                                 <img
                                                                     src={video.thumbnail}
                                                                     alt={video.title}
                                                                     className="w-full h-full object-cover"
                                                                     onError={(e) => {
-                                                                        e.currentTarget.src = 'https://via.placeholder.com/80x48/1a1a1a/666666?text=Video'
+                                                                        e.currentTarget.src = 'https://via.placeholder.com/80x48/f5f5f5/999999?text=Video'
                                                                     }}
                                                                 />
                                                                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -199,7 +199,7 @@ function CategoryCard({
 
                                                             {/* Video Info */}
                                                             <div className="flex-1 min-w-0">
-                                                                <p className="text-xs text-white line-clamp-2 mb-1 group-hover:text-purple-400 transition-colors">
+                                                                <p className="text-xs text-gray-900 line-clamp-2 mb-1 group-hover:text-teal-600 transition-colors">
                                                                     {video.title}
                                                                 </p>
                                                                 <div className="flex items-center gap-2 text-xs text-gray-500">
