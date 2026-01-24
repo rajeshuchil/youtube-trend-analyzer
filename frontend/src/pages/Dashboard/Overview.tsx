@@ -89,15 +89,15 @@ function Dashboard() {
         })
 
         const categoryColors: Record<string, string> = {
-            'Gaming': '#8B5CF6',
-            'Music': '#3B82F6',
+            'Gaming': '#A855F7',
+            'Music': '#8B5CF6',
             'Entertainment': '#06B6D4',
-            'Education': '#10B981',
+            'Education': '#14B8A6',
             'News & Politics': '#F97316',
-            'Sports': '#EF4444',
+            'Sports': '#EC4899',
             'Film & Animation': '#F59E0B',
             'Science & Technology': '#14B8A6',
-            'Comedy': '#EC4899',
+            'Comedy': '#D946EF',
         }
 
         const categoryData = Object.entries(categoryCount).map(([name, value]) => ({
@@ -167,7 +167,7 @@ function Dashboard() {
         return (
             <div className="p-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="bg-gray-900/50 border border-red-500/20 rounded-xl">
+                    <div className="bg-white border border-red-200 rounded-xl">
                         <EmptyState
                             title="Failed to Load Trends"
                             description={error.message || 'Unable to fetch trending videos. Please check your connection and try again.'}
@@ -190,16 +190,16 @@ function Dashboard() {
                 <div className="max-w-7xl mx-auto">
                     <div className="flex items-center justify-between mb-8">
                         <div>
-                            <h1 className="text-4xl font-bold text-white mb-2">
+                            <h1 className="text-4xl font-bold text-gray-900 mb-2">
                                 Dashboard Overview
                             </h1>
-                            <p className="text-gray-400">
+                            <p className="text-gray-600">
                                 Real-time YouTube trends and analytics
                             </p>
                         </div>
                         <RegionFilter value={selectedRegion} onChange={setSelectedRegion} />
                     </div>
-                    <div className="bg-gray-900/50 border border-white/10 rounded-xl">
+                    <div className="bg-white border border-gray-200 rounded-xl">
                         <EmptyState
                             title="No Trending Videos Found"
                             description={`No trending videos available for ${selectedRegion}. Try selecting a different region or refresh the data.`}
@@ -221,10 +221,10 @@ function Dashboard() {
                 {/* Header */}
                 <div className="flex items-center justify-between mb-8">
                     <div>
-                        <h1 className="text-4xl font-bold text-white mb-2">
+                        <h1 className="text-4xl font-bold text-gray-900 mb-2">
                             Dashboard Overview
                         </h1>
-                        <p className="text-gray-400">
+                        <p className="text-gray-600">
                             Real-time YouTube trends and analytics
                         </p>
                     </div>
@@ -232,7 +232,7 @@ function Dashboard() {
                         <button
                             onClick={handleRefresh}
                             disabled={refreshMutation.isPending}
-                            className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors disabled:opacity-50"
+                            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50"
                         >
                             <RefreshCw className={`w-4 h-4 ${refreshMutation.isPending ? 'animate-spin' : ''}`} />
                             Refresh
@@ -248,7 +248,7 @@ function Dashboard() {
                         value={formatNumber(transformedData.metrics.totalViews)}
                         change={`${transformedData.metrics.totalVideos} videos`}
                         icon={Eye}
-                        gradient="bg-gradient-to-br from-purple-600/20 to-blue-600/20"
+                        gradient="bg-white border border-gray-200"
                         tooltip="Total number of views across all trending videos in this region"
                     />
                     <MetricCard
@@ -256,7 +256,7 @@ function Dashboard() {
                         value={transformedData.metrics.totalVideos.toString()}
                         change={`Region: ${selectedRegion}`}
                         icon={Video}
-                        gradient="bg-gradient-to-br from-blue-600/20 to-cyan-600/20"
+                        gradient="bg-white border border-gray-200"
                         tooltip="Number of trending videos currently tracked for this region"
                     />
                     <MetricCard
@@ -264,7 +264,7 @@ function Dashboard() {
                         value={formatNumber(transformedData.metrics.totalEngagement)}
                         change="Likes + Comments"
                         icon={Heart}
-                        gradient="bg-gradient-to-br from-pink-600/20 to-purple-600/20"
+                        gradient="bg-white border border-gray-200"
                         tooltip="Combined total of all likes and comments across trending videos"
                     />
                     <MetricCard
@@ -272,7 +272,7 @@ function Dashboard() {
                         value={formatNumber(transformedData.metrics.avgEngagement)}
                         change="Per video"
                         icon={TrendingUp}
-                        gradient="bg-gradient-to-br from-cyan-600/20 to-blue-600/20"
+                        gradient="bg-white border border-gray-200"
                         tooltip="Average engagement score (likes + comments) per trending video"
                     />
                 </div>
@@ -285,7 +285,7 @@ function Dashboard() {
 
                 {/* Trending Videos Table */}
                 <div>
-                    <h2 className="text-2xl font-bold text-white mb-4">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">
                         Trending Videos
                     </h2>
                     <TrendingTable

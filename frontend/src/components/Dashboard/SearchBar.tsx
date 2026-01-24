@@ -58,10 +58,10 @@ function SearchBar({ onSearch, onClear, isSearching = false, placeholder = 'Sear
             transition={{ duration: 0.3 }}
         >
             <div className={`relative flex items-center transition-all duration-300 ${isFocused
-                ? 'ring-2 ring-purple-500/50 shadow-lg shadow-purple-500/20'
-                : 'ring-1 ring-white/10'
-                } rounded-lg bg-gray-900/50 backdrop-blur-sm`}>
-                <Search className={`absolute left-3 w-5 h-5 transition-colors duration-300 ${isFocused ? 'text-purple-400' : 'text-gray-400'
+                ? 'ring-2 ring-teal-500/50 shadow-lg shadow-teal-500/20'
+                : 'ring-1 ring-gray-200'
+                } rounded-lg bg-white backdrop-blur-sm`}>
+                <Search className={`absolute left-3 w-5 h-5 transition-colors duration-300 ${isFocused ? 'text-teal-500' : 'text-gray-400'
                     }`} />
 
                 <input
@@ -71,7 +71,7 @@ function SearchBar({ onSearch, onClear, isSearching = false, placeholder = 'Sear
                     onFocus={() => setIsFocused(true)}
                     onBlur={() => setIsFocused(false)}
                     placeholder={placeholder}
-                    className="w-full pl-11 pr-10 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none"
+                    className="w-full pl-11 pr-10 py-3 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none"
                 />
 
                 <AnimatePresence>
@@ -92,7 +92,7 @@ function SearchBar({ onSearch, onClear, isSearching = false, placeholder = 'Sear
 
                 {isSearching && (
                     <div className="absolute right-3">
-                        <div className="w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
+                        <div className="w-4 h-4 border-2 border-teal-500 border-t-transparent rounded-full animate-spin" />
                     </div>
                 )}
             </div>
@@ -104,7 +104,7 @@ function SearchBar({ onSearch, onClear, isSearching = false, placeholder = 'Sear
                         initial={{ opacity: 0, y: -5 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -5 }}
-                        className="absolute top-full mt-2 left-0 right-0 bg-gray-900/90 backdrop-blur-sm border border-white/10 rounded-lg p-3 text-sm text-gray-400 z-10"
+                            className="absolute top-full mt-2 left-0 right-0 bg-white backdrop-blur-sm border border-gray-200 rounded-lg p-3 text-sm text-gray-600 z-10 shadow-lg"
                     >
                         <p>💡 Try searching for topics like "gaming", "music", or "tech"</p>
                     </motion.div>

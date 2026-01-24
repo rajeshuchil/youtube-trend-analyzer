@@ -90,10 +90,10 @@ function Search() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-white mb-2">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-2">
                         Search Trending Videos
                     </h1>
-                    <p className="text-gray-400">
+                    <p className="text-gray-600">
                         Find trending videos by keyword or topic
                     </p>
                 </div>
@@ -107,16 +107,16 @@ function Search() {
                 {isLoading && (
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[1, 2, 3, 4, 5, 6].map(i => (
-                            <Skeleton key={i} className="h-80 bg-gray-800" />
+                            <Skeleton key={i} className="h-80 bg-gray-200" />
                         ))}
                     </div>
                 )}
 
                 {/* Error State */}
                 {error && (
-                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 text-center">
-                        <h2 className="text-2xl font-bold text-red-400 mb-2">Error</h2>
-                        <p className="text-gray-400">{error}</p>
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+                        <h2 className="text-2xl font-bold text-red-600 mb-2">Error</h2>
+                        <p className="text-gray-600">{error}</p>
                     </div>
                 )}
 
@@ -126,7 +126,7 @@ function Search() {
                         {results.length > 0 ? (
                             <>
                                 <div className="mb-6">
-                                    <h2 className="text-xl font-semibold text-white">
+                                    <h2 className="text-xl font-semibold text-gray-900">
                                         Found {results.length} results for "{searchQuery}"
                                     </h2>
                                 </div>
@@ -139,7 +139,7 @@ function Search() {
                         ) : (
                             <div className="text-center py-16">
                                 <SearchIcon className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-                                <h2 className="text-2xl font-bold text-gray-400 mb-2">
+                                <h2 className="text-2xl font-bold text-gray-600 mb-2">
                                     No results found
                                 </h2>
                                 <p className="text-gray-500">
@@ -153,13 +153,13 @@ function Search() {
                 {/* Empty State (before search) */}
                 {!isLoading && !error && !hasSearched && (
                     <div className="text-center py-16">
-                        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-purple-600/20 mb-6">
-                            <TrendingUp className="w-10 h-10 text-purple-500" />
+                        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-teal-600/20 mb-6">
+                            <TrendingUp className="w-10 h-10 text-teal-500" />
                         </div>
-                        <h2 className="text-2xl font-bold text-white mb-2">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-2">
                             Start Searching
                         </h2>
-                        <p className="text-gray-400 mb-6">
+                        <p className="text-gray-600 mb-6">
                             Enter a keyword to find trending videos
                         </p>
                         <div className="flex flex-wrap gap-2 justify-center">
@@ -167,7 +167,7 @@ function Search() {
                                 <button
                                     key={keyword}
                                     onClick={() => handleSearch(keyword)}
-                                    className="px-4 py-2 bg-gray-800 text-gray-300 rounded-lg hover:bg-gray-700 transition-colors"
+                                    className="px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
                                 >
                                     {keyword}
                                 </button>

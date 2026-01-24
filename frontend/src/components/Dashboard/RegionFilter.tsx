@@ -20,17 +20,17 @@ function RegionFilter({ value, onChange }: RegionFilterProps) {
 
     return (
         <div className="flex items-center gap-3">
-            <Globe className="w-5 h-5 text-gray-400" />
+            <Globe className="w-5 h-5 text-gray-500" />
             <Select value={value} onValueChange={onChange}>
-                <SelectTrigger className="w-48 bg-gray-900 border-white/10 text-white">
+                <SelectTrigger className="w-48 bg-white border-gray-200 text-gray-900">
                     <SelectValue placeholder="Select region" />
                 </SelectTrigger>
-                <SelectContent className="bg-gray-900 border-white/10">
+                <SelectContent className="bg-white border-gray-200">
                     {regions.map((region) => (
                         <SelectItem
                             key={region.code}
                             value={region.code}
-                            className="text-white hover:bg-white/5 focus:bg-white/5"
+                            className="text-gray-900 hover:bg-gray-50 focus:bg-gray-50"
                         >
                             <span className="flex items-center gap-2">
                                 <span>{region.flag}</span>

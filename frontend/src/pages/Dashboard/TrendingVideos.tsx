@@ -118,7 +118,7 @@ function TrendingVideos() {
                     <Skeleton className="h-12 w-64 mb-8 bg-gray-800" />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[1, 2, 3, 4, 5, 6].map(i => (
-                            <Skeleton key={i} className="h-80 bg-gray-800" />
+                            <Skeleton key={i} className="h-80 bg-gray-200" />
                         ))}
                     </div>
                 </div>
@@ -132,7 +132,7 @@ function TrendingVideos() {
                 <div className="max-w-7xl mx-auto">
                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 text-center">
                         <h2 className="text-2xl font-bold text-red-400 mb-2">Error Loading Videos</h2>
-                        <p className="text-gray-400">{error.message}</p>
+                        <p className="text-gray-600">{error.message}</p>
                     </div>
                 </div>
             </div>
@@ -144,10 +144,10 @@ function TrendingVideos() {
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-white mb-2">
+                    <h1 className="text-4xl font-bold text-gray-900 mb-2">
                         Trending Videos
                     </h1>
-                    <p className="text-gray-400">
+                    <p className="text-gray-600">
                         Explore {processedVideos.length} trending videos from {selectedRegion}
                     </p>
                 </div>
@@ -180,19 +180,19 @@ function TrendingVideos() {
                             onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
                             disabled={currentPage === 1}
                             variant="outline"
-                            className="bg-gray-900 border-white/10 text-white hover:bg-gray-800"
+                            className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50"
                         >
                             <ChevronLeft className="w-4 h-4 mr-2" />
                             Previous
                         </Button>
-                        <span className="text-gray-400">
+                        <span className="text-gray-600">
                             Page {currentPage} of {totalPages}
                         </span>
                         <Button
                             onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
                             disabled={currentPage === totalPages}
                             variant="outline"
-                            className="bg-gray-900 border-white/10 text-white hover:bg-gray-800"
+                            className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50"
                         >
                             Next
                             <ChevronRight className="w-4 h-4 ml-2" />

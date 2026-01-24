@@ -44,17 +44,17 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
             {/* Region Filter */}
             {selectedRegion && onRegionChange && (
                 <div className="flex items-center gap-2">
-                    <Globe className="w-4 h-4 text-gray-400" />
+                    <Globe className="w-4 h-4 text-gray-500" />
                     <Select value={selectedRegion} onValueChange={onRegionChange}>
-                        <SelectTrigger className="w-[200px] bg-gray-900 border-white/10 text-white">
+                        <SelectTrigger className="w-[200px] bg-white border-gray-200 text-gray-900">
                             <SelectValue placeholder="Select region" />
                         </SelectTrigger>
-                        <SelectContent className="bg-gray-900 border-white/10">
+                        <SelectContent className="bg-white border-gray-200">
                             {regions.map((region) => (
                                 <SelectItem
                                     key={region.value}
                                     value={region.value}
-                                    className="text-white hover:bg-white/10"
+                                    className="text-gray-900 hover:bg-gray-50"
                                 >
                                     {region.label}
                                 </SelectItem>
@@ -66,17 +66,17 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
 
             {/* Category Filter */}
             <div className="flex items-center gap-2">
-                <Filter className="w-4 h-4 text-gray-400" />
+                <Filter className="w-4 h-4 text-gray-500" />
                 <Select value={selectedCategory} onValueChange={onCategoryChange}>
-                    <SelectTrigger className="w-[200px] bg-gray-900 border-white/10 text-white">
+                    <SelectTrigger className="w-[200px] bg-white border-gray-200 text-gray-900">
                         <SelectValue placeholder="Select category" />
                     </SelectTrigger>
-                    <SelectContent className="bg-gray-900 border-white/10">
+                    <SelectContent className="bg-white border-gray-200">
                         {categories.map((cat) => (
                             <SelectItem
                                 key={cat.value}
                                 value={cat.value}
-                                className="text-white hover:bg-white/10"
+                                className="text-gray-900 hover:bg-gray-50"
                             >
                                 {cat.label}
                             </SelectItem>
@@ -87,17 +87,17 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
 
             {/* Sort Options */}
             <div className="flex items-center gap-2">
-                <ArrowUpDown className="w-4 h-4 text-gray-400" />
+                <ArrowUpDown className="w-4 h-4 text-gray-500" />
                 <Select value={sortBy} onValueChange={onSortChange}>
-                    <SelectTrigger className="w-[180px] bg-gray-900 border-white/10 text-white">
+                    <SelectTrigger className="w-[180px] bg-white border-gray-200 text-gray-900">
                         <SelectValue placeholder="Sort by" />
                     </SelectTrigger>
-                    <SelectContent className="bg-gray-900 border-white/10">
+                    <SelectContent className="bg-white border-gray-200">
                         {sortOptions.map((option) => (
                             <SelectItem
                                 key={option.value}
                                 value={option.value}
-                                className="text-white hover:bg-white/10"
+                                className="text-gray-900 hover:bg-gray-50"
                             >
                                 {option.label}
                             </SelectItem>

@@ -3,9 +3,9 @@ import Sidebar from '../components/Dashboard/Sidebar'
 
 function DashboardLayout() {
     return (
-        <div className="flex min-h-screen bg-black">
+        <div className="flex min-h-screen bg-gray-50">
             <Sidebar />
-            <main className="flex-1">
+            <main className="flex-1 bg-gray-50">
                 <Outlet />
             </main>
         </div>

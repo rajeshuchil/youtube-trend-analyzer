@@ -59,19 +59,19 @@ function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: Met
             whileHover={{ y: -4, scale: 1.02, transition: { duration: 0.2 } }}
             onHoverStart={handleHoverStart}
         >
-            <Card className={`${gradient} border-purple-500/20 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:border-purple-500/40`}>
+            <Card className={`${gradient} border-gray-200 hover:shadow-lg transition-all duration-300`}>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
                     <div className="flex items-center gap-2">
-                        <CardTitle className="text-sm font-medium text-gray-400">
+                        <CardTitle className="text-sm font-medium text-gray-600">
                             {title}
                         </CardTitle>
                         {tooltip && (
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Info className="w-3.5 h-3.5 text-gray-500 cursor-help" />
+                                        <Info className="w-3.5 h-3.5 text-gray-400 cursor-help" />
                                     </TooltipTrigger>
-                                    <TooltipContent className="bg-gray-900 border-white/10 text-gray-300 max-w-xs">
+                                    <TooltipContent className="bg-white border-gray-200 text-gray-700 max-w-xs shadow-lg">
                                         <p>{tooltip}</p>
                                     </TooltipContent>
                                 </Tooltip>
@@ -79,12 +79,12 @@ function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: Met
                         )}
                     </div>
                     <motion.div animate={iconControls}>
-                        <Icon className="w-5 h-5 text-gray-400" />
+                        <Icon className="w-5 h-5 text-gray-500" />
                     </motion.div>
                 </CardHeader>
                 <CardContent>
                     <motion.div
-                        className="text-4xl font-bold text-white mb-2"
+                        className="text-4xl font-bold text-gray-900 mb-2"
                         initial={{ scale: 0.5, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.1 }}

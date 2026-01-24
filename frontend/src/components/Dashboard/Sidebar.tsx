@@ -12,13 +12,13 @@ function Sidebar() {
     ]
 
     return (
-        <aside className="w-64 h-screen bg-gray-900 border-r border-white/10 flex-col hidden md:flex">
+        <aside className="w-64 h-screen bg-white border-r border-gray-200 flex-col hidden md:flex">
             {/* Logo */}
-            <div className="p-6 border-b border-white/10">
+            <div className="p-6 border-b border-gray-200">
                 <div className="flex items-center gap-3">
                     <span className="text-2xl">📊</span>
                     <div>
-                        <h1 className="text-lg font-bold bg-gradient-to-r from-lime-400 to-green-500 bg-clip-text text-transparent">
+                        <h1 className="text-lg font-bold text-gray-900">
                             YouTube Trends
                         </h1>
                         <p className="text-xs text-gray-500">Analytics</p>
@@ -40,8 +40,8 @@ function Sidebar() {
                                 w-full flex items-center gap-3 px-4 py-3 rounded-lg
                                 transition-all duration-200 no-underline
                                 ${isActive
-                                    ? 'bg-gradient-to-r from-purple-600/20 to-blue-600/20 text-white'
-                                    : 'text-gray-400 hover:bg-white/5 hover:text-white'
+                                    ? 'bg-teal-50 border-l-4 border-teal-500 text-teal-700'
+                                    : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                                 }
                             `}
                         >
@@ -59,10 +59,10 @@ function Sidebar() {
             </nav>
 
             {/* Footer */}
-            <div className="p-4 border-t border-white/10">
+            <div className="p-4 border-t border-gray-200">
                 <a
                     href="/"
-                    className="text-sm text-gray-500 hover:text-gray-400 transition-colors"
+                    className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
                 >
                     ← Back to Home
                 </a>

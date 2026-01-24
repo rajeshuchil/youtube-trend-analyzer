@@ -41,15 +41,15 @@ function Categories() {
         }
 
         const categoryColors: Record<string, string> = {
-            'Gaming': '#8B5CF6',
-            'Music': '#3B82F6',
+            'Gaming': '#A855F7',
+            'Music': '#8B5CF6',
             'Entertainment': '#06B6D4',
-            'Education': '#10B981',
+            'Education': '#14B8A6',
             'News & Politics': '#F97316',
-            'Sports': '#EF4444',
+            'Sports': '#EC4899',
             'Film & Animation': '#F59E0B',
             'Science & Technology': '#14B8A6',
-            'Comedy': '#EC4899',
+            'Comedy': '#D946EF',
             'People & Blogs': '#A855F7',
         }
 
@@ -118,9 +118,9 @@ function Categories() {
         return (
             <div className="p-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 text-center">
-                        <h2 className="text-2xl font-bold text-red-400 mb-2">Error Loading Categories</h2>
-                        <p className="text-gray-400">{error.message}</p>
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+                        <h2 className="text-2xl font-bold text-red-600 mb-2">Error Loading Categories</h2>
+                        <p className="text-gray-600">{error.message}</p>
                     </div>
                 </div>
             </div>
@@ -133,7 +133,7 @@ function Categories() {
                 {/* Header */}
                 <div className="mb-8">
                     <div className="flex items-center justify-between mb-4">
-                        <h1 className="text-4xl font-bold text-white">
+                        <h1 className="text-4xl font-bold text-gray-900">
                             Categories
                         </h1>
                         <RegionFilter
@@ -141,7 +141,7 @@ function Categories() {
                             onChange={setSelectedRegion}
                         />
                     </div>
-                    <p className="text-gray-400">
+                    <p className="text-gray-600">
                         Analyze performance across {categoryStats.length} content categories in {selectedRegion}
                     </p>
                 </div>
@@ -173,27 +173,27 @@ function Categories() {
 
                 {/* Summary Stats */}
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="bg-gray-900/50 border border-white/10 rounded-lg p-6">
-                        <h3 className="text-gray-400 text-sm mb-2">Most Popular Category</h3>
-                        <p className="text-2xl font-bold text-white">
+                    <div className="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 className="text-gray-600 text-sm mb-2">Most Popular Category</h3>
+                        <p className="text-2xl font-bold text-gray-900">
                             {categoryStats[0]?.name || 'N/A'}
                         </p>
                         <p className="text-sm text-gray-500 mt-1">
                             {categoryStats[0]?.videoCount || 0} videos
                         </p>
                     </div>
-                    <div className="bg-gray-900/50 border border-white/10 rounded-lg p-6">
-                        <h3 className="text-gray-400 text-sm mb-2">Total Categories</h3>
-                        <p className="text-2xl font-bold text-white">
+                    <div className="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 className="text-gray-600 text-sm mb-2">Total Categories</h3>
+                        <p className="text-2xl font-bold text-gray-900">
                             {categoryStats.length}
                         </p>
                         <p className="text-sm text-gray-500 mt-1">
                             Active categories
                         </p>
                     </div>
-                    <div className="bg-gray-900/50 border border-white/10 rounded-lg p-6">
-                        <h3 className="text-gray-400 text-sm mb-2">Top Category Views</h3>
-                        <p className="text-2xl font-bold text-white">
+                    <div className="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 className="text-gray-600 text-sm mb-2">Top Category Views</h3>
+                        <p className="text-2xl font-bold text-gray-900">
                             {categoryStats[0]?.totalViews || '0'}
                         </p>
                         <p className="text-sm text-gray-500 mt-1">

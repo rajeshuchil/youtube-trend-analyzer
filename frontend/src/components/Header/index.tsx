@@ -47,12 +47,21 @@ function Header() {
                     </div>
 
                     {/* Right: CTA Button */}
-                    <a
+                    <motion.a
                         href="/dashboard"
-                        className="px-6 py-2.5 bg-yellow-400 text-gray-900 font-semibold text-sm rounded-full transition-all hover:bg-yellow-300 hover:shadow-lg"
+                        className="relative px-6 py-2.5 bg-yellow-400 text-gray-900 font-semibold text-sm rounded-full transition-all overflow-hidden group"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        style={{
+                            boxShadow: '0 0 15px rgba(250, 204, 21, 0.4)'
+                        }}
                     >
-                        Try Dashboard
-                    </a>
+                        <span className="relative z-10">Try Dashboard</span>
+                        <motion.div
+                            className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100"
+                            transition={{ duration: 0.3 }}
+                        />
+                    </motion.a>
                 </div>
             </div>
         </motion.header>

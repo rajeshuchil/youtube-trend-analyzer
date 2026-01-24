@@ -19,9 +19,9 @@ function CategoryChart({ data }: CategoryChartProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
         >
-            <Card className="bg-gray-900/50 border-white/10 hover:border-white/20 transition-all duration-300">
+            <Card className="bg-white border border-gray-200 hover:border-gray-300 transition-all duration-300">
                 <CardHeader>
-                    <CardTitle className="text-white">Category Distribution</CardTitle>
+                    <CardTitle className="text-gray-900">Category Distribution</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <ResponsiveContainer width="100%" height={300}>
@@ -44,16 +44,16 @@ function CategoryChart({ data }: CategoryChartProps) {
                             </Pie>
                             <Tooltip
                                 contentStyle={{
-                                    backgroundColor: '#1a1a1a',
-                                    border: '1px solid rgba(255,255,255,0.1)',
+                                    backgroundColor: '#ffffff',
+                                    border: '1px solid rgba(0,0,0,0.1)',
                                     borderRadius: '8px',
-                                    color: '#fff'
+                                    color: '#1a1a1a'
                                 }}
                             />
                             <Legend
                                 verticalAlign="bottom"
                                 height={36}
-                                formatter={(value) => <span className="text-gray-300">{value}</span>}
+                                formatter={(value) => <span className="text-gray-700">{value}</span>}
                             />
                         </PieChart>
                     </ResponsiveContainer>
