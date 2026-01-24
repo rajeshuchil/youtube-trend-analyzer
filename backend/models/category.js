@@ -7,6 +7,9 @@ const categorySchema = new mongoose.Schema({
     fetchedAt: {type: Date, default: Date.now},
 });
 
+// Indexes for faster queries
+categorySchema.index({ regionCode: 1, fetchedAt: -1 }); // Main query pattern
+
 const Category = mongoose.model('Category',categorySchema);
 
 export default Category;

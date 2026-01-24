@@ -5,7 +5,7 @@
 
 // Cache Time-To-Live (TTL) values in hours
 export const CACHE_TTL = {
-    TRENDS: 1,        // Trends cached for 1 hour
+    TRENDS: 2,        // Trends cached for 2 hours - increased for better performance
     CATEGORIES: 24,   // Categories cached for 24 hours
 };
 
