@@ -10,13 +10,13 @@ function HowItWorks() {
         },
         {
             number: 2,
-            image: '/images/step_analyze_trends.png',
+            image: '/images/step_view_analytics.png',
             title: 'Analyze Trends',
             description: 'View engagement scores, trending duration, and category insights in real-time.'
         },
         {
             number: 3,
-            image: '/images/step_create_content.png',
+            image: '/images/step_make_decisions.png',
             title: 'Create Better Content',
             description: 'Use AI-powered topic extraction to create content your audience will love.'
         }

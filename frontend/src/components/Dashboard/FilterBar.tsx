@@ -54,7 +54,7 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
                                 <SelectItem
                                     key={region.value}
                                     value={region.value}
-                                    className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
+                                    className="text-white hover:bg-white/10"
                                 >
                                     {region.label}
                                 </SelectItem>
@@ -76,7 +76,7 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
                             <SelectItem
                                 key={cat.value}
                                 value={cat.value}
-                                className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
+                                className="text-white hover:bg-white/10"
                             >
                                 {cat.label}
                             </SelectItem>
@@ -97,7 +97,7 @@ function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange, s
                             <SelectItem
                                 key={option.value}
                                 value={option.value}
-                                className="text-white hover:bg-white/5 focus:bg-white/5 focus:text-white"
+                                className="text-white hover:bg-white/10"
                             >
                                 {option.label}
                             </SelectItem>
