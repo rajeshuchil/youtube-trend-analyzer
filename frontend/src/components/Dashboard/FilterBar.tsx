@@ -1,0 +1,78 @@
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
+import { Filter, ArrowUpDown } from 'lucide-react'
+
+interface FilterBarProps {
+    selectedCategory: string
+    onCategoryChange: (category: string) => void
+    sortBy: string
+    onSortChange: (sort: string) => void
+}
+
+function FilterBar({ selectedCategory, onCategoryChange, sortBy, onSortChange }: FilterBarProps) {
+    const categories = [
+        { value: 'all', label: 'All Categories' },
+        { value: '10', label: 'Music' },
+        { value: '20', label: 'Gaming' },
+        { value: '24', label: 'Entertainment' },
+        { value: '28', label: 'Science & Technology' },
+        { value: '27', label: 'Education' },
+        { value: '17', label: 'Sports' },
+        { value: '1', label: 'Film & Animation' },
+        { value: '25', label: 'News & Politics' },
+    ]
+
+    const sortOptions = [
+        { value: 'views', label: 'Most Views' },
+        { value: 'likes', label: 'Most Likes' },
+        { value: 'comments', label: 'Most Comments' },
+        { value: 'recent', label: 'Most Recent' },
+    ]
+
+    return (
+        <div className="flex items-center gap-4 mb-6">
+            {/* Category Filter */}
+            <div className="flex items-center gap-2">
+                <Filter className="w-4 h-4 text-gray-400" />
+                <Select value={selectedCategory} onValueChange={onCategoryChange}>
+                    <SelectTrigger className="w-[200px] bg-gray-900 border-white/10 text-white">
+                        <SelectValue placeholder="Select category" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-gray-900 border-white/10">
+                        {categories.map((cat) => (
+                            <SelectItem
+                                key={cat.value}
+                                value={cat.value}
+                                className="text-white hover:bg-white/5"
+                            >
+                                {cat.label}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </div>
+
+            {/* Sort Options */}
+            <div className="flex items-center gap-2">
+                <ArrowUpDown className="w-4 h-4 text-gray-400" />
+                <Select value={sortBy} onValueChange={onSortChange}>
+                    <SelectTrigger className="w-[180px] bg-gray-900 border-white/10 text-white">
+                        <SelectValue placeholder="Sort by" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-gray-900 border-white/10">
+                        {sortOptions.map((option) => (
+                            <SelectItem
+                                key={option.value}
+                                value={option.value}
+                                className="text-white hover:bg-white/5"
+                            >
+                                {option.label}
+                            </SelectItem>
+                        ))}
+                    </SelectContent>
+                </Select>
+            </div>
+        </div>
+    )
+}
+
+export default FilterBar
