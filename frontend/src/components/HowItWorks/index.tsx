@@ -51,7 +51,7 @@ function HowItWorks() {
                             transition={{ duration: 0.5, delay: index * 0.2 }}
                         >
                             <div className="relative mb-6">
-                                <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                                <div className="w-16 h-16 bg-gradient-to-r from-lime-400 to-green-500 rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                                     {step.number}
                                 </div>
                                 <div className="rounded-xl overflow-hidden shadow-lg">

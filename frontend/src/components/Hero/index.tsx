@@ -22,12 +22,12 @@ function Hero() {
                         >
                             The ultimate <br />
                             <span className="relative inline-block">
-                                <span className="bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text text-transparent relative z-10">
+                                <span className="bg-gradient-to-r from-lime-400 to-green-500 bg-clip-text text-transparent relative z-10">
                                     YouTube trend
                                 </span>
                                 {/* Hand-drawn underline */}
                                 <svg
-                                    className="absolute -bottom-2 w-full left-0 h-4 -z-0 text-indigo-500 opacity-60"
+                                    className="absolute -bottom-2 w-full left-0 h-4 -z-0 text-lime-500 opacity-60"
                                     viewBox="0 0 200 9"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ function Hero() {
                             </motion.a>
                             <motion.a
                                 href="#features"
-                                className="inline-block px-8 py-4 bg-transparent border-2 border-indigo-500 text-white font-bold rounded-full transition-all hover:bg-indigo-500/10"
+                                className="inline-block px-8 py-4 bg-transparent border-2 border-lime-500 text-white font-bold rounded-full transition-all hover:bg-lime-500/10"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.7 }}

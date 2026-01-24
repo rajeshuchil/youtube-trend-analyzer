@@ -63,7 +63,7 @@ function Stats() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
                 >
-                    <p className="text-indigo-600 font-semibold mb-2 uppercase tracking-wide text-sm">
+                    <p className="text-lime-600 font-semibold mb-2 uppercase tracking-wide text-sm">
                         Powerful data at your fingertips
                     </p>
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
@@ -91,7 +91,7 @@ function Stats() {
                             <div className="text-5xl mb-4">{stat.icon}</div>
                             <div className="text-5xl font-bold text-gray-900 mb-2">
                                 {stat.number}
-                                <span className="text-3xl text-indigo-600">{stat.suffix}</span>
+                                <span className="text-3xl text-black">{stat.suffix}</span>
                             </div>
                             <div className="text-lg font-semibold text-gray-700 mb-1 capitalize">
                                 {stat.label}
