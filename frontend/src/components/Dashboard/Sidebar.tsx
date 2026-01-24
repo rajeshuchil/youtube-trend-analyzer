@@ -1,17 +1,14 @@
-import { Home, TrendingUp, Grid3x3, Search, Settings } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { Home, TrendingUp, Grid3x3, Search, Settings } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 
-interface SidebarProps {
-    activeItem?: string
-}
-
-function Sidebar({ activeItem = 'overview' }: SidebarProps) {
+function Sidebar() {
     const navItems = [
-        { id: 'overview', label: 'Overview', icon: Home },
-        { id: 'trending', label: 'Trending Videos', icon: TrendingUp },
-        { id: 'categories', label: 'Categories', icon: Grid3x3 },
-        { id: 'search', label: 'Search', icon: Search },
-        { id: 'settings', label: 'Settings', icon: Settings },
+        { id: 'overview', label: 'Overview', icon: Home, path: '/dashboard' },
+        { id: 'trending', label: 'Trending Videos', icon: TrendingUp, path: '/dashboard/trending' },
+        { id: 'categories', label: 'Categories', icon: Grid3x3, path: '/dashboard/categories' },
+        { id: 'search', label: 'Search', icon: Search, path: '/dashboard/search' },
+        { id: 'settings', label: 'Settings', icon: Settings, path: '/dashboard/settings' },
     ]
 
     return (
@@ -33,25 +30,30 @@ function Sidebar({ activeItem = 'overview' }: SidebarProps) {
             <nav className="flex-1 p-4 space-y-2">
                 {navItems.map((item) => {
                     const Icon = item.icon
-                    const isActive = activeItem === item.id
 
                     return (
-                        <motion.button
+                        <NavLink
                             key={item.id}
-                            className={`
+                            to={item.path}
+                            end={item.id === 'overview'}
+                            className={({ isActive }: { isActive: boolean }) => `
                                 w-full flex items-center gap-3 px-4 py-3 rounded-lg
-                                transition-all duration-200
+                                transition-all duration-200 no-underline
                                 ${isActive
                                     ? 'bg-gradient-to-r from-purple-600/20 to-blue-600/20 text-white'
                                     : 'text-gray-400 hover:bg-white/5 hover:text-white'
                                 }
                             `}
-                            whileHover={{ x: 4 }}
-                            whileTap={{ scale: 0.98 }}
                         >
-                            <Icon className="w-5 h-5" />
-                            <span className="text-sm font-medium">{item.label}</span>
-                        </motion.button>
+                            <motion.div
+                                className="w-full flex items-center gap-3"
+                                whileHover={{ x: 4 }}
+                                whileTap={{ scale: 0.98 }}
+                            >
+                                <Icon className="w-5 h-5" />
+                                <span className="text-sm font-medium">{item.label}</span>
+                            </motion.div>
+                        </NavLink>
                     )
                 })}
             </nav>
