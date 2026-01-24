@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export async function fetchYoutubeTrends(apiKey,regionCode ='US',maxResults = 5, categoryId) {
+export async function fetchYoutubeTrends(apiKey,regionCode ='US',maxResults = 50, categoryId) {
     if(!apiKey){
         return[
             {

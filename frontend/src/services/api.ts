@@ -48,11 +48,26 @@ export interface CategoryResponse {
 
 // Fetch trending videos
 export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse> {
-    const response = await fetch(`${API_BASE_URL}/api/youtube/trends?regionCode=${region}`)
-    if (!response.ok) {
-        throw new Error('Failed to fetch trends')
+    const controller = new AbortController()
+    const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 second timeout
+    
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/youtube/trends?regionCode=${region}&maxResults=50`, {
+            signal: controller.signal,
+            headers: {
+                'Connection': 'keep-alive'
+            }
+        })
+        clearTimeout(timeoutId)
+        
+        if (!response.ok) {
+            throw new Error('Failed to fetch trends')
+        }
+        return response.json()
+    } catch (error) {
+        clearTimeout(timeoutId)
+        throw error
     }
-    return response.json()
 }
 
 // Fetch categories

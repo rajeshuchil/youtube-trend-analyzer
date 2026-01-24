@@ -5,8 +5,11 @@ export function useTrends(region: string) {
     return useQuery<TrendsResponse>({
         queryKey: ['trends', region],
         queryFn: () => fetchTrends(region),
-        staleTime: 1000 * 60 * 60, // 1 hour (matches backend cache)
+        staleTime: 1000 * 60 * 30, // 30 minutes
+        gcTime: 1000 * 60 * 60, // Keep in cache for 1 hour
         refetchOnWindowFocus: false,
+        retry: 2,
+        retryDelay: 1000,
     })
 }
 
