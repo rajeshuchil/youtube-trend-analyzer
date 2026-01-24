@@ -33,17 +33,30 @@ function Hero() {
                             Whether you're starting out or scaling up, YouTube Trend Analyzer gives you the
                             insights and data to grow faster and create content your audience truly loves.
                         </motion.p>
-                        <motion.a
-                            href="#features"
-                            className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg transition-all hover:bg-yellow-300 hover:shadow-xl"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.6 }}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Explore Features
-                        </motion.a>
+                        <div className="flex gap-4">
+                            <motion.a
+                                href="/dashboard"
+                                className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg transition-all hover:bg-yellow-300 hover:shadow-xl"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.6 }}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                Try Dashboard
+                            </motion.a>
+                            <motion.a
+                                href="#features"
+                                className="inline-block px-8 py-4 bg-transparent border-2 border-indigo-500 text-white font-bold rounded-lg transition-all hover:bg-indigo-500/10"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.7 }}
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                            >
+                                Explore Features
+                            </motion.a>
+                        </div>
                     </motion.div>
 
                     {/* Hero Image */}

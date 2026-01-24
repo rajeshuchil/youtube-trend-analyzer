@@ -22,15 +22,15 @@ function CTA() {
                         ?
                     </h2>
                     <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                        Join thousands of creators who are using YouTube Trend Analyzer to create better content
+                        Explore real-time YouTube trends and analytics with this interactive demo
                     </p>
                     <motion.a
-                        href="#features"
+                        href="/dashboard"
                         className="inline-block px-10 py-5 bg-yellow-400 text-gray-900 font-bold text-lg rounded-lg transition-all hover:bg-yellow-300 hover:shadow-2xl"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        Get Started Free
+                        Try Dashboard
                     </motion.a>
                 </motion.div>
             </div>

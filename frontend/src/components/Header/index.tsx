@@ -55,7 +55,7 @@ function Header() {
                         href="/dashboard"
                         className="px-6 py-2.5 bg-yellow-400 text-gray-900 font-semibold rounded-lg transition-all hover:bg-yellow-300 hover:scale-105 hover:shadow-lg"
                     >
-                        Get Started
+                        Try Dashboard
                     </a>
                 </div>
             </div>
