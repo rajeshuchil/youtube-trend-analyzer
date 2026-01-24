@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 function Hero() {
     return (
         <section
-            className="sticky top-0 min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-black z-0 will-change-transform"
+            className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-black"
         >
             <div className="container mx-auto px-8 py-16 max-w-7xl relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

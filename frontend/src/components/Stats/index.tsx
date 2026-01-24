@@ -54,7 +54,7 @@ function Stats() {
     }
 
     return (
-        <section className="relative py-24 bg-white z-10 will-change-transform">
+        <section className="relative py-24 bg-white">
             <div className="container mx-auto px-8 max-w-7xl">
                 <motion.div
                     className="text-center mb-16"
