@@ -38,7 +38,7 @@ export interface CategoryResponse {
 
 // Fetch trending videos
 export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse> {
-    const response = await fetch(`${API_BASE_URL}/api/youtube/trends?region=${region}`)
+    const response = await fetch(`${API_BASE_URL}/api/youtube/trends?regionCode=${region}`)
     if (!response.ok) {
         throw new Error('Failed to fetch trends')
     }
@@ -56,7 +56,7 @@ export async function fetchCategories(): Promise<CategoryResponse> {
 
 // Search trends by keyword
 export async function searchTrends(keyword: string, region: string = 'US'): Promise<TrendsResponse> {
-    const response = await fetch(`${API_BASE_URL}/api/youtube/trends?keyword=${encodeURIComponent(keyword)}&region=${region}`)
+    const response = await fetch(`${API_BASE_URL}/api/youtube/trends?keyword=${encodeURIComponent(keyword)}&regionCode=${region}`)
     if (!response.ok) {
         throw new Error('Failed to search trends')
     }
@@ -65,7 +65,7 @@ export async function searchTrends(keyword: string, region: string = 'US'): Prom
 
 // Refresh trends data
 export async function refreshTrends(region: string = 'US'): Promise<TrendsResponse> {
-    const response = await fetch(`${API_BASE_URL}/api/youtube/trends/refresh?region=${region}`, {
+    const response = await fetch(`${API_BASE_URL}/api/youtube/trends/refresh?regionCode=${region}`, {
         method: 'POST'
     })
     if (!response.ok) {
