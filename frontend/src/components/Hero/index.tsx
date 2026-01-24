@@ -86,33 +86,6 @@ function Hero() {
                                 className="w-full rounded-2xl shadow-2xl shadow-indigo-500/30 border border-gray-800"
                             />
                         </div>
-
-                        {/* Casual Floating Elements */}
-                        <motion.div
-                            className="absolute -left-12 top-20 bg-gray-900/90 backdrop-blur-xl border border-white/10 p-4 rounded-xl shadow-2xl z-20 flex items-center gap-4 hidden md:flex"
-                            animate={{ y: [0, -15, 0] }}
-                            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                        >
-                            <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center text-2xl">
-                                🔥
-                            </div>
-                            <div>
-                                <div className="text-white font-bold">Trending #1</div>
-                                <div className="text-gray-400 text-xs">Global Gaming</div>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            className="absolute -right-8 bottom-12 bg-white p-4 rounded-xl shadow-2xl z-20 hidden md:block"
-                            animate={{ y: [0, 15, 0] }}
-                            transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                        >
-                            <div className="flex items-center gap-2 mb-2">
-                                <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
-                                <span className="text-gray-900 font-bold text-sm">Engagement</span>
-                            </div>
-                            <div className="text-3xl font-bold text-gray-900">+127% 🚀</div>
-                        </motion.div>
                     </motion.div>
                 </div>
             </div>
