@@ -9,7 +9,7 @@ function SmoothScroll({ children }: SmoothScrollProps) {
     const lenisRef = useRef<Lenis | null>(null)
 
     useEffect(() => {
-        // Initialize Lenis
+        // Initialize Lenis with mobile-optimized settings
         const lenis = new Lenis({
             duration: 1.2,
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -17,7 +17,7 @@ function SmoothScroll({ children }: SmoothScrollProps) {
             gestureOrientation: 'vertical',
             smoothWheel: true,
             wheelMultiplier: 1,
-            touchMultiplier: 2,
+            touchMultiplier: 3, // Increased for less "draggy" feel on touch
             infinite: false,
         })
 

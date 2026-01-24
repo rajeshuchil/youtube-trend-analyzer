@@ -13,7 +13,7 @@ function UseCases() {
             ]
         },
         {
-            image: '/images/usecase_marketing_teams.png',
+            image: '/images/usecase_digital_marketers.png',
             title: 'Marketing Teams',
             description: 'Track brand mentions and trending topics to inform your content strategy and campaigns.',
             benefits: [
