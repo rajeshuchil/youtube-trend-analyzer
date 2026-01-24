@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 function CTA() {
     return (
-        <section className="py-24 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+        <section className="py-24 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden z-10">
             {/* Background decoration */}
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-600/10"></div>
 
@@ -26,7 +26,7 @@ function CTA() {
                     </p>
                     <motion.a
                         href="/dashboard"
-                        className="inline-block px-10 py-5 bg-yellow-400 text-gray-900 font-bold text-lg rounded-lg transition-all hover:bg-yellow-300 hover:shadow-2xl"
+                        className="inline-block px-10 py-5 bg-yellow-400 text-gray-900 font-bold text-lg rounded-full transition-all hover:bg-yellow-300 hover:shadow-2xl"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >

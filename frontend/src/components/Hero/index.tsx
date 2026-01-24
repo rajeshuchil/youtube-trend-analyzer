@@ -2,7 +2,9 @@ import { motion } from 'framer-motion'
 
 function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+        <section
+            className="sticky top-0 min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-900 to-black z-0"
+        >
             <div className="container mx-auto px-8 py-16 max-w-7xl relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* Hero Content */}
@@ -36,7 +38,7 @@ function Hero() {
                         <div className="flex gap-4">
                             <motion.a
                                 href="/dashboard"
-                                className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg transition-all hover:bg-yellow-300 hover:shadow-xl"
+                                className="inline-block px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-full transition-all hover:bg-yellow-300 hover:shadow-xl"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
@@ -47,7 +49,7 @@ function Hero() {
                             </motion.a>
                             <motion.a
                                 href="#features"
-                                className="inline-block px-8 py-4 bg-transparent border-2 border-indigo-500 text-white font-bold rounded-lg transition-all hover:bg-indigo-500/10"
+                                className="inline-block px-8 py-4 bg-transparent border-2 border-indigo-500 text-white font-bold rounded-full transition-all hover:bg-indigo-500/10"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: 0.7 }}
@@ -74,18 +76,6 @@ function Hero() {
                     </motion.div>
                 </div>
             </div>
-
-            {/* Badge */}
-            <motion.div
-                className="absolute bottom-[10%] left-1/2 -translate-x-1/2 bg-gray-800/95 backdrop-blur-lg px-12 py-6 rounded-xl text-center shadow-2xl z-20 lg:block hidden"
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-            >
-                <div className="text-2xl mb-2">⭐⭐⭐⭐⭐</div>
-                <div className="text-white font-semibold mb-1">Trusted by content creators worldwide</div>
-                <div className="text-gray-400 text-sm">Join thousands of creators</div>
-            </motion.div>
         </section>
     )
 }
