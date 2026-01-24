@@ -78,7 +78,7 @@ function TrendingTable({ videos }: TrendingTableProps) {
 
     return (
         <div className="space-y-4">
-            <div className="bg-gray-900/50 rounded-xl border border-white/10 overflow-hidden">
+            <div className="bg-gray-900/50 rounded-xl border border-white/10 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow className="border-white/10 hover:bg-transparent">
@@ -139,12 +139,12 @@ function TrendingTable({ videos }: TrendingTableProps) {
 
             {/* Pagination Controls */}
             {totalPages > 1 && (
-                <div className="flex items-center justify-between px-2">
-                    <div className="text-sm text-gray-400">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-2">
+                    <div className="text-sm text-gray-400 text-center sm:text-left">
                         Showing {startIndex + 1}-{Math.min(endIndex, videos.length)} of {videos.length} videos
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 flex-wrap justify-center">
                         <Button
                             variant="outline"
                             size="sm"
@@ -152,11 +152,11 @@ function TrendingTable({ videos }: TrendingTableProps) {
                             disabled={currentPage === 1}
                             className="bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            <ChevronLeft className="h-4 w-4 mr-1" />
-                            Previous
+                            <ChevronLeft className="h-4 w-4 sm:mr-1" />
+                            <span className="hidden sm:inline">Previous</span>
                         </Button>
 
-                        <div className="flex items-center gap-1">
+                        <div className="hidden md:flex items-center gap-1">
                             {getPageNumbers().map((page, index) => (
                                 page === '...' ? (
                                     <span key={`ellipsis-${index}`} className="px-2 text-gray-500">
@@ -169,14 +169,19 @@ function TrendingTable({ videos }: TrendingTableProps) {
                                         size="sm"
                                         onClick={() => setCurrentPage(page as number)}
                                         className={`min-w-[2.5rem] ${currentPage === page
-                                                ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white border-transparent hover:from-purple-600 hover:to-blue-600'
-                                                : 'bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white'
+                                            ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white border-transparent hover:from-purple-600 hover:to-blue-600'
+                                            : 'bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white'
                                             }`}
                                     >
                                         {page}
                                     </Button>
                                 )
                             ))}
+                        </div>
+
+                        {/* Mobile page indicator */}
+                        <div className="md:hidden px-3 py-1 bg-gray-900/50 border border-white/10 rounded text-sm text-gray-300">
+                            {currentPage} / {totalPages}
                         </div>
 
                         <Button
@@ -186,8 +191,8 @@ function TrendingTable({ videos }: TrendingTableProps) {
                             disabled={currentPage === totalPages}
                             className="bg-gray-900/50 border-white/10 text-gray-300 hover:bg-white/5 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            Next
-                            <ChevronRight className="h-4 w-4 ml-1" />
+                            <span className="hidden sm:inline">Next</span>
+                            <ChevronRight className="h-4 w-4 sm:ml-1" />
                         </Button>
                     </div>
                 </div>

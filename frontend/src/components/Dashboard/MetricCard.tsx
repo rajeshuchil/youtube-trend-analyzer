@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
-import { LucideIcon } from 'lucide-react'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip'
+import { LucideIcon, Info } from 'lucide-react'
 
 interface MetricCardProps {
     title: string
@@ -9,9 +10,10 @@ interface MetricCardProps {
     change?: string
     icon: LucideIcon
     gradient: string
+    tooltip?: string
 }
 
-function MetricCard({ title, value, change, icon: Icon, gradient }: MetricCardProps) {
+function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: MetricCardProps) {
     const [displayValue, setDisplayValue] = useState('0')
     const iconControls = useAnimation()
 
@@ -59,9 +61,23 @@ function MetricCard({ title, value, change, icon: Icon, gradient }: MetricCardPr
         >
             <Card className={`${gradient} border-purple-500/20 hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300 hover:border-purple-500/40`}>
                 <CardHeader className="flex flex-row items-center justify-between pb-2">
-                    <CardTitle className="text-sm font-medium text-gray-400">
-                        {title}
-                    </CardTitle>
+                    <div className="flex items-center gap-2">
+                        <CardTitle className="text-sm font-medium text-gray-400">
+                            {title}
+                        </CardTitle>
+                        {tooltip && (
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Info className="w-3.5 h-3.5 text-gray-500 cursor-help" />
+                                    </TooltipTrigger>
+                                    <TooltipContent className="bg-gray-900 border-white/10 text-gray-300 max-w-xs">
+                                        <p>{tooltip}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                        )}
+                    </div>
                     <motion.div animate={iconControls}>
                         <Icon className="w-5 h-5 text-gray-400" />
                     </motion.div>
@@ -91,5 +107,5 @@ function MetricCard({ title, value, change, icon: Icon, gradient }: MetricCardPr
     )
 }
 
-export default MetricCard
 
+export default MetricCard

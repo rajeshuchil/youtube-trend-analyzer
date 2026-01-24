@@ -4,8 +4,9 @@ import TrendingTable from '../../components/Dashboard/TrendingTable'
 import RegionFilter from '../../components/Dashboard/RegionFilter'
 import CategoryChart from '../../components/Dashboard/CategoryChart'
 import EngagementChart from '../../components/Dashboard/EngagementChart'
+import EmptyState from '../../components/Dashboard/EmptyState'
 import { Skeleton } from '../../components/ui/skeleton'
-import { Eye, Video, Heart, TrendingUp, RefreshCw } from 'lucide-react'
+import { Eye, Video, Heart, TrendingUp, RefreshCw, AlertCircle, Database } from 'lucide-react'
 import { useTrends, useRefreshTrends } from '../../hooks/useTrends'
 
 // Helper function to format large numbers
@@ -163,22 +164,53 @@ function Dashboard() {
         return (
             <div className="p-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 text-center">
-                        <h2 className="text-2xl font-bold text-red-400 mb-2">Error Loading Data</h2>
-                        <p className="text-gray-400 mb-4">{error.message}</p>
-                        <button
-                            onClick={handleRefresh}
-                            className="px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
-                        >
-                            Try Again
-                        </button>
+                    <div className="bg-gray-900/50 border border-red-500/20 rounded-xl">
+                        <EmptyState
+                            title="Failed to Load Trends"
+                            description={error.message || 'Unable to fetch trending videos. Please check your connection and try again.'}
+                            icon={<AlertCircle className="w-8 h-8 text-red-400" />}
+                            action={{
+                                label: 'Retry',
+                                onClick: handleRefresh
+                            }}
+                        />
                     </div>
                 </div>
             </div>
         )
     }
 
-    if (!transformedData) return null
+    // Empty state
+    if (!transformedData || transformedData.tableVideos.length === 0) {
+        return (
+            <div className="p-8">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex items-center justify-between mb-8">
+                        <div>
+                            <h1 className="text-4xl font-bold text-white mb-2">
+                                Dashboard Overview
+                            </h1>
+                            <p className="text-gray-400">
+                                Real-time YouTube trends and analytics
+                            </p>
+                        </div>
+                        <RegionFilter value={selectedRegion} onChange={setSelectedRegion} />
+                    </div>
+                    <div className="bg-gray-900/50 border border-white/10 rounded-xl">
+                        <EmptyState
+                            title="No Trending Videos Found"
+                            description={`No trending videos available for ${selectedRegion}. Try selecting a different region or refresh the data.`}
+                            icon={<Database className="w-8 h-8 text-gray-500" />}
+                            action={{
+                                label: 'Refresh Data',
+                                onClick: handleRefresh
+                            }}
+                        />
+                    </div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <div className="p-8 overflow-y-auto">
@@ -214,6 +246,7 @@ function Dashboard() {
                         change={`${transformedData.metrics.totalVideos} videos`}
                         icon={Eye}
                         gradient="bg-gradient-to-br from-purple-600/20 to-blue-600/20"
+                        tooltip="Total number of views across all trending videos in this region"
                     />
                     <MetricCard
                         title="Total Videos"
@@ -221,6 +254,7 @@ function Dashboard() {
                         change={`Region: ${selectedRegion}`}
                         icon={Video}
                         gradient="bg-gradient-to-br from-blue-600/20 to-cyan-600/20"
+                        tooltip="Number of trending videos currently tracked for this region"
                     />
                     <MetricCard
                         title="Engagement"
@@ -228,6 +262,7 @@ function Dashboard() {
                         change="Likes + Comments"
                         icon={Heart}
                         gradient="bg-gradient-to-br from-pink-600/20 to-purple-600/20"
+                        tooltip="Combined total of all likes and comments across trending videos"
                     />
                     <MetricCard
                         title="Avg Score"
@@ -235,6 +270,7 @@ function Dashboard() {
                         change="Per video"
                         icon={TrendingUp}
                         gradient="bg-gradient-to-br from-cyan-600/20 to-blue-600/20"
+                        tooltip="Average engagement score (likes + comments) per trending video"
                     />
                 </div>
 
