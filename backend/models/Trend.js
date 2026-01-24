@@ -18,6 +18,12 @@ const trendSchema = new mongoose.Schema({
     timestamp: {type: Date, default: Date.now},
 });
 
+// Indexes for faster queries
+trendSchema.index({ regionCode: 1, fetchedAt: -1 }); // Most common query
+trendSchema.index({ category: 1, regionCode: 1 }); // Category filtering
+trendSchema.index({ keyword: 1, regionCode: 1 }); // Keyword search
+trendSchema.index({ fetchedAt: -1 }); // Cache expiry checks
+
 const Trend = mongoose.model('Trend', trendSchema);
 
 export default Trend;

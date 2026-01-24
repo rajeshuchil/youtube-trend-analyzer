@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import compression from 'compression';
 import dotenv from 'dotenv';
 import youtubeRoutes from './Routes/youtubeRoutes.js';
 import { requestLogger } from './config/logger.js';
@@ -51,6 +52,17 @@ const corsOptions = {
 
 // Request logging
 app.use(requestLogger);
+
+// Compression middleware - reduces response size by ~70%
+app.use(compression({
+  filter: (req, res) => {
+    if (req.headers['x-no-compression']) {
+      return false;
+    }
+    return compression.filter(req, res);
+  },
+  threshold: 1024 // Only compress responses larger than 1KB
+}));
 
 // Middleware
 app.use(express.json());
