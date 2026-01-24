@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface Video {
     id: string
+    videoId?: string
     title: string
     thumbnail: string
     category: string
@@ -18,11 +19,12 @@ interface Video {
 
 interface TrendingTableProps {
     videos: Video[]
+    onVideoClick?: (video: { id: string; title: string }) => void
 }
 
 const ITEMS_PER_PAGE = 20
 
-function TrendingTable({ videos }: TrendingTableProps) {
+function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
     const [currentPage, setCurrentPage] = useState(1)
 
     const totalPages = Math.ceil(videos.length / ITEMS_PER_PAGE)
@@ -96,6 +98,7 @@ function TrendingTable({ videos }: TrendingTableProps) {
                                 <motion.tr
                                     key={`${currentPage}-${video.id}`}
                                     className="border-white/10 hover:bg-white/5 transition-colors cursor-pointer"
+                                    onClick={() => onVideoClick?.({ id: video.videoId || video.id, title: video.title })}
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -20 }}

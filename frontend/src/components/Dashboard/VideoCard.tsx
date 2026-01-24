@@ -11,9 +11,10 @@ interface VideoCardProps {
     likes: string
     comments: string
     engagement: number
+    onClick?: () => void
 }
 
-function VideoCard({ title, thumbnail, category, views, likes, comments }: VideoCardProps) {
+function VideoCard({ title, thumbnail, category, views, likes, comments, onClick }: VideoCardProps) {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -23,7 +24,7 @@ function VideoCard({ title, thumbnail, category, views, likes, comments }: Video
         >
             <Card className="bg-gray-900/50 border-white/10 overflow-hidden hover:border-purple-500/30 transition-all">
                 {/* Thumbnail */}
-                <div className="relative aspect-video bg-gray-800 group cursor-pointer">
+                <div className="relative aspect-video bg-gray-800 group cursor-pointer" onClick={onClick}>
                     <img
                         src={thumbnail}
                         alt={title}

@@ -5,6 +5,7 @@ import RegionFilter from '../../components/Dashboard/RegionFilter'
 import CategoryChart from '../../components/Dashboard/CategoryChart'
 import EngagementChart from '../../components/Dashboard/EngagementChart'
 import EmptyState from '../../components/Dashboard/EmptyState'
+import VideoPlayerModal from '../../components/Dashboard/VideoPlayerModal'
 import { Skeleton } from '../../components/ui/skeleton'
 import { Eye, Video, Heart, TrendingUp, RefreshCw, AlertCircle, Database } from 'lucide-react'
 import { useTrends, useRefreshTrends } from '../../hooks/useTrends'
@@ -22,6 +23,7 @@ function formatNumber(num: number): string {
 
 function Dashboard() {
     const [selectedRegion, setSelectedRegion] = useState('US')
+    const [selectedVideo, setSelectedVideo] = useState<{ id: string; title: string } | null>(null)
 
     // Fetch trends data
     const { data, isLoading, error } = useTrends(selectedRegion)
@@ -62,6 +64,7 @@ function Dashboard() {
 
             return {
                 id: video.topicId,
+                videoId: videoId,
                 title: video.title,
                 thumbnail: thumbnailUrl,
                 category: categoryName,
@@ -285,11 +288,23 @@ function Dashboard() {
                     <h2 className="text-2xl font-bold text-white mb-4">
                         Trending Videos
                     </h2>
-                    <TrendingTable videos={transformedData.tableVideos} />
+                    <TrendingTable
+                        videos={transformedData.tableVideos}
+                        onVideoClick={(video) => setSelectedVideo(video)}
+                    />
                 </div>
+
+                {/* Video Player Modal */}
+                <VideoPlayerModal
+                    isOpen={!!selectedVideo}
+                    onClose={() => setSelectedVideo(null)}
+                    videoId={selectedVideo?.id || ''}
+                    title={selectedVideo?.title || ''}
+                />
             </div>
         </div>
     )
 }
 
 export default Dashboard
+

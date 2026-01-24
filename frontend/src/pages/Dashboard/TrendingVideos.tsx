@@ -10,10 +10,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 // Helper function to format large numbers
 function formatNumber(num: number): string {
     if (num >= 1000000) {
-        return `${(num / 1000000).toFixed(1)}M`
+        return `${(num / 1000000).toFixed(1)} M`
     }
     if (num >= 1000) {
-        return `${(num / 1000).toFixed(1)}K`
+        return `${(num / 1000).toFixed(1)} K`
     }
     return num.toString()
 }
@@ -189,9 +189,18 @@ function TrendingVideos() {
                         </Button>
                     </div>
                 )}
+
+                {/* Video Player Modal */}
+                <VideoPlayerModal
+                    isOpen={!!selectedVideo}
+                    onClose={() => setSelectedVideo(null)}
+                    videoId={selectedVideo?.id || ''}
+                    title={selectedVideo?.title || ''}
+                />
             </div>
         </div>
     )
 }
 
 export default TrendingVideos
+
