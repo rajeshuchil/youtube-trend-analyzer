@@ -15,7 +15,7 @@ export function useRefreshTrends() {
 
     return useMutation({
         mutationFn: (region: string) => refreshTrends(region),
-        onSuccess: (data, region) => {
+        onSuccess: (_data, region) => {
             // Invalidate and refetch trends for this region
             queryClient.invalidateQueries({ queryKey: ['trends', region] })
         },

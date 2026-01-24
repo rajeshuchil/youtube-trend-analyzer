@@ -15,7 +15,7 @@ function Sidebar({ activeItem = 'overview' }: SidebarProps) {
     ]
 
     return (
-        <aside className="w-64 h-screen bg-gray-900 border-r border-white/10 flex flex-col">
+        <aside className="w-64 h-screen bg-gray-900 border-r border-white/10 flex-col hidden md:flex">
             {/* Logo */}
             <div className="p-6 border-b border-white/10">
                 <div className="flex items-center gap-3">
