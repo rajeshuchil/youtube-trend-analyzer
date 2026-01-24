@@ -56,7 +56,7 @@ function Features() {
     }
 
     return (
-        <section id="features" className="py-24 bg-gray-50">
+        <section id="features" className="relative py-24 bg-gray-50 z-10">
             <div className="container mx-auto px-8 max-w-7xl">
                 <motion.div
                     className="text-center mb-16"
