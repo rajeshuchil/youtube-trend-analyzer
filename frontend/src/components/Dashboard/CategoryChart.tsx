@@ -24,7 +24,8 @@ function CategoryChart({ data }: CategoryChartProps) {
                     <CardTitle className="text-gray-900">Category Distribution</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <ResponsiveContainer width="100%" height={300}>
+                    {/* Desktop Chart */}
+                    <ResponsiveContainer width="100%" height={300} className="hidden sm:block">
                         <PieChart>
                             <Pie
                                 data={data}
@@ -54,6 +55,43 @@ function CategoryChart({ data }: CategoryChartProps) {
                                 verticalAlign="bottom"
                                 height={36}
                                 formatter={(value) => <span className="text-gray-700">{value}</span>}
+                            />
+                        </PieChart>
+                    </ResponsiveContainer>
+
+                    {/* Mobile Chart */}
+                    <ResponsiveContainer width="100%" height={250} className="sm:hidden">
+                        <PieChart>
+                            <Pie
+                                data={data}
+                                cx="50%"
+                                cy="45%"
+                                innerRadius={40}
+                                outerRadius={70}
+                                paddingAngle={2}
+                                dataKey="value"
+                                animationBegin={0}
+                                animationDuration={800}
+                                animationEasing="ease-out"
+                            >
+                                {data.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={entry.color} />
+                                ))}
+                            </Pie>
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#ffffff',
+                                    border: '1px solid rgba(0,0,0,0.1)',
+                                    borderRadius: '8px',
+                                    color: '#1a1a1a',
+                                    fontSize: '12px'
+                                }}
+                            />
+                            <Legend
+                                verticalAlign="bottom"
+                                height={36}
+                                formatter={(value) => <span className="text-gray-700 text-xs">{value}</span>}
+                                wrapperStyle={{ fontSize: '11px' }}
                             />
                         </PieChart>
                     </ResponsiveContainer>

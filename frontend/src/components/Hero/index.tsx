@@ -152,7 +152,7 @@ function Hero() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
-      <section className="relative flex-1 flex items-center justify-center py-16 px-8 min-h-[65vh] overflow-hidden bg-gradient-to-br from-[#E8F5E9] via-[#C8E6C9] to-[#A5D6A7]">
+      <section className="relative flex-1 flex items-center justify-center py-12 sm:py-16 px-4 sm:px-8 min-h-[60vh] sm:min-h-[65vh] overflow-hidden bg-gradient-to-br from-[#E8F5E9] via-[#C8E6C9] to-[#A5D6A7]">
         {/* WebGL Particle Background */}
         <div className="absolute inset-0 z-0">
           <Particles
@@ -183,44 +183,57 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#C8E6C9]/20 via-transparent to-[#81C784]/15 z-[1]" />
 
         {/* Left Floating Illustration - top left position */}
-        <motion.img
-          src="/images/Screenshot from 2026-01-25 03-19-52.png"
-          alt="YouTube Analytics"
-          className="absolute left-20 top-24 w-80 h-auto rounded-2xl shadow-2xl hidden lg:block z-10 transform -rotate-3"
+        <motion.div
+          className="absolute left-20 top-24 w-80 h-auto hidden lg:block z-10"
           style={{ y: leftImageY }}
-          variants={illustrationVariants}
-          initial="hidden"
-          animate={{
-            opacity: 1,
-            scale: 1,
-            y: [0, -12, 0],
-          }}
-          transition={{
-            opacity: { duration: 1, ease: premiumEase, delay: 0.6 },
-            scale: { duration: 1, ease: premiumEase, delay: 0.6 },
-            y: { duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 },
-          }}
-        />
+        >
+          <motion.img
+            src="/images/Screenshot from 2026-01-25 03-19-52.png"
+            alt="YouTube Analytics"
+            className="w-full h-auto rounded-2xl shadow-2xl transform -rotate-3"
+            variants={illustrationVariants}
+            initial="hidden"
+            animate={{
+              opacity: 1,
+              scale: 1,
+              y: [0, -25, 0],
+            }}
+            transition={{
+              opacity: { duration: 1, ease: premiumEase, delay: 0.6 },
+              scale: { duration: 1, ease: premiumEase, delay: 0.6 },
+              y: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 },
+            }}
+          />
+        </motion.div>
 
         {/* Right Floating Illustration - bottom right position */}
-        <motion.img
-          src="/images/Screenshot from 2026-01-25 03-29-00.png"
-          alt="Trending Videos"
-          className="absolute right-12 bottom-24 w-96 h-auto rounded-2xl shadow-2xl hidden lg:block z-10 transform rotate-2"
+        <motion.div
+          className="absolute right-12 bottom-24 w-96 h-auto hidden lg:block z-10"
           style={{ y: rightImageY }}
-          variants={illustrationVariants}
-          initial="hidden"
-          animate={{
-            opacity: 1,
-            scale: 1,
-            y: [0, -10, 0],
-          }}
-          transition={{
-            opacity: { duration: 1, ease: premiumEase, delay: 0.8 },
-            scale: { duration: 1, ease: premiumEase, delay: 0.8 },
-            y: { duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.5 },
-          }}
-        />
+        >
+          <motion.img
+            src="/images/Screenshot from 2026-01-25 03-29-00.png"
+            alt="Trending Videos"
+            className="w-full h-auto rounded-2xl shadow-2xl transform rotate-2"
+            variants={illustrationVariants}
+            initial="hidden"
+            animate={{
+              opacity: 1,
+              scale: 1,
+              y: [0, -20, 0],
+            }}
+            transition={{
+              opacity: { duration: 1, ease: premiumEase, delay: 0.8 },
+              scale: { duration: 1, ease: premiumEase, delay: 0.8 },
+              y: {
+                duration: 7,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1.5,
+              },
+            }}
+          />
+        </motion.div>
 
         {/* Ambient decorative orbs - very subtle presence */}
         <motion.span
@@ -251,7 +264,7 @@ function Hero() {
           }}
         />
 
-        <div className="container mx-auto max-w-6xl relative z-20">
+        <div className="container mx-auto max-w-6xl relative z-20 px-4">
           <motion.div
             className="flex items-center justify-center"
             variants={containerVariants}
@@ -261,7 +274,7 @@ function Hero() {
             {/* Hero Content */}
             <div className="text-center max-w-3xl">
               {/* Headline with masked text reveal */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-gray-900 mb-4 sm:mb-6">
                 <motion.span
                   className="inline-block"
                   variants={textRevealVariants}
@@ -309,7 +322,7 @@ function Hero() {
 
               {/* Subheading */}
               <motion.p
-                className="text-xl md:text-2xl text-gray-700 mb-8"
+                className="text-base sm:text-xl md:text-2xl text-gray-700 mb-6 sm:mb-8 px-2"
                 variants={subheadingVariants}
               >
                 Track viral videos across{" "}
@@ -317,23 +330,25 @@ function Hero() {
                 <span className="font-semibold text-purple-600">
                   categories
                 </span>
-                <br />
+                <br className="hidden sm:block" />
+                <span className="hidden sm:inline"> </span>
                 Get real-time insights to stay ahead of the curve
               </motion.p>
 
               {/* CTA Buttons with micro-interactions */}
               <motion.div
-                className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-2"
                 variants={ctaContainerVariants}
               >
                 <motion.a
                   href="#features"
-                  className="px-8 py-4 bg-yellow-300 text-gray-900 font-semibold rounded-full shadow-lg"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-yellow-300 text-gray-900 font-semibold rounded-full shadow-lg text-center"
                   variants={ctaButtonVariants}
                   whileHover={{
-                    y: -3,
-                    boxShadow: "0 10px 30px -5px rgba(234, 179, 8, 0.4)",
-                    transition: { duration: 0.2, ease: premiumEase },
+                    y: -4,
+                    backgroundColor: "#fbbf24",
+                    boxShadow: "0 20px 40px -10px rgba(234, 179, 8, 0.5)",
+                    transition: { duration: 0.3, ease: premiumEase },
                   }}
                   whileTap={{
                     scale: 0.97,
@@ -344,12 +359,13 @@ function Hero() {
                 </motion.a>
                 <motion.a
                   href="/dashboard"
-                  className="px-8 py-4 bg-orange-400 text-white font-semibold rounded-full shadow-lg"
+                  className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-orange-400 text-white font-semibold rounded-full shadow-lg text-center"
                   variants={ctaButtonVariants}
                   whileHover={{
-                    y: -3,
-                    boxShadow: "0 10px 30px -5px rgba(251, 146, 60, 0.4)",
-                    transition: { duration: 0.2, ease: premiumEase },
+                    y: -4,
+                    backgroundColor: "#fb923c",
+                    boxShadow: "0 20px 40px -10px rgba(251, 146, 60, 0.5)",
+                    transition: { duration: 0.3, ease: premiumEase },
                   }}
                   whileTap={{
                     scale: 0.97,
