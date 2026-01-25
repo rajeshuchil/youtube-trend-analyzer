@@ -1,22 +1,23 @@
 import { useState, useMemo } from "react";
 import MetricCard from "../../components/Dashboard/MetricCard";
 import TrendingTable from "../../components/Dashboard/TrendingTable";
+import RegionFilter from "../../components/Dashboard/RegionFilter";
 import CategoryChart from "../../components/Dashboard/CategoryChart";
 import EngagementChart from "../../components/Dashboard/EngagementChart";
 import EmptyState from "../../components/Dashboard/EmptyState";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
-import DashboardHeader from "../../components/Dashboard/DashboardHeader";
+import AIChat from "../../components/Dashboard/AIChat";
 import { Skeleton } from "../../components/ui/skeleton";
 import {
   Eye,
   Video,
   Heart,
   TrendingUp,
+  RefreshCw,
   AlertCircle,
   Database,
 } from "lucide-react";
 import { useTrends, useRefreshTrends } from "../../hooks/useTrends";
-import { useAIChat } from "../../hooks/useAIChat";
 
 // Helper function to format large numbers
 function formatNumber(num: number): string {
@@ -39,13 +40,6 @@ function Dashboard() {
   // Fetch trends data
   const { data, isLoading, error } = useTrends(selectedRegion);
   const refreshMutation = useRefreshTrends();
-
-  // AI Chat hook
-  const {
-    messages,
-    isLoading: aiIsLoading,
-    sendMessage,
-  } = useAIChat(selectedRegion);
 
   // Transform API data for components
   const transformedData = useMemo(() => {
@@ -72,32 +66,27 @@ function Dashboard() {
     };
 
     // Transform videos for table
-    const tableVideos = videos
-      .filter((video, index, self) =>
-        // Deduplicate by topicId to prevent duplicate entries
-        index === self.findIndex((v) => v.topicId === video.topicId)
-      )
-      .map((video) => {
-        const categoryName = categoryNames[video.category] || "Other";
-        const engagementScore = video.metrics.likes + video.metrics.comments;
+    const tableVideos = videos.map((video) => {
+      const categoryName = categoryNames[video.category] || "Other";
+      const engagementScore = video.metrics.likes + video.metrics.comments;
 
-        // Extract video ID from URL
-        const videoId =
-          video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
-        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+      // Extract video ID from URL
+      const videoId =
+        video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
+      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
 
-        return {
-          id: video.topicId,
-          videoId: videoId,
-          title: video.title,
-          thumbnail: thumbnailUrl,
-          category: categoryName,
-          views: formatNumber(video.metrics.views),
-          likes: formatNumber(video.metrics.likes),
-          comments: formatNumber(video.metrics.comments),
-          engagement: Math.round(engagementScore / 1000), // Convert to K
-        };
-      });
+      return {
+        id: video.topicId,
+        videoId: videoId,
+        title: video.title,
+        thumbnail: thumbnailUrl,
+        category: categoryName,
+        views: formatNumber(video.metrics.views),
+        likes: formatNumber(video.metrics.likes),
+        comments: formatNumber(video.metrics.comments),
+        engagement: Math.round(engagementScore / 1000), // Convert to K
+      };
+    });
 
     // Calculate metrics
     const totalViews = videos.reduce((sum, v) => sum + v.metrics.views, 0);
@@ -219,117 +208,128 @@ function Dashboard() {
   // Empty state
   if (!transformedData || transformedData.tableVideos.length === 0) {
     return (
-      <>
-        <DashboardHeader
-          title="Dashboard Overview"
-          subtitle="Real-time YouTube trends and analytics"
-          selectedRegion={selectedRegion}
-          onRegionChange={setSelectedRegion}
-          onRefresh={handleRefresh}
-          isRefreshing={refreshMutation.isPending}
-          aiMessages={messages}
-          aiIsLoading={aiIsLoading}
-          onAISendMessage={sendMessage}
-        />
-        <div className="p-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="bg-white border border-gray-200 rounded-xl">
-              <EmptyState
-                title="No Trending Videos Found"
-                description={`No trending videos available for ${selectedRegion}. Try selecting a different region or refresh the data.`}
-                icon={<Database className="w-8 h-8 text-gray-500" />}
-                action={{
-                  label: "Refresh Data",
-                  onClick: handleRefresh,
-                }}
-              />
+      <div className="p-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <div>
+              <h1 className="text-4xl font-bold text-gray-900 mb-2">
+                Dashboard Overview
+              </h1>
+              <p className="text-gray-600">
+                Real-time YouTube trends and analytics
+              </p>
             </div>
+            <RegionFilter value={selectedRegion} onChange={setSelectedRegion} />
+          </div>
+          <div className="bg-white border border-gray-200 rounded-xl">
+            <EmptyState
+              title="No Trending Videos Found"
+              description={`No trending videos available for ${selectedRegion}. Try selecting a different region or refresh the data.`}
+              icon={<Database className="w-8 h-8 text-gray-500" />}
+              action={{
+                label: "Refresh Data",
+                onClick: handleRefresh,
+              }}
+            />
           </div>
         </div>
-      </>
+      </div>
     );
   }
 
   return (
-    <>
-      {/* Dashboard Header with AI Search */}
-      <DashboardHeader
-        title="Dashboard Overview"
-        subtitle="Real-time YouTube trends and analytics"
-        selectedRegion={selectedRegion}
-        onRegionChange={setSelectedRegion}
-        onRefresh={handleRefresh}
-        isRefreshing={refreshMutation.isPending}
-        aiMessages={messages}
-        aiIsLoading={aiIsLoading}
-        onAISendMessage={sendMessage}
-      />
-
-      <div className="p-4 md:p-8 overflow-y-auto">
-        <div className="max-w-7xl mx-auto">
-          {/* Metric Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-8">
-            <MetricCard
-              title="Total Views"
-              value={formatNumber(transformedData.metrics.totalViews)}
-              change={`${transformedData.metrics.totalVideos} videos`}
-              icon={Eye}
-              gradient="bg-white border border-gray-200"
-              tooltip="Total number of views across all trending videos in this region"
-            />
-            <MetricCard
-              title="Total Videos"
-              value={transformedData.metrics.totalVideos.toString()}
-              change={`Region: ${selectedRegion}`}
-              icon={Video}
-              gradient="bg-white border border-gray-200"
-              tooltip="Number of trending videos currently tracked for this region"
-            />
-            <MetricCard
-              title="Engagement"
-              value={formatNumber(transformedData.metrics.totalEngagement)}
-              change="Likes + Comments"
-              icon={Heart}
-              gradient="bg-white border border-gray-200"
-              tooltip="Combined total of all likes and comments across trending videos"
-            />
-            <MetricCard
-              title="Avg Score"
-              value={formatNumber(transformedData.metrics.avgEngagement)}
-              change="Per video"
-              icon={TrendingUp}
-              gradient="bg-white border border-gray-200"
-              tooltip="Average engagement score (likes + comments) per trending video"
-            />
-          </div>
-
-          {/* Charts */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
-            <CategoryChart data={transformedData.categoryData} />
-            <EngagementChart data={transformedData.engagementData} />
-          </div>
-
-          {/* Trending Videos Table */}
+    <div className="p-4 md:p-8 overflow-y-auto">
+      <div className="max-w-7xl mx-auto">
+        {/* Header - Responsive */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
           <div>
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-              Trending Videos
-            </h2>
-            <TrendingTable
-              videos={transformedData.tableVideos}
-              onVideoClick={(video) => setSelectedVideo(video)}
-            />
+            <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2">
+              Dashboard Overview
+            </h1>
+            <p className="text-sm md:text-base text-gray-600">
+              Real-time YouTube trends and analytics
+            </p>
           </div>
+          <div className="flex items-center gap-2 md:gap-4">
+            <button
+              onClick={handleRefresh}
+              disabled={refreshMutation.isPending}
+              className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors disabled:opacity-50 shadow-sm text-sm"
+            >
+              <RefreshCw
+                className={`w-4 h-4 ${refreshMutation.isPending ? "animate-spin" : ""}`}
+              />
+              <span className="hidden sm:inline">Refresh</span>
+            </button>
+            <RegionFilter value={selectedRegion} onChange={setSelectedRegion} />
+          </div>
+        </div>
 
-          {/* Video Player Modal */}
-          <VideoPlayerModal
-            isOpen={!!selectedVideo}
-            onClose={() => setSelectedVideo(null)}
-            videoId={selectedVideo?.id || ""}
-            title={selectedVideo?.title || ""}
+        {/* Metric Cards - Responsive grid */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-6 md:mb-8">
+          <MetricCard
+            title="Total Views"
+            value={formatNumber(transformedData.metrics.totalViews)}
+            change={`${transformedData.metrics.totalVideos} videos`}
+            icon={Eye}
+            gradient="bg-white border border-gray-200"
+            tooltip="Total number of views across all trending videos in this region"
+          />
+          <MetricCard
+            title="Total Videos"
+            value={transformedData.metrics.totalVideos.toString()}
+            change={`Region: ${selectedRegion}`}
+            icon={Video}
+            gradient="bg-white border border-gray-200"
+            tooltip="Number of trending videos currently tracked for this region"
+          />
+          <MetricCard
+            title="Engagement"
+            value={formatNumber(transformedData.metrics.totalEngagement)}
+            change="Likes + Comments"
+            icon={Heart}
+            gradient="bg-white border border-gray-200"
+            tooltip="Combined total of all likes and comments across trending videos"
+          />
+          <MetricCard
+            title="Avg Score"
+            value={formatNumber(transformedData.metrics.avgEngagement)}
+            change="Per video"
+            icon={TrendingUp}
+            gradient="bg-white border border-gray-200"
+            tooltip="Average engagement score (likes + comments) per trending video"
           />
         </div>
+
+        {/* Charts - Responsive grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
+          <CategoryChart data={transformedData.categoryData} />
+          <EngagementChart data={transformedData.engagementData} />
+        </div>
+
+        {/* Trending Videos Table */}
+        <div>
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
+            Trending Videos
+          </h2>
+          <TrendingTable
+            videos={transformedData.tableVideos}
+            onVideoClick={(video) => setSelectedVideo(video)}
+          />
+        </div>
+
+        {/* Video Player Modal */}
+        <VideoPlayerModal
+          isOpen={!!selectedVideo}
+          onClose={() => setSelectedVideo(null)}
+          videoId={selectedVideo?.id || ""}
+          title={selectedVideo?.title || ""}
+        />
+
+        {/* AI Chat Assistant */}
+        <AIChat trendsData={data} regionCode={selectedRegion} />
       </div>
-    </>
+    </div>
   );
 }
 

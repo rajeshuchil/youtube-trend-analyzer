@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { useTrends } from "../../hooks/useTrends";
 import VideoCard from "../../components/Dashboard/VideoCard";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
+import AIChat from "../../components/Dashboard/AIChat";
 import FilterBar from "../../components/Dashboard/FilterBar";
 import { Skeleton } from "../../components/ui/skeleton";
 import { Button } from "../../components/ui/button";
@@ -56,33 +57,28 @@ function TrendingVideos() {
       "28": "Science & Technology",
     };
 
-    let videos = data.data
-      .filter((video, index, self) =>
-        // Deduplicate by topicId to prevent duplicate entries
-        index === self.findIndex((v) => v.topicId === video.topicId)
-      )
-      .map((video) => {
-        const categoryName = categoryNames[video.category] || "Other";
-        const videoId =
-          video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
-        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+    let videos = data.data.map((video) => {
+      const categoryName = categoryNames[video.category] || "Other";
+      const videoId =
+        video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
+      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
 
-        return {
-          id: video.topicId,
-          videoId: videoId,
-          title: video.title,
-          thumbnail: thumbnailUrl,
-          category: categoryName,
-          categoryId: video.category,
-          views: formatNumber(video.metrics.views),
-          likes: formatNumber(video.metrics.likes),
-          comments: formatNumber(video.metrics.comments),
-          engagement: video.metrics.likes + video.metrics.comments,
-          viewsRaw: video.metrics.views,
-          likesRaw: video.metrics.likes,
-          commentsRaw: video.metrics.comments,
-        };
-      });
+      return {
+        id: video.topicId,
+        videoId: videoId,
+        title: video.title,
+        thumbnail: thumbnailUrl,
+        category: categoryName,
+        categoryId: video.category,
+        views: formatNumber(video.metrics.views),
+        likes: formatNumber(video.metrics.likes),
+        comments: formatNumber(video.metrics.comments),
+        engagement: video.metrics.likes + video.metrics.comments,
+        viewsRaw: video.metrics.views,
+        likesRaw: video.metrics.likes,
+        commentsRaw: video.metrics.comments,
+      };
+    });
 
     // Filter by category
     if (selectedCategory !== "all") {
@@ -223,6 +219,9 @@ function TrendingVideos() {
           videoId={selectedVideo?.id || ""}
           title={selectedVideo?.title || ""}
         />
+
+        {/* AI Chat Assistant */}
+        <AIChat trendsData={data} regionCode={selectedRegion} />
       </div>
     </div>
   );
