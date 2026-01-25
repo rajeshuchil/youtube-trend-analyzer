@@ -53,13 +53,13 @@ function FilterBar({
   ];
 
   return (
-    <div className="flex flex-wrap items-center gap-4 mb-6">
+    <div className="flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 md:gap-4 mb-6">
       {/* Region Filter */}
       {selectedRegion && onRegionChange && (
         <div className="flex items-center gap-2">
           <Globe className="w-4 h-4 text-gray-500" />
           <Select value={selectedRegion} onValueChange={onRegionChange}>
-            <SelectTrigger className="w-[200px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm">
+            <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm text-sm">
               <SelectValue placeholder="Select region" />
             </SelectTrigger>
             <SelectContent className="bg-white border-gray-200 rounded-xl shadow-lg">
@@ -81,7 +81,7 @@ function FilterBar({
       <div className="flex items-center gap-2">
         <Filter className="w-4 h-4 text-gray-500" />
         <Select value={selectedCategory} onValueChange={onCategoryChange}>
-          <SelectTrigger className="w-[200px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm">
+          <SelectTrigger className="w-full sm:w-[180px] md:w-[200px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm text-sm">
             <SelectValue placeholder="Select category" />
           </SelectTrigger>
           <SelectContent className="bg-white border-gray-200 rounded-xl shadow-lg">
@@ -102,7 +102,7 @@ function FilterBar({
       <div className="flex items-center gap-2">
         <ArrowUpDown className="w-4 h-4 text-gray-500" />
         <Select value={sortBy} onValueChange={onSortChange}>
-          <SelectTrigger className="w-[180px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm">
+          <SelectTrigger className="w-full sm:w-[160px] md:w-[180px] bg-white border-gray-200 text-gray-900 rounded-xl shadow-sm text-sm">
             <SelectValue placeholder="Sort by" />
           </SelectTrigger>
           <SelectContent className="bg-white border-gray-200 rounded-xl shadow-lg">
