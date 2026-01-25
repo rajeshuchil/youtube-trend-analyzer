@@ -15,15 +15,15 @@ function Header() {
             {/* Logo */}
             <a
               href="/"
-              className="flex items-center gap-2 sm:gap-3 text-white no-underline font-bold text-lg sm:text-xl transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 sm:gap-3 text-white no-underline transition-opacity hover:opacity-80"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-sm sm:text-lg">
-                  YS
-                </span>
-              </div>
-              <span className="text-white font-bold tracking-tight text-base sm:text-xl">
-                trendscope
+              <img
+                src="/images/trendscope-icon.svg"
+                alt="TrendScope"
+                className="w-10 h-10 sm:w-12 sm:h-12"
+              />
+              <span className="text-white font-bold tracking-tight text-lg sm:text-2xl">
+                TrendScope
               </span>
             </a>
 
