@@ -238,35 +238,35 @@ function Dashboard() {
   }
 
   return (
-    <div className="p-8 overflow-y-auto">
+    <div className="p-4 md:p-8 overflow-y-auto">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        {/* Header - Responsive */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6 md:mb-8">
           <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+            <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2">
               Dashboard Overview
             </h1>
-            <p className="text-gray-600">
+            <p className="text-sm md:text-base text-gray-600">
               Real-time YouTube trends and analytics
             </p>
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
             <button
               onClick={handleRefresh}
               disabled={refreshMutation.isPending}
-              className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors disabled:opacity-50 shadow-sm"
+              className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-gray-200 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors disabled:opacity-50 shadow-sm text-sm"
             >
               <RefreshCw
                 className={`w-4 h-4 ${refreshMutation.isPending ? "animate-spin" : ""}`}
               />
-              Refresh
+              <span className="hidden sm:inline">Refresh</span>
             </button>
             <RegionFilter value={selectedRegion} onChange={setSelectedRegion} />
           </div>
         </div>
 
-        {/* Metric Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        {/* Metric Cards - Responsive grid */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mb-6 md:mb-8">
           <MetricCard
             title="Total Views"
             value={formatNumber(transformedData.metrics.totalViews)}
@@ -301,15 +301,15 @@ function Dashboard() {
           />
         </div>
 
-        {/* Charts */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+        {/* Charts - Responsive grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
           <CategoryChart data={transformedData.categoryData} />
           <EngagementChart data={transformedData.engagementData} />
         </div>
 
         {/* Trending Videos Table */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">
             Trending Videos
           </h2>
           <TrendingTable
