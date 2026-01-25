@@ -50,7 +50,7 @@ export interface CategoryResponse {
 export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse> {
     const controller = new AbortController()
     const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 second timeout
-
+    
     try {
         const response = await fetch(`${API_BASE_URL}/api/youtube/trends?regionCode=${region}&maxResults=50`, {
             signal: controller.signal,
@@ -59,7 +59,7 @@ export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse
             }
         })
         clearTimeout(timeoutId)
-
+        
         if (!response.ok) {
             throw new Error('Failed to fetch trends')
         }
@@ -98,40 +98,3 @@ export async function refreshTrends(region: string = 'US'): Promise<TrendsRespon
     }
     return response.json()
 }
-
-// AI Chat interface
-export interface AIChatRequest {
-    message: string
-    regionCode: string
-}
-
-export interface AIChatResponse {
-    response: string
-    dataContext: {
-        videosAnalyzed: number
-        regionCode: string
-    }
-}
-
-// Chat with AI assistant
-export async function chatWithAI(message: string, regionCode: string = 'US'): Promise<AIChatResponse> {
-    const response = await fetch(`${API_BASE_URL}/api/ai/chat`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            message,
-            regionCode,
-        }),
-    })
-
-    if (!response.ok) {
-        throw new Error('Failed to get AI response')
-    }
-
-    return response.json()
-}
-
-// Export API_BASE_URL for debugging purposes
-export { API_BASE_URL }
