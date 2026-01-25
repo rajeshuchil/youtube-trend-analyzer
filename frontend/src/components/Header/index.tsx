@@ -58,7 +58,7 @@ function Header() {
               boxShadow: "0 0 15px rgba(250, 204, 21, 0.4)",
             }}
           >
-            <span className="relative z-10">Try Dashboard</span>
+            <span className="relative z-10">Dashboard</span>
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-500 opacity-0 group-hover:opacity-100"
               transition={{ duration: 0.3 }}
