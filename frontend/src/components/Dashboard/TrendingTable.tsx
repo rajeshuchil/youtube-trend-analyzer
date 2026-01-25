@@ -32,48 +32,60 @@ interface TrendingTableProps {
 const ITEMS_PER_PAGE = 20;
 
 function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
-  const [currentPage, setCurrentPage] = useState(1);
+    const [currentPage, setCurrentPage] = useState(1)
 
-  const totalPages = Math.ceil(videos.length / ITEMS_PER_PAGE);
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const endIndex = startIndex + ITEMS_PER_PAGE;
-  const currentVideos = videos.slice(startIndex, endIndex);
+    const totalPages = Math.ceil(videos.length / ITEMS_PER_PAGE)
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE
+    const endIndex = startIndex + ITEMS_PER_PAGE
+    const currentVideos = videos.slice(startIndex, endIndex)
 
-  const getCategoryColor = (category: string) => {
-    const colors: Record<string, string> = {
-      Gaming: "bg-purple-500/20 text-purple-400 border-purple-500/30",
-      Music: "bg-violet-500/20 text-violet-400 border-violet-500/30",
-      Entertainment: "bg-cyan-500/20 text-cyan-400 border-cyan-500/30",
-      Education: "bg-teal-500/20 text-teal-400 border-teal-500/30",
-      "News & Politics":
-        "bg-orange-500/20 text-orange-400 border-orange-500/30",
-      Sports: "bg-pink-500/20 text-pink-400 border-pink-500/30",
-    };
-    return (
-      colors[category] || "bg-gray-500/20 text-gray-300 border-gray-500/30"
-    );
-  };
-
-  const getPageNumbers = () => {
-    const pages: (number | string)[] = [];
-    const maxVisible = 5;
-
-    if (totalPages <= maxVisible) {
-      for (let i = 1; i <= totalPages; i++) {
-        pages.push(i);
-      }
-    } else {
-      if (currentPage <= 3) {
-        for (let i = 1; i <= 4; i++) {
-          pages.push(i);
+    const getCategoryColor = (category: string) => {
+        const colors: Record<string, string> = {
+            'Gaming': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+            'Music': 'bg-violet-500/20 text-violet-400 border-violet-500/30',
+            'Entertainment': 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30',
+            'Education': 'bg-teal-500/20 text-teal-400 border-teal-500/30',
+            'News & Politics': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
+            'Sports': 'bg-pink-500/20 text-pink-400 border-pink-500/30',
+            'Film & Animation': 'bg-amber-500/20 text-amber-600 border-amber-500/30',
+            'Science & Technology': 'bg-emerald-500/20 text-emerald-600 border-emerald-500/30',
+            'Comedy': 'bg-fuchsia-500/20 text-fuchsia-400 border-fuchsia-500/30',
+            'People & Blogs': 'bg-rose-500/20 text-rose-400 border-rose-500/30',
+            'Howto & Style': 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30',
         }
-        pages.push("...");
-        pages.push(totalPages);
-      } else if (currentPage >= totalPages - 2) {
-        pages.push(1);
-        pages.push("...");
-        for (let i = totalPages - 3; i <= totalPages; i++) {
-          pages.push(i);
+        return colors[category] || 'bg-gray-500/20 text-gray-700 border-gray-500/30'
+    }
+
+    const getPageNumbers = () => {
+        const pages: (number | string)[] = []
+        const maxVisible = 5
+
+        if (totalPages <= maxVisible) {
+            for (let i = 1; i <= totalPages; i++) {
+                pages.push(i)
+            }
+        } else {
+            if (currentPage <= 3) {
+                for (let i = 1; i <= 4; i++) {
+                    pages.push(i)
+                }
+                pages.push('...')
+                pages.push(totalPages)
+            } else if (currentPage >= totalPages - 2) {
+                pages.push(1)
+                pages.push('...')
+                for (let i = totalPages - 3; i <= totalPages; i++) {
+                    pages.push(i)
+                }
+            } else {
+                pages.push(1)
+                pages.push('...')
+                pages.push(currentPage - 1)
+                pages.push(currentPage)
+                pages.push(currentPage + 1)
+                pages.push('...')
+                pages.push(totalPages)
+            }
         }
       } else {
         pages.push(1);
