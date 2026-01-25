@@ -53,6 +53,7 @@ function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: Met
 
     return (
         <motion.div
+            className="relative"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -66,13 +67,13 @@ function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: Met
                             {title}
                         </CardTitle>
                         {tooltip && (
-                            <TooltipProvider>
+                            <TooltipProvider delayDuration={200}>
                                 <Tooltip>
                                     <TooltipTrigger asChild>
-                                        <Info className="w-3.5 h-3.5 text-gray-400 cursor-help" />
+                                        <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help transition-colors" />
                                     </TooltipTrigger>
-                                    <TooltipContent className="bg-white border-gray-200 text-gray-700 max-w-xs shadow-lg">
-                                        <p>{tooltip}</p>
+                                    <TooltipContent side="top" sideOffset={8} className="max-w-xs">
+                                        <p className="text-xs leading-relaxed">{tooltip}</p>
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
