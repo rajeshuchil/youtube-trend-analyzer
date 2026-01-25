@@ -86,7 +86,8 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
 
     return (
         <div className="space-y-4">
-            <div className="bg-white rounded-xl border border-gray-200 overflow-x-auto">
+            {/* Desktop Table View */}
+            <div className="hidden md:block bg-white rounded-xl border border-gray-200 overflow-x-auto">
                 <Table>
                     <TableHeader>
                         <TableRow className="border-gray-200 hover:bg-transparent">
@@ -144,6 +145,67 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
                         </AnimatePresence>
                     </TableBody>
                 </Table>
+            </div>
+
+            {/* Mobile Card View */}
+            <div className="md:hidden space-y-3">
+                <AnimatePresence mode="wait">
+                    {currentVideos.map((video, index) => (
+                        <motion.div
+                            key={`${currentPage}-${video.id}`}
+                            className="bg-white rounded-xl border border-gray-200 p-4 cursor-pointer hover:shadow-md transition-shadow"
+                            onClick={() => onVideoClick?.({ id: video.videoId || video.id, title: video.title })}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -20 }}
+                            transition={{ duration: 0.2, delay: index * 0.03 }}
+                        >
+                            <div className="flex gap-3 mb-3">
+                                <img
+                                    src={video.thumbnail}
+                                    alt={video.title}
+                                    className="w-32 h-20 rounded-lg object-cover flex-shrink-0"
+                                />
+                                <div className="flex-1 min-w-0">
+                                    <h3 className="text-sm font-medium text-gray-900 line-clamp-2 mb-2">
+                                        {video.title}
+                                    </h3>
+                                    <Badge className={`${getCategoryColor(video.category)} text-xs`}>
+                                        {video.category}
+                                    </Badge>
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-3 gap-3 text-center pt-3 border-t border-gray-100">
+                                <div>
+                                    <div className="text-xs text-gray-500 mb-1">Views</div>
+                                    <div className="text-sm font-semibold text-gray-900">{video.views}</div>
+                                </div>
+                                <div>
+                                    <div className="text-xs text-gray-500 mb-1">Likes</div>
+                                    <div className="text-sm font-semibold text-gray-900">{video.likes}</div>
+                                </div>
+                                <div>
+                                    <div className="text-xs text-gray-500 mb-1">Comments</div>
+                                    <div className="text-sm font-semibold text-gray-900">{video.comments}</div>
+                                </div>
+                            </div>
+
+                            <div className="mt-3 pt-3 border-t border-gray-100">
+                                <div className="flex items-center justify-between">
+                                    <span className="text-xs text-gray-500">Engagement</span>
+                                    <span className="text-sm font-semibold text-gray-900">{video.engagement}K</span>
+                                </div>
+                                <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden mt-2">
+                                    <div
+                                        className="h-full bg-gradient-to-r from-teal-500 to-cyan-500"
+                                        style={{ width: `${Math.min(video.engagement / 10, 100)}%` }}
+                                    />
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </AnimatePresence>
             </div>
 
             {/* Pagination Controls */}
