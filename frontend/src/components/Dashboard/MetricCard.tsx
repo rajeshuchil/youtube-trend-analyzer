@@ -63,62 +63,61 @@ function MetricCard({
     });
   };
 
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      whileHover={{ y: -4, scale: 1.02, transition: { duration: 0.2 } }}
-      onHoverStart={handleHoverStart}
-    >
-      <Card
-        className={`${gradient} border-gray-200 hover:shadow-lg transition-all duration-300`}
-      >
-        <CardHeader className="flex flex-row items-center justify-between pb-2 px-3 md:px-6 pt-3 md:pt-6">
-          <div className="flex items-center gap-1 md:gap-2">
-            <CardTitle className="text-xs md:text-sm font-medium text-gray-600">
-              {title}
-            </CardTitle>
-            {tooltip && (
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Info className="w-3 h-3 md:w-3.5 md:h-3.5 text-gray-400 cursor-help" />
-                  </TooltipTrigger>
-                  <TooltipContent className="bg-white border-gray-200 text-gray-700 max-w-xs shadow-lg">
-                    <p>{tooltip}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            )}
-          </div>
-          <motion.div animate={iconControls}>
-            <Icon className="w-4 h-4 md:w-5 md:h-5 text-gray-500" />
-          </motion.div>
-        </CardHeader>
-        <CardContent className="px-3 md:px-6 pb-3 md:pb-6">
-          <motion.div
-            className="text-xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2"
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-          >
-            {displayValue}
-          </motion.div>
-          {change && (
-            <motion.p
-              className="text-[10px] md:text-xs text-gray-500"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              {change}
-            </motion.p>
-          )}
-        </CardContent>
-      </Card>
-    </motion.div>
-  );
+    return (
+        <motion.div
+            className="relative"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{ y: -4, scale: 1.02, transition: { duration: 0.2 } }}
+            onHoverStart={handleHoverStart}
+        >
+            <Card className={`${gradient} border-gray-200 hover:shadow-lg transition-all duration-300`}>
+                <CardHeader className="flex flex-row items-center justify-between pb-2">
+                    <div className="flex items-center gap-2">
+                        <CardTitle className="text-sm font-medium text-gray-600">
+                            {title}
+                        </CardTitle>
+                        {tooltip && (
+                            <TooltipProvider delayDuration={200}>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help transition-colors" />
+                                    </TooltipTrigger>
+                                    <TooltipContent side="top" sideOffset={8} className="max-w-xs">
+                                        <p className="text-xs leading-relaxed">{tooltip}</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                        )}
+                    </div>
+                    <motion.div animate={iconControls}>
+                        <Icon className="w-5 h-5 text-gray-500" />
+                    </motion.div>
+                </CardHeader>
+                <CardContent>
+                    <motion.div
+                        className="text-4xl font-bold text-gray-900 mb-2"
+                        initial={{ scale: 0.5, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ duration: 0.5, delay: 0.1 }}
+                    >
+                        {displayValue}
+                    </motion.div>
+                    {change && (
+                        <motion.p
+                            className="text-xs text-gray-500"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.3 }}
+                        >
+                            {change}
+                        </motion.p>
+                    )}
+                </CardContent>
+            </Card>
+        </motion.div>
+    )
 }
 
 export default MetricCard;
