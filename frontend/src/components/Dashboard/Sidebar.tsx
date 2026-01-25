@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Home, TrendingUp, Grid3x3, Search, Settings } from "lucide-react";
+import { Home, TrendingUp, Grid3x3, Search, Settings, ArrowLeft } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {
@@ -27,7 +27,7 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 h-screen bg-white border-r border-gray-200 flex-col hidden md:flex">
+    <aside className="w-64 h-screen bg-white border-r border-gray-200 flex-col hidden md:flex sticky top-0">
       {/* Logo */}
       <div className="p-6 border-b border-gray-200">
         <a href="/" className="flex items-center gap-3 no-underline">
@@ -55,11 +55,10 @@ function Sidebar() {
               className={({ isActive }: { isActive: boolean }) => `
                                 w-full flex items-center gap-3 px-4 py-3 rounded-lg
                                 transition-all duration-200 no-underline
-                                ${
-                                  isActive
-                                    ? "bg-orange-50 border-l-4 border-orange-500 text-orange-700"
-                                    : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                                }
+                                ${isActive
+                  ? "bg-orange-50 border-l-4 border-orange-500 text-orange-700"
+                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                }
                             `}
             >
               <motion.div
@@ -79,9 +78,10 @@ function Sidebar() {
       <div className="p-4 border-t border-gray-200">
         <a
           href="/"
-          className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          className="flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors no-underline"
         >
-          ← Back to Home
+          <ArrowLeft className="w-4 h-4" />
+          <span>Back to Home</span>
         </a>
       </div>
     </aside>
