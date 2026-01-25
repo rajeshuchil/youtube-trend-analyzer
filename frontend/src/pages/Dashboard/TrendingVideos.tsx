@@ -122,10 +122,10 @@ function TrendingVideos() {
 
   if (isLoading) {
     return (
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
-          <Skeleton className="h-12 w-64 mb-8 bg-gray-800" />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Skeleton className="h-8 md:h-12 w-48 md:w-64 mb-6 md:mb-8 bg-gray-800" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <Skeleton key={i} className="h-80 bg-gray-200" />
             ))}
@@ -137,13 +137,15 @@ function TrendingVideos() {
 
   if (error) {
     return (
-      <div className="p-8">
+      <div className="p-4 md:p-8">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 text-center">
-            <h2 className="text-2xl font-bold text-red-400 mb-2">
+          <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4 md:p-6 text-center">
+            <h2 className="text-xl md:text-2xl font-bold text-red-400 mb-2">
               Error Loading Videos
             </h2>
-            <p className="text-gray-600">{error.message}</p>
+            <p className="text-sm md:text-base text-gray-600">
+              {error.message}
+            </p>
           </div>
         </div>
       </div>
@@ -151,14 +153,14 @@ function TrendingVideos() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
+        {/* Header - Responsive */}
+        <div className="mb-6 md:mb-8">
+          <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-1 md:mb-2">
             Trending Videos
           </h1>
-          <p className="text-gray-600">
+          <p className="text-sm md:text-base text-gray-600">
             Explore {processedVideos.length} trending videos from{" "}
             {selectedRegion}
           </p>
@@ -174,8 +176,8 @@ function TrendingVideos() {
           onSortChange={setSortBy}
         />
 
-        {/* Video Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        {/* Video Grid - Responsive */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-6 md:mb-8">
           {paginatedVideos.map((video) => (
             <VideoCard
               key={video.id}
@@ -187,29 +189,29 @@ function TrendingVideos() {
           ))}
         </div>
 
-        {/* Pagination */}
+        {/* Pagination - Responsive */}
         {totalPages > 1 && (
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-2 md:gap-4 flex-wrap">
             <Button
               onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
               disabled={currentPage === 1}
               variant="outline"
-              className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 rounded-xl shadow-sm"
+              className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 rounded-xl shadow-sm text-sm"
             >
-              <ChevronLeft className="w-4 h-4 mr-2" />
-              Previous
+              <ChevronLeft className="w-4 h-4 md:mr-2" />
+              <span className="hidden sm:inline">Previous</span>
             </Button>
-            <span className="text-gray-600">
+            <span className="text-sm md:text-base text-gray-600">
               Page {currentPage} of {totalPages}
             </span>
             <Button
               onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
               disabled={currentPage === totalPages}
               variant="outline"
-              className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 rounded-xl shadow-sm"
+              className="bg-white border-gray-200 text-gray-700 hover:bg-gray-50 rounded-xl shadow-sm text-sm"
             >
-              Next
-              <ChevronRight className="w-4 h-4 ml-2" />
+              <span className="hidden sm:inline">Next</span>
+              <ChevronRight className="w-4 h-4 md:ml-2" />
             </Button>
           </div>
         )}

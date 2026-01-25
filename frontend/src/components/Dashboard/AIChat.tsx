@@ -17,6 +17,7 @@ interface AIChatProps {
 
 function AIChat({ trendsData, regionCode }: AIChatProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(true);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
@@ -223,37 +224,45 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
       <AnimatePresence>
         {!isOpen && (
           <>
-            {/* Tooltip Banner */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ delay: 0.5 }}
-              className="fixed bottom-24 right-6 z-50 bg-white rounded-xl shadow-2xl p-4 max-w-xs border border-orange-200"
-            >
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Bot className="w-5 h-5 text-white" />
+            {/* Tooltip Banner - Hidden on mobile */}
+            {showTooltip && (
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.5 }}
+                className="hidden md:block fixed bottom-24 right-6 z-50 bg-white rounded-xl shadow-2xl p-4 max-w-xs border border-orange-200"
+              >
+                <button
+                  onClick={() => setShowTooltip(false)}
+                  className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                <div className="flex items-start gap-3 pr-6">
+                  <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Bot className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      AI Assistant Available!
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      Ask me anything about YouTube trends 👇
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    AI Assistant Available!
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Ask me anything about YouTube trends 👇
-                  </p>
-                </div>
-              </div>
-              <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-orange-200 transform rotate-45" />
-            </motion.div>
+                <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-orange-200 transform rotate-45" />
+              </motion.div>
+            )}
 
-            {/* Main Chat Button */}
+            {/* Main Chat Button - Responsive */}
             <motion.button
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0, opacity: 0 }}
               onClick={() => setIsOpen(true)}
-              className="fixed bottom-6 right-6 z-50 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-2xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 group overflow-hidden"
+              className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-gradient-to-br from-orange-500 to-orange-600 text-white rounded-2xl shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 group overflow-hidden"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -270,16 +279,17 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                 }}
               />
 
-              <div className="relative px-6 py-4 flex items-center gap-3">
+              {/* Mobile: Icon only, Desktop: Full button */}
+              <div className="relative px-4 py-4 md:px-6 flex items-center gap-3">
                 <div className="relative">
-                  <Bot className="w-7 h-7" />
+                  <Bot className="w-6 h-6 md:w-7 md:h-7" />
                   <motion.div
                     className="absolute -top-1 -right-1 w-3 h-3 bg-green-400 rounded-full border-2 border-white"
                     animate={{ scale: [1, 1.3, 1] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   />
                 </div>
-                <div className="text-left">
+                <div className="text-left hidden md:block">
                   <div className="font-bold text-sm">AI Assistant</div>
                   <div className="text-xs text-orange-100">Ask me anything</div>
                 </div>
@@ -301,20 +311,20 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
         )}
       </AnimatePresence>
 
-      {/* Chat Window */}
+      {/* Chat Window - Responsive */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-6 right-6 z-50 w-96 h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-200"
+            className="fixed inset-4 md:bottom-6 md:right-6 md:left-auto md:top-auto z-50 md:w-96 md:h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-gray-200"
           >
-            {/* Header */}
-            <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-6 py-4 flex items-center justify-between">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                  <Bot className="w-6 h-6 text-white" />
+            {/* Header - Responsive padding */}
+            <div className="bg-gradient-to-r from-orange-500 to-orange-600 px-4 py-3 md:px-6 md:py-4 flex items-center justify-between">
+              <div className="flex items-center gap-2 md:gap-3">
+                <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center">
+                  <Bot className="w-4 h-4 md:w-6 md:h-6 text-white" />
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">
@@ -349,9 +359,9 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                       }`}
                   >
                     {message.role === "user" ? (
-                      <User className="w-4 h-4" />
+                      <User className="w-3 h-3 md:w-4 md:h-4" />
                     ) : (
-                      <Bot className="w-4 h-4" />
+                      <Bot className="w-3 h-3 md:w-4 md:h-4" />
                     )}
                   </div>
                   <div
@@ -363,7 +373,7 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                           : "bg-white border border-gray-200 text-gray-900 rounded-bl-none"
                         }`}
                     >
-                      <p className="text-sm whitespace-pre-line">
+                      <p className="text-xs md:text-sm whitespace-pre-line">
                         {message.content}
                       </p>
                     </div>
@@ -382,21 +392,21 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                   animate={{ opacity: 1, y: 0 }}
                   className="flex gap-3"
                 >
-                  <div className="w-8 h-8 rounded-full bg-white border-2 border-orange-500 text-orange-500 flex items-center justify-center">
-                    <Bot className="w-4 h-4" />
+                  <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white border-2 border-orange-500 text-orange-500 flex items-center justify-center">
+                    <Bot className="w-3 h-3 md:w-4 md:h-4" />
                   </div>
-                  <div className="bg-white border border-gray-200 rounded-2xl rounded-bl-none px-4 py-3">
-                    <Loader2 className="w-5 h-5 text-orange-500 animate-spin" />
+                  <div className="bg-white border border-gray-200 rounded-2xl rounded-bl-none px-3 py-2 md:px-4 md:py-3">
+                    <Loader2 className="w-4 h-4 md:w-5 md:h-5 text-orange-500 animate-spin" />
                   </div>
                 </motion.div>
               )}
               <div ref={messagesEndRef} />
             </div>
 
-            {/* Input */}
+            {/* Input - Responsive */}
             <form
               onSubmit={handleSubmit}
-              className="p-4 bg-white border-t border-gray-200"
+              className="p-3 md:p-4 bg-white border-t border-gray-200"
             >
               <div className="flex gap-2">
                 <input
@@ -404,15 +414,15 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Ask about trends..."
-                  className="flex-1 px-4 py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
+                  className="flex-1 px-3 py-2 md:px-4 md:py-3 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm"
                   disabled={isLoading}
                 />
                 <button
                   type="submit"
                   disabled={!input.trim() || isLoading}
-                  className="px-4 py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="px-3 py-2 md:px-4 md:py-3 bg-orange-500 text-white rounded-xl hover:bg-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                 >
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4 md:w-5 md:h-5" />
                 </button>
               </div>
             </form>

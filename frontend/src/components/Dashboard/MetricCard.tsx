@@ -1,55 +1,67 @@
-import { useEffect, useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import { Card, CardContent, CardHeader, CardTitle } from '../ui/card'
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../ui/tooltip'
-import { LucideIcon, Info } from 'lucide-react'
+import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
+import { LucideIcon, Info } from "lucide-react";
 
 interface MetricCardProps {
-    title: string
-    value: string
-    change?: string
-    icon: LucideIcon
-    gradient: string
-    tooltip?: string
+  title: string;
+  value: string;
+  change?: string;
+  icon: LucideIcon;
+  gradient: string;
+  tooltip?: string;
 }
 
-function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: MetricCardProps) {
-    const [displayValue, setDisplayValue] = useState('0')
-    const iconControls = useAnimation()
+function MetricCard({
+  title,
+  value,
+  change,
+  icon: Icon,
+  gradient,
+  tooltip,
+}: MetricCardProps) {
+  const [displayValue, setDisplayValue] = useState("0");
+  const iconControls = useAnimation();
 
-    // Extract numeric value for counting animation
-    useEffect(() => {
-        const numericValue = parseFloat(value.replace(/[^0-9.]/g, ''))
-        if (isNaN(numericValue)) {
-            setDisplayValue(value)
-            return
-        }
-
-        const suffix = value.replace(/[0-9.,]/g, '')
-        const duration = 1000 // 1 second
-        const steps = 30
-        const increment = numericValue / steps
-        let current = 0
-
-        const timer = setInterval(() => {
-            current += increment
-            if (current >= numericValue) {
-                setDisplayValue(numericValue.toLocaleString() + suffix)
-                clearInterval(timer)
-            } else {
-                setDisplayValue(Math.floor(current).toLocaleString() + suffix)
-            }
-        }, duration / steps)
-
-        return () => clearInterval(timer)
-    }, [value])
-
-    const handleHoverStart = () => {
-        iconControls.start({
-            y: [0, -8, 0],
-            transition: { duration: 0.4, ease: 'easeInOut' }
-        })
+  // Extract numeric value for counting animation
+  useEffect(() => {
+    const numericValue = parseFloat(value.replace(/[^0-9.]/g, ""));
+    if (isNaN(numericValue)) {
+      setDisplayValue(value);
+      return;
     }
+
+    const suffix = value.replace(/[0-9.,]/g, "");
+    const duration = 1000; // 1 second
+    const steps = 30;
+    const increment = numericValue / steps;
+    let current = 0;
+
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= numericValue) {
+        setDisplayValue(numericValue.toLocaleString() + suffix);
+        clearInterval(timer);
+      } else {
+        setDisplayValue(Math.floor(current).toLocaleString() + suffix);
+      }
+    }, duration / steps);
+
+    return () => clearInterval(timer);
+  }, [value]);
+
+  const handleHoverStart = () => {
+    iconControls.start({
+      y: [0, -8, 0],
+      transition: { duration: 0.4, ease: "easeInOut" },
+    });
+  };
 
     return (
         <motion.div
@@ -108,5 +120,4 @@ function MetricCard({ title, value, change, icon: Icon, gradient, tooltip }: Met
     )
 }
 
-
-export default MetricCard
+export default MetricCard;
