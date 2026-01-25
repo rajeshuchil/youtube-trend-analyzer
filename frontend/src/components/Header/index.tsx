@@ -8,19 +8,21 @@ function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Left: Logo + Navigation */}
-          <div className="flex items-center gap-12">
+          <div className="flex items-center gap-6 sm:gap-12">
             {/* Logo */}
             <a
               href="/"
-              className="flex items-center gap-3 text-white no-underline font-bold text-xl transition-opacity hover:opacity-80"
+              className="flex items-center gap-2 sm:gap-3 text-white no-underline font-bold text-lg sm:text-xl transition-opacity hover:opacity-80"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-lg">YS</span>
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-sm sm:text-lg">
+                  YS
+                </span>
               </div>
-              <span className="text-white font-bold tracking-tight">
+              <span className="text-white font-bold tracking-tight text-base sm:text-xl">
                 trendscope
               </span>
             </a>
@@ -51,7 +53,7 @@ function Header() {
           {/* Right: CTA Button */}
           <motion.a
             href="/dashboard"
-            className="relative px-6 py-2.5 bg-yellow-400 text-gray-900 font-semibold text-sm rounded-full transition-all overflow-hidden group"
+            className="relative px-4 py-2 sm:px-6 sm:py-2.5 bg-yellow-400 text-gray-900 font-semibold text-xs sm:text-sm rounded-full transition-all overflow-hidden group"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             style={{

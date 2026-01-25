@@ -72,27 +72,32 @@ function Dashboard() {
     };
 
     // Transform videos for table
-    const tableVideos = videos.map((video) => {
-      const categoryName = categoryNames[video.category] || "Other";
-      const engagementScore = video.metrics.likes + video.metrics.comments;
+    const tableVideos = videos
+      .filter((video, index, self) =>
+        // Deduplicate by topicId to prevent duplicate entries
+        index === self.findIndex((v) => v.topicId === video.topicId)
+      )
+      .map((video) => {
+        const categoryName = categoryNames[video.category] || "Other";
+        const engagementScore = video.metrics.likes + video.metrics.comments;
 
-      // Extract video ID from URL
-      const videoId =
-        video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
-      const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
+        // Extract video ID from URL
+        const videoId =
+          video.topicId || video.url.split("v=")[1]?.split("&")[0] || "default";
+        const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
 
-      return {
-        id: video.topicId,
-        videoId: videoId,
-        title: video.title,
-        thumbnail: thumbnailUrl,
-        category: categoryName,
-        views: formatNumber(video.metrics.views),
-        likes: formatNumber(video.metrics.likes),
-        comments: formatNumber(video.metrics.comments),
-        engagement: Math.round(engagementScore / 1000), // Convert to K
-      };
-    });
+        return {
+          id: video.topicId,
+          videoId: videoId,
+          title: video.title,
+          thumbnail: thumbnailUrl,
+          category: categoryName,
+          views: formatNumber(video.metrics.views),
+          likes: formatNumber(video.metrics.likes),
+          comments: formatNumber(video.metrics.comments),
+          engagement: Math.round(engagementScore / 1000), // Convert to K
+        };
+      });
 
     // Calculate metrics
     const totalViews = videos.reduce((sum, v) => sum + v.metrics.views, 0);
