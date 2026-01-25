@@ -40,8 +40,13 @@ function TrendingTable({ videos, onVideoClick }: TrendingTableProps) {
             'Education': 'bg-teal-500/20 text-teal-400 border-teal-500/30',
             'News & Politics': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
             'Sports': 'bg-pink-500/20 text-pink-400 border-pink-500/30',
+            'Film & Animation': 'bg-amber-500/20 text-amber-600 border-amber-500/30',
+            'Science & Technology': 'bg-emerald-500/20 text-emerald-600 border-emerald-500/30',
+            'Comedy': 'bg-fuchsia-500/20 text-fuchsia-400 border-fuchsia-500/30',
+            'People & Blogs': 'bg-rose-500/20 text-rose-400 border-rose-500/30',
+            'Howto & Style': 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30',
         }
-        return colors[category] || 'bg-gray-500/20 text-gray-300 border-gray-500/30'
+        return colors[category] || 'bg-gray-500/20 text-gray-700 border-gray-500/30'
     }
 
     const getPageNumbers = () => {
