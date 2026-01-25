@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Home, TrendingUp, Grid3x3, Search, Settings, ArrowLeft } from "lucide-react";
+import {
+  Home,
+  TrendingUp,
+  Grid3x3,
+  Search,
+  Settings,
+  ArrowLeft,
+} from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {
@@ -31,14 +38,17 @@ function Sidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-gray-200">
         <a href="/" className="flex items-center gap-3 no-underline">
-          <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-base">YT</span>
-          </div>
-          <div>
-            <h1 className="text-lg font-bold text-gray-900 tracking-tight">
-              trendscope
-            </h1>
-          </div>
+          <img
+            src="/images/trendscope-icon.svg"
+            alt="TrendScope"
+            className="w-10 h-10 flex-shrink-0"
+          />
+          <h1
+            className="text-lg font-bold text-gray-900 tracking-tight m-0 p-0"
+            style={{ lineHeight: "2.5rem" }}
+          >
+            TrendScope
+          </h1>
         </a>
       </div>
 
@@ -55,10 +65,11 @@ function Sidebar() {
               className={({ isActive }: { isActive: boolean }) => `
                                 w-full flex items-center gap-3 px-4 py-3 rounded-lg
                                 transition-all duration-200 no-underline
-                                ${isActive
-                  ? "bg-orange-50 border-l-4 border-orange-500 text-orange-700"
-                  : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
-                }
+                                ${
+                                  isActive
+                                    ? "bg-orange-50 border-l-4 border-orange-500 text-orange-700"
+                                    : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
+                                }
                             `}
             >
               <motion.div
