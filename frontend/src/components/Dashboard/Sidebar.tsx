@@ -79,16 +79,16 @@ function Sidebar({ isOpen, onClose }: SidebarProps) {
         transition={{ type: "spring", damping: 25, stiffness: 200 }}
         className="w-64 h-screen bg-white border-r border-gray-200 flex-col flex z-50 fixed md:sticky top-0 left-0"
       >
-        {/* Close button for mobile */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-900 md:hidden"
-        >
-          <X size={20} />
-        </button>
-
         {/* Logo */}
-        <div className="p-6 border-b border-gray-200">
+        <div className="p-6 border-b border-gray-200 relative">
+          {/* Close button for mobile */}
+          <button
+            onClick={onClose}
+            className="absolute top-6 right-4 p-2 text-gray-500 hover:text-gray-900 md:hidden"
+          >
+            <X size={20} />
+          </button>
+
           <a href="/" className="flex items-center gap-3 no-underline">
             <img
               src="/images/trendscope-icon.svg"
