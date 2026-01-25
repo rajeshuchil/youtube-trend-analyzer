@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import { useTrends } from "../../hooks/useTrends";
 import VideoCard from "../../components/Dashboard/VideoCard";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
+import AIChat from "../../components/Dashboard/AIChat";
 import FilterBar from "../../components/Dashboard/FilterBar";
 import { Skeleton } from "../../components/ui/skeleton";
 import { Button } from "../../components/ui/button";
@@ -216,6 +217,9 @@ function TrendingVideos() {
           videoId={selectedVideo?.id || ""}
           title={selectedVideo?.title || ""}
         />
+
+        {/* AI Chat Assistant */}
+        <AIChat trendsData={data} regionCode={selectedRegion} />
       </div>
     </div>
   );
