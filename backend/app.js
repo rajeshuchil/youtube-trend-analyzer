@@ -3,6 +3,7 @@ import cors from 'cors';
 import compression from 'compression';
 import dotenv from 'dotenv';
 import youtubeRoutes from './Routes/youtubeRoutes.js';
+import aiRoutes from './Routes/aiRoutes.js';
 import { requestLogger } from './config/logger.js';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
 import { apiLimiter } from './middleware/rateLimiter.js';
@@ -78,6 +79,7 @@ app.use('/api', apiLimiter);
 
 // Routes
 app.use('/api/youtube', youtubeRoutes);
+app.use('/api/ai', aiRoutes);
 
 // 404 handler - must be after all routes
 app.use(notFound);

@@ -185,20 +185,36 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
     };
 
     setMessages((prev) => [...prev, userMessage]);
+    const userQuestion = input;
     setInput("");
     setIsLoading(true);
 
-    // Simulate AI thinking time
-    setTimeout(() => {
+    try {
+      // Use centralized API function
+      const { chatWithAI } = await import("../../services/api");
+      const data = await chatWithAI(userQuestion, regionCode);
+
       const aiResponse: Message = {
         id: (Date.now() + 1).toString(),
         role: "assistant",
-        content: analyzeData(input),
+        content: data.response,
         timestamp: new Date(),
       };
+
       setMessages((prev) => [...prev, aiResponse]);
+    } catch (error) {
+      console.error("AI Chat Error:", error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: "assistant",
+        content:
+          "Sorry, I encountered an error processing your request. Please make sure the backend server is running and the Groq API key is configured.",
+        timestamp: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+    } finally {
       setIsLoading(false);
-    }, 800);
+    }
   };
 
   return (
@@ -327,11 +343,10 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                   className={`flex gap-3 ${message.role === "user" ? "flex-row-reverse" : ""}`}
                 >
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
-                      message.role === "user"
+                    className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${message.role === "user"
                         ? "bg-orange-500 text-white"
                         : "bg-white border-2 border-orange-500 text-orange-500"
-                    }`}
+                      }`}
                   >
                     {message.role === "user" ? (
                       <User className="w-4 h-4" />
@@ -343,11 +358,10 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
                     className={`flex-1 ${message.role === "user" ? "text-right" : ""}`}
                   >
                     <div
-                      className={`inline-block max-w-[85%] px-4 py-2 rounded-2xl ${
-                        message.role === "user"
+                      className={`inline-block max-w-[85%] px-4 py-2 rounded-2xl ${message.role === "user"
                           ? "bg-orange-500 text-white rounded-br-none"
                           : "bg-white border border-gray-200 text-gray-900 rounded-bl-none"
-                      }`}
+                        }`}
                     >
                       <p className="text-sm whitespace-pre-line">
                         {message.content}
