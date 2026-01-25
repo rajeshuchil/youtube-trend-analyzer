@@ -30,5 +30,8 @@
     "typescript"
   ],
   "author": "Rajesh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ogl": "^1.0.11"
+  }
 }
