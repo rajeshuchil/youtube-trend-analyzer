@@ -1,12 +1,12 @@
 import { useState, useMemo, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useOutletContext } from "react-router-dom";
 import { useTrends } from "../../hooks/useTrends";
 import VideoCard from "../../components/Dashboard/VideoCard";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
 import FilterBar from "../../components/Dashboard/FilterBar";
 import { Skeleton } from "../../components/ui/skeleton";
 import { Button } from "../../components/ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Menu } from "lucide-react";
 
 // Helper function to format large numbers
 function formatNumber(num: number): string {
@@ -19,8 +19,13 @@ function formatNumber(num: number): string {
   return num.toString();
 }
 
+interface OutletContext {
+  openSidebar: () => void;
+}
+
 function TrendingVideos() {
   const [searchParams] = useSearchParams();
+  const { openSidebar } = useOutletContext<OutletContext>();
   const [selectedRegion, setSelectedRegion] = useState("US");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortBy, setSortBy] = useState("views");
@@ -57,9 +62,10 @@ function TrendingVideos() {
     };
 
     let videos = data.data
-      .filter((video, index, self) =>
-        // Deduplicate by topicId to prevent duplicate entries
-        index === self.findIndex((v) => v.topicId === video.topicId)
+      .filter(
+        (video, index, self) =>
+          // Deduplicate by topicId to prevent duplicate entries
+          index === self.findIndex((v) => v.topicId === video.topicId),
       )
       .map((video) => {
         const categoryName = categoryNames[video.category] || "Other";
@@ -151,14 +157,23 @@ function TrendingVideos() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 md:p-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Trending Videos
-          </h1>
-          <p className="text-gray-600">
+        <div className="mb-6 md:mb-8">
+          <div className="flex items-center gap-3 mb-2">
+            <button
+              onClick={openSidebar}
+              className="md:hidden p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Open menu"
+            >
+              <Menu size={24} />
+            </button>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
+              Trending Videos
+            </h1>
+          </div>
+          <p className="text-sm md:text-base text-gray-600">
             Explore {processedVideos.length} trending videos from{" "}
             {selectedRegion}
           </p>
