@@ -6,6 +6,7 @@ import CategoryChart from "../../components/Dashboard/CategoryChart";
 import EngagementChart from "../../components/Dashboard/EngagementChart";
 import EmptyState from "../../components/Dashboard/EmptyState";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
+import AIChat from "../../components/Dashboard/AIChat";
 import { Skeleton } from "../../components/ui/skeleton";
 import {
   Eye,
@@ -324,6 +325,9 @@ function Dashboard() {
           videoId={selectedVideo?.id || ""}
           title={selectedVideo?.title || ""}
         />
+
+        {/* AI Chat Assistant */}
+        <AIChat trendsData={data} regionCode={selectedRegion} />
       </div>
     </div>
   );
