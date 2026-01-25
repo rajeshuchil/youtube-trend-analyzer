@@ -17,6 +17,7 @@ interface AIChatProps {
 
 function AIChat({ trendsData, regionCode }: AIChatProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [showTooltip, setShowTooltip] = useState(true);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
@@ -208,28 +209,36 @@ function AIChat({ trendsData, regionCode }: AIChatProps) {
         {!isOpen && (
           <>
             {/* Tooltip Banner - Hidden on mobile */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ delay: 0.5 }}
-              className="hidden md:block fixed bottom-24 right-6 z-50 bg-white rounded-xl shadow-2xl p-4 max-w-xs border border-orange-200"
-            >
-              <div className="flex items-start gap-3">
-                <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Bot className="w-5 h-5 text-white" />
+            {showTooltip && (
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.5 }}
+                className="hidden md:block fixed bottom-24 right-6 z-50 bg-white rounded-xl shadow-2xl p-4 max-w-xs border border-orange-200"
+              >
+                <button
+                  onClick={() => setShowTooltip(false)}
+                  className="absolute top-2 right-2 text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+                <div className="flex items-start gap-3 pr-6">
+                  <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Bot className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      AI Assistant Available!
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      Ask me anything about YouTube trends 👇
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">
-                    AI Assistant Available!
-                  </h4>
-                  <p className="text-sm text-gray-600">
-                    Ask me anything about YouTube trends 👇
-                  </p>
-                </div>
-              </div>
-              <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-orange-200 transform rotate-45" />
-            </motion.div>
+                <div className="absolute -bottom-2 right-8 w-4 h-4 bg-white border-r border-b border-orange-200 transform rotate-45" />
+              </motion.div>
+            )}
 
             {/* Main Chat Button - Responsive */}
             <motion.button
