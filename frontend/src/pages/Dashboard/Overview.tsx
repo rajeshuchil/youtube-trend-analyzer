@@ -30,7 +30,9 @@ function formatNumber(num: number): string {
 }
 
 function Dashboard() {
-  const [selectedRegion, setSelectedRegion] = useState("US");
+  const [selectedRegion, setSelectedRegion] = useState(() => {
+    return localStorage.getItem("preferredRegion") || "US";
+  });
   const [selectedVideo, setSelectedVideo] = useState<{
     id: string;
     title: string;
@@ -73,9 +75,10 @@ function Dashboard() {
 
     // Transform videos for table
     const tableVideos = videos
-      .filter((video, index, self) =>
-        // Deduplicate by topicId to prevent duplicate entries
-        index === self.findIndex((v) => v.topicId === video.topicId)
+      .filter(
+        (video, index, self) =>
+          // Deduplicate by topicId to prevent duplicate entries
+          index === self.findIndex((v) => v.topicId === video.topicId),
       )
       .map((video) => {
         const categoryName = categoryNames[video.category] || "Other";
@@ -180,6 +183,12 @@ function Dashboard() {
     return (
       <div className="p-8">
         <div className="max-w-7xl mx-auto">
+          <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+            <p className="text-sm text-blue-800 text-center">
+              ⏳ Loading trending videos... If this is your first visit, the
+              server may take 30-60 seconds to start.
+            </p>
+          </div>
           <Skeleton className="h-12 w-64 mb-8 bg-gray-800" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {[1, 2, 3, 4].map((i) => (
@@ -194,19 +203,26 @@ function Dashboard() {
 
   // Error state
   if (error) {
+    const errorMessage = error.message || "Unable to fetch trending videos";
+    const isColdStart =
+      errorMessage.includes("timeout") || errorMessage.includes("starting up");
+
     return (
       <div className="p-8">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white border border-red-200 rounded-xl">
             <EmptyState
-              title="Failed to Load Trends"
+              title={
+                isColdStart ? "Server Starting Up" : "Failed to Load Trends"
+              }
               description={
-                error.message ||
-                "Unable to fetch trending videos. Please check your connection and try again."
+                isColdStart
+                  ? "The server is waking up from sleep (free tier). This takes about 30-60 seconds on first load. Please try again."
+                  : errorMessage
               }
               icon={<AlertCircle className="w-8 h-8 text-red-400" />}
               action={{
-                label: "Retry",
+                label: isColdStart ? "Retry Now" : "Retry",
                 onClick: handleRefresh,
               }}
             />

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import {
   Card,
@@ -17,8 +17,9 @@ import {
   Linkedin,
   Mail,
   Menu,
+  Check,
 } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const REGIONS = [
   { code: "US", name: "United States", flag: "🇺🇸" },
@@ -38,9 +39,19 @@ interface OutletContext {
 }
 
 function Settings() {
-  const [selectedRegion, setSelectedRegion] = useState("US");
+  const [selectedRegion, setSelectedRegion] = useState(() => {
+    return localStorage.getItem("preferredRegion") || "US";
+  });
+  const [showSuccess, setShowSuccess] = useState(false);
   const { mutate: refreshTrends, isPending } = useRefreshTrends();
   const { openSidebar } = useOutletContext<OutletContext>();
+
+  const handleRegionChange = (regionCode: string) => {
+    setSelectedRegion(regionCode);
+    localStorage.setItem("preferredRegion", regionCode);
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 3000);
+  };
 
   const handleRefresh = () => {
     refreshTrends(selectedRegion);
@@ -91,7 +102,7 @@ function Settings() {
                 {REGIONS.map((region) => (
                   <motion.button
                     key={region.code}
-                    onClick={() => setSelectedRegion(region.code)}
+                    onClick={() => handleRegionChange(region.code)}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     className={`p-4 rounded-lg border transition-all ${
@@ -106,12 +117,27 @@ function Settings() {
                 ))}
               </div>
               <div className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200">
-                <p className="text-sm text-gray-600">
-                  Selected Region:{" "}
-                  <span className="text-gray-900 font-semibold">
-                    {REGIONS.find((r) => r.code === selectedRegion)?.name}
-                  </span>
-                </p>
+                <div className="flex items-center justify-between">
+                  <p className="text-sm text-gray-600">
+                    Selected Region:{" "}
+                    <span className="text-gray-900 font-semibold">
+                      {REGIONS.find((r) => r.code === selectedRegion)?.name}
+                    </span>
+                  </p>
+                  <AnimatePresence>
+                    {showSuccess && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        className="flex items-center gap-1 text-teal-600 text-sm font-medium"
+                      >
+                        <Check size={16} />
+                        Saved!
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               </div>
             </CardContent>
           </Card>
