@@ -26,7 +26,9 @@ interface OutletContext {
 function TrendingVideos() {
   const [searchParams] = useSearchParams();
   const { openSidebar } = useOutletContext<OutletContext>();
-  const [selectedRegion, setSelectedRegion] = useState("US");
+  const [selectedRegion, setSelectedRegion] = useState(() => {
+    return localStorage.getItem("preferredRegion") || "US";
+  });
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [sortBy, setSortBy] = useState("views");
   const [currentPage, setCurrentPage] = useState(1);

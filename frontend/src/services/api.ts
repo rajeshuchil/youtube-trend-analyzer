@@ -49,7 +49,7 @@ export interface CategoryResponse {
 // Fetch trending videos
 export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse> {
     const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 second timeout
+    const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout for cold start
 
     try {
         const response = await fetch(`${API_BASE_URL}/api/youtube/trends?regionCode=${region}&maxResults=50`, {
@@ -61,11 +61,15 @@ export async function fetchTrends(region: string = 'US'): Promise<TrendsResponse
         clearTimeout(timeoutId)
 
         if (!response.ok) {
-            throw new Error('Failed to fetch trends')
+            const errorText = await response.text()
+            throw new Error(`Failed to fetch trends: ${response.status} ${errorText}`)
         }
         return response.json()
     } catch (error) {
         clearTimeout(timeoutId)
+        if (error instanceof Error && error.name === 'AbortError') {
+            throw new Error('Request timeout - server may be starting up. Please try again.')
+        }
         throw error
     }
 }
@@ -91,7 +95,7 @@ export async function searchTrends(keyword: string, region: string = 'US'): Prom
 // Refresh trends data
 export async function refreshTrends(region: string = 'US'): Promise<TrendsResponse> {
     const response = await fetch(`${API_BASE_URL}/api/youtube/trends/refresh?regionCode=${region}`, {
-        method: 'POST'
+        method: 'GET'
     })
     if (!response.ok) {
         throw new Error('Failed to refresh trends')

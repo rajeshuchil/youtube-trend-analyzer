@@ -25,7 +25,9 @@ interface OutletContext {
 function Categories() {
   const navigate = useNavigate();
   const { openSidebar } = useOutletContext<OutletContext>();
-  const [selectedRegion, setSelectedRegion] = useState("US");
+  const [selectedRegion, setSelectedRegion] = useState(() => {
+    return localStorage.getItem("preferredRegion") || "US";
+  });
   const [selectedVideo, setSelectedVideo] = useState<{
     id: string;
     title: string;

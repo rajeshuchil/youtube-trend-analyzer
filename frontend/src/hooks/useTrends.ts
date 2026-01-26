@@ -8,8 +8,8 @@ export function useTrends(region: string) {
         staleTime: 1000 * 60 * 30, // 30 minutes
         gcTime: 1000 * 60 * 60, // Keep in cache for 1 hour
         refetchOnWindowFocus: false,
-        retry: 2,
-        retryDelay: 1000,
+        retry: 3, // Increased retries for cold start
+        retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 10000), // Exponential backoff: 1s, 2s, 4s
     })
 }
 
