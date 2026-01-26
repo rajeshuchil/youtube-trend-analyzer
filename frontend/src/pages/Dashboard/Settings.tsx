@@ -124,9 +124,10 @@ function Settings() {
                       {REGIONS.find((r) => r.code === selectedRegion)?.name}
                     </span>
                   </p>
-                  <AnimatePresence>
+                  <AnimatePresence mode="wait">
                     {showSuccess && (
                       <motion.div
+                        key="success-message"
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.8 }}
@@ -160,33 +161,69 @@ function Settings() {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
-                <div>
-                  <p className="text-gray-900 font-medium mb-1">
-                    Refresh Trending Data
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Fetch the latest trending videos for{" "}
-                    {REGIONS.find((r) => r.code === selectedRegion)?.name}
-                  </p>
+              <div className="space-y-4">
+                <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg border border-gray-200">
+                  <div>
+                    <p className="text-gray-900 font-medium mb-1">
+                      Refresh Trending Data
+                    </p>
+                    <p className="text-sm text-gray-600">
+                      Fetch the latest trending videos for{" "}
+                      {REGIONS.find((r) => r.code === selectedRegion)?.name}
+                    </p>
+                  </div>
+                  <Button
+                    onClick={handleRefresh}
+                    disabled={isPending}
+                    className="bg-cyan-600 hover:bg-cyan-700 text-white"
+                  >
+                    {isPending ? (
+                      <>
+                        <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
+                        Refreshing...
+                      </>
+                    ) : (
+                      <>
+                        <RefreshCw className="w-4 h-4 mr-2" />
+                        Refresh Now
+                      </>
+                    )}
+                  </Button>
                 </div>
-                <Button
-                  onClick={handleRefresh}
-                  disabled={isPending}
-                  className="bg-cyan-600 hover:bg-cyan-700 text-white"
-                >
-                  {isPending ? (
-                    <>
-                      <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
-                      Refreshing...
-                    </>
-                  ) : (
-                    <>
-                      <RefreshCw className="w-4 h-4 mr-2" />
-                      Refresh Now
-                    </>
-                  )}
-                </Button>
+
+                {/* Info Box */}
+                <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                  <div className="flex gap-3">
+                    <Info className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-medium text-blue-900 mb-1">
+                        What does refresh do?
+                      </p>
+                      <ul className="text-sm text-blue-800 space-y-1">
+                        <li>
+                          • <strong>Bypasses cache</strong> - Ignores stored
+                          data
+                        </li>
+                        <li>
+                          • <strong>Calls YouTube API</strong> - Gets real-time
+                          trending videos
+                        </li>
+                        <li>
+                          • <strong>Updates database</strong> - Saves fresh data
+                          for faster loading
+                        </li>
+                        <li>
+                          • <strong>Updates all pages</strong> - Overview,
+                          Videos, Categories automatically refresh
+                        </li>
+                      </ul>
+                      <p className="text-xs text-blue-700 mt-2">
+                        💡 Normal usage: Data auto-refreshes every 30 minutes.
+                        Use this for immediate updates.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </CardContent>
           </Card>

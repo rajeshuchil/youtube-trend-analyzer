@@ -95,7 +95,7 @@ export async function searchTrends(keyword: string, region: string = 'US'): Prom
 // Refresh trends data
 export async function refreshTrends(region: string = 'US'): Promise<TrendsResponse> {
     const response = await fetch(`${API_BASE_URL}/api/youtube/trends/refresh?regionCode=${region}`, {
-        method: 'POST'
+        method: 'GET'
     })
     if (!response.ok) {
         throw new Error('Failed to refresh trends')
