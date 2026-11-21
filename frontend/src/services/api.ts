@@ -31,7 +31,8 @@ export interface BackendVideo {
 export interface TrendsResponse {
     success: boolean
     cached: boolean
-    refreshed: boolean
+    // Optional because the backend omits it on cache-hit responses
+    refreshed?: boolean
     page: number
     limit: number
     count: number
@@ -101,6 +102,78 @@ export async function refreshTrends(region: string = 'US'): Promise<TrendsRespon
         throw new Error('Failed to refresh trends')
     }
     return response.json()
+}
+
+// Static snapshot metadata written by scripts/fetch-trending.mjs (Phase 1)
+export interface TrendSnapshotMeta {
+    region: string
+    generatedAt: string
+    fetchedAt: string | null
+    videoCount: number
+    cached: boolean
+    source: string
+}
+
+export interface TrendSnapshot extends TrendsResponse {
+    meta?: TrendSnapshotMeta
+}
+
+// Root-relative so it works on the production domain, Vercel preview
+// deployments and the Vite dev server alike (SPA routes like
+// /dashboard/trending would break a document-relative path).
+const SNAPSHOT_BASE_PATH = '/data'
+
+function isValidTrendPayload(payload: unknown): payload is TrendSnapshot {
+    if (!payload || typeof payload !== 'object') return false
+
+    const candidate = payload as TrendSnapshot
+    if (candidate.success !== true || !Array.isArray(candidate.data) || candidate.data.length === 0) {
+        return false
+    }
+
+    return candidate.data.every(
+        (video) =>
+            typeof video.topicId === 'string' &&
+            video.topicId.length > 0 &&
+            typeof video.title === 'string' &&
+            video.metrics !== null &&
+            typeof video.metrics === 'object' &&
+            typeof video.metrics.views === 'number'
+    )
+}
+
+// Load the static snapshot for a region. Returns null when the region has no
+// snapshot yet (HTTP 404), when the file is malformed, or when the request
+// fails — callers fall back to the live API in every case.
+export async function fetchTrendSnapshot(region: string): Promise<TrendSnapshot | null> {
+    // Defensive: region can come from localStorage, so only well-formed
+    // ISO country codes may end up in a URL path.
+    if (!/^[A-Z]{2}$/.test(region)) return null
+
+    try {
+        const response = await fetch(`${SNAPSHOT_BASE_PATH}/trends-${region}.json`, {
+            headers: { Accept: 'application/json' }
+        })
+
+        if (!response.ok) {
+            // A missing snapshot is an expected situation, not an error
+            if (response.status !== 404) {
+                console.warn(`Snapshot request for ${region} failed: HTTP ${response.status}`)
+            }
+            return null
+        }
+
+        const payload: unknown = await response.json()
+        if (!isValidTrendPayload(payload)) {
+            console.warn(`Snapshot for ${region} is malformed; ignoring it`)
+            return null
+        }
+
+        return payload
+    } catch (error) {
+        console.warn(`Could not load snapshot for ${region}:`, error)
+        return null
+    }
 }
 
 // AI Chat interface
