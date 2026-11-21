@@ -1,0 +1,818 @@
+{
+  "success": true,
+  "cached": false,
+  "refreshed": true,
+  "page": 1,
+  "limit": 50,
+  "count": 50,
+  "data": [
+    {
+      "platform": "Youtube",
+      "topicId": "QQV-0OUGxGs",
+      "title": "Whatever You Steal in GTA 6, You Keep!",
+      "url": "https://www.youtube.com/watch?v=QQV-0OUGxGs",
+      "metrics": {
+        "views": 18330891,
+        "likes": 251784,
+        "comments": 7921
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 18330891
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hMapmHG0nIs",
+      "title": "skibidi toilet 83 (part 2)",
+      "url": "https://www.youtube.com/watch?v=hMapmHG0nIs",
+      "metrics": {
+        "views": 5437567,
+        "likes": 242867,
+        "comments": 37679
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 5437567
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "RtghspIPQeU",
+      "title": "GTA 6 - Best Ending (True Ending)",
+      "url": "https://www.youtube.com/watch?v=RtghspIPQeU",
+      "metrics": {
+        "views": 1972925,
+        "likes": 34517,
+        "comments": 3053
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 1972925
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9OHE71sGjiU",
+      "title": "Rammstein - Live in Mexico City - Du Hast (Official Video)",
+      "url": "https://www.youtube.com/watch?v=9OHE71sGjiU",
+      "metrics": {
+        "views": 1530121,
+        "likes": 46086,
+        "comments": 0
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 1530121
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "GMZzFJsf844",
+      "title": "GTA 6 WTF and Funny Moments! #3",
+      "url": "https://www.youtube.com/watch?v=GMZzFJsf844",
+      "metrics": {
+        "views": 1328483,
+        "likes": 9153,
+        "comments": 535
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 1328483
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "F-qGcKYMNPc",
+      "title": "Brawl Stars Championship 2026 | WORLD FINALS | DAY 2",
+      "url": "https://www.youtube.com/watch?v=F-qGcKYMNPc",
+      "metrics": {
+        "views": 1087189,
+        "likes": 8075,
+        "comments": 81
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 1087189
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zb_jvGxKKWc",
+      "title": "Ebru Yaşar X Shawty - Bu Bir Vedaymış",
+      "url": "https://www.youtube.com/watch?v=zb_jvGxKKWc",
+      "metrics": {
+        "views": 904432,
+        "likes": 15092,
+        "comments": 568
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 904432
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jc28hp-t6MM",
+      "title": "Džejla Ramović & Jakov Jozinović - Suze (Official video)",
+      "url": "https://www.youtube.com/watch?v=jc28hp-t6MM",
+      "metrics": {
+        "views": 776793,
+        "likes": 26159,
+        "comments": 1291
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 776793
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QPYIMFEt77Q",
+      "title": "Jerry Heil & Baby Lasagna - MEOW (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=QPYIMFEt77Q",
+      "metrics": {
+        "views": 528781,
+        "likes": 37904,
+        "comments": 2271
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 528781
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "LUKsyOCxKPs",
+      "title": "ICE AGE 6: Am Siedepunkt Trailer German Deutsch (2027)",
+      "url": "https://www.youtube.com/watch?v=LUKsyOCxKPs",
+      "metrics": {
+        "views": 472306,
+        "likes": 5221,
+        "comments": 568
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 472306
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "xbZAigxS330",
+      "title": "Sido - FLÜGEL (Prod. by Yanek Stärk & Skipbeats) [Official Video]",
+      "url": "https://www.youtube.com/watch?v=xbZAigxS330",
+      "metrics": {
+        "views": 387747,
+        "likes": 17664,
+        "comments": 1143
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 387747
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "OKbAMPeH-c0",
+      "title": "GTA 6 auf PS5, Pro & Xbox - Wichtige Grafik-Unterschiede und FPS-Probleme im Vergleich!",
+      "url": "https://www.youtube.com/watch?v=OKbAMPeH-c0",
+      "metrics": {
+        "views": 376463,
+        "likes": 4667,
+        "comments": 1150
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 376463
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ZzayZgCSSlg",
+      "title": "Wael Kfoury - Albi El Ghali (Official Lyric Video 2026) | وائل كفوري - قلبي الغالي",
+      "url": "https://www.youtube.com/watch?v=ZzayZgCSSlg",
+      "metrics": {
+        "views": 338237,
+        "likes": 7804,
+        "comments": 782
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 338237
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "4LOH42MW9r4",
+      "title": "🔥🤯Ganze Stadt WILL UNSEREN TOD! LUCIA ARC beginnt! Jason SCHWER VERLETZT! GTA VI Folge 3",
+      "url": "https://www.youtube.com/watch?v=4LOH42MW9r4",
+      "metrics": {
+        "views": 308367,
+        "likes": 5029,
+        "comments": 100
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 308367
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "pRZiOIeDSGQ",
+      "title": "DAS ist der ANFANG von GTA 6! 😳 | Mohi Plays",
+      "url": "https://www.youtube.com/watch?v=pRZiOIeDSGQ",
+      "metrics": {
+        "views": 293568,
+        "likes": 4680,
+        "comments": 376
+      },
+      "category": "22",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 293568
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9tqzvViJBak",
+      "title": "FOREVER | UNTIL THE END ❤️ Kaelvar ft. Eira | Live Show Version | Nordic Love Anthem",
+      "url": "https://www.youtube.com/watch?v=9tqzvViJBak",
+      "metrics": {
+        "views": 287197,
+        "likes": 5301,
+        "comments": 211
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 287197
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "_zleWDhZSrQ",
+      "title": "neue WOHNUNG in Vice City gekauft... Teil 3",
+      "url": "https://www.youtube.com/watch?v=_zleWDhZSrQ",
+      "metrics": {
+        "views": 283405,
+        "likes": 2467,
+        "comments": 13
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 283405
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Hi4ZM9GQP0Q",
+      "title": "TNT Records - Aether",
+      "url": "https://www.youtube.com/watch?v=Hi4ZM9GQP0Q",
+      "metrics": {
+        "views": 277773,
+        "likes": 3469,
+        "comments": 56
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 277773
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "wESIWyVzBnU",
+      "title": "WAS HAST DU MIT MIR GEMACHT (Helene Fischer Show 2026 | 25.12.2026 um 20.15 Uhr im ZDF, ORF und SRF)",
+      "url": "https://www.youtube.com/watch?v=wESIWyVzBnU",
+      "metrics": {
+        "views": 260001,
+        "likes": 3773,
+        "comments": 262
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 260001
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "neU8Fm-CVec",
+      "title": "Diese Website hat Zugriff auf ALLE Security Kameras",
+      "url": "https://www.youtube.com/watch?v=neU8Fm-CVec",
+      "metrics": {
+        "views": 241276,
+        "likes": 8032,
+        "comments": 282
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 241276
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "7iqjz_07SYc",
+      "title": "SAJFER - NIKAD NIKO",
+      "url": "https://www.youtube.com/watch?v=7iqjz_07SYc",
+      "metrics": {
+        "views": 241127,
+        "likes": 4610,
+        "comments": 292
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 241127
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "wzVrLs7FKOo",
+      "title": "VYRMA – ENTER VALHALLA | Open the Gates ⚔️ Viking Music (LIVE)",
+      "url": "https://www.youtube.com/watch?v=wzVrLs7FKOo",
+      "metrics": {
+        "views": 218521,
+        "likes": 4128,
+        "comments": 228
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 218521
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "3USV-a_OhHo",
+      "title": "GTA 6 spielen OHNE REGELN brechen!",
+      "url": "https://www.youtube.com/watch?v=3USV-a_OhHo",
+      "metrics": {
+        "views": 173984,
+        "likes": 3457,
+        "comments": 208
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 173984
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "CCzsREKHbnU",
+      "title": "Ich habe 200 Tage Enshrouded 1.0 gespielt und das ist passiert",
+      "url": "https://www.youtube.com/watch?v=CCzsREKHbnU",
+      "metrics": {
+        "views": 163017,
+        "likes": 5277,
+        "comments": 221
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 163017
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "E96dw0zU0ng",
+      "title": "AMONG US MIT DER BESTEN TRUPPE👀🧠 mit Danny, Gleggmire, Isa, Mcky, Mehdi & Co.! XXL FOLGE🔥",
+      "url": "https://www.youtube.com/watch?v=E96dw0zU0ng",
+      "metrics": {
+        "views": 153907,
+        "likes": 3936,
+        "comments": 90
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 153907
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "WygT_cVeW7Q",
+      "title": "ICH MUSS EINE NADEL IM HEUHAUFEN SUCHEN... (wow)",
+      "url": "https://www.youtube.com/watch?v=WygT_cVeW7Q",
+      "metrics": {
+        "views": 141914,
+        "likes": 4687,
+        "comments": 112
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 141914
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-kQ5UboPVTs",
+      "title": "KIDDA - AKUZA",
+      "url": "https://www.youtube.com/watch?v=-kQ5UboPVTs",
+      "metrics": {
+        "views": 136538,
+        "likes": 3796,
+        "comments": 84
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 136538
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hEpJJ3dlJYc",
+      "title": "Kool Savas - Rhythmus meines Lebens 2 (feat. Laskah & Yako Ok)",
+      "url": "https://www.youtube.com/watch?v=hEpJJ3dlJYc",
+      "metrics": {
+        "views": 113178,
+        "likes": 3702,
+        "comments": 287
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 113178
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "gJB49LeN4Uk",
+      "title": "Ghost61 feat. Kolja Goldstein - Aktiv (Official Video)",
+      "url": "https://www.youtube.com/watch?v=gJB49LeN4Uk",
+      "metrics": {
+        "views": 109339,
+        "likes": 3788,
+        "comments": 176
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 109339
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AtERC6CZz2A",
+      "title": "Celo & Abdi x Hanybal - DLIA / Ticker die rappen (prod. von m3) [Official Video]",
+      "url": "https://www.youtube.com/watch?v=AtERC6CZz2A",
+      "metrics": {
+        "views": 101281,
+        "likes": 5083,
+        "comments": 410
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 101281
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "XGjPZlAs5os",
+      "title": "Diese STORY ist komplett CRAZY😍😱 | GTA 6 - TEIL 4 | SpontanaBlack",
+      "url": "https://www.youtube.com/watch?v=XGjPZlAs5os",
+      "metrics": {
+        "views": 95215,
+        "likes": 1168,
+        "comments": 44
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 95215
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "S_Jt3BzmvDE",
+      "title": "1V1 gegen Papaplatte, aber seine CHEATS werden IMMER STÄRKER",
+      "url": "https://www.youtube.com/watch?v=S_Jt3BzmvDE",
+      "metrics": {
+        "views": 92706,
+        "likes": 3166,
+        "comments": 94
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 92706
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "1J7GrSjHxac",
+      "title": "Roblox Obby, aber du wirst mit jeder Stufe kleiner...",
+      "url": "https://www.youtube.com/watch?v=1J7GrSjHxac",
+      "metrics": {
+        "views": 89398,
+        "likes": 787,
+        "comments": 96
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 89398
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "bcC2ZPUAKXM",
+      "title": "Kauta (feat. Mucco) - Tut mir leid [Official Video]",
+      "url": "https://www.youtube.com/watch?v=bcC2ZPUAKXM",
+      "metrics": {
+        "views": 85976,
+        "likes": 3052,
+        "comments": 82
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 85976
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "xWH8jDWFdxk",
+      "title": "KURDO - BON APPÉTIT (Official Video)",
+      "url": "https://www.youtube.com/watch?v=xWH8jDWFdxk",
+      "metrics": {
+        "views": 76446,
+        "likes": 4550,
+        "comments": 290
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 76446
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "3MqPKhme1N4",
+      "title": "Ich 'muss' Pokemon schlachten, um sie in Dosenfutter zu verwandeln | Can Em All",
+      "url": "https://www.youtube.com/watch?v=3MqPKhme1N4",
+      "metrics": {
+        "views": 66611,
+        "likes": 1618,
+        "comments": 111
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 66611
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9vdMtdzujDg",
+      "title": "SHINDY - THROW THAT THANG (FEAT. REEZY)",
+      "url": "https://www.youtube.com/watch?v=9vdMtdzujDg",
+      "metrics": {
+        "views": 66389,
+        "likes": 2217,
+        "comments": 435
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 66389
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Z6AeprHgDBQ",
+      "title": "Minecraft, aber WÖRTER sind BEGRENZT...",
+      "url": "https://www.youtube.com/watch?v=Z6AeprHgDBQ",
+      "metrics": {
+        "views": 65191,
+        "likes": 1186,
+        "comments": 69
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 65191
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "JlDQGbckavw",
+      "title": "Meine FREUNDIN verbietet mir GTA 6! 😱🎮",
+      "url": "https://www.youtube.com/watch?v=JlDQGbckavw",
+      "metrics": {
+        "views": 63465,
+        "likes": 1259,
+        "comments": 97
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 63465
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ivujiBUm9ps",
+      "title": "😂🤣 MILLIONEN GETREIDEHALME  in REKORDZEIT GEERNTET (Halm für Halm)! 🌾 Unharvest",
+      "url": "https://www.youtube.com/watch?v=ivujiBUm9ps",
+      "metrics": {
+        "views": 57192,
+        "likes": 2235,
+        "comments": 31
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 57192
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "qOhPSfv24ss",
+      "title": "INVINCIBLE Staffel 5 Teaser Trailer German Deutsch (2027)",
+      "url": "https://www.youtube.com/watch?v=qOhPSfv24ss",
+      "metrics": {
+        "views": 55449,
+        "likes": 961,
+        "comments": 71
+      },
+      "category": "24",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 55449
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HIMoaXNWOQY",
+      "title": "SOUFIAN – STATUS MINUS [Official Video]",
+      "url": "https://www.youtube.com/watch?v=HIMoaXNWOQY",
+      "metrics": {
+        "views": 51891,
+        "likes": 2854,
+        "comments": 148
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 51891
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "uF_7HzTAaIY",
+      "title": "Der Größte Fehler In GTA 6...",
+      "url": "https://www.youtube.com/watch?v=uF_7HzTAaIY",
+      "metrics": {
+        "views": 47330,
+        "likes": 802,
+        "comments": 98
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 47330
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "JljIk6N8nIc",
+      "title": "Beatrice Egli - Ein Geschenk (Offizielles Musikvideo)",
+      "url": "https://www.youtube.com/watch?v=JljIk6N8nIc",
+      "metrics": {
+        "views": 46300,
+        "likes": 588,
+        "comments": 58
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 46300
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "G5x8tbS8QJg",
+      "title": "Ice Age: Am Siedepunkt | Offizieller Trailer | Ab 28. Januar 2027 im Kino",
+      "url": "https://www.youtube.com/watch?v=G5x8tbS8QJg",
+      "metrics": {
+        "views": 34327,
+        "likes": 208,
+        "comments": 30
+      },
+      "category": "1",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 34327
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "OMeknV0RH9c",
+      "title": "Kastelruther Spatzen - Hollywood in Kastelruth (Offizielles Musikvideo)",
+      "url": "https://www.youtube.com/watch?v=OMeknV0RH9c",
+      "metrics": {
+        "views": 34276,
+        "likes": 195,
+        "comments": 11
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 34276
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "JSE66_SKPgA",
+      "title": "1v1v1v1 MINECRAFT WALLS PVP BATTLE⚔️",
+      "url": "https://www.youtube.com/watch?v=JSE66_SKPgA",
+      "metrics": {
+        "views": 24432,
+        "likes": 1094,
+        "comments": 91
+      },
+      "category": "20",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 24432
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "KlkzfWJAqZk",
+      "title": "EISBERG",
+      "url": "https://www.youtube.com/watch?v=KlkzfWJAqZk",
+      "metrics": {
+        "views": 21263,
+        "likes": 1370,
+        "comments": 0
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 21263
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "2aCY6r4EynU",
+      "title": "Die Letzten ihrer Art",
+      "url": "https://www.youtube.com/watch?v=2aCY6r4EynU",
+      "metrics": {
+        "views": 20434,
+        "likes": 1002,
+        "comments": 27
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 20434
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "aZLGvN5MXsM",
+      "title": "MC Bomber & MC Kneipenkrieger - Rocknroller (prod. MC Bomber) Official Video",
+      "url": "https://www.youtube.com/watch?v=aZLGvN5MXsM",
+      "metrics": {
+        "views": 19661,
+        "likes": 1125,
+        "comments": 89
+      },
+      "category": "10",
+      "regionCode": "DE",
+      "timestamp": "2026-11-21T12:51:22.836Z",
+      "fetchedAt": "2026-11-21T12:51:22.836Z",
+      "views": 19661
+    }
+  ],
+  "meta": {
+    "region": "DE",
+    "generatedAt": "2026-11-21T12:51:23.541Z",
+    "fetchedAt": "2026-11-21T12:51:22.836Z",
+    "videoCount": 50,
+    "cached": false,
+    "source": "render-backend"
+  }
+}

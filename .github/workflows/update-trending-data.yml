@@ -1,0 +1,83 @@
+# Generates static trending-data snapshots by calling the production backend
+# (cache-first endpoint) and commits them so Vercel deploys the fresh JSON.
+#
+# Triggers:
+#   - schedule: every 6 hours at :17 UTC (offset from :00 to avoid GitHub's
+#     cron congestion)
+#   - workflow_dispatch: manual runs from the GitHub Actions tab
+#
+# The push made here uses the repository's GITHUB_TOKEN, which never triggers
+# other workflows, and this workflow only listens to schedule/dispatch — so
+# there is no self-triggering loop.
+
+name: Update Trending Data Snapshots
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+# Minimum permissions: write to repository contents (needed to push the
+# snapshot commit). Everything else is denied.
+permissions:
+  contents: write
+
+# Never run two snapshot jobs at once; let a queued run wait instead of
+# cancelling a potentially long cold-start fetch mid-way.
+concurrency:
+  group: update-trending-data
+  cancel-in-progress: false
+
+jobs:
+  update-snapshots:
+    name: Generate and commit snapshots
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # continue-on-error: if some regions fail, the successful ones are still
+      # committed below; the job is marked failed at the end so the partial
+      # run is always visible.
+      - name: Generate snapshots
+        id: generate
+        continue-on-error: true
+        run: node scripts/fetch-trending.mjs
+
+      - name: Validate snapshot files
+        id: validate
+        continue-on-error: true
+        run: node scripts/fetch-trending.mjs --check
+
+      - name: Detect changes
+        id: changes
+        run: |
+          git add -A frontend/public/data 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No snapshot changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Snapshot changes detected."
+          fi
+
+      - name: Commit and push snapshots
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update trending data snapshots"
+          git push
+
+      - name: Fail job if the run was incomplete
+        if: steps.generate.outcome == 'failure' || steps.validate.outcome == 'failure'
+        run: |
+          echo "::error::Snapshot run incomplete — one or more regions failed. See the 'Generate snapshots' and 'Validate snapshot files' steps above. Previously valid snapshots were preserved."
+          exit 1

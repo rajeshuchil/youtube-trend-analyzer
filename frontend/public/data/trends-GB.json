@@ -1,0 +1,786 @@
+{
+  "success": true,
+  "cached": false,
+  "refreshed": true,
+  "page": 1,
+  "limit": 50,
+  "count": 48,
+  "data": [
+    {
+      "platform": "Youtube",
+      "topicId": "QQV-0OUGxGs",
+      "title": "Whatever You Steal in GTA 6, You Keep!",
+      "url": "https://www.youtube.com/watch?v=QQV-0OUGxGs",
+      "metrics": {
+        "views": 18330891,
+        "likes": 251754,
+        "comments": 7920
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 18330891
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "A_H1EH6p4A0",
+      "title": "CL - ‘ICONIC’ M/V",
+      "url": "https://www.youtube.com/watch?v=A_H1EH6p4A0",
+      "metrics": {
+        "views": 5753786,
+        "likes": 0,
+        "comments": 4966
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 5753786
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hMapmHG0nIs",
+      "title": "skibidi toilet 83 (part 2)",
+      "url": "https://www.youtube.com/watch?v=hMapmHG0nIs",
+      "metrics": {
+        "views": 5434396,
+        "likes": 242859,
+        "comments": 37677
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 5434396
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "0JQ9k6kcKVs",
+      "title": "NAYEON “BABY ANGEL” M/V",
+      "url": "https://www.youtube.com/watch?v=0JQ9k6kcKVs",
+      "metrics": {
+        "views": 5333468,
+        "likes": 180057,
+        "comments": 15228
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 5333468
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "LJC7mgjp5FQ",
+      "title": "Taylor Swift - I Knew It, I Knew You x Our Song (Live From The 60th CMA Awards)",
+      "url": "https://www.youtube.com/watch?v=LJC7mgjp5FQ",
+      "metrics": {
+        "views": 5036882,
+        "likes": 116102,
+        "comments": 4192
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 5036882
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "NwQKirh2dxE",
+      "title": "Testing Everything In GTA 6",
+      "url": "https://www.youtube.com/watch?v=NwQKirh2dxE",
+      "metrics": {
+        "views": 4202980,
+        "likes": 72803,
+        "comments": 1475
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 4202980
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "NBV_oeNEaxw",
+      "title": "GTA 6 User Reviews Are Finally Out..",
+      "url": "https://www.youtube.com/watch?v=NBV_oeNEaxw",
+      "metrics": {
+        "views": 2781982,
+        "likes": 128543,
+        "comments": 14254
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2781982
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dSDUAAr-w_g",
+      "title": "BEATING GTA 6 *FINALE*",
+      "url": "https://www.youtube.com/watch?v=dSDUAAr-w_g",
+      "metrics": {
+        "views": 2599414,
+        "likes": 21060,
+        "comments": 243
+      },
+      "category": "22",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2599414
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Bhti3dZCtXM",
+      "title": "Does GTA 6 Live Up to the Hype",
+      "url": "https://www.youtube.com/watch?v=Bhti3dZCtXM",
+      "metrics": {
+        "views": 2597547,
+        "likes": 63454,
+        "comments": 10811
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2597547
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "tz8nh-16JWg",
+      "title": "KUNDHIYAN (official video) | RANJIT BAWA | KAPTAAN | BLACK VIRUS | NAVJIT BUTTAR | NEW PUNJABI SONGS",
+      "url": "https://www.youtube.com/watch?v=tz8nh-16JWg",
+      "metrics": {
+        "views": 2376300,
+        "likes": 39807,
+        "comments": 657
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2376300
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "UckZ7N_Zt28",
+      "title": "Diviki Diviki - January 12 Vidudala| Venkatesh,Kalyan Ram,Keerthy, Krithi| Anil Ravipudi| GV Prakash",
+      "url": "https://www.youtube.com/watch?v=UckZ7N_Zt28",
+      "metrics": {
+        "views": 2320032,
+        "likes": 20525,
+        "comments": 856
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2320032
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "IQI2qaqHFlg",
+      "title": "GiiiRIP",
+      "url": "https://www.youtube.com/watch?v=IQI2qaqHFlg",
+      "metrics": {
+        "views": 2030016,
+        "likes": 96716,
+        "comments": 8064
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 2030016
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "RtghspIPQeU",
+      "title": "GTA 6 - Best Ending (True Ending)",
+      "url": "https://www.youtube.com/watch?v=RtghspIPQeU",
+      "metrics": {
+        "views": 1972925,
+        "likes": 34515,
+        "comments": 3053
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1972925
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "eQ0LhWrcuKQ",
+      "title": "GTA 6 has turned RIDICULOUS..",
+      "url": "https://www.youtube.com/watch?v=eQ0LhWrcuKQ",
+      "metrics": {
+        "views": 1937682,
+        "likes": 53867,
+        "comments": 9412
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1937682
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "XUQ7qoZjNBA",
+      "title": "🔴LIVE | GTA 6 | DAY 2 | VICE CITY | SUPER CARS/HYPER CARS | #1 GTA 6 DRIVER | #BUNGULATE",
+      "url": "https://www.youtube.com/watch?v=XUQ7qoZjNBA",
+      "metrics": {
+        "views": 1899621,
+        "likes": 15016,
+        "comments": 79
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1899621
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rDJVx4dw848",
+      "title": "GTA 6: 20 MISTAKES YOU SHOULDN'T MAKE",
+      "url": "https://www.youtube.com/watch?v=rDJVx4dw848",
+      "metrics": {
+        "views": 1275432,
+        "likes": 18966,
+        "comments": 2002
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1275432
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AITUq3aW_8w",
+      "title": "GTA 6 | FULL GAME | PART 1",
+      "url": "https://www.youtube.com/watch?v=AITUq3aW_8w",
+      "metrics": {
+        "views": 1155486,
+        "likes": 33614,
+        "comments": 2665
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1155486
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "eD7PKEOKGDI",
+      "title": "The Day of the Jackal Season 2 | First Look Teaser | Sky",
+      "url": "https://www.youtube.com/watch?v=eD7PKEOKGDI",
+      "metrics": {
+        "views": 1122590,
+        "likes": 8135,
+        "comments": 471
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1122590
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "paML_p4sbCo",
+      "title": "This Is Why You Hate GTA 6 (rant)",
+      "url": "https://www.youtube.com/watch?v=paML_p4sbCo",
+      "metrics": {
+        "views": 1114498,
+        "likes": 46475,
+        "comments": 3699
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1114498
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "DiKc3ypdU90",
+      "title": "Final Life: Episode 4 - GUESS WHO'S BACK??",
+      "url": "https://www.youtube.com/watch?v=DiKc3ypdU90",
+      "metrics": {
+        "views": 1095834,
+        "likes": 52310,
+        "comments": 3386
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1095834
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "KePvp0-hcn0",
+      "title": "The Beatles - In My Life (Official Music Video starring Owen Cooper)",
+      "url": "https://www.youtube.com/watch?v=KePvp0-hcn0",
+      "metrics": {
+        "views": 1070981,
+        "likes": 30349,
+        "comments": 1718
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 1070981
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "y2VpDEDI_34",
+      "title": "Stealing MILLIONAIRE SUPERCARS in GTA 6",
+      "url": "https://www.youtube.com/watch?v=y2VpDEDI_34",
+      "metrics": {
+        "views": 993321,
+        "likes": 18540,
+        "comments": 1060
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 993321
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "r3oAEokOT5w",
+      "title": "15 Early Game Mistakes NOBODY Warned Me About (GTA 6)",
+      "url": "https://www.youtube.com/watch?v=r3oAEokOT5w",
+      "metrics": {
+        "views": 962034,
+        "likes": 15989,
+        "comments": 1419
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 962034
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mATQ5maJ234",
+      "title": "GTA 6 Walkthrough Gameplay Part 3 - LUCIA CAMINOS (GRAND THEFT AUTO 6)",
+      "url": "https://www.youtube.com/watch?v=mATQ5maJ234",
+      "metrics": {
+        "views": 754857,
+        "likes": 20288,
+        "comments": 1379
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 754857
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hYvK824FQK8",
+      "title": "Justice - Starting From Zero (feat. Michael McDonald) [From GTAVI]",
+      "url": "https://www.youtube.com/watch?v=hYvK824FQK8",
+      "metrics": {
+        "views": 697308,
+        "likes": 14854,
+        "comments": 1136
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 697308
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "1XE_28aP3KU",
+      "title": "Grand Theft Auto 6 keeps blowing me away...",
+      "url": "https://www.youtube.com/watch?v=1XE_28aP3KU",
+      "metrics": {
+        "views": 659347,
+        "likes": 10056,
+        "comments": 907
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 659347
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "nG5Bg9FF3WQ",
+      "title": "CG5 - I'm The Big Bad (Calling All Villains Song Animation)",
+      "url": "https://www.youtube.com/watch?v=nG5Bg9FF3WQ",
+      "metrics": {
+        "views": 630170,
+        "likes": 46780,
+        "comments": 4201
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 630170
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "p8i5SiUrpjg",
+      "title": "Quando Rondo -  HEAD GONE [Official Video]",
+      "url": "https://www.youtube.com/watch?v=p8i5SiUrpjg",
+      "metrics": {
+        "views": 614536,
+        "likes": 38302,
+        "comments": 2321
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 614536
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hI4k9ewBEFA",
+      "title": "ABSOLUTE CINEMA | Grand Theft Auto 6 - Part 3",
+      "url": "https://www.youtube.com/watch?v=hI4k9ewBEFA",
+      "metrics": {
+        "views": 612162,
+        "likes": 15847,
+        "comments": 1500
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 612162
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QPYIMFEt77Q",
+      "title": "Jerry Heil & Baby Lasagna - MEOW (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=QPYIMFEt77Q",
+      "metrics": {
+        "views": 528781,
+        "likes": 37904,
+        "comments": 2271
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 528781
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "BUNISkO5H2U",
+      "title": "FINAL LIFE: Episode 4 - KILL THEM ALL",
+      "url": "https://www.youtube.com/watch?v=BUNISkO5H2U",
+      "metrics": {
+        "views": 503527,
+        "likes": 21581,
+        "comments": 1262
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 503527
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "B1cLo1po_8M",
+      "title": "Presumed Innocent — Season 2 Official Teaser | Apple TV",
+      "url": "https://www.youtube.com/watch?v=B1cLo1po_8M",
+      "metrics": {
+        "views": 391019,
+        "likes": 2812,
+        "comments": 123
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 391019
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "o4aslcUEnoU",
+      "title": "Avengers: Doomsday: Every NEW REVEAL From the Empire Teaser",
+      "url": "https://www.youtube.com/watch?v=o4aslcUEnoU",
+      "metrics": {
+        "views": 361185,
+        "likes": 4261,
+        "comments": 440
+      },
+      "category": "1",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 361185
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "69vj42VeWHI",
+      "title": "I HATE Spider Games!",
+      "url": "https://www.youtube.com/watch?v=69vj42VeWHI",
+      "metrics": {
+        "views": 301437,
+        "likes": 11459,
+        "comments": 937
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 301437
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hJWWFu5o1Bk",
+      "title": "NEMZZZ - LAMINE YAMAL FEAT. LA PANTERA [OFFICIAL VIDEO]",
+      "url": "https://www.youtube.com/watch?v=hJWWFu5o1Bk",
+      "metrics": {
+        "views": 228794,
+        "likes": 15306,
+        "comments": 653
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 228794
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "wzVrLs7FKOo",
+      "title": "VYRMA – ENTER VALHALLA | Open the Gates ⚔️ Viking Music (LIVE)",
+      "url": "https://www.youtube.com/watch?v=wzVrLs7FKOo",
+      "metrics": {
+        "views": 218521,
+        "likes": 4128,
+        "comments": 228
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 218521
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "YtDoNL7yPaM",
+      "title": "Shaggy - Angel (Visualizer) Feat. Rayvon",
+      "url": "https://www.youtube.com/watch?v=YtDoNL7yPaM",
+      "metrics": {
+        "views": 202414,
+        "likes": 662,
+        "comments": 4
+      },
+      "category": "22",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 202414
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QM478H9bR6M",
+      "title": "Fontaines D.C. - Mimesis (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=QM478H9bR6M",
+      "metrics": {
+        "views": 189018,
+        "likes": 8349,
+        "comments": 366
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 189018
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "DxC5ICmXWes",
+      "title": "Stefflon Don Ft. French Montana - Tun Up (Official Video)",
+      "url": "https://www.youtube.com/watch?v=DxC5ICmXWes",
+      "metrics": {
+        "views": 166930,
+        "likes": 8066,
+        "comments": 429
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 166930
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "7_ikBbRq6Jg",
+      "title": "Warhammer TV Winter Season 2026 Trailer | Warhammer+",
+      "url": "https://www.youtube.com/watch?v=7_ikBbRq6Jg",
+      "metrics": {
+        "views": 165346,
+        "likes": 3073,
+        "comments": 133
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 165346
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Y-5ROMmL5ks",
+      "title": "ENHYPEN (엔하이픈) 2026 MAMA AWARDS ‘Big Girls Don’t Cry’ & ‘Knife’ Performance Practice ",
+      "url": "https://www.youtube.com/watch?v=Y-5ROMmL5ks",
+      "metrics": {
+        "views": 134031,
+        "likes": 25180,
+        "comments": 1493
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 134031
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ybJ4FXJlbfE",
+      "title": "Top Christmas Songs of All Time Playlist 🎄 Best Christmas Music 2027",
+      "url": "https://www.youtube.com/watch?v=ybJ4FXJlbfE",
+      "metrics": {
+        "views": 54373,
+        "likes": 243,
+        "comments": 7
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 54373
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9RU8E-8DE5w",
+      "title": "December 10 - Everybody's Leaving",
+      "url": "https://www.youtube.com/watch?v=9RU8E-8DE5w",
+      "metrics": {
+        "views": 47075,
+        "likes": 2992,
+        "comments": 339
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 47075
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "89UgN4QALEE",
+      "title": "Where Is The Avengers Doomsday Trailer",
+      "url": "https://www.youtube.com/watch?v=89UgN4QALEE",
+      "metrics": {
+        "views": 46487,
+        "likes": 760,
+        "comments": 98
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 46487
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mb98i3CkHfQ",
+      "title": "SLIM - MADENKA FREESTYLE (OFFICIAL MUSIC VIDEO)",
+      "url": "https://www.youtube.com/watch?v=mb98i3CkHfQ",
+      "metrics": {
+        "views": 34554,
+        "likes": 1107,
+        "comments": 55
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 34554
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "7RhgTHofKDs",
+      "title": "SpongeBob Defenders Teaser Trailer",
+      "url": "https://www.youtube.com/watch?v=7RhgTHofKDs",
+      "metrics": {
+        "views": 22165,
+        "likes": 742,
+        "comments": 205
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 22165
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9VYI5_bmWs8",
+      "title": "BOOTER BEE - SUMMERTIME [Official Music Video] #TheBuzz ",
+      "url": "https://www.youtube.com/watch?v=9VYI5_bmWs8",
+      "metrics": {
+        "views": 13105,
+        "likes": 649,
+        "comments": 49
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 13105
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "z0aJ-kzUPQc",
+      "title": "Kasst 8 - Quiddich Freestyle (Music Video)",
+      "url": "https://www.youtube.com/watch?v=z0aJ-kzUPQc",
+      "metrics": {
+        "views": 10696,
+        "likes": 771,
+        "comments": 40
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-21T12:51:15.886Z",
+      "fetchedAt": "2026-11-21T12:51:15.886Z",
+      "views": 10696
+    }
+  ],
+  "meta": {
+    "region": "GB",
+    "generatedAt": "2026-11-21T12:51:16.736Z",
+    "fetchedAt": "2026-11-21T12:51:15.886Z",
+    "videoCount": 48,
+    "cached": false,
+    "source": "render-backend"
+  }
+}

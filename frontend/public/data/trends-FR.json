@@ -1,0 +1,802 @@
+{
+  "success": true,
+  "cached": false,
+  "refreshed": true,
+  "page": 1,
+  "limit": 50,
+  "count": 49,
+  "data": [
+    {
+      "platform": "Youtube",
+      "topicId": "IQI2qaqHFlg",
+      "title": "GiiiRIP",
+      "url": "https://www.youtube.com/watch?v=IQI2qaqHFlg",
+      "metrics": {
+        "views": 2032972,
+        "likes": 96722,
+        "comments": 8064
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 2032972
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fCaoKUJOzw8",
+      "title": "VTECH : GTA est un jeu de voiture ( je vous jure )",
+      "url": "https://www.youtube.com/watch?v=fCaoKUJOzw8",
+      "metrics": {
+        "views": 1965670,
+        "likes": 54062,
+        "comments": 1635
+      },
+      "category": "2",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 1965670
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "d-02jEimDJs",
+      "title": "La fin du duo. (Ninjaxx & Nino)",
+      "url": "https://www.youtube.com/watch?v=d-02jEimDJs",
+      "metrics": {
+        "views": 921895,
+        "likes": 87809,
+        "comments": 11314
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 921895
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hYvK824FQK8",
+      "title": "Justice - Starting From Zero (feat. Michael McDonald) [From GTAVI]",
+      "url": "https://www.youtube.com/watch?v=hYvK824FQK8",
+      "metrics": {
+        "views": 697308,
+        "likes": 14855,
+        "comments": 1136
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 697308
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "deafKQUW6UY",
+      "title": "AVOIR 6 ÉTOILES DANS GTA 6",
+      "url": "https://www.youtube.com/watch?v=deafKQUW6UY",
+      "metrics": {
+        "views": 670049,
+        "likes": 10494,
+        "comments": 201
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 670049
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "5-04XKIyuFs",
+      "title": "JOUER UN JEDI",
+      "url": "https://www.youtube.com/watch?v=5-04XKIyuFs",
+      "metrics": {
+        "views": 608319,
+        "likes": 18602,
+        "comments": 857
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 608319
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rJ-qemA7wGM",
+      "title": "JE DÉCOUVRE GTA 6",
+      "url": "https://www.youtube.com/watch?v=rJ-qemA7wGM",
+      "metrics": {
+        "views": 554667,
+        "likes": 6696,
+        "comments": 88
+      },
+      "category": "24",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 554667
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jiC-FwD3KwY",
+      "title": "Dua Lipa - Go Easy (From Grand Theft Auto VI: The Album)",
+      "url": "https://www.youtube.com/watch?v=jiC-FwD3KwY",
+      "metrics": {
+        "views": 506396,
+        "likes": 10169,
+        "comments": 332
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 506396
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "wR9I5YYenGU",
+      "title": "Ninho - OCÉAN DE PROBLÈMES (Clip officiel)",
+      "url": "https://www.youtube.com/watch?v=wR9I5YYenGU",
+      "metrics": {
+        "views": 487897,
+        "likes": 28317,
+        "comments": 1802
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 487897
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "B3NulfhGaHo",
+      "title": "GTA 6 FR #2 : Lucia sort de Prison !",
+      "url": "https://www.youtube.com/watch?v=B3NulfhGaHo",
+      "metrics": {
+        "views": 426999,
+        "likes": 13930,
+        "comments": 1089
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 426999
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "eqQRPRcoIYo",
+      "title": "Go Easy (from GTAVI: The Album)",
+      "url": "https://www.youtube.com/watch?v=eqQRPRcoIYo",
+      "metrics": {
+        "views": 426905,
+        "likes": 14918,
+        "comments": 482
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 426905
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "pQ_3P-0WwvU",
+      "title": "My Moon My Man",
+      "url": "https://www.youtube.com/watch?v=pQ_3P-0WwvU",
+      "metrics": {
+        "views": 413672,
+        "likes": 14274,
+        "comments": 179
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 413672
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "V4e2-UVh5qM",
+      "title": "Ce jeu étrange Simule des Guerres entre... des Formes ?!",
+      "url": "https://www.youtube.com/watch?v=V4e2-UVh5qM",
+      "metrics": {
+        "views": 411099,
+        "likes": 11347,
+        "comments": 318
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 411099
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "XzYSliD5xlo",
+      "title": "Je Traverse TOUTE la MAP de GTA 6 !",
+      "url": "https://www.youtube.com/watch?v=XzYSliD5xlo",
+      "metrics": {
+        "views": 403663,
+        "likes": 11916,
+        "comments": 408
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 403663
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fuotWLFF3Hk",
+      "title": "L’Âge de Glace : Le Réveil du Volcan - Deuxième bande - annonce (VF) | Disney",
+      "url": "https://www.youtube.com/watch?v=fuotWLFF3Hk",
+      "metrics": {
+        "views": 313896,
+        "likes": 2450,
+        "comments": 246
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 313896
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-lZakN2jvbs",
+      "title": "JE TOMBE AMOUREUX DE LUCIA ! (GTA 6 épisode 1)",
+      "url": "https://www.youtube.com/watch?v=-lZakN2jvbs",
+      "metrics": {
+        "views": 295514,
+        "likes": 3874,
+        "comments": 94
+      },
+      "category": "24",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 295514
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "aiufcgTUMyw",
+      "title": "YUMA - BA BOYI YO Ft. TMOR (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=aiufcgTUMyw",
+      "metrics": {
+        "views": 271014,
+        "likes": 20498,
+        "comments": 1588
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 271014
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jEwsutAc29E",
+      "title": "J'ai Brisé 27 Mythes de la Base Militaire de GTA 6 !",
+      "url": "https://www.youtube.com/watch?v=jEwsutAc29E",
+      "metrics": {
+        "views": 261335,
+        "likes": 5163,
+        "comments": 152
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 261335
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "OAKhQf9TRBw",
+      "title": "GTA 6 : 17 Astuces à SAVOIR avant de Jouer ! (LE JEU NE LE DIT PAS)",
+      "url": "https://www.youtube.com/watch?v=OAKhQf9TRBw",
+      "metrics": {
+        "views": 220090,
+        "likes": 3126,
+        "comments": 156
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 220090
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "KKoFpW2kA1E",
+      "title": "Grand Theft Auto VI (GTA 6), partie 2 - Rediffusion Squeezie du 18/11",
+      "url": "https://www.youtube.com/watch?v=KKoFpW2kA1E",
+      "metrics": {
+        "views": 188277,
+        "likes": 2447,
+        "comments": 174
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 188277
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "wJrstN7vQSM",
+      "title": "ON VA ENFIN RETROUVER LUCIA ! (Let's Play GTA VI) #2",
+      "url": "https://www.youtube.com/watch?v=wJrstN7vQSM",
+      "metrics": {
+        "views": 116145,
+        "likes": 1186,
+        "comments": 61
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 116145
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "XqS8rQkRRjM",
+      "title": "S’ÉCHAPPER DE PRISON AVEC UN CURE-DENT !!",
+      "url": "https://www.youtube.com/watch?v=XqS8rQkRRjM",
+      "metrics": {
+        "views": 113703,
+        "likes": 2293,
+        "comments": 86
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 113703
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Spf-t8mUdfE",
+      "title": "Bouss - Hypnotisé (Clip officiel)",
+      "url": "https://www.youtube.com/watch?v=Spf-t8mUdfE",
+      "metrics": {
+        "views": 113314,
+        "likes": 2936,
+        "comments": 118
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 113314
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "4Y7yl4azHM8",
+      "title": "HUGGY WUGGY dans Hello Neighbor… (Je suis cuit)",
+      "url": "https://www.youtube.com/watch?v=4Y7yl4azHM8",
+      "metrics": {
+        "views": 112929,
+        "likes": 5765,
+        "comments": 295
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 112929
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "gbvOCSkGAkQ",
+      "title": "L'ÂGE DE GLACE : LE RÉVEIL DU VOLCAN Bande Annonce VF (2027) Disney",
+      "url": "https://www.youtube.com/watch?v=gbvOCSkGAkQ",
+      "metrics": {
+        "views": 100901,
+        "likes": 1575,
+        "comments": 75
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 100901
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "owEM7nTd4dw",
+      "title": "GTA 6 - Ne TERMINER PAS Le Chapitre 1 Avant D'Avoir Fait Ceci",
+      "url": "https://www.youtube.com/watch?v=owEM7nTd4dw",
+      "metrics": {
+        "views": 89032,
+        "likes": 1843,
+        "comments": 103
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 89032
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "b27bgkDoXio",
+      "title": "NE T’APPROCHE PAS De Cet ARBRE VIVANT LA NUIT !",
+      "url": "https://www.youtube.com/watch?v=b27bgkDoXio",
+      "metrics": {
+        "views": 73706,
+        "likes": 1196,
+        "comments": 27
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 73706
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "w8W_X9ZniWg",
+      "title": "MiiMii KDS Feat. LeJuh & PYROMAN - TTN (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=w8W_X9ZniWg",
+      "metrics": {
+        "views": 71366,
+        "likes": 3953,
+        "comments": 126
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 71366
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fexoBBUB50M",
+      "title": "J'ai ORGANISÉ le plus gros TOURNOI Minecraft français... (voici ce qu'il s'est passé)",
+      "url": "https://www.youtube.com/watch?v=fexoBBUB50M",
+      "metrics": {
+        "views": 67477,
+        "likes": 2737,
+        "comments": 106
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 67477
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "G-PM75UMIzg",
+      "title": "Grand Corps Malade en duo avec Mentissa \"Ça ira\" (Vidéo Studio Officielle)",
+      "url": "https://www.youtube.com/watch?v=G-PM75UMIzg",
+      "metrics": {
+        "views": 66448,
+        "likes": 2158,
+        "comments": 87
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 66448
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "uZsqEH7Vzto",
+      "title": "97 HOOD - Lé Will & Deuspi (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=uZsqEH7Vzto",
+      "metrics": {
+        "views": 65248,
+        "likes": 3150,
+        "comments": 182
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 65248
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "5IYRp-_mUKE",
+      "title": "Pomme - lumière bleue (clip officiel)",
+      "url": "https://www.youtube.com/watch?v=5IYRp-_mUKE",
+      "metrics": {
+        "views": 61757,
+        "likes": 1971,
+        "comments": 125
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 61757
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "E65kSBlgj5w",
+      "title": "GTA 6 : 13 véhicules SECRETS et ULTRA RARES (Localisation)",
+      "url": "https://www.youtube.com/watch?v=E65kSBlgj5w",
+      "metrics": {
+        "views": 61625,
+        "likes": 1348,
+        "comments": 33
+      },
+      "category": "22",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 61625
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AYDpBHL95HQ",
+      "title": "Anouk - Volte-face (Visualizer officiel)",
+      "url": "https://www.youtube.com/watch?v=AYDpBHL95HQ",
+      "metrics": {
+        "views": 55897,
+        "likes": 3512,
+        "comments": 210
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 55897
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "MbpCHt6QGGM",
+      "title": "Sdk",
+      "url": "https://www.youtube.com/watch?v=MbpCHt6QGGM",
+      "metrics": {
+        "views": 48558,
+        "likes": 1907,
+        "comments": 67
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 48558
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "D2tqb1XP_FM",
+      "title": "Déçu",
+      "url": "https://www.youtube.com/watch?v=D2tqb1XP_FM",
+      "metrics": {
+        "views": 45165,
+        "likes": 2121,
+        "comments": 32
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 45165
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zqpZgwpuyPQ",
+      "title": "KODES - OPPS 2 (CLIP OFFICIEL)",
+      "url": "https://www.youtube.com/watch?v=zqpZgwpuyPQ",
+      "metrics": {
+        "views": 44453,
+        "likes": 3292,
+        "comments": 212
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 44453
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "N8xqBnwMBvE",
+      "title": "Darkest Dungeon II: The Butcher's Asylum Gameplay Trailer",
+      "url": "https://www.youtube.com/watch?v=N8xqBnwMBvE",
+      "metrics": {
+        "views": 36231,
+        "likes": 3051,
+        "comments": 276
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 36231
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rA1szSwEg7g",
+      "title": "Djilu Di Djinha - CHAPA VERDE [OFFICIAL VIDEO 4K 2026]",
+      "url": "https://www.youtube.com/watch?v=rA1szSwEg7g",
+      "metrics": {
+        "views": 35742,
+        "likes": 884,
+        "comments": 95
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 35742
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "OEUdW0lqaXg",
+      "title": "Meryl - Bobo feat. Lamasa (prod by Natoxie)",
+      "url": "https://www.youtube.com/watch?v=OEUdW0lqaXg",
+      "metrics": {
+        "views": 34423,
+        "likes": 1715,
+        "comments": 44
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 34423
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "yYdpkUYyWB8",
+      "title": "Alkpote - Wang Yu (Clip officiel)",
+      "url": "https://www.youtube.com/watch?v=yYdpkUYyWB8",
+      "metrics": {
+        "views": 23861,
+        "likes": 1301,
+        "comments": 189
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 23861
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mfKgOfydcew",
+      "title": "Ma préférée",
+      "url": "https://www.youtube.com/watch?v=mfKgOfydcew",
+      "metrics": {
+        "views": 18861,
+        "likes": 1010,
+        "comments": 27
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 18861
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "_19wJzo5reE",
+      "title": "Bande-annonce : la semaine du 23 au 27 novembre 2026",
+      "url": "https://www.youtube.com/watch?v=_19wJzo5reE",
+      "metrics": {
+        "views": 15554,
+        "likes": 116,
+        "comments": 6
+      },
+      "category": "24",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 15554
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "vybNd5lUEQE",
+      "title": "NOUVELLE ANIMATION ET BACK TO BACK ?! DUEL INVOCATION 80 000 CC BEAST ULTRA & GOGETA 4 LR",
+      "url": "https://www.youtube.com/watch?v=vybNd5lUEQE",
+      "metrics": {
+        "views": 14881,
+        "likes": 1042,
+        "comments": 54
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 14881
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "gEUc_a7n5sE",
+      "title": "FREE-B x @Merveille_music  - ON M'APPELLE",
+      "url": "https://www.youtube.com/watch?v=gEUc_a7n5sE",
+      "metrics": {
+        "views": 13233,
+        "likes": 958,
+        "comments": 31
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 13233
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "laqQ0EbIB9w",
+      "title": "💎 NOUVELLE ANIMATION !! 80 000 CC DUEL INVOCATIONS GOGETA 4/BEAST AVEC FITZ ! LEGENDS FESTIVAL",
+      "url": "https://www.youtube.com/watch?v=laqQ0EbIB9w",
+      "metrics": {
+        "views": 11093,
+        "likes": 746,
+        "comments": 36
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 11093
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QXSjqiMD85Q",
+      "title": "FRISCO KING Bande Annonce VF (2026) Samuel L. Jackson",
+      "url": "https://www.youtube.com/watch?v=QXSjqiMD85Q",
+      "metrics": {
+        "views": 7007,
+        "likes": 56,
+        "comments": 0
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 7007
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AQwBKdn3YMg",
+      "title": "Ninao - Afrox (Acharuli Gandagana)",
+      "url": "https://www.youtube.com/watch?v=AQwBKdn3YMg",
+      "metrics": {
+        "views": 6599,
+        "likes": 592,
+        "comments": 23
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 6599
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "eMSClvTCOqg",
+      "title": "Le Pape en France, au coeur d'un voyage historique - Bande-annonce",
+      "url": "https://www.youtube.com/watch?v=eMSClvTCOqg",
+      "metrics": {
+        "views": 4772,
+        "likes": 116,
+        "comments": 0
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-21T12:51:24.518Z",
+      "fetchedAt": "2026-11-21T12:51:24.518Z",
+      "views": 4772
+    }
+  ],
+  "meta": {
+    "region": "FR",
+    "generatedAt": "2026-11-21T12:51:25.135Z",
+    "fetchedAt": "2026-11-21T12:51:24.518Z",
+    "videoCount": 49,
+    "cached": false,
+    "source": "render-backend"
+  }
+}
