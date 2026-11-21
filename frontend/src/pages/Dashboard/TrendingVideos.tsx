@@ -6,6 +6,7 @@ import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
 import FilterBar from "../../components/Dashboard/FilterBar";
 import { Skeleton } from "../../components/ui/skeleton";
 import { Button } from "../../components/ui/button";
+import StaleDataBanner from "../../components/Dashboard/StaleDataBanner";
 import { ChevronLeft, ChevronRight, Menu } from "lucide-react";
 
 // Helper function to format large numbers
@@ -46,7 +47,21 @@ function TrendingVideos() {
     }
   }, [searchParams]);
 
-  const { data, isLoading, error } = useTrends(selectedRegion);
+  const {
+    data,
+    isLoading,
+    error,
+    refetch,
+    isFetching,
+    dataUpdatedAt,
+  } = useTrends(selectedRegion);
+
+  // Keep usable data on screen when the latest live fetch failed, and warn
+  // subtly instead of replacing the dashboard with an error screen.
+  const showStaleNotice = !!data && !!error;
+  const staleTimestamp =
+    data?.meta?.generatedAt ??
+    (dataUpdatedAt > 0 ? new Date(dataUpdatedAt).toISOString() : null);
 
   // Transform and filter data
   const processedVideos = useMemo(() => {
@@ -143,7 +158,8 @@ function TrendingVideos() {
     );
   }
 
-  if (error) {
+  // Error state — only when there is no usable data to show
+  if (error && !data) {
     return (
       <div className="p-8">
         <div className="max-w-7xl mx-auto">
@@ -180,6 +196,15 @@ function TrendingVideos() {
             {selectedRegion}
           </p>
         </div>
+
+        {/* Subtle notice when the latest live fetch failed but data is shown */}
+        {showStaleNotice && (
+          <StaleDataBanner
+            timestamp={staleTimestamp}
+            onRetry={refetch}
+            isRetrying={isFetching}
+          />
+        )}
 
         {/* Filters */}
         <FilterBar

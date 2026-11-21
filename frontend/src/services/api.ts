@@ -37,6 +37,9 @@ export interface TrendsResponse {
     limit: number
     count: number
     data: BackendVideo[]
+    // Present only on data hydrated from a Phase 1 static snapshot; live
+    // backend responses never include it
+    meta?: TrendSnapshotMeta
 }
 
 export interface CategoryResponse {
@@ -114,9 +117,7 @@ export interface TrendSnapshotMeta {
     source: string
 }
 
-export interface TrendSnapshot extends TrendsResponse {
-    meta?: TrendSnapshotMeta
-}
+export type TrendSnapshot = TrendsResponse
 
 // Root-relative so it works on the production domain, Vercel preview
 // deployments and the Vite dev server alike (SPA routes like

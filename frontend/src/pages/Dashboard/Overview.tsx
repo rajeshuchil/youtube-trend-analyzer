@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { useTrends, useRefreshTrends } from "../../hooks/useTrends";
 import { useAIChat } from "../../hooks/useAIChat";
+import StaleDataBanner from "../../components/Dashboard/StaleDataBanner";
 
 // Helper function to format large numbers
 function formatNumber(num: number): string {
@@ -39,7 +40,14 @@ function Dashboard() {
   } | null>(null);
 
   // Fetch trends data
-  const { data, isLoading, error } = useTrends(selectedRegion);
+  const {
+    data,
+    isLoading,
+    error,
+    refetch,
+    isFetching,
+    dataUpdatedAt,
+  } = useTrends(selectedRegion);
   const refreshMutation = useRefreshTrends();
 
   // AI Chat hook
@@ -178,6 +186,21 @@ function Dashboard() {
     refreshMutation.mutate(selectedRegion);
   };
 
+  // Usable data (snapshot or cached live response) is on display while the
+  // latest live attempt failed — keep the dashboard and warn subtly instead
+  // of swapping it for an error screen. Covers both the background query and
+  // the header's force-refresh button failing.
+  const showStaleNotice =
+    !!data && (!!error || refreshMutation.isError);
+  const staleTimestamp =
+    data?.meta?.generatedAt ??
+    (dataUpdatedAt > 0 ? new Date(dataUpdatedAt).toISOString() : null);
+
+  const handleStaleRetry = () => {
+    refreshMutation.reset();
+    refetch();
+  };
+
   // Loading state
   if (isLoading) {
     return (
@@ -201,8 +224,9 @@ function Dashboard() {
     );
   }
 
-  // Error state
-  if (error) {
+  // Error state — only when there is no usable data to show. With usable
+  // data, the dashboard renders below with a StaleDataBanner notice.
+  if (error && !data) {
     const errorMessage = error.message || "Unable to fetch trending videos";
     const isColdStart =
       errorMessage.includes("timeout") || errorMessage.includes("starting up");
@@ -283,6 +307,15 @@ function Dashboard() {
 
       <div className="p-4 md:p-8 overflow-y-auto">
         <div className="max-w-7xl mx-auto">
+          {/* Subtle notice when the latest live fetch failed but data is shown */}
+          {showStaleNotice && (
+            <StaleDataBanner
+              timestamp={staleTimestamp}
+              onRetry={handleStaleRetry}
+              isRetrying={isFetching}
+            />
+          )}
+
           {/* Metric Cards */}
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-8">
             <MetricCard

@@ -4,6 +4,7 @@ import { useTrends } from "../../hooks/useTrends";
 import CategoryCard from "../../components/Dashboard/CategoryCard";
 import RegionFilter from "../../components/Dashboard/RegionFilter";
 import VideoPlayerModal from "../../components/Dashboard/VideoPlayerModal";
+import StaleDataBanner from "../../components/Dashboard/StaleDataBanner";
 import { Skeleton } from "../../components/ui/skeleton";
 import { Menu } from "lucide-react";
 
@@ -32,7 +33,21 @@ function Categories() {
     id: string;
     title: string;
   } | null>(null);
-  const { data, isLoading, error } = useTrends(selectedRegion);
+  const {
+    data,
+    isLoading,
+    error,
+    refetch,
+    isFetching,
+    dataUpdatedAt,
+  } = useTrends(selectedRegion);
+
+  // Keep usable data on screen when the latest live fetch failed, and warn
+  // subtly instead of replacing the dashboard with an error screen.
+  const showStaleNotice = !!data && !!error;
+  const staleTimestamp =
+    data?.meta?.generatedAt ??
+    (dataUpdatedAt > 0 ? new Date(dataUpdatedAt).toISOString() : null);
 
   // Process category data
   const categoryStats = useMemo(() => {
@@ -137,7 +152,8 @@ function Categories() {
     );
   }
 
-  if (error) {
+  // Error state — only when there is no usable data to show
+  if (error && !data) {
     return (
       <div className="p-8">
         <div className="max-w-7xl mx-auto">
@@ -177,6 +193,15 @@ function Categories() {
             in {selectedRegion}
           </p>
         </div>
+
+        {/* Subtle notice when the latest live fetch failed but data is shown */}
+        {showStaleNotice && (
+          <StaleDataBanner
+            timestamp={staleTimestamp}
+            onRetry={refetch}
+            isRetrying={isFetching}
+          />
+        )}
 
         {/* Category Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
