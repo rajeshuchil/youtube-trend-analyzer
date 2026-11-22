@@ -4,7 +4,7 @@
   "refreshed": true,
   "page": 1,
   "limit": 50,
-  "count": 50,
+  "count": 49,
   "data": [
     {
       "platform": "Youtube",
@@ -12,15 +12,15 @@
       "title": "Yeh Prem Mol Liya – Official Trailer | Ayushmann, Sharvari, Sooraj Barjatya | Himesh Reshammiya",
       "url": "https://www.youtube.com/watch?v=vdhNar4uxm4",
       "metrics": {
-        "views": 37414425,
-        "likes": 56948,
-        "comments": 10708
+        "views": 38300822,
+        "likes": 58589,
+        "comments": 10913
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 37414425
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 38300822
     },
     {
       "platform": "Youtube",
@@ -28,15 +28,15 @@
       "title": "Whatever You Steal in GTA 6, You Keep!",
       "url": "https://www.youtube.com/watch?v=QQV-0OUGxGs",
       "metrics": {
-        "views": 18330891,
-        "likes": 251754,
-        "comments": 7921
+        "views": 31413784,
+        "likes": 368651,
+        "comments": 10032
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 18330891
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 31413784
     },
     {
       "platform": "Youtube",
@@ -44,31 +44,15 @@
       "title": "The Comeback King | Official Trailer",
       "url": "https://www.youtube.com/watch?v=dlpxXcC8nPk",
       "metrics": {
-        "views": 11558276,
-        "likes": 7243,
-        "comments": 324
+        "views": 13604582,
+        "likes": 7721,
+        "comments": 341
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 11558276
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "YDNs_sPEcJc",
-      "title": "GTA 6 Gameplay Walkthrough Part 1 FULL GAME [4K PS5 PRO] - No Commentary",
-      "url": "https://www.youtube.com/watch?v=YDNs_sPEcJc",
-      "metrics": {
-        "views": 10928621,
-        "likes": 103526,
-        "comments": 11369
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 10928621
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 13604582
     },
     {
       "platform": "Youtube",
@@ -76,47 +60,31 @@
       "title": "Artificial - Official Trailer - In Select Theaters Christmas Day, Everywhere January 8",
       "url": "https://www.youtube.com/watch?v=ufeJbTNq-BI",
       "metrics": {
-        "views": 10410333,
-        "likes": 25858,
-        "comments": 1222
+        "views": 12696541,
+        "likes": 28765,
+        "comments": 1358
       },
       "category": "1",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 10410333
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 12696541
     },
     {
       "platform": "Youtube",
-      "topicId": "6E2cBXFCDyQ",
-      "title": "GTA 6 - Stealing a Jet From the Military Base",
-      "url": "https://www.youtube.com/watch?v=6E2cBXFCDyQ",
+      "topicId": "YDNs_sPEcJc",
+      "title": "GTA 6 Gameplay Walkthrough Part 1 FULL GAME [4K PS5 PRO] - No Commentary",
+      "url": "https://www.youtube.com/watch?v=YDNs_sPEcJc",
       "metrics": {
-        "views": 9515533,
-        "likes": 53620,
-        "comments": 2008
+        "views": 11605585,
+        "likes": 107121,
+        "comments": 11609
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 9515533
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "rQLEb0W7REo",
-      "title": "GTA 6 Walkthrough Gameplay Part 1 - INTRO (GRAND THEFT AUTO 6)",
-      "url": "https://www.youtube.com/watch?v=rQLEb0W7REo",
-      "metrics": {
-        "views": 8851411,
-        "likes": 189351,
-        "comments": 13673
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 8851411
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 11605585
     },
     {
       "platform": "Youtube",
@@ -124,15 +92,31 @@
       "title": "THE NIGHTINGALE – Official Teaser Trailer (4K)",
       "url": "https://www.youtube.com/watch?v=gNHr2-JjKRM",
       "metrics": {
-        "views": 8487361,
-        "likes": 16490,
-        "comments": 860
+        "views": 11585868,
+        "likes": 17969,
+        "comments": 914
       },
       "category": "1",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 8487361
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 11585868
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "6E2cBXFCDyQ",
+      "title": "GTA 6 - Stealing a Jet From the Military Base",
+      "url": "https://www.youtube.com/watch?v=6E2cBXFCDyQ",
+      "metrics": {
+        "views": 10366105,
+        "likes": 58510,
+        "comments": 2202
+      },
+      "category": "20",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 10366105
     },
     {
       "platform": "Youtube",
@@ -140,79 +124,15 @@
       "title": "Why GTA is a Bigger Deal Than You Think",
       "url": "https://www.youtube.com/watch?v=NrF4mkTmuTU",
       "metrics": {
-        "views": 8239442,
-        "likes": 103562,
-        "comments": 4257
+        "views": 9287885,
+        "likes": 112986,
+        "comments": 4692
       },
       "category": "28",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 8239442
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Fg0jyss_YnU",
-      "title": "Avengers: Doomsday | The Return | In Theaters December 18",
-      "url": "https://www.youtube.com/watch?v=Fg0jyss_YnU",
-      "metrics": {
-        "views": 7925843,
-        "likes": 141144,
-        "comments": 6460
-      },
-      "category": "24",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 7925843
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "vVVIWEGciKk",
-      "title": "GTA 6 - Before You Buy",
-      "url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
-      "metrics": {
-        "views": 5920106,
-        "likes": 107431,
-        "comments": 13951
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 5920106
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "wAFHBHXUzWE",
-      "title": "Frisco King | Official Trailer | Paramount+",
-      "url": "https://www.youtube.com/watch?v=wAFHBHXUzWE",
-      "metrics": {
-        "views": 5897811,
-        "likes": 10240,
-        "comments": 508
-      },
-      "category": "24",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 5897811
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "A_H1EH6p4A0",
-      "title": "CL - ‘ICONIC’ M/V",
-      "url": "https://www.youtube.com/watch?v=A_H1EH6p4A0",
-      "metrics": {
-        "views": 5753786,
-        "likes": 0,
-        "comments": 4966
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 5753786
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 9287885
     },
     {
       "platform": "Youtube",
@@ -220,31 +140,47 @@
       "title": "NAYEON “BABY ANGEL” M/V",
       "url": "https://www.youtube.com/watch?v=0JQ9k6kcKVs",
       "metrics": {
-        "views": 5333468,
-        "likes": 180057,
-        "comments": 15228
+        "views": 8510000,
+        "likes": 201223,
+        "comments": 16820
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 5333468
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 8510000
     },
     {
       "platform": "Youtube",
-      "topicId": "LJC7mgjp5FQ",
-      "title": "Taylor Swift - I Knew It, I Knew You x Our Song (Live From The 60th CMA Awards)",
-      "url": "https://www.youtube.com/watch?v=LJC7mgjp5FQ",
+      "topicId": "Fg0jyss_YnU",
+      "title": "Avengers: Doomsday | The Return | In Theaters December 18",
+      "url": "https://www.youtube.com/watch?v=Fg0jyss_YnU",
       "metrics": {
-        "views": 5036882,
-        "likes": 116103,
-        "comments": 4192
+        "views": 8196000,
+        "likes": 142689,
+        "comments": 6509
+      },
+      "category": "24",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 8196000
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "A_H1EH6p4A0",
+      "title": "CL - ‘ICONIC’ M/V",
+      "url": "https://www.youtube.com/watch?v=A_H1EH6p4A0",
+      "metrics": {
+        "views": 7307493,
+        "likes": 0,
+        "comments": 5384
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 5036882
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 7307493
     },
     {
       "platform": "Youtube",
@@ -252,15 +188,47 @@
       "title": "Testing Everything In GTA 6",
       "url": "https://www.youtube.com/watch?v=NwQKirh2dxE",
       "metrics": {
-        "views": 4202980,
-        "likes": 72804,
-        "comments": 1475
+        "views": 5649730,
+        "likes": 88277,
+        "comments": 1671
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 4202980
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 5649730
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "LJC7mgjp5FQ",
+      "title": "Taylor Swift - I Knew It, I Knew You x Our Song (Live From The 60th CMA Awards)",
+      "url": "https://www.youtube.com/watch?v=LJC7mgjp5FQ",
+      "metrics": {
+        "views": 5632188,
+        "likes": 122765,
+        "comments": 4485
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 5632188
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "UckZ7N_Zt28",
+      "title": "Diviki Diviki - January 12 Vidudala| Venkatesh,Kalyan Ram,Keerthy, Krithi| Anil Ravipudi| GV Prakash",
+      "url": "https://www.youtube.com/watch?v=UckZ7N_Zt28",
+      "metrics": {
+        "views": 4999535,
+        "likes": 35556,
+        "comments": 1373
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 4999535
     },
     {
       "platform": "Youtube",
@@ -268,47 +236,15 @@
       "title": "LISA - Leave With Me (Featured in Always Lalisa) (Official Music Video)",
       "url": "https://www.youtube.com/watch?v=M8fO5lQpfrc",
       "metrics": {
-        "views": 3955578,
-        "likes": 209752,
-        "comments": 14131
+        "views": 4485049,
+        "likes": 215903,
+        "comments": 14339
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 3955578
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Wd-vKw3XYP0",
-      "title": "Grand Theft Auto 6 Gameplay and Impressions...",
-      "url": "https://www.youtube.com/watch?v=Wd-vKw3XYP0",
-      "metrics": {
-        "views": 3312943,
-        "likes": 28998,
-        "comments": 3106
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 3312943
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "dUYIMa2ifWM",
-      "title": "GTA 6 WTF and Funny Moments! #2",
-      "url": "https://www.youtube.com/watch?v=dUYIMa2ifWM",
-      "metrics": {
-        "views": 3204620,
-        "likes": 22205,
-        "comments": 1123
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 3204620
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 4485049
     },
     {
       "platform": "Youtube",
@@ -316,63 +252,15 @@
       "title": "GTA 6 User Reviews Are Finally Out..",
       "url": "https://www.youtube.com/watch?v=NBV_oeNEaxw",
       "metrics": {
-        "views": 2781982,
-        "likes": 128548,
-        "comments": 14254
+        "views": 4077437,
+        "likes": 140267,
+        "comments": 17927
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2781982
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Bhti3dZCtXM",
-      "title": "Does GTA 6 Live Up to the Hype",
-      "url": "https://www.youtube.com/watch?v=Bhti3dZCtXM",
-      "metrics": {
-        "views": 2597547,
-        "likes": 63461,
-        "comments": 10813
-      },
-      "category": "24",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2597547
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "AIvSTjArIZo",
-      "title": "Do GTA 6 NPCs Actually Have Lives?",
-      "url": "https://www.youtube.com/watch?v=AIvSTjArIZo",
-      "metrics": {
-        "views": 2431242,
-        "likes": 35097,
-        "comments": 3038
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2431242
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ZwgCqyp6reY",
-      "title": "Mike Posner - I Took A Pill In Ibiza (Akmalov & Lynoria Cover) 2026",
-      "url": "https://www.youtube.com/watch?v=ZwgCqyp6reY",
-      "metrics": {
-        "views": 2425497,
-        "likes": 2824,
-        "comments": 33
-      },
-      "category": "22",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2425497
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 4077437
     },
     {
       "platform": "Youtube",
@@ -380,47 +268,79 @@
       "title": "KUNDHIYAN (official video) | RANJIT BAWA | KAPTAAN | BLACK VIRUS | NAVJIT BUTTAR | NEW PUNJABI SONGS",
       "url": "https://www.youtube.com/watch?v=tz8nh-16JWg",
       "metrics": {
-        "views": 2376300,
-        "likes": 39807,
-        "comments": 657
+        "views": 3872236,
+        "likes": 56910,
+        "comments": 779
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2376300
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 3872236
     },
     {
       "platform": "Youtube",
-      "topicId": "7wVufXnZ64A",
-      "title": "FOR THE BROS (OFFICAL VIDEO) TARSEM JASSAR & KULBIR JHINJER | RASS | LATEST PUNJABI SONG",
-      "url": "https://www.youtube.com/watch?v=7wVufXnZ64A",
+      "topicId": "4RqYHJmmmuw",
+      "title": "The GTA 6 backlash is getting out of hand..",
+      "url": "https://www.youtube.com/watch?v=4RqYHJmmmuw",
       "metrics": {
-        "views": 2348147,
-        "likes": 16568,
-        "comments": 1272
+        "views": 3869417,
+        "likes": 82143,
+        "comments": 23359
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2348147
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 3869417
     },
     {
       "platform": "Youtube",
-      "topicId": "FaTbU3CB_zE",
-      "title": "OUR LAST GTA V VIDEO",
-      "url": "https://www.youtube.com/watch?v=FaTbU3CB_zE",
+      "topicId": "Bhti3dZCtXM",
+      "title": "Does GTA 6 Live Up to the Hype",
+      "url": "https://www.youtube.com/watch?v=Bhti3dZCtXM",
       "metrics": {
-        "views": 2234110,
-        "likes": 65141,
-        "comments": 2571
+        "views": 3495078,
+        "likes": 79082,
+        "comments": 13149
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2234110
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 3495078
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AIvSTjArIZo",
+      "title": "Do GTA 6 NPCs Actually Have Lives?",
+      "url": "https://www.youtube.com/watch?v=AIvSTjArIZo",
+      "metrics": {
+        "views": 3084923,
+        "likes": 46535,
+        "comments": 3773
+      },
+      "category": "20",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 3084923
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "GMZzFJsf844",
+      "title": "GTA 6 WTF and Funny Moments! #3",
+      "url": "https://www.youtube.com/watch?v=GMZzFJsf844",
+      "metrics": {
+        "views": 2768047,
+        "likes": 15306,
+        "comments": 878
+      },
+      "category": "20",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 2768047
     },
     {
       "platform": "Youtube",
@@ -428,31 +348,63 @@
       "title": "GiiiRIP",
       "url": "https://www.youtube.com/watch?v=IQI2qaqHFlg",
       "metrics": {
-        "views": 2032972,
-        "likes": 96722,
-        "comments": 8064
+        "views": 2565129,
+        "likes": 107973,
+        "comments": 8469
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 2032972
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 2565129
     },
     {
       "platform": "Youtube",
-      "topicId": "eQ0LhWrcuKQ",
-      "title": "GTA 6 has turned RIDICULOUS..",
-      "url": "https://www.youtube.com/watch?v=eQ0LhWrcuKQ",
+      "topicId": "7wVufXnZ64A",
+      "title": "FOR THE BROS (OFFICAL VIDEO) TARSEM JASSAR & KULBIR JHINJER | RASS | LATEST PUNJABI SONG",
+      "url": "https://www.youtube.com/watch?v=7wVufXnZ64A",
       "metrics": {
-        "views": 1937682,
-        "likes": 53868,
-        "comments": 9412
+        "views": 2462781,
+        "likes": 17393,
+        "comments": 1300
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 2462781
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AITUq3aW_8w",
+      "title": "GTA 6 | FULL GAME | PART 1",
+      "url": "https://www.youtube.com/watch?v=AITUq3aW_8w",
+      "metrics": {
+        "views": 2426361,
+        "likes": 54867,
+        "comments": 3907
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1937682
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 2426361
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ub7aZWE94Cs",
+      "title": "GTA 6 Is The Worst...",
+      "url": "https://www.youtube.com/watch?v=ub7aZWE94Cs",
+      "metrics": {
+        "views": 2162551,
+        "likes": 109465,
+        "comments": 8050
+      },
+      "category": "1",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 2162551
     },
     {
       "platform": "Youtube",
@@ -460,47 +412,31 @@
       "title": "Rammstein - Live in Mexico City - Du Hast (Official Video)",
       "url": "https://www.youtube.com/watch?v=9OHE71sGjiU",
       "metrics": {
-        "views": 1530121,
-        "likes": 46085,
+        "views": 1884501,
+        "likes": 51023,
         "comments": 0
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1530121
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1884501
     },
     {
       "platform": "Youtube",
-      "topicId": "cJRsJQMAVYY",
-      "title": "LITTLEFOOT | Official Trailer | Land Before Time Reimagining",
-      "url": "https://www.youtube.com/watch?v=cJRsJQMAVYY",
+      "topicId": "rDJVx4dw848",
+      "title": "GTA 6: 20 MISTAKES YOU SHOULDN'T MAKE",
+      "url": "https://www.youtube.com/watch?v=rDJVx4dw848",
       "metrics": {
-        "views": 1407917,
-        "likes": 32617,
-        "comments": 3824
-      },
-      "category": "24",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1407917
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "cqZ-7Z0zp5k",
-      "title": "Warzone is back... but at what cost?",
-      "url": "https://www.youtube.com/watch?v=cqZ-7Z0zp5k",
-      "metrics": {
-        "views": 1209645,
-        "likes": 40373,
-        "comments": 1265
+        "views": 1710611,
+        "likes": 24330,
+        "comments": 2521
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1209645
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1710611
     },
     {
       "platform": "Youtube",
@@ -508,31 +444,31 @@
       "title": "The Day of the Jackal Season 2 | First Look Teaser | Sky",
       "url": "https://www.youtube.com/watch?v=eD7PKEOKGDI",
       "metrics": {
-        "views": 1122590,
-        "likes": 8135,
-        "comments": 471
+        "views": 1691173,
+        "likes": 9064,
+        "comments": 503
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1122590
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1691173
     },
     {
       "platform": "Youtube",
-      "topicId": "5GB00NsVH3Q",
-      "title": "Twilight (But Better) Teaser Trailer",
-      "url": "https://www.youtube.com/watch?v=5GB00NsVH3Q",
+      "topicId": "cJRsJQMAVYY",
+      "title": "LITTLEFOOT | Official Trailer | Land Before Time Reimagining",
+      "url": "https://www.youtube.com/watch?v=cJRsJQMAVYY",
       "metrics": {
-        "views": 1100307,
-        "likes": 68240,
-        "comments": 2128
+        "views": 1604503,
+        "likes": 36034,
+        "comments": 4200
       },
-      "category": "23",
+      "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1100307
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1604503
     },
     {
       "platform": "Youtube",
@@ -540,95 +476,31 @@
       "title": "Final Life: Episode 4 - GUESS WHO'S BACK??",
       "url": "https://www.youtube.com/watch?v=DiKc3ypdU90",
       "metrics": {
-        "views": 1097515,
-        "likes": 52315,
-        "comments": 3386
+        "views": 1460717,
+        "likes": 63875,
+        "comments": 3876
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1097515
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1460717
     },
     {
       "platform": "Youtube",
-      "topicId": "KePvp0-hcn0",
-      "title": "The Beatles - In My Life (Official Music Video starring Owen Cooper)",
-      "url": "https://www.youtube.com/watch?v=KePvp0-hcn0",
+      "topicId": "vunYsm7gV9s",
+      "title": "SIDEMEN AMONG US GTA 6 EDITION",
+      "url": "https://www.youtube.com/watch?v=vunYsm7gV9s",
       "metrics": {
-        "views": 1070981,
-        "likes": 30350,
-        "comments": 1718
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1070981
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "zGhJeLMIhbk",
-      "title": "3 IDIOTS TRY TO CHEAT DEATH | The Cabin Game",
-      "url": "https://www.youtube.com/watch?v=zGhJeLMIhbk",
-      "metrics": {
-        "views": 1029298,
-        "likes": 30187,
-        "comments": 1022
-      },
-      "category": "20",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 1029298
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "akiAh12Vt-U",
-      "title": "Jamie Miller - Babydoll (Lyrics)",
-      "url": "https://www.youtube.com/watch?v=akiAh12Vt-U",
-      "metrics": {
-        "views": 789768,
-        "likes": 3569,
-        "comments": 71
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 789768
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "5cK2fXepkoU",
-      "title": "Ted: The Animated Series | Official Trailer | Peacock Original",
-      "url": "https://www.youtube.com/watch?v=5cK2fXepkoU",
-      "metrics": {
-        "views": 731491,
-        "likes": 18590,
-        "comments": 2389
+        "views": 1339963,
+        "likes": 34024,
+        "comments": 1468
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 731491
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "gcktQGI5PzI",
-      "title": "Lainey Wilson - Just A Woman (Live from \"The 60th Annual CMA Awards\")",
-      "url": "https://www.youtube.com/watch?v=gcktQGI5PzI",
-      "metrics": {
-        "views": 730678,
-        "likes": 9272,
-        "comments": 636
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 730678
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1339963
     },
     {
       "platform": "Youtube",
@@ -636,15 +508,79 @@
       "title": "CG5 - I'm The Big Bad (Calling All Villains Song Animation)",
       "url": "https://www.youtube.com/watch?v=nG5Bg9FF3WQ",
       "metrics": {
-        "views": 630170,
-        "likes": 46780,
-        "comments": 4201
+        "views": 1311942,
+        "likes": 68841,
+        "comments": 5334
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 630170
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1311942
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "KePvp0-hcn0",
+      "title": "The Beatles - In My Life (Official Music Video starring Owen Cooper)",
+      "url": "https://www.youtube.com/watch?v=KePvp0-hcn0",
+      "metrics": {
+        "views": 1252599,
+        "likes": 33886,
+        "comments": 1809
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1252599
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "5GB00NsVH3Q",
+      "title": "Twilight (But Better) Teaser Trailer",
+      "url": "https://www.youtube.com/watch?v=5GB00NsVH3Q",
+      "metrics": {
+        "views": 1217221,
+        "likes": 72318,
+        "comments": 2180
+      },
+      "category": "23",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1217221
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "1XE_28aP3KU",
+      "title": "Grand Theft Auto 6 keeps blowing me away...",
+      "url": "https://www.youtube.com/watch?v=1XE_28aP3KU",
+      "metrics": {
+        "views": 1033569,
+        "likes": 14154,
+        "comments": 1239
+      },
+      "category": "20",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 1033569
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "akiAh12Vt-U",
+      "title": "Jamie Miller - Babydoll (Lyrics)",
+      "url": "https://www.youtube.com/watch?v=akiAh12Vt-U",
+      "metrics": {
+        "views": 988949,
+        "likes": 4151,
+        "comments": 77
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 988949
     },
     {
       "platform": "Youtube",
@@ -652,15 +588,31 @@
       "title": "ABSOLUTE CINEMA | Grand Theft Auto 6 - Part 3",
       "url": "https://www.youtube.com/watch?v=hI4k9ewBEFA",
       "metrics": {
-        "views": 612162,
-        "likes": 15847,
-        "comments": 1501
+        "views": 897777,
+        "likes": 21639,
+        "comments": 1898
       },
       "category": "20",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 612162
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 897777
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Y488C2KfdmQ",
+      "title": "MAYAN Chapter 1 - Trailer | Jayasurya | Jithin K Jose | Rajeev Govindan | Nyla Usha | Mujeeb Majeed",
+      "url": "https://www.youtube.com/watch?v=Y488C2KfdmQ",
+      "metrics": {
+        "views": 774838,
+        "likes": 12349,
+        "comments": 679
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 774838
     },
     {
       "platform": "Youtube",
@@ -668,47 +620,15 @@
       "title": "Go Easy (from GTAVI: The Album)",
       "url": "https://www.youtube.com/watch?v=eqQRPRcoIYo",
       "metrics": {
-        "views": 426905,
-        "likes": 14918,
-        "comments": 482
+        "views": 687168,
+        "likes": 20790,
+        "comments": 560
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 426905
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "B1cLo1po_8M",
-      "title": "Presumed Innocent — Season 2 Official Teaser | Apple TV",
-      "url": "https://www.youtube.com/watch?v=B1cLo1po_8M",
-      "metrics": {
-        "views": 391019,
-        "likes": 2812,
-        "comments": 123
-      },
-      "category": "24",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 391019
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "o4aslcUEnoU",
-      "title": "Avengers: Doomsday: Every NEW REVEAL From the Empire Teaser",
-      "url": "https://www.youtube.com/watch?v=o4aslcUEnoU",
-      "metrics": {
-        "views": 361185,
-        "likes": 4261,
-        "comments": 440
-      },
-      "category": "1",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 361185
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 687168
     },
     {
       "platform": "Youtube",
@@ -716,47 +636,15 @@
       "title": "RÜFÜS DU SOL x Hans Zimmer - Innerbloom XI (Official Music Video)",
       "url": "https://www.youtube.com/watch?v=7kb3KdUbt6Y",
       "metrics": {
-        "views": 343470,
-        "likes": 19014,
-        "comments": 1334
+        "views": 556766,
+        "likes": 25197,
+        "comments": 1511
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 343470
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "OAeBV9nFdTo",
-      "title": "Christmas Song Playlist 🎅🏻 Top Christmas Songs of All Time🎄Best Christmas Music Playlist",
-      "url": "https://www.youtube.com/watch?v=OAeBV9nFdTo",
-      "metrics": {
-        "views": 333407,
-        "likes": 754,
-        "comments": 40
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 333407
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "qbVF3QTzWqc",
-      "title": "Trivium - The Terror (Official Music Video)",
-      "url": "https://www.youtube.com/watch?v=qbVF3QTzWqc",
-      "metrics": {
-        "views": 278513,
-        "likes": 12614,
-        "comments": 915
-      },
-      "category": "10",
-      "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 278513
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 556766
     },
     {
       "platform": "Youtube",
@@ -764,15 +652,31 @@
       "title": "Shaggy - Angel (Visualizer) Feat. Rayvon",
       "url": "https://www.youtube.com/watch?v=YtDoNL7yPaM",
       "metrics": {
-        "views": 202414,
-        "likes": 662,
-        "comments": 4
+        "views": 501719,
+        "likes": 1424,
+        "comments": 6
       },
       "category": "22",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 202414
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 501719
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "o4aslcUEnoU",
+      "title": "Avengers: Doomsday: Every NEW REVEAL From the Empire Teaser",
+      "url": "https://www.youtube.com/watch?v=o4aslcUEnoU",
+      "metrics": {
+        "views": 417506,
+        "likes": 4711,
+        "comments": 469
+      },
+      "category": "1",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 417506
     },
     {
       "platform": "Youtube",
@@ -780,15 +684,63 @@
       "title": "One Last Breath (Remastered 2026)",
       "url": "https://www.youtube.com/watch?v=CnO_eCzoVsg",
       "metrics": {
-        "views": 164462,
-        "likes": 1639,
-        "comments": 25
+        "views": 298239,
+        "likes": 2892,
+        "comments": 33
       },
       "category": "10",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 164462
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 298239
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9d8XBITmQhs",
+      "title": "HEAL from The Princess of Wales | Trailer",
+      "url": "https://www.youtube.com/watch?v=9d8XBITmQhs",
+      "metrics": {
+        "views": 225222,
+        "likes": 12506,
+        "comments": 833
+      },
+      "category": "22",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 225222
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "q0CuV2PKAzE",
+      "title": "Fred again..  - One Day in Tokyo with Chihei Hatakeyama (Japan, 30th July 2025)",
+      "url": "https://www.youtube.com/watch?v=q0CuV2PKAzE",
+      "metrics": {
+        "views": 195474,
+        "likes": 4672,
+        "comments": 222
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 195474
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "UWa8xqMLwhw",
+      "title": "Christmas Songs Playlist 🎅  Top Christmas Songs of All Time Playlist 🎄 Best Christmas Music 2027",
+      "url": "https://www.youtube.com/watch?v=UWa8xqMLwhw",
+      "metrics": {
+        "views": 138148,
+        "likes": 406,
+        "comments": 37
+      },
+      "category": "10",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 138148
     },
     {
       "platform": "Youtube",
@@ -796,22 +748,54 @@
       "title": "WOLF CREEK 3 Official Teaser Trailer (2027)",
       "url": "https://www.youtube.com/watch?v=9QITO1CrwUA",
       "metrics": {
-        "views": 76602,
-        "likes": 808,
-        "comments": 156
+        "views": 105895,
+        "likes": 946,
+        "comments": 188
       },
       "category": "24",
       "regionCode": "AU",
-      "timestamp": "2026-11-21T12:51:21.105Z",
-      "fetchedAt": "2026-11-21T12:51:21.105Z",
-      "views": 76602
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 105895
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HlhBZvKChWU",
+      "title": "Family Time - Steam Gameplay Trailer",
+      "url": "https://www.youtube.com/watch?v=HlhBZvKChWU",
+      "metrics": {
+        "views": 75448,
+        "likes": 11350,
+        "comments": 748
+      },
+      "category": "20",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 75448
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zCdlJFn42WE",
+      "title": "Top Christmas Songs 🎅 Best Christmas Music Playlist 2027 🎄 Merry Christmas Songs",
+      "url": "https://www.youtube.com/watch?v=zCdlJFn42WE",
+      "metrics": {
+        "views": 56295,
+        "likes": 109,
+        "comments": 5
+      },
+      "category": "22",
+      "regionCode": "AU",
+      "timestamp": "2026-11-22T06:50:56.821Z",
+      "fetchedAt": "2026-11-22T06:50:56.821Z",
+      "views": 56295
     }
   ],
   "meta": {
     "region": "AU",
-    "generatedAt": "2026-11-21T12:51:21.849Z",
-    "fetchedAt": "2026-11-21T12:51:21.105Z",
-    "videoCount": 50,
+    "generatedAt": "2026-11-22T06:50:57.456Z",
+    "fetchedAt": "2026-11-22T06:50:56.821Z",
+    "videoCount": 49,
     "cached": false,
     "source": "render-backend"
   }
