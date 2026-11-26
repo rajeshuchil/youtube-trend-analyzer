@@ -4,7 +4,7 @@
   "refreshed": true,
   "page": 1,
   "limit": 50,
-  "count": 49,
+  "count": 50,
   "data": [
     {
       "platform": "Youtube",
@@ -12,15 +12,15 @@
       "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
       "url": "https://www.youtube.com/watch?v=Wb8Tq_HD4E8",
       "metrics": {
-        "views": 55826280,
-        "likes": 1633809,
-        "comments": 94367
+        "views": 60080918,
+        "likes": 1664427,
+        "comments": 95657
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 55826280
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 60080918
     },
     {
       "platform": "Youtube",
@@ -28,31 +28,31 @@
       "title": "2 Peg (Official Music Video) Gulab Sidhu | Kulshan Sandhu | Latest Punjabi Songs 2026",
       "url": "https://www.youtube.com/watch?v=qA_doR1lYe8",
       "metrics": {
-        "views": 5069436,
-        "likes": 32017,
-        "comments": 5867
+        "views": 7517295,
+        "likes": 47346,
+        "comments": 6160
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 5069436
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 7517295
     },
     {
       "platform": "Youtube",
-      "topicId": "umDq3LY7sFA",
-      "title": "GTA 6 #2",
-      "url": "https://www.youtube.com/watch?v=umDq3LY7sFA",
+      "topicId": "R3AzRsIqxb0",
+      "title": "Vrushakarma Official Trailer | Naga Chaitanya | Meenakshi Chaudhary | Karthik | Sparsh Shrivastava",
+      "url": "https://www.youtube.com/watch?v=R3AzRsIqxb0",
       "metrics": {
-        "views": 4299480,
-        "likes": 272494,
-        "comments": 25023
+        "views": 6183840,
+        "likes": 77203,
+        "comments": 1633
       },
-      "category": "20",
+      "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 4299480
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 6183840
     },
     {
       "platform": "Youtube",
@@ -60,15 +60,15 @@
       "title": "Aachi Aachi Lyric | Inji Vellam | Mani Ratnam| A.R.Rahman| Vijay Sethupathi| Sai Pallavi| Subaskaran",
       "url": "https://www.youtube.com/watch?v=hsrO7UK6b3E",
       "metrics": {
-        "views": 3565216,
-        "likes": 38300,
-        "comments": 2207
+        "views": 5758216,
+        "likes": 47092,
+        "comments": 2703
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 3565216
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 5758216
     },
     {
       "platform": "Youtube",
@@ -76,47 +76,31 @@
       "title": "Don't Do That",
       "url": "https://www.youtube.com/watch?v=9B1ljU7lv-E",
       "metrics": {
-        "views": 3408869,
-        "likes": 65841,
-        "comments": 5331
+        "views": 4993806,
+        "likes": 85590,
+        "comments": 6497
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 3408869
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 4993806
     },
     {
       "platform": "Youtube",
-      "topicId": "HGY8x0qy0aI",
-      "title": "Jo Bachay Hain Sang Samait Lo | Official Trailer | Netflix",
-      "url": "https://www.youtube.com/watch?v=HGY8x0qy0aI",
+      "topicId": "xEtC_FwraNc",
+      "title": "PMGC 2026 | The Gauntlet Day 1 - WATCHPARTY WITH SNAX",
+      "url": "https://www.youtube.com/watch?v=xEtC_FwraNc",
       "metrics": {
-        "views": 3156611,
-        "likes": 49781,
-        "comments": 7532
+        "views": 4437529,
+        "likes": 153413,
+        "comments": 99
       },
-      "category": "24",
+      "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 3156611
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "vNpbvIU1kWg",
-      "title": "Stray Kids 『SUIATSU』 Music Video",
-      "url": "https://www.youtube.com/watch?v=vNpbvIU1kWg",
-      "metrics": {
-        "views": 2996378,
-        "likes": 352350,
-        "comments": 16467
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 2996378
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 4437529
     },
     {
       "platform": "Youtube",
@@ -124,95 +108,31 @@
       "title": "Pataka (Official Music Video) | Kulwinder Sohi | Gaiphy | New Punjabi Song 2026",
       "url": "https://www.youtube.com/watch?v=2ZPKLP80Wxk",
       "metrics": {
-        "views": 2672055,
-        "likes": 39633,
-        "comments": 831
+        "views": 3886961,
+        "likes": 44480,
+        "comments": 928
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 2672055
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 3886961
     },
     {
       "platform": "Youtube",
-      "topicId": "NMFn6IjThPk",
-      "title": "We need to talk about GTA 6",
-      "url": "https://www.youtube.com/watch?v=NMFn6IjThPk",
+      "topicId": "HGY8x0qy0aI",
+      "title": "Jo Bachay Hain Sang Samait Lo | Official Trailer | Netflix",
+      "url": "https://www.youtube.com/watch?v=HGY8x0qy0aI",
       "metrics": {
-        "views": 1969114,
-        "likes": 100251,
-        "comments": 16959
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1969114
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ErhPysTk6Jc",
-      "title": "Dune: Part Three - Exclusive Teaser Trailer (2026) Timothée Chalamet, Zendaya, Robert Pattinson",
-      "url": "https://www.youtube.com/watch?v=ErhPysTk6Jc",
-      "metrics": {
-        "views": 1865267,
-        "likes": 13834,
-        "comments": 814
+        "views": 3694349,
+        "likes": 56178,
+        "comments": 8614
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1865267
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ONcwarkfq90",
-      "title": "O Saathi Re | Official Trailer | Aditi R. Hydari, Arjun Rampal & Avinash Tiwary | Netflix India",
-      "url": "https://www.youtube.com/watch?v=ONcwarkfq90",
-      "metrics": {
-        "views": 1784039,
-        "likes": 12978,
-        "comments": 690
-      },
-      "category": "24",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1784039
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "jPU38VyVVgE",
-      "title": "Grand Theft Auto VI",
-      "url": "https://www.youtube.com/watch?v=jPU38VyVVgE",
-      "metrics": {
-        "views": 1718883,
-        "likes": 51581,
-        "comments": 2889
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1718883
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "g_5cTwVFU4k",
-      "title": "Avengers: Doomsday | New International Teaser Trailer | Get Your Tickets at TGV Now",
-      "url": "https://www.youtube.com/watch?v=g_5cTwVFU4k",
-      "metrics": {
-        "views": 1703071,
-        "likes": 22232,
-        "comments": 738
-      },
-      "category": "22",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1703071
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 3694349
     },
     {
       "platform": "Youtube",
@@ -220,15 +140,127 @@
       "title": "Avengers: Doomsday | “DESTINY” TRAILER CONCEPT | Marvel Studios",
       "url": "https://www.youtube.com/watch?v=-htnBIywgfM",
       "metrics": {
-        "views": 1646769,
-        "likes": 15044,
-        "comments": 460
+        "views": 3670285,
+        "likes": 35495,
+        "comments": 628
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1646769
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 3670285
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ONcwarkfq90",
+      "title": "O Saathi Re | Official Trailer | Aditi R. Hydari, Arjun Rampal & Avinash Tiwary | Netflix India",
+      "url": "https://www.youtube.com/watch?v=ONcwarkfq90",
+      "metrics": {
+        "views": 3630459,
+        "likes": 15563,
+        "comments": 873
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 3630459
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "vNpbvIU1kWg",
+      "title": "Stray Kids 『SUIATSU』 Music Video",
+      "url": "https://www.youtube.com/watch?v=vNpbvIU1kWg",
+      "metrics": {
+        "views": 3483008,
+        "likes": 377267,
+        "comments": 16965
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 3483008
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jPU38VyVVgE",
+      "title": "Grand Theft Auto VI",
+      "url": "https://www.youtube.com/watch?v=jPU38VyVVgE",
+      "metrics": {
+        "views": 2695317,
+        "likes": 70780,
+        "comments": 3622
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2695317
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "DzgorMtx38c",
+      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
+      "url": "https://www.youtube.com/watch?v=DzgorMtx38c",
+      "metrics": {
+        "views": 2461571,
+        "likes": 24544,
+        "comments": 1100
+      },
+      "category": "22",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2461571
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "cRLn0QiWoxY",
+      "title": "Alias Rukmini Trailer | Nani Presents Nithiin | Aafiya Sayed | Unanimous Productions | December 4",
+      "url": "https://www.youtube.com/watch?v=cRLn0QiWoxY",
+      "metrics": {
+        "views": 2320117,
+        "likes": 36318,
+        "comments": 993
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2320117
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "NMFn6IjThPk",
+      "title": "We need to talk about GTA 6",
+      "url": "https://www.youtube.com/watch?v=NMFn6IjThPk",
+      "metrics": {
+        "views": 2236280,
+        "likes": 104419,
+        "comments": 18218
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2236280
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fv-0q97mSJE",
+      "title": "Gukesh vs Sindarov | Game 3 | Salesforce FIDE World Championship 2026",
+      "url": "https://www.youtube.com/watch?v=fv-0q97mSJE",
+      "metrics": {
+        "views": 2137170,
+        "likes": 25734,
+        "comments": 14
+      },
+      "category": "17",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2137170
     },
     {
       "platform": "Youtube",
@@ -236,143 +268,47 @@
       "title": "Hail Mary - Official Trailer | Kunchacko Boban | Suraj Venjaramoodu | Vishnu Revikumar | Jakes Bejoy",
       "url": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
       "metrics": {
-        "views": 1370749,
-        "likes": 9502,
-        "comments": 428
+        "views": 2107143,
+        "likes": 13223,
+        "comments": 494
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 1370749
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 2107143
     },
     {
       "platform": "Youtube",
-      "topicId": "yFzhRlUj0RA",
-      "title": "We Tried Hunting Down Michael Myers...",
-      "url": "https://www.youtube.com/watch?v=yFzhRlUj0RA",
+      "topicId": "RMXe4RnC-m8",
+      "title": "Shotta's.",
+      "url": "https://www.youtube.com/watch?v=RMXe4RnC-m8",
       "metrics": {
-        "views": 906290,
-        "likes": 28514,
-        "comments": 915
+        "views": 1594106,
+        "likes": 25932,
+        "comments": 83
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1594106
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Y7PPzKj6kTQ",
+      "title": "🔴LIVE | GTA 6 | DAY 7 | CHAPTER 5 | irredeemable | LUCIA DUMPED ME | BEST ENDING 100% | #BUNGULATE",
+      "url": "https://www.youtube.com/watch?v=Y7PPzKj6kTQ",
+      "metrics": {
+        "views": 1395261,
+        "likes": 12600,
+        "comments": 295
       },
       "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 906290
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "9tqzvViJBak",
-      "title": "FOREVER | UNTIL THE END ❤️ Kaelvar ft. Eira | Live Show Version | Nordic Love Anthem",
-      "url": "https://www.youtube.com/watch?v=9tqzvViJBak",
-      "metrics": {
-        "views": 819207,
-        "likes": 11217,
-        "comments": 404
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 819207
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "G3mxM92yvFA",
-      "title": "Top Christmas Songs of All Time Playlist 🎄 Best Christmas Music 2027",
-      "url": "https://www.youtube.com/watch?v=G3mxM92yvFA",
-      "metrics": {
-        "views": 755232,
-        "likes": 2067,
-        "comments": 128
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 755232
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ruvZSziPgUY",
-      "title": "Khush Kismat (Official Video) Korala Maan ft Sargi Maan | Mahi Sharma | Latest Punjabi Songs 2026",
-      "url": "https://www.youtube.com/watch?v=ruvZSziPgUY",
-      "metrics": {
-        "views": 755083,
-        "likes": 7215,
-        "comments": 191
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 755083
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "nsMrZz88Vl8",
-      "title": "Your STRANGEST Clips...",
-      "url": "https://www.youtube.com/watch?v=nsMrZz88Vl8",
-      "metrics": {
-        "views": 695347,
-        "likes": 10745,
-        "comments": 450
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 695347
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mSzWE455tns",
-      "title": "這一刻等了26年！《復仇者聯盟5》 最終預告解析 | 超粒方",
-      "url": "https://www.youtube.com/watch?v=mSzWE455tns",
-      "metrics": {
-        "views": 678503,
-        "likes": 5994,
-        "comments": 464
-      },
-      "category": "1",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 678503
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hrJ6pXLE4Ro",
-      "title": "Dalimb | Official Trailer | Hindi Zee 5 Original | Jitendra Kumar, Priya Bapat | Premieres 4th Dec",
-      "url": "https://www.youtube.com/watch?v=hrJ6pXLE4Ro",
-      "metrics": {
-        "views": 629913,
-        "likes": 4823,
-        "comments": 129
-      },
-      "category": "24",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 629913
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "0QYIBLB2Hco",
-      "title": "Top 50 Christmas Songs of All Time 🎅🏼 Classic Christmas Music with Fireplace 🎅🏼 Merry Christmas 2026",
-      "url": "https://www.youtube.com/watch?v=0QYIBLB2Hco",
-      "metrics": {
-        "views": 622103,
-        "likes": 1278,
-        "comments": 47
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 622103
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1395261
     },
     {
       "platform": "Youtube",
@@ -380,15 +316,111 @@
       "title": "Jamie Miller - Babydoll (Official Music Video)",
       "url": "https://www.youtube.com/watch?v=HQoB61gvVOw",
       "metrics": {
-        "views": 618726,
-        "likes": 22448,
-        "comments": 1049
+        "views": 1387549,
+        "likes": 34891,
+        "comments": 1423
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 618726
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1387549
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "yFzhRlUj0RA",
+      "title": "We Tried Hunting Down Michael Myers...",
+      "url": "https://www.youtube.com/watch?v=yFzhRlUj0RA",
+      "metrics": {
+        "views": 1359128,
+        "likes": 38518,
+        "comments": 1051
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1359128
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "GqUI1CqXc48",
+      "title": "[B] PGL Major Singapore 2026 - Stage 1 - Day 3",
+      "url": "https://www.youtube.com/watch?v=GqUI1CqXc48",
+      "metrics": {
+        "views": 1169302,
+        "likes": 5198,
+        "comments": 6
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1169302
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "YPN3z6zqPZg",
+      "title": "Beating Steam’s Most Refunded Game",
+      "url": "https://www.youtube.com/watch?v=YPN3z6zqPZg",
+      "metrics": {
+        "views": 1105129,
+        "likes": 17158,
+        "comments": 267
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1105129
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ruvZSziPgUY",
+      "title": "Khush Kismat (Official Video) Korala Maan ft Sargi Maan | Mahi Sharma | Latest Punjabi Songs 2026",
+      "url": "https://www.youtube.com/watch?v=ruvZSziPgUY",
+      "metrics": {
+        "views": 1099827,
+        "likes": 9507,
+        "comments": 213
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1099827
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "nsMrZz88Vl8",
+      "title": "Your STRANGEST Clips...",
+      "url": "https://www.youtube.com/watch?v=nsMrZz88Vl8",
+      "metrics": {
+        "views": 1080038,
+        "likes": 15241,
+        "comments": 535
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1080038
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "G3mxM92yvFA",
+      "title": "Top Christmas Songs of All Time Playlist 🎄 Best Christmas Music 2027",
+      "url": "https://www.youtube.com/watch?v=G3mxM92yvFA",
+      "metrics": {
+        "views": 1055870,
+        "likes": 2899,
+        "comments": 156
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 1055870
     },
     {
       "platform": "Youtube",
@@ -396,15 +428,15 @@
       "title": "Hermitcraft 11: Episode 32 - it's too big",
       "url": "https://www.youtube.com/watch?v=mMeM8kY_tu8",
       "metrics": {
-        "views": 549720,
-        "likes": 24942,
-        "comments": 1271
+        "views": 848355,
+        "likes": 33671,
+        "comments": 1502
       },
       "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 549720
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 848355
     },
     {
       "platform": "Youtube",
@@ -412,111 +444,15 @@
       "title": "AVENGERS DOOMSDAY TRAILER BREAKDOWN | International Promo | Steve & Thor in Latveria & TVA!",
       "url": "https://www.youtube.com/watch?v=L2z-NKaTA7E",
       "metrics": {
-        "views": 513817,
-        "likes": 11265,
-        "comments": 624
+        "views": 737987,
+        "likes": 14566,
+        "comments": 771
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 513817
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "9J6QBb9rzVM",
-      "title": "Why Does Doomsday Look Like That?",
-      "url": "https://www.youtube.com/watch?v=9J6QBb9rzVM",
-      "metrics": {
-        "views": 499125,
-        "likes": 7961,
-        "comments": 1153
-      },
-      "category": "22",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 499125
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "kBesuEzoMh0",
-      "title": "AVENGERS DOOMSDAY NEW TV SPOT ! | THE MASK IS OFF",
-      "url": "https://www.youtube.com/watch?v=kBesuEzoMh0",
-      "metrics": {
-        "views": 466974,
-        "likes": 6700,
-        "comments": 530
-      },
-      "category": "1",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 466974
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DXQJlttTwnQ",
-      "title": "Minecraft Boss Speedrun VS 4 Hunters",
-      "url": "https://www.youtube.com/watch?v=DXQJlttTwnQ",
-      "metrics": {
-        "views": 398394,
-        "likes": 11906,
-        "comments": 616
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 398394
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "J_62hYtemJY",
-      "title": "Contaminating Minecraft with Create",
-      "url": "https://www.youtube.com/watch?v=J_62hYtemJY",
-      "metrics": {
-        "views": 395031,
-        "likes": 13346,
-        "comments": 1287
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 395031
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "7kqzUGC8lKI",
-      "title": "We Went Missing…",
-      "url": "https://www.youtube.com/watch?v=7kqzUGC8lKI",
-      "metrics": {
-        "views": 375042,
-        "likes": 8063,
-        "comments": 1092
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 375042
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "2XdPlgeg71Y",
-      "title": "Harry Styles - Coming Up Roses (Live from Funkhaus)",
-      "url": "https://www.youtube.com/watch?v=2XdPlgeg71Y",
-      "metrics": {
-        "views": 374859,
-        "likes": 20154,
-        "comments": 1238
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 374859
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 737987
     },
     {
       "platform": "Youtube",
@@ -524,63 +460,79 @@
       "title": "In this game, you sit in an airplane for 5 hours",
       "url": "https://www.youtube.com/watch?v=IbeJqNtDQ0Y",
       "metrics": {
-        "views": 364460,
-        "likes": 11905,
-        "comments": 850
+        "views": 698542,
+        "likes": 18791,
+        "comments": 1180
       },
       "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 364460
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 698542
     },
     {
       "platform": "Youtube",
-      "topicId": "R35hc4i4wtM",
-      "title": "Did the Avengers: Doomsday Trailer Just Reveal Doom's Infinity Gauntlet?",
-      "url": "https://www.youtube.com/watch?v=R35hc4i4wtM",
+      "topicId": "O-3nK-3NOKk",
+      "title": "TV Royale | Barbarian King, EVO Archer Queen, Legendary C.H.A.O.S & MORE!",
+      "url": "https://www.youtube.com/watch?v=O-3nK-3NOKk",
       "metrics": {
-        "views": 354726,
-        "likes": 4381,
-        "comments": 374
+        "views": 634028,
+        "likes": 22615,
+        "comments": 1365
       },
-      "category": "1",
+      "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 354726
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 634028
     },
     {
       "platform": "Youtube",
-      "topicId": "9EX4XeeLZq4",
-      "title": "Seal - New Person, Same Old Mistakes (Tame Impala Cover) [Live Recording Session]",
-      "url": "https://www.youtube.com/watch?v=9EX4XeeLZq4",
+      "topicId": "QrxDetnioXA",
+      "title": "NAYEON “BOY” M/V",
+      "url": "https://www.youtube.com/watch?v=QrxDetnioXA",
       "metrics": {
-        "views": 266859,
-        "likes": 10520,
-        "comments": 496
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 266859
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "I4TEn_uZ4A4",
-      "title": "Peaceful Day - Cozy Outdoor Jazz (Official Music Video)",
-      "url": "https://www.youtube.com/watch?v=I4TEn_uZ4A4",
-      "metrics": {
-        "views": 250532,
-        "likes": 58,
-        "comments": 0
+        "views": 620655,
+        "likes": 64508,
+        "comments": 4914
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 250532
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 620655
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "2XdPlgeg71Y",
+      "title": "Harry Styles - Coming Up Roses (Live from Funkhaus)",
+      "url": "https://www.youtube.com/watch?v=2XdPlgeg71Y",
+      "metrics": {
+        "views": 602524,
+        "likes": 26409,
+        "comments": 1391
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 602524
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dnGJmIrdbls",
+      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
+      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
+      "metrics": {
+        "views": 595486,
+        "likes": 4722,
+        "comments": 405
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 595486
     },
     {
       "platform": "Youtube",
@@ -588,127 +540,31 @@
       "title": "30 Secrets & Easter Eggs In GTA 6! #3",
       "url": "https://www.youtube.com/watch?v=jfTN0qFkcUY",
       "metrics": {
-        "views": 241385,
-        "likes": 3209,
-        "comments": 137
+        "views": 528450,
+        "likes": 6149,
+        "comments": 273
       },
       "category": "20",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 241385
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 528450
     },
     {
       "platform": "Youtube",
-      "topicId": "LD3LjdnDvS0",
-      "title": "AVENGERS DOOMSDAY TRAILER Doom Throne Room Battle Breakdown!",
-      "url": "https://www.youtube.com/watch?v=LD3LjdnDvS0",
+      "topicId": "_qb0yKFj2nc",
+      "title": "AVENGERS: DOOMSDAY | MAGNETO vs DOOM NEW TEASER TRAILER!",
+      "url": "https://www.youtube.com/watch?v=_qb0yKFj2nc",
       "metrics": {
-        "views": 191828,
-        "likes": 2978,
-        "comments": 436
+        "views": 416866,
+        "likes": 2210,
+        "comments": 117
       },
       "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 191828
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mghhlMi5-vI",
-      "title": "I Robbed 13 Banks in GTA 6 Undetected.....",
-      "url": "https://www.youtube.com/watch?v=mghhlMi5-vI",
-      "metrics": {
-        "views": 176743,
-        "likes": 2815,
-        "comments": 205
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 176743
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Rkt_rTYPGz4",
-      "title": "Robbing MANSIONS in GTA 6",
-      "url": "https://www.youtube.com/watch?v=Rkt_rTYPGz4",
-      "metrics": {
-        "views": 175957,
-        "likes": 2432,
-        "comments": 148
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 175957
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "0YRiZsIFp4o",
-      "title": "I Remade GRIEF From Memory",
-      "url": "https://www.youtube.com/watch?v=0YRiZsIFp4o",
-      "metrics": {
-        "views": 175717,
-        "likes": 7020,
-        "comments": 1113
-      },
-      "category": "20",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 175717
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "_DNl8LJKPco",
-      "title": "Magneto vs Doctor Doom | Avengers Doomsday New Teaser ",
-      "url": "https://www.youtube.com/watch?v=_DNl8LJKPco",
-      "metrics": {
-        "views": 166455,
-        "likes": 1615,
-        "comments": 129
-      },
-      "category": "22",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 166455
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "94VoBinWvdA",
-      "title": "AVENGERS Doomsday NEW Trailer Breakdown | Easter Eggs, Plot Details & Everything We Learned",
-      "url": "https://www.youtube.com/watch?v=94VoBinWvdA",
-      "metrics": {
-        "views": 145436,
-        "likes": 2858,
-        "comments": 246
-      },
-      "category": "24",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 145436
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DAfpjDpOhAs",
-      "title": "Element Eleéeh - MY DEAR (Official Video)",
-      "url": "https://www.youtube.com/watch?v=DAfpjDpOhAs",
-      "metrics": {
-        "views": 138610,
-        "likes": 13546,
-        "comments": 966
-      },
-      "category": "10",
-      "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 138610
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 416866
     },
     {
       "platform": "Youtube",
@@ -716,47 +572,143 @@
       "title": "Popcaan - Where Would I Be (Official Video)",
       "url": "https://www.youtube.com/watch?v=acfE__aYEbo",
       "metrics": {
-        "views": 125611,
-        "likes": 9090,
-        "comments": 787
+        "views": 331065,
+        "likes": 16951,
+        "comments": 1243
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 125611
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 331065
     },
     {
       "platform": "Youtube",
-      "topicId": "za92udPFpm8",
-      "title": "They made a GREAT Doomsday trailer!",
-      "url": "https://www.youtube.com/watch?v=za92udPFpm8",
+      "topicId": "DnQ5QtZslYo",
+      "title": "okay supercell",
+      "url": "https://www.youtube.com/watch?v=DnQ5QtZslYo",
       "metrics": {
-        "views": 94542,
-        "likes": 2315,
-        "comments": 350
+        "views": 296956,
+        "likes": 13495,
+        "comments": 1111
       },
-      "category": "22",
+      "category": "24",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 94542
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 296956
     },
     {
       "platform": "Youtube",
-      "topicId": "RFdOARLtEHg",
-      "title": "AWOLNATION - Sail (Lyrics)",
-      "url": "https://www.youtube.com/watch?v=RFdOARLtEHg",
+      "topicId": "I4TEn_uZ4A4",
+      "title": "Peaceful Day - Cozy Outdoor Jazz (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=I4TEn_uZ4A4",
       "metrics": {
-        "views": 82765,
-        "likes": 466,
+        "views": 287686,
+        "likes": 63,
         "comments": 1
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 82765
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 287686
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "qoLCuauMlG4",
+      "title": "Let’s talk about T1 Zeus for 2027",
+      "url": "https://www.youtube.com/watch?v=qoLCuauMlG4",
+      "metrics": {
+        "views": 285646,
+        "likes": 6193,
+        "comments": 427
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 285646
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "LD3LjdnDvS0",
+      "title": "AVENGERS DOOMSDAY TRAILER Doom Throne Room Battle Breakdown!",
+      "url": "https://www.youtube.com/watch?v=LD3LjdnDvS0",
+      "metrics": {
+        "views": 268585,
+        "likes": 3885,
+        "comments": 532
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 268585
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "RZDPDteBKKw",
+      "title": "AVENGERS Doomsday MAGNETO VS DOOM Fight Breakdown + A Massive Theory About the Movie",
+      "url": "https://www.youtube.com/watch?v=RZDPDteBKKw",
+      "metrics": {
+        "views": 230285,
+        "likes": 3268,
+        "comments": 453
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 230285
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "x-PnocmaZ8Y",
+      "title": "Lagui - ROULETTE RUSSE (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=x-PnocmaZ8Y",
+      "metrics": {
+        "views": 157736,
+        "likes": 13893,
+        "comments": 1434
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 157736
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "10AiyWbLBxU",
+      "title": "Deep Rock Galactic: Season 07 - Narrated Trailer",
+      "url": "https://www.youtube.com/watch?v=10AiyWbLBxU",
+      "metrics": {
+        "views": 157355,
+        "likes": 13842,
+        "comments": 1174
+      },
+      "category": "20",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 157355
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "nUfVphx49EY",
+      "title": "Asake - Skilful (Official Video)",
+      "url": "https://www.youtube.com/watch?v=nUfVphx49EY",
+      "metrics": {
+        "views": 113827,
+        "likes": 10063,
+        "comments": 894
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 113827
     },
     {
       "platform": "Youtube",
@@ -764,38 +716,102 @@
       "title": "Pataka",
       "url": "https://www.youtube.com/watch?v=vM5nt8FnAHs",
       "metrics": {
-        "views": 64583,
-        "likes": 936,
-        "comments": 25
+        "views": 99037,
+        "likes": 1242,
+        "comments": 28
       },
       "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 64583
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 99037
     },
     {
       "platform": "Youtube",
-      "topicId": "UbAg6ysa3RY",
-      "title": "Merkules - ''November Rain'' ft 94Fatso & Hunter Bentley",
-      "url": "https://www.youtube.com/watch?v=UbAg6ysa3RY",
+      "topicId": "Y2Ihkz3CAHA",
+      "title": "Top 50 Christmas Songs of All Time 🎅🏼 Classic Christmas Music with Fireplace 🎅🏼 Merry Christmas 2026",
+      "url": "https://www.youtube.com/watch?v=Y2Ihkz3CAHA",
       "metrics": {
-        "views": 11355,
-        "likes": 1170,
-        "comments": 418
+        "views": 62915,
+        "likes": 1102,
+        "comments": 30
       },
-      "category": "22",
+      "category": "10",
       "regionCode": "CA",
-      "timestamp": "2026-11-26T08:20:59.057Z",
-      "fetchedAt": "2026-11-26T08:20:59.057Z",
-      "views": 11355
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 62915
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-l237RK1icA",
+      "title": "AVENGERS 5: DOOMSDAY Official “Magneto Removes Doctor Dooms Mask” Teaser Trailer (2026) Marvel",
+      "url": "https://www.youtube.com/watch?v=-l237RK1icA",
+      "metrics": {
+        "views": 60257,
+        "likes": 997,
+        "comments": 58
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 60257
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "he4zz4Jwce4",
+      "title": "Jo Bachay Hain Sang Samait Lo: Grand Trailer Launch & India Ban Controversy | What's The 411! Ep 309",
+      "url": "https://www.youtube.com/watch?v=he4zz4Jwce4",
+      "metrics": {
+        "views": 47560,
+        "likes": 997,
+        "comments": 363
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 47560
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "9boXLd_4kD0",
+      "title": "YoniSosi (ኮይኑላ'ሎ Koynulalo )Nov 26/2026 ",
+      "url": "https://www.youtube.com/watch?v=9boXLd_4kD0",
+      "metrics": {
+        "views": 34492,
+        "likes": 1678,
+        "comments": 286
+      },
+      "category": "10",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 34492
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-vdlIoXNuMk",
+      "title": "Everything You Wanted To Know About Jo Bachay Hain Sang Samait Lo Trailer Launch | SA1Q",
+      "url": "https://www.youtube.com/watch?v=-vdlIoXNuMk",
+      "metrics": {
+        "views": 30987,
+        "likes": 334,
+        "comments": 76
+      },
+      "category": "24",
+      "regionCode": "CA",
+      "timestamp": "2026-11-26T21:34:04.713Z",
+      "fetchedAt": "2026-11-26T21:34:04.713Z",
+      "views": 30987
     }
   ],
   "meta": {
     "region": "CA",
-    "generatedAt": "2026-11-26T08:20:59.774Z",
-    "fetchedAt": "2026-11-26T08:20:59.057Z",
-    "videoCount": 49,
+    "generatedAt": "2026-11-26T21:34:05.447Z",
+    "fetchedAt": "2026-11-26T21:34:04.713Z",
+    "videoCount": 50,
     "cached": false,
     "source": "render-backend"
   }
