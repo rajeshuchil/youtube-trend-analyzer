@@ -4,7 +4,7 @@
   "refreshed": true,
   "page": 1,
   "limit": 50,
-  "count": 50,
+  "count": 49,
   "data": [
     {
       "platform": "Youtube",
@@ -12,15 +12,15 @@
       "title": "Avengers: Doomsday | Final Trailer | In Theaters December 18",
       "url": "https://www.youtube.com/watch?v=Wb8Tq_HD4E8",
       "metrics": {
-        "views": 62558696,
-        "likes": 1679254,
-        "comments": 96406
+        "views": 65975717,
+        "likes": 1697177,
+        "comments": 97185
       },
       "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 62558696
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 65975717
     },
     {
       "platform": "Youtube",
@@ -28,15 +28,15 @@
       "title": "Panchayat Season 5 - Official Trailer | Jitendra Kumar, Raghubir Yadav, Neena Gupta, Sanvikaa",
       "url": "https://www.youtube.com/watch?v=36a-E7A35F8",
       "metrics": {
-        "views": 31713545,
-        "likes": 272364,
-        "comments": 10856
+        "views": 36293423,
+        "likes": 275129,
+        "comments": 10929
       },
       "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 31713545
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 36293423
     },
     {
       "platform": "Youtube",
@@ -44,47 +44,15 @@
       "title": "Vrushakarma Official Trailer | Naga Chaitanya | Meenakshi Chaudhary | Karthik | Sparsh Shrivastava",
       "url": "https://www.youtube.com/watch?v=R3AzRsIqxb0",
       "metrics": {
-        "views": 7877148,
-        "likes": 96747,
-        "comments": 1789
+        "views": 10008607,
+        "likes": 107075,
+        "comments": 1941
       },
       "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 7877148
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "qA_doR1lYe8",
-      "title": "2 Peg (Official Music Video) Gulab Sidhu | Kulshan Sandhu | Latest Punjabi Songs 2026",
-      "url": "https://www.youtube.com/watch?v=qA_doR1lYe8",
-      "metrics": {
-        "views": 7719226,
-        "likes": 59561,
-        "comments": 6172
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 7719226
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hrJ6pXLE4Ro",
-      "title": "Dalimb | Official Trailer | Hindi Zee 5 Original | Jitendra Kumar, Priya Bapat | Premieres 4th Dec",
-      "url": "https://www.youtube.com/watch?v=hrJ6pXLE4Ro",
-      "metrics": {
-        "views": 7363174,
-        "likes": 6457,
-        "comments": 759
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 7363174
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 10008607
     },
     {
       "platform": "Youtube",
@@ -92,303 +60,31 @@
       "title": "Aachi Aachi Lyric | Inji Vellam | Mani Ratnam| A.R.Rahman| Vijay Sethupathi| Sai Pallavi| Subaskaran",
       "url": "https://www.youtube.com/watch?v=hsrO7UK6b3E",
       "metrics": {
-        "views": 6194568,
-        "likes": 50044,
-        "comments": 2866
+        "views": 6938459,
+        "likes": 53544,
+        "comments": 3082
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 6194568
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 6938459
     },
     {
       "platform": "Youtube",
-      "topicId": "HNgA42FbG4w",
-      "title": "GTA 5 LIVE #gta5 #gtav #gaming #pajiislive",
-      "url": "https://www.youtube.com/watch?v=HNgA42FbG4w",
+      "topicId": "2pIRdpQhvpU",
+      "title": "Daddy Cool (KING Version) | Shah Rukh Khan, Kareena | Sachin-Jigar, Arijit, Boney M, Shilpa, Kumaar",
+      "url": "https://www.youtube.com/watch?v=2pIRdpQhvpU",
       "metrics": {
-        "views": 5003806,
-        "likes": 6541,
-        "comments": 5
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 5003806
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ONcwarkfq90",
-      "title": "O Saathi Re | Official Trailer | Aditi R. Hydari, Arjun Rampal & Avinash Tiwary | Netflix India",
-      "url": "https://www.youtube.com/watch?v=ONcwarkfq90",
-      "metrics": {
-        "views": 4860261,
-        "likes": 16355,
-        "comments": 948
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 4860261
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "-htnBIywgfM",
-      "title": "Avengers: Doomsday | “DESTINY” TRAILER CONCEPT | Marvel Studios",
-      "url": "https://www.youtube.com/watch?v=-htnBIywgfM",
-      "metrics": {
-        "views": 4784083,
-        "likes": 44269,
-        "comments": 712
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 4784083
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "xEtC_FwraNc",
-      "title": "PMGC 2026 | The Gauntlet Day 1 - WATCHPARTY WITH SNAX",
-      "url": "https://www.youtube.com/watch?v=xEtC_FwraNc",
-      "metrics": {
-        "views": 4563539,
-        "likes": 155062,
-        "comments": 135
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 4563539
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "HGY8x0qy0aI",
-      "title": "Jo Bachay Hain Sang Samait Lo | Official Trailer | Netflix",
-      "url": "https://www.youtube.com/watch?v=HGY8x0qy0aI",
-      "metrics": {
-        "views": 3848982,
-        "likes": 58045,
-        "comments": 8905
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 3848982
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "3FWFIHfGC7o",
-      "title": "I WENT BACK TO SCHOOL",
-      "url": "https://www.youtube.com/watch?v=3FWFIHfGC7o",
-      "metrics": {
-        "views": 3220684,
-        "likes": 49599,
-        "comments": 2621
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 3220684
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "cRLn0QiWoxY",
-      "title": "Alias Rukmini Trailer | Nani Presents Nithiin | Aafiya Sayed | Unanimous Productions | December 4",
-      "url": "https://www.youtube.com/watch?v=cRLn0QiWoxY",
-      "metrics": {
-        "views": 3121471,
-        "likes": 46845,
-        "comments": 1215
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 3121471
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "H6THWs8RP2Q",
-      "title": "Family Pack - Official Teaser | Sree Vishnu, Sakkshi Mhadolkar | Ram Abbaraju | Mythri Movie Makers",
-      "url": "https://www.youtube.com/watch?v=H6THWs8RP2Q",
-      "metrics": {
-        "views": 3031378,
-        "likes": 38383,
-        "comments": 739
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 3031378
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DzgorMtx38c",
-      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
-      "url": "https://www.youtube.com/watch?v=DzgorMtx38c",
-      "metrics": {
-        "views": 2820408,
-        "likes": 27436,
-        "comments": 1197
-      },
-      "category": "22",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2820408
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "xe2HikcDcew",
-      "title": "Shinchan Eating All the Icecream! 🔥",
-      "url": "https://www.youtube.com/watch?v=xe2HikcDcew",
-      "metrics": {
-        "views": 2606441,
-        "likes": 9872,
-        "comments": 589
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2606441
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mhcdRA4eNT0",
-      "title": "GTA 5 LIVE 🔥 #shortsfeed #shorts #grandtheftauto5",
-      "url": "https://www.youtube.com/watch?v=mhcdRA4eNT0",
-      "metrics": {
-        "views": 2357450,
-        "likes": 6671,
-        "comments": 3
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2357450
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "MeYJ38OCXjs",
-      "title": "Hail Mary - Official Trailer | Kunchacko Boban | Suraj Venjaramoodu | Vishnu Revikumar | Jakes Bejoy",
-      "url": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
-      "metrics": {
-        "views": 2271399,
-        "likes": 14061,
-        "comments": 521
+        "views": 6274222,
+        "likes": 128146,
+        "comments": 9610
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2271399
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "3tXrwPkXdZg",
-      "title": "Avengers Doomsday Final Trailer Breakdown!",
-      "url": "https://www.youtube.com/watch?v=3tXrwPkXdZg",
-      "metrics": {
-        "views": 2227662,
-        "likes": 67870,
-        "comments": 4072
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2227662
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "fv-0q97mSJE",
-      "title": "Gukesh vs Sindarov | Game 3 | Salesforce FIDE World Championship 2026",
-      "url": "https://www.youtube.com/watch?v=fv-0q97mSJE",
-      "metrics": {
-        "views": 2206787,
-        "likes": 25989,
-        "comments": 43
-      },
-      "category": "17",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2206787
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "x0MpzFZi3eE",
-      "title": "GTA 5 LIVE  #gta5 #gtav #gaming",
-      "url": "https://www.youtube.com/watch?v=x0MpzFZi3eE",
-      "metrics": {
-        "views": 2096994,
-        "likes": 4453,
-        "comments": 0
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 2096994
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "6WtboY7AM1I",
-      "title": "SCRIMS WITH @JONATHANGAMINGYT  | WATCHPARTY DONE | GTA LATER",
-      "url": "https://www.youtube.com/watch?v=6WtboY7AM1I",
-      "metrics": {
-        "views": 1898125,
-        "likes": 42681,
-        "comments": 73
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1898125
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ruvZSziPgUY",
-      "title": "Khush Kismat (Official Video) Korala Maan ft Sargi Maan | Mahi Sharma | Latest Punjabi Songs 2026",
-      "url": "https://www.youtube.com/watch?v=ruvZSziPgUY",
-      "metrics": {
-        "views": 1442242,
-        "likes": 10300,
-        "comments": 224
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1442242
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "fyvOWMxi4Fg",
-      "title": "#Video - जहिया जा हलो दिलीया कानो हलीयै जी | #Aashish Yadav का एक और देशी अंदाज में | Magahi Song",
-      "url": "https://www.youtube.com/watch?v=fyvOWMxi4Fg",
-      "metrics": {
-        "views": 1373875,
-        "likes": 52614,
-        "comments": 2885
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1373875
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 6274222
     },
     {
       "platform": "Youtube",
@@ -396,287 +92,79 @@
       "title": "MY FIRST MISSION WITH LUCIA | GTA 6 GAMEPLAY #5",
       "url": "https://www.youtube.com/watch?v=TlQNohBQBnU",
       "metrics": {
-        "views": 1288688,
-        "likes": 79401,
-        "comments": 5192
+        "views": 6262002,
+        "likes": 190134,
+        "comments": 10253
       },
       "category": "20",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1288688
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 6262002
     },
     {
       "platform": "Youtube",
-      "topicId": "JxZnF00GAJo",
-      "title": "Yeshanagula -  8K Video | The Paradise | Nani | Keerthy Suresh | Anirudh Ravichander | Srikanth",
-      "url": "https://www.youtube.com/watch?v=JxZnF00GAJo",
+      "topicId": "-htnBIywgfM",
+      "title": "Avengers: Doomsday | “DESTINY” TRAILER CONCEPT | Marvel Studios",
+      "url": "https://www.youtube.com/watch?v=-htnBIywgfM",
       "metrics": {
-        "views": 1270840,
-        "likes": 5318,
-        "comments": 42
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1270840
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "CZkeklCEHwg",
-      "title": "Avengers Doomsday final trailer breakdown: Thor’s new power",
-      "url": "https://www.youtube.com/watch?v=CZkeklCEHwg",
-      "metrics": {
-        "views": 1217381,
-        "likes": 31199,
-        "comments": 1514
+        "views": 6110860,
+        "likes": 52958,
+        "comments": 780
       },
       "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1217381
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 6110860
     },
     {
       "platform": "Youtube",
-      "topicId": "dnGJmIrdbls",
-      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
-      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
+      "topicId": "Do1cg2z4Vas",
+      "title": "GTA 5 LIVE #gta5 #gtav #gaming #pajiislive",
+      "url": "https://www.youtube.com/watch?v=Do1cg2z4Vas",
       "metrics": {
-        "views": 1160202,
-        "likes": 7550,
-        "comments": 638
-      },
-      "category": "24",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1160202
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "l_hV928VXkg",
-      "title": "Granny Live 😉😱| GRANNY GAMEPLAY | #shorts #shortsfeed #shortslive #granny #horror #gta6",
-      "url": "https://www.youtube.com/watch?v=l_hV928VXkg",
-      "metrics": {
-        "views": 1022149,
-        "likes": 0,
+        "views": 6105710,
+        "likes": 7304,
         "comments": 0
       },
       "category": "20",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1022149
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 6105710
     },
     {
       "platform": "Youtube",
-      "topicId": "L4yfGvEP0J4",
-      "title": "करिहइये कारखाना ह | #Khesari Lal Yadav & Neha Raj | Karihaiye Karkhana Ha | Ft. Rani | New Song 2026",
-      "url": "https://www.youtube.com/watch?v=L4yfGvEP0J4",
+      "topicId": "cRLn0QiWoxY",
+      "title": "Alias Rukmini Trailer | Nani Presents Nithiin | Aafiya Sayed | Unanimous Productions | December 4",
+      "url": "https://www.youtube.com/watch?v=cRLn0QiWoxY",
       "metrics": {
-        "views": 1000678,
-        "likes": 43846,
-        "comments": 3168
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 1000678
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "RwucmyMeNvM",
-      "title": "SHERU BHAI Opened New Airport in his City😱",
-      "url": "https://www.youtube.com/watch?v=RwucmyMeNvM",
-      "metrics": {
-        "views": 985552,
-        "likes": 9708,
-        "comments": 3044
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 985552
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hJuKLM0yd5s",
-      "title": "chain together live with @ARCANE-GAMING14 #shortslive #chaintogethergame",
-      "url": "https://www.youtube.com/watch?v=hJuKLM0yd5s",
-      "metrics": {
-        "views": 981931,
-        "likes": 0,
-        "comments": 1
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 981931
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hsrwoqLmatA",
-      "title": "I Found My Girlfriends Most Secret Base In Minecraft..",
-      "url": "https://www.youtube.com/watch?v=hsrwoqLmatA",
-      "metrics": {
-        "views": 946926,
-        "likes": 9560,
-        "comments": 492
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 946926
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "R1uHkkvPrfo",
-      "title": "I UNLOCKED THE NEW FROZEN TREADMIL IN SUBSCRIBERS ACCOUNT IN ROBLOX STEAL AN EGG !!",
-      "url": "https://www.youtube.com/watch?v=R1uHkkvPrfo",
-      "metrics": {
-        "views": 926355,
-        "likes": 13863,
-        "comments": 12563
-      },
-      "category": "20",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 926355
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "-Bhd8JF2VhQ",
-      "title": "Ramayana 700 Shows Cancel vs Love & War + King & Monster Trailer | Deeksha Sharma",
-      "url": "https://www.youtube.com/watch?v=-Bhd8JF2VhQ",
-      "metrics": {
-        "views": 788326,
-        "likes": 11158,
-        "comments": 893
+        "views": 4966204,
+        "likes": 54752,
+        "comments": 1380
       },
       "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 788326
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4966204
     },
     {
       "platform": "Youtube",
-      "topicId": "fFtEk0hYUu0",
-      "title": "Avengers Doomsday Final Trailer Breakdown (தமிழ்)",
-      "url": "https://www.youtube.com/watch?v=fFtEk0hYUu0",
+      "topicId": "HRab8doJNDQ",
+      "title": "PMGC 2026 | The Gauntlet Day 2 - WATCHPARTY WITH SNAX",
+      "url": "https://www.youtube.com/watch?v=HRab8doJNDQ",
       "metrics": {
-        "views": 702968,
-        "likes": 31092,
-        "comments": 1611
+        "views": 4946928,
+        "likes": 172458,
+        "comments": 265
       },
-      "category": "24",
+      "category": "20",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 702968
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "UT6LTC0epeo",
-      "title": "Aaj splendor 🏍️\" se bete ko Helicopter khilaune  dilaunga | indian vehicles simulator 3D #gaming",
-      "url": "https://www.youtube.com/watch?v=UT6LTC0epeo",
-      "metrics": {
-        "views": 702439,
-        "likes": 1339,
-        "comments": 18
-      },
-      "category": "22",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 702439
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "MivHGeG0L0o",
-      "title": "O Mohini | ও মোহিনী  ( Pagli Re 2.0 ) | Romantic Song | Bong Media |  Jhor Ashuk Toofan Ashuk ",
-      "url": "https://www.youtube.com/watch?v=MivHGeG0L0o",
-      "metrics": {
-        "views": 681097,
-        "likes": 31930,
-        "comments": 2240
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 681097
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "qw2-VB_cfpo",
-      "title": "Steve Rogers Is the Real Villain of Doomsday",
-      "url": "https://www.youtube.com/watch?v=qw2-VB_cfpo",
-      "metrics": {
-        "views": 656961,
-        "likes": 14763,
-        "comments": 798
-      },
-      "category": "1",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 656961
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "5jNmSQa3hUg",
-      "title": "#Video | झूठे झूठे | #Ashish Yadav | Jhoothe Jhoothe | Anjali | New Maghi Sad Song 2026",
-      "url": "https://www.youtube.com/watch?v=5jNmSQa3hUg",
-      "metrics": {
-        "views": 582595,
-        "likes": 33466,
-        "comments": 2542
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 582595
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "grfNzY5HxL4",
-      "title": "JACK NE RIYA KO INJECTION LGA DIYA RIYA KA PET KHRAB HO GYA 😨😆|GRAND THEAF AURA GAME GTA5 SIMULATOR ",
-      "url": "https://www.youtube.com/watch?v=grfNzY5HxL4",
-      "metrics": {
-        "views": 574180,
-        "likes": 0,
-        "comments": 19
-      },
-      "category": "22",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 574180
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "NKFnLbdiu1c",
-      "title": "Uncha Nicha Rasta - New Haryanvi DJ Viral Song 2025 | Raj Mawar, Komal C | Bharti Choudhary Dance",
-      "url": "https://www.youtube.com/watch?v=NKFnLbdiu1c",
-      "metrics": {
-        "views": 486083,
-        "likes": 1401,
-        "comments": 6
-      },
-      "category": "10",
-      "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 486083
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4946928
     },
     {
       "platform": "Youtube",
@@ -684,79 +172,575 @@
       "title": "Brownie (Official Music Video) Cheema Y | Gur Sidhu",
       "url": "https://www.youtube.com/watch?v=RA6R22nedK0",
       "metrics": {
-        "views": 465913,
-        "likes": 33837,
-        "comments": 1458
+        "views": 4713641,
+        "likes": 79067,
+        "comments": 2468
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 465913
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4713641
     },
     {
       "platform": "Youtube",
-      "topicId": "XZP8BvE8bcQ",
-      "title": "#Video- नाच नागिन जैसन | Nach Nagin Jaisan | #Raushan Rohi & #Khushi Kakkar New #Maghi Song 2026",
-      "url": "https://www.youtube.com/watch?v=XZP8BvE8bcQ",
+      "topicId": "Y-cRxjSr9YE",
+      "title": "GTA 5 LIVE 🔥 #shortsfeed #shorts #grandtheftauto5",
+      "url": "https://www.youtube.com/watch?v=Y-cRxjSr9YE",
       "metrics": {
-        "views": 328073,
-        "likes": 986,
-        "comments": 15
+        "views": 4265173,
+        "likes": 11836,
+        "comments": 0
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 328073
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4265173
     },
     {
       "platform": "Youtube",
-      "topicId": "Dtt5jjcKrFU",
-      "title": "Laxminka Charane Mana Laga | Namita Agrawal | ଲଷ୍ମୀଙ୍କ ଚରଣେ ମନ ଲଗା | Maa Lakshmi Bhajan",
-      "url": "https://www.youtube.com/watch?v=Dtt5jjcKrFU",
+      "topicId": "3FWFIHfGC7o",
+      "title": "I WENT BACK TO SCHOOL",
+      "url": "https://www.youtube.com/watch?v=3FWFIHfGC7o",
       "metrics": {
-        "views": 178448,
-        "likes": 1640,
-        "comments": 100
+        "views": 4243195,
+        "likes": 55304,
+        "comments": 2800
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 178448
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4243195
     },
     {
       "platform": "Youtube",
-      "topicId": "gftKyACBDsQ",
-      "title": "Full Set",
-      "url": "https://www.youtube.com/watch?v=gftKyACBDsQ",
+      "topicId": "HGY8x0qy0aI",
+      "title": "Jo Bachay Hain Sang Samait Lo | Official Trailer | Netflix",
+      "url": "https://www.youtube.com/watch?v=HGY8x0qy0aI",
       "metrics": {
-        "views": 167285,
-        "likes": 12726,
-        "comments": 877
+        "views": 4156416,
+        "likes": 61249,
+        "comments": 9408
       },
-      "category": "10",
+      "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 167285
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 4156416
     },
     {
       "platform": "Youtube",
-      "topicId": "_OtapdLvoGA",
-      "title": "Manabasa Gurubar Katha | Namita Agrawal | ମାଣବସା ଗୁରୁବାର କଥା | Margashira Special",
-      "url": "https://www.youtube.com/watch?v=_OtapdLvoGA",
+      "topicId": "H6THWs8RP2Q",
+      "title": "Family Pack - Official Teaser | Sree Vishnu, Sakkshi Mhadolkar | Ram Abbaraju | Mythri Movie Makers",
+      "url": "https://www.youtube.com/watch?v=H6THWs8RP2Q",
       "metrics": {
-        "views": 130698,
-        "likes": 841,
-        "comments": 33
+        "views": 3120499,
+        "likes": 38727,
+        "comments": 745
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 3120499
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "DzgorMtx38c",
+      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
+      "url": "https://www.youtube.com/watch?v=DzgorMtx38c",
+      "metrics": {
+        "views": 2967783,
+        "likes": 28335,
+        "comments": 1255
+      },
+      "category": "22",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2967783
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "xsqkdjx0qYA",
+      "title": "[HI] FFWS Global Finals 2026 - Last Chance",
+      "url": "https://www.youtube.com/watch?v=xsqkdjx0qYA",
+      "metrics": {
+        "views": 2826741,
+        "likes": 43698,
+        "comments": 347
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2826741
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "RpjvbsqyUUQ",
+      "title": "Train - Official Trailer | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu",
+      "url": "https://www.youtube.com/watch?v=RpjvbsqyUUQ",
+      "metrics": {
+        "views": 2756278,
+        "likes": 18413,
+        "comments": 648
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2756278
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "MeYJ38OCXjs",
+      "title": "Hail Mary - Official Trailer | Kunchacko Boban | Suraj Venjaramoodu | Vishnu Revikumar | Jakes Bejoy",
+      "url": "https://www.youtube.com/watch?v=MeYJ38OCXjs",
+      "metrics": {
+        "views": 2607623,
+        "likes": 15170,
+        "comments": 549
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 130698
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2607623
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "3tXrwPkXdZg",
+      "title": "Avengers Doomsday Final Trailer Breakdown!",
+      "url": "https://www.youtube.com/watch?v=3tXrwPkXdZg",
+      "metrics": {
+        "views": 2270645,
+        "likes": 68411,
+        "comments": 4088
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2270645
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fv-0q97mSJE",
+      "title": "Gukesh vs Sindarov | Game 3 | Salesforce FIDE World Championship 2026",
+      "url": "https://www.youtube.com/watch?v=fv-0q97mSJE",
+      "metrics": {
+        "views": 2237455,
+        "likes": 25797,
+        "comments": 48
+      },
+      "category": "17",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2237455
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "x0MpzFZi3eE",
+      "title": "GTA 5 LIVE  #gta5 #gtav #gaming",
+      "url": "https://www.youtube.com/watch?v=x0MpzFZi3eE",
+      "metrics": {
+        "views": 2096151,
+        "likes": 4435,
+        "comments": 0
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 2096151
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fyvOWMxi4Fg",
+      "title": "#Video - जहिया जा हलो दिलीया कानो हलीयै जी | #Aashish Yadav का एक और देशी अंदाज में | Magahi Song",
+      "url": "https://www.youtube.com/watch?v=fyvOWMxi4Fg",
+      "metrics": {
+        "views": 1693427,
+        "likes": 57139,
+        "comments": 3086
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1693427
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ZhTBX9SYEvg",
+      "title": "Rang Daali Re | Panchayat Season 5 |Jitendra Kumar| Anurag Saikia, Udit Narayan, Deepali Sathe, Juno",
+      "url": "https://www.youtube.com/watch?v=ZhTBX9SYEvg",
+      "metrics": {
+        "views": 1626775,
+        "likes": 17906,
+        "comments": 660
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1626775
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "JxZnF00GAJo",
+      "title": "Yeshanagula -  8K Video | The Paradise | Nani | Keerthy Suresh | Anirudh Ravichander | Srikanth",
+      "url": "https://www.youtube.com/watch?v=JxZnF00GAJo",
+      "metrics": {
+        "views": 1564272,
+        "likes": 6349,
+        "comments": 44
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1564272
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dnGJmIrdbls",
+      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
+      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
+      "metrics": {
+        "views": 1530993,
+        "likes": 9299,
+        "comments": 807
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1530993
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "hsrwoqLmatA",
+      "title": "I Found My Girlfriends Most Secret Base In Minecraft..",
+      "url": "https://www.youtube.com/watch?v=hsrwoqLmatA",
+      "metrics": {
+        "views": 1449000,
+        "likes": 11854,
+        "comments": 558
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1449000
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "L4yfGvEP0J4",
+      "title": "करिहइये कारखाना ह | #Khesari Lal Yadav & Neha Raj | Karihaiye Karkhana Ha | Ft. Rani | New Song 2026",
+      "url": "https://www.youtube.com/watch?v=L4yfGvEP0J4",
+      "metrics": {
+        "views": 1290369,
+        "likes": 49323,
+        "comments": 3366
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1290369
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zicGsGRVpWc",
+      "title": "देवर ने भाभी के साथ जो किया  |  ROMANTIC 💕💕HINDI WEB SERIES | Devar Bhabhi Ka Romantic Video",
+      "url": "https://www.youtube.com/watch?v=zicGsGRVpWc",
+      "metrics": {
+        "views": 1257968,
+        "likes": 1829,
+        "comments": 27
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1257968
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "2rsCmGk_zGw",
+      "title": "EETHA - Sindoor Se (Official Video) | Shraddha K, Randeep H | Ajay-Atul, Sneha S,Amitabh B | 4th Dec",
+      "url": "https://www.youtube.com/watch?v=2rsCmGk_zGw",
+      "metrics": {
+        "views": 1215315,
+        "likes": 37351,
+        "comments": 690
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1215315
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "DW9F2jELRd8",
+      "title": "Full Set (Official Music Video) | Dhanda Nyoliwala × Xvir Grewal",
+      "url": "https://www.youtube.com/watch?v=DW9F2jELRd8",
+      "metrics": {
+        "views": 1085113,
+        "likes": 67449,
+        "comments": 4108
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1085113
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mXpvbLDEVgQ",
+      "title": "Luxury",
+      "url": "https://www.youtube.com/watch?v=mXpvbLDEVgQ",
+      "metrics": {
+        "views": 1067585,
+        "likes": 37516,
+        "comments": 470
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 1067585
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "4tMECZB_Ywk",
+      "title": "LAST CHANCE FOR TEAM INDIA ❗ ||  INDIA 🇮🇳 vs RRQ 🇮🇩 LOS 🇧🇷 INF 🇧🇩 ||  FFWS GLOBAL FINALS WATCH PARTY",
+      "url": "https://www.youtube.com/watch?v=4tMECZB_Ywk",
+      "metrics": {
+        "views": 969236,
+        "likes": 35104,
+        "comments": 404
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 969236
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "vpsOPdtu3_M",
+      "title": "Kisi Se Dil Lagaya Nahi – Aarzoo Khaan | Sad Song | New Song 2026 | New Hindi song",
+      "url": "https://www.youtube.com/watch?v=vpsOPdtu3_M",
+      "metrics": {
+        "views": 874982,
+        "likes": 1824,
+        "comments": 27
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 874982
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "5jNmSQa3hUg",
+      "title": "#Video | झूठे झूठे | #Ashish Yadav | Jhoothe Jhoothe | Anjali | New Maghi Sad Song 2026",
+      "url": "https://www.youtube.com/watch?v=5jNmSQa3hUg",
+      "metrics": {
+        "views": 848507,
+        "likes": 39695,
+        "comments": 2774
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 848507
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-Bhd8JF2VhQ",
+      "title": "Ramayana 700 Shows Cancel vs Love & War + King & Monster Trailer | Deeksha Sharma",
+      "url": "https://www.youtube.com/watch?v=-Bhd8JF2VhQ",
+      "metrics": {
+        "views": 838055,
+        "likes": 11427,
+        "comments": 912
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 838055
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "c1YVm3jHwGI",
+      "title": "Moonwalk Tamil Trailer | AR Rahman | Prabhudeva | Yogi Babu | Aju Varghese | Arjun Ashokan |Manoj NS",
+      "url": "https://www.youtube.com/watch?v=c1YVm3jHwGI",
+      "metrics": {
+        "views": 709277,
+        "likes": 8285,
+        "comments": 195
+      },
+      "category": "24",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 709277
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "qw2-VB_cfpo",
+      "title": "Steve Rogers Is the Real Villain of Doomsday",
+      "url": "https://www.youtube.com/watch?v=qw2-VB_cfpo",
+      "metrics": {
+        "views": 708336,
+        "likes": 15431,
+        "comments": 828
+      },
+      "category": "1",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 708336
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "UfUWzb1IjTk",
+      "title": "Last Chance | FFWS Global Finals 2026 Watch Party",
+      "url": "https://www.youtube.com/watch?v=UfUWzb1IjTk",
+      "metrics": {
+        "views": 657290,
+        "likes": 23591,
+        "comments": 65
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 657290
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "_cV8QbR0ZZw",
+      "title": "100 Days But ORES ARE CHEST In Hardcore Minecraft 😱",
+      "url": "https://www.youtube.com/watch?v=_cV8QbR0ZZw",
+      "metrics": {
+        "views": 641339,
+        "likes": 32260,
+        "comments": 1728
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 641339
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Y3ctLQIvO3c",
+      "title": "WATCHPARTY🚀 2026 PMGC League | The Gauntlet Day 2 | PUBG MOBILE Global Championship",
+      "url": "https://www.youtube.com/watch?v=Y3ctLQIvO3c",
+      "metrics": {
+        "views": 575035,
+        "likes": 18510,
+        "comments": 46
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 575035
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HKvY_EjuGvY",
+      "title": "Krish Rao - MEXICO (Official Music Video) | Khyati Sharma ",
+      "url": "https://www.youtube.com/watch?v=HKvY_EjuGvY",
+      "metrics": {
+        "views": 542217,
+        "likes": 15896,
+        "comments": 1070
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 542217
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "S5VIop4BZRI",
+      "title": "NOOB vs PRO : Steal An Egg Build Battle Challenge in Minecraft..",
+      "url": "https://www.youtube.com/watch?v=S5VIop4BZRI",
+      "metrics": {
+        "views": 500726,
+        "likes": 4832,
+        "comments": 213
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 500726
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fLe3uSkvLa4",
+      "title": "🔥FFWS Global Finals 2026 - LAST CHANCE 🔥 #freefireindia #totalgaming #rockyrdx",
+      "url": "https://www.youtube.com/watch?v=fLe3uSkvLa4",
+      "metrics": {
+        "views": 499186,
+        "likes": 23002,
+        "comments": 109
+      },
+      "category": "20",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 499186
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Z_vg5diUfRo",
+      "title": "Kaka New Song | Temporary Pyar - Kaka (Lyrics) Darling | Adaab Kharoud | Latest Punjabi Songs 2026",
+      "url": "https://www.youtube.com/watch?v=Z_vg5diUfRo",
+      "metrics": {
+        "views": 395911,
+        "likes": 1698,
+        "comments": 12
+      },
+      "category": "10",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 395911
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "X-vvVENSuhk",
+      "title": "I Watched Avengers: Doomsday FINAL TRAILER in 0.25x Speed and Here's What I Found",
+      "url": "https://www.youtube.com/watch?v=X-vvVENSuhk",
+      "metrics": {
+        "views": 296414,
+        "likes": 10071,
+        "comments": 780
+      },
+      "category": "22",
+      "regionCode": "IN",
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 296414
     },
     {
       "platform": "Youtube",
@@ -764,15 +748,15 @@
       "title": "Mujhse Mohabbat Ka Izhar Karta | 90s Hindi Gane | 90s Hits Hindi Songs | Old Is Gold |Sadabahar Geet",
       "url": "https://www.youtube.com/watch?v=ufOqwBWZM-w",
       "metrics": {
-        "views": 114707,
-        "likes": 293,
-        "comments": 3
+        "views": 250388,
+        "likes": 534,
+        "comments": 10
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 114707
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 250388
     },
     {
       "platform": "Youtube",
@@ -780,38 +764,38 @@
       "title": "Pani Chhalke (Official Music Video) | Sapna Choudhary | Manisha Sharma | New Haryanvi Songs",
       "url": "https://www.youtube.com/watch?v=J314Mk5FzO8",
       "metrics": {
-        "views": 99785,
-        "likes": 287,
-        "comments": 3
+        "views": 230601,
+        "likes": 489,
+        "comments": 6
       },
       "category": "10",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 99785
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 230601
     },
     {
       "platform": "Youtube",
-      "topicId": "ZFIcKgHShTE",
-      "title": "शुक्रवार के दिन जरूर अपने घर में ये सुंदरकांड चलाकर रख देना कर्ज ,बीमारी खत्म और धन वर्षा शुरू",
-      "url": "https://www.youtube.com/watch?v=ZFIcKgHShTE",
+      "topicId": "BUxhap3DUlo",
+      "title": "Adarsha Kutumbam | Official Trailer | Venkatesh | Srinidhi Shetty | Trivikram | Netflix India",
+      "url": "https://www.youtube.com/watch?v=BUxhap3DUlo",
       "metrics": {
-        "views": 51822,
-        "likes": 595,
-        "comments": 35
+        "views": 196527,
+        "likes": 1723,
+        "comments": 45
       },
-      "category": "10",
+      "category": "24",
       "regionCode": "IN",
-      "timestamp": "2026-11-27T08:36:38.412Z",
-      "fetchedAt": "2026-11-27T08:36:38.412Z",
-      "views": 51822
+      "timestamp": "2026-11-27T21:18:36.897Z",
+      "fetchedAt": "2026-11-27T21:18:36.897Z",
+      "views": 196527
     }
   ],
   "meta": {
     "region": "IN",
-    "generatedAt": "2026-11-27T08:36:39.112Z",
-    "fetchedAt": "2026-11-27T08:36:38.412Z",
-    "videoCount": 50,
+    "generatedAt": "2026-11-27T21:18:37.464Z",
+    "fetchedAt": "2026-11-27T21:18:36.897Z",
+    "videoCount": 49,
     "cached": false,
     "source": "render-backend"
   }
