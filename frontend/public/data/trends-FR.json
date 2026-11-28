@@ -4,7 +4,7 @@
   "refreshed": true,
   "page": 1,
   "limit": 50,
-  "count": 50,
+  "count": 49,
   "data": [
     {
       "platform": "Youtube",
@@ -12,63 +12,15 @@
       "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
       "url": "https://www.youtube.com/watch?v=DzgorMtx38c",
       "metrics": {
-        "views": 2967783,
-        "likes": 28336,
-        "comments": 1255
+        "views": 3026411,
+        "likes": 28669,
+        "comments": 1273
       },
       "category": "22",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 2967783
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "RpjvbsqyUUQ",
-      "title": "Train - Official Trailer | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu",
-      "url": "https://www.youtube.com/watch?v=RpjvbsqyUUQ",
-      "metrics": {
-        "views": 2756278,
-        "likes": 18413,
-        "comments": 648
-      },
-      "category": "24",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 2756278
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "dnGJmIrdbls",
-      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
-      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
-      "metrics": {
-        "views": 1530993,
-        "likes": 9299,
-        "comments": 807
-      },
-      "category": "24",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 1530993
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "M-QUgdcBpZU",
-      "title": "Cherry Time! Special Presentation - November 2026",
-      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU",
-      "metrics": {
-        "views": 1326541,
-        "likes": 129070,
-        "comments": 7546
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 1326541
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 3026411
     },
     {
       "platform": "Youtube",
@@ -76,15 +28,47 @@
       "title": "Avengers: Doomsday | TV SPOT “REDEMPTION” CONCEPT | Marvel Studios",
       "url": "https://www.youtube.com/watch?v=FYHvlRJXG2A",
       "metrics": {
-        "views": 1226115,
-        "likes": 14756,
-        "comments": 363
+        "views": 2162532,
+        "likes": 21816,
+        "comments": 516
       },
       "category": "24",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 1226115
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 2162532
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "M-QUgdcBpZU",
+      "title": "Cherry Time! Special Presentation - November 2026",
+      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU",
+      "metrics": {
+        "views": 1733970,
+        "likes": 142800,
+        "comments": 7997
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 1733970
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dnGJmIrdbls",
+      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
+      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
+      "metrics": {
+        "views": 1699303,
+        "likes": 9996,
+        "comments": 872
+      },
+      "category": "24",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 1699303
     },
     {
       "platform": "Youtube",
@@ -92,31 +76,15 @@
       "title": "Lagui - ROULETTE RUSSE (Clip Officiel)",
       "url": "https://www.youtube.com/watch?v=x-PnocmaZ8Y",
       "metrics": {
-        "views": 899275,
-        "likes": 23352,
-        "comments": 1869
+        "views": 1030304,
+        "likes": 24749,
+        "comments": 1908
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 899275
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ihRnBGjz7T8",
-      "title": "Mauvais Djo - 12 (Clip officiel)",
-      "url": "https://www.youtube.com/watch?v=ihRnBGjz7T8",
-      "metrics": {
-        "views": 778012,
-        "likes": 11777,
-        "comments": 425
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 778012
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 1030304
     },
     {
       "platform": "Youtube",
@@ -124,15 +92,31 @@
       "title": "Moonwalk Tamil Trailer | AR Rahman | Prabhudeva | Yogi Babu | Aju Varghese | Arjun Ashokan |Manoj NS",
       "url": "https://www.youtube.com/watch?v=c1YVm3jHwGI",
       "metrics": {
-        "views": 709277,
-        "likes": 8285,
-        "comments": 195
+        "views": 978133,
+        "likes": 11226,
+        "comments": 256
       },
       "category": "24",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 709277
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 978133
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ihRnBGjz7T8",
+      "title": "Mauvais Djo - 12 (Clip officiel)",
+      "url": "https://www.youtube.com/watch?v=ihRnBGjz7T8",
+      "metrics": {
+        "views": 901865,
+        "likes": 12364,
+        "comments": 439
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 901865
     },
     {
       "platform": "Youtube",
@@ -140,47 +124,15 @@
       "title": "Un jeu où tu fais Passer Toute l'Humanité à travers une Porte",
       "url": "https://www.youtube.com/watch?v=VswiccIKDwY",
       "metrics": {
-        "views": 561604,
-        "likes": 14494,
-        "comments": 304
+        "views": 682688,
+        "likes": 15753,
+        "comments": 326
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 561604
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "rkhpk8m3Yh4",
-      "title": "Mecha Base Trailer | Tower Defense Simulator",
-      "url": "https://www.youtube.com/watch?v=rkhpk8m3Yh4",
-      "metrics": {
-        "views": 129465,
-        "likes": 5724,
-        "comments": 956
-      },
-      "category": "1",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 129465
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "zGJqttjITmA",
-      "title": "AVENGERS DOOMSDAY TRAILER FINAL: L'ANALYSE ULTIME SANS SPOILER",
-      "url": "https://www.youtube.com/watch?v=zGJqttjITmA",
-      "metrics": {
-        "views": 125808,
-        "likes": 2935,
-        "comments": 282
-      },
-      "category": "1",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 125808
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 682688
     },
     {
       "platform": "Youtube",
@@ -188,15 +140,31 @@
       "title": "CONDUIRE LE PLUS GROS BATEAU DE GTA 6",
       "url": "https://www.youtube.com/watch?v=Vz8QfbOz_ks",
       "metrics": {
-        "views": 118555,
-        "likes": 2329,
-        "comments": 98
+        "views": 211554,
+        "likes": 3232,
+        "comments": 137
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 118555
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 211554
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rkhpk8m3Yh4",
+      "title": "Mecha Base Trailer | Tower Defense Simulator",
+      "url": "https://www.youtube.com/watch?v=rkhpk8m3Yh4",
+      "metrics": {
+        "views": 177944,
+        "likes": 6590,
+        "comments": 1045
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 177944
     },
     {
       "platform": "Youtube",
@@ -204,63 +172,15 @@
       "title": "SINIK - Après le silence... (Clip Officiel)",
       "url": "https://www.youtube.com/watch?v=UHbghSzk88w",
       "metrics": {
-        "views": 105052,
-        "likes": 2365,
-        "comments": 247
+        "views": 161350,
+        "likes": 3028,
+        "comments": 317
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 105052
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "0P8SKvviUnc",
-      "title": "FFFF - Caballero ft Infinit, H JeuneCrack, Mairo, Jungle Jack, Limsa, JeanJass",
-      "url": "https://www.youtube.com/watch?v=0P8SKvviUnc",
-      "metrics": {
-        "views": 100821,
-        "likes": 6610,
-        "comments": 535
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 100821
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "iDkgYgGzQa8",
-      "title": "GTA 6 : La SUITE ÉVOQUÉE par ROCKSTAR GAMES ⭐ Évolution de la Carte, Activités Annulées, DLC Solo ?",
-      "url": "https://www.youtube.com/watch?v=iDkgYgGzQa8",
-      "metrics": {
-        "views": 88617,
-        "likes": 1779,
-        "comments": 184
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 88617
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "jSicsbyAqZY",
-      "title": "Niro - J'SUIS PARO J'AI RAISON (Clip Officiel)",
-      "url": "https://www.youtube.com/watch?v=jSicsbyAqZY",
-      "metrics": {
-        "views": 83718,
-        "likes": 3171,
-        "comments": 191
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 83718
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 161350
     },
     {
       "platform": "Youtube",
@@ -268,31 +188,47 @@
       "title": "J’ai BRISÉ 69 Mythes sur GTA 6 !",
       "url": "https://www.youtube.com/watch?v=2rA7IdOPdwU",
       "metrics": {
-        "views": 80121,
-        "likes": 2928,
-        "comments": 55
+        "views": 151391,
+        "likes": 4094,
+        "comments": 63
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 80121
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 151391
     },
     {
       "platform": "Youtube",
-      "topicId": "0e8tW_Prw5M",
-      "title": "JETER UN AMI POUR LES MONSTRES !! (Désolé)",
-      "url": "https://www.youtube.com/watch?v=0e8tW_Prw5M",
+      "topicId": "zGJqttjITmA",
+      "title": "AVENGERS DOOMSDAY TRAILER FINAL: L'ANALYSE ULTIME SANS SPOILER",
+      "url": "https://www.youtube.com/watch?v=zGJqttjITmA",
       "metrics": {
-        "views": 72777,
-        "likes": 1210,
-        "comments": 65
+        "views": 140418,
+        "likes": 3117,
+        "comments": 285
       },
-      "category": "20",
+      "category": "1",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 72777
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 140418
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "0P8SKvviUnc",
+      "title": "FFFF - Caballero ft Infinit, H JeuneCrack, Mairo, Jungle Jack, Limsa, JeanJass",
+      "url": "https://www.youtube.com/watch?v=0P8SKvviUnc",
+      "metrics": {
+        "views": 136639,
+        "likes": 7820,
+        "comments": 616
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 136639
     },
     {
       "platform": "Youtube",
@@ -300,127 +236,15 @@
       "title": "Leto (feat. Mous-k) - Est-ce que t'es branché ? (Clip Officiel)",
       "url": "https://www.youtube.com/watch?v=OiJSA89u4Qc",
       "metrics": {
-        "views": 64994,
-        "likes": 2926,
-        "comments": 84
+        "views": 109287,
+        "likes": 3893,
+        "comments": 100
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 64994
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "AF7wQDqSuG0",
-      "title": "JE SUIS UNE PURE CATASTROPHE... (Fortnite avec Hctuan et XababTV)",
-      "url": "https://www.youtube.com/watch?v=AF7wQDqSuG0",
-      "metrics": {
-        "views": 59434,
-        "likes": 809,
-        "comments": 47
-      },
-      "category": "24",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 59434
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mAewtpl0zGg",
-      "title": "100 Jours dans Le NETHER sur Minecraft..",
-      "url": "https://www.youtube.com/watch?v=mAewtpl0zGg",
-      "metrics": {
-        "views": 57839,
-        "likes": 2427,
-        "comments": 148
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 57839
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "gklXw4b9Kv8",
-      "title": "ALERTE GTA 6 : Un MODE ONLINE déjà JOUABLE sur PC ! ⚠️ C'est quoi cette histoire ?!",
-      "url": "https://www.youtube.com/watch?v=gklXw4b9Kv8",
-      "metrics": {
-        "views": 54695,
-        "likes": 805,
-        "comments": 228
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 54695
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "KawwWN_VnWQ",
-      "title": "On s'en remettra",
-      "url": "https://www.youtube.com/watch?v=KawwWN_VnWQ",
-      "metrics": {
-        "views": 44699,
-        "likes": 2322,
-        "comments": 104
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 44699
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "v0SCBlIwK5w",
-      "title": "J’ai crée un FAUX PUITS pour Voler l’argent de mes Amis sur Minecraft !",
-      "url": "https://www.youtube.com/watch?v=v0SCBlIwK5w",
-      "metrics": {
-        "views": 38212,
-        "likes": 790,
-        "comments": 46
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 38212
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "IYz_1DTWH8w",
-      "title": "ÉLIMINER TOUS LES INSECTES DE MA MAISON !! (Horrible)",
-      "url": "https://www.youtube.com/watch?v=IYz_1DTWH8w",
-      "metrics": {
-        "views": 38013,
-        "likes": 886,
-        "comments": 57
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 38013
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Fy1O8l0VLrs",
-      "title": "92",
-      "url": "https://www.youtube.com/watch?v=Fy1O8l0VLrs",
-      "metrics": {
-        "views": 37032,
-        "likes": 1702,
-        "comments": 107
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 37032
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 109287
     },
     {
       "platform": "Youtube",
@@ -428,63 +252,63 @@
       "title": "MOO WHO? #2 & WORST CLASS EVER ft. Zerator, Antoine, MoMaN & Lydia ! (Best-of du Lundi #247)",
       "url": "https://www.youtube.com/watch?v=5zl1mWWPDjk",
       "metrics": {
-        "views": 36020,
-        "likes": 1295,
-        "comments": 54
+        "views": 105550,
+        "likes": 2207,
+        "comments": 83
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 36020
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 105550
     },
     {
       "platform": "Youtube",
-      "topicId": "HJUZ_C3vS0E",
-      "title": "Lenaïg - Poupée (Lyrics Video)",
-      "url": "https://www.youtube.com/watch?v=HJUZ_C3vS0E",
+      "topicId": "0e8tW_Prw5M",
+      "title": "JETER UN AMI POUR LES MONSTRES !! (Désolé)",
+      "url": "https://www.youtube.com/watch?v=0e8tW_Prw5M",
       "metrics": {
-        "views": 34867,
-        "likes": 3615,
-        "comments": 409
+        "views": 105036,
+        "likes": 1472,
+        "comments": 74
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 105036
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jSicsbyAqZY",
+      "title": "Niro - J'SUIS PARO J'AI RAISON (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=jSicsbyAqZY",
+      "metrics": {
+        "views": 97255,
+        "likes": 3414,
+        "comments": 199
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 34867
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 97255
     },
     {
       "platform": "Youtube",
-      "topicId": "k6Gm5L-xXps",
-      "title": "J’ai Fait SEMBLANT D’être Malade pour Rater l’École!",
-      "url": "https://www.youtube.com/watch?v=k6Gm5L-xXps",
+      "topicId": "mAewtpl0zGg",
+      "title": "100 Jours dans Le NETHER sur Minecraft..",
+      "url": "https://www.youtube.com/watch?v=mAewtpl0zGg",
       "metrics": {
-        "views": 33672,
-        "likes": 653,
-        "comments": 35
+        "views": 94642,
+        "likes": 3152,
+        "comments": 191
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 33672
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "qQ7MxU3hPKM",
-      "title": "à Chaque MORT, Elephant 2028 devient de PLUS en PLUS GROS ! (ft.Maxouel)",
-      "url": "https://www.youtube.com/watch?v=qQ7MxU3hPKM",
-      "metrics": {
-        "views": 33539,
-        "likes": 2057,
-        "comments": 32
-      },
-      "category": "20",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 33539
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 94642
     },
     {
       "platform": "Youtube",
@@ -492,95 +316,79 @@
       "title": "Je dois RAMASSER tout le SABLE d'un DÉSERT (Every Last Grain)",
       "url": "https://www.youtube.com/watch?v=1RY3P1Ho2aQ",
       "metrics": {
-        "views": 33276,
-        "likes": 733,
-        "comments": 63
+        "views": 84497,
+        "likes": 1170,
+        "comments": 101
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 33276
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 84497
     },
     {
       "platform": "Youtube",
-      "topicId": "n4xdeaBExH0",
-      "title": "LE JOUEUR Bande Annonce (2027) Pio Marmai",
-      "url": "https://www.youtube.com/watch?v=n4xdeaBExH0",
+      "topicId": "zshGWLA_e7Q",
+      "title": "GTA 6 déjà JOUABLE sur PC (Online, Mods, Chat, IA) 🚨 ROCKSTAR GAMES et TAKE TWO en PANIQUE TOTALE !",
+      "url": "https://www.youtube.com/watch?v=zshGWLA_e7Q",
       "metrics": {
-        "views": 30110,
-        "likes": 136,
-        "comments": 17
-      },
-      "category": "1",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 30110
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mUJvOkLEgIA",
-      "title": "Dans Ce Monde, Chaque Ville A Sa Règle… 🌍 | Histoires Roblox",
-      "url": "https://www.youtube.com/watch?v=mUJvOkLEgIA",
-      "metrics": {
-        "views": 27353,
-        "likes": 359,
-        "comments": 13
+        "views": 79133,
+        "likes": 1328,
+        "comments": 448
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 27353
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 79133
     },
     {
       "platform": "Youtube",
-      "topicId": "fcHgxNLTL60",
-      "title": "J'ai Triché Avec un XRAY Sans qu'ils Remarquent !",
-      "url": "https://www.youtube.com/watch?v=fcHgxNLTL60",
+      "topicId": "IYz_1DTWH8w",
+      "title": "ÉLIMINER TOUS LES INSECTES DE MA MAISON !! (Horrible)",
+      "url": "https://www.youtube.com/watch?v=IYz_1DTWH8w",
       "metrics": {
-        "views": 24797,
-        "likes": 1103,
-        "comments": 76
+        "views": 72592,
+        "likes": 1221,
+        "comments": 66
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 24797
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 72592
     },
     {
       "platform": "Youtube",
-      "topicId": "QZSU5uJXtYY",
-      "title": "MIKL Feat. Léa Churros - Doudou An Mwen (Clip officiel)",
-      "url": "https://www.youtube.com/watch?v=QZSU5uJXtYY",
+      "topicId": "IT3knign8Gk",
+      "title": "Comment bien Commencer GTA VI ? ✨ (Sans spoil majeur)",
+      "url": "https://www.youtube.com/watch?v=IT3knign8Gk",
       "metrics": {
-        "views": 22789,
-        "likes": 1226,
-        "comments": 41
+        "views": 70654,
+        "likes": 1921,
+        "comments": 64
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 22789
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 70654
     },
     {
       "platform": "Youtube",
-      "topicId": "dF0drf7unV4",
-      "title": "LA CITÉ (feat. Mous-K)",
-      "url": "https://www.youtube.com/watch?v=dF0drf7unV4",
+      "topicId": "v0SCBlIwK5w",
+      "title": "J’ai crée un FAUX PUITS pour Voler l’argent de mes Amis sur Minecraft !",
+      "url": "https://www.youtube.com/watch?v=v0SCBlIwK5w",
       "metrics": {
-        "views": 22332,
-        "likes": 880,
-        "comments": 25
+        "views": 57822,
+        "likes": 947,
+        "comments": 57
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 22332
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 57822
     },
     {
       "platform": "Youtube",
@@ -588,143 +396,95 @@
       "title": "Akhenaton - Grinta #1(Freestyle intégral)",
       "url": "https://www.youtube.com/watch?v=9Ua0tCvXqH4",
       "metrics": {
-        "views": 20294,
-        "likes": 3151,
-        "comments": 474
+        "views": 56090,
+        "likes": 4779,
+        "comments": 694
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 20294
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 56090
     },
     {
       "platform": "Youtube",
-      "topicId": "8IkOqRDm2ww",
-      "title": "I PLAY ROCKY Bande Annonce VF (2026) Nouvelle",
-      "url": "https://www.youtube.com/watch?v=8IkOqRDm2ww",
+      "topicId": "KawwWN_VnWQ",
+      "title": "On s'en remettra",
+      "url": "https://www.youtube.com/watch?v=KawwWN_VnWQ",
       "metrics": {
-        "views": 19254,
-        "likes": 377,
-        "comments": 29
+        "views": 55439,
+        "likes": 2661,
+        "comments": 120
       },
-      "category": "1",
+      "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 19254
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 55439
     },
     {
       "platform": "Youtube",
-      "topicId": "mu3N1trMPzg",
-      "title": "SOUKA EST COINCÉ DANS GTA 6 !",
-      "url": "https://www.youtube.com/watch?v=mu3N1trMPzg",
+      "topicId": "059Yvvdcc1s",
+      "title": "99 % des joueurs de GTA 6 ont Raté ça ! (Ferrari MANQUABLE, Secret Vice City PS2, Radios SECRÈTES)",
+      "url": "https://www.youtube.com/watch?v=059Yvvdcc1s",
       "metrics": {
-        "views": 18850,
-        "likes": 537,
-        "comments": 24
+        "views": 52756,
+        "likes": 917,
+        "comments": 59
       },
       "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 18850
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 52756
     },
     {
       "platform": "Youtube",
-      "topicId": "zGMeFeTgid0",
-      "title": "LECYA - J'aimerais m'aimer (Clip Officiel)",
-      "url": "https://www.youtube.com/watch?v=zGMeFeTgid0",
+      "topicId": "Fy1O8l0VLrs",
+      "title": "92",
+      "url": "https://www.youtube.com/watch?v=Fy1O8l0VLrs",
       "metrics": {
-        "views": 18749,
-        "likes": 2412,
-        "comments": 522
+        "views": 52377,
+        "likes": 1975,
+        "comments": 116
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 18749
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 52377
     },
     {
       "platform": "Youtube",
-      "topicId": "1EjP4W-6w5k",
-      "title": "SELECT",
-      "url": "https://www.youtube.com/watch?v=1EjP4W-6w5k",
+      "topicId": "fcHgxNLTL60",
+      "title": "J'ai Triché Avec un XRAY Sans qu'ils Remarquent !",
+      "url": "https://www.youtube.com/watch?v=fcHgxNLTL60",
       "metrics": {
-        "views": 16688,
-        "likes": 1146,
-        "comments": 23
+        "views": 51375,
+        "likes": 1515,
+        "comments": 71
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 16688
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 51375
     },
     {
       "platform": "Youtube",
-      "topicId": "rCsqFTDY1Bs",
-      "title": "Marine - Si j'étais Marin (Audio)",
-      "url": "https://www.youtube.com/watch?v=rCsqFTDY1Bs",
+      "topicId": "k6Gm5L-xXps",
+      "title": "J’ai Fait SEMBLANT D’être Malade pour Rater l’École!",
+      "url": "https://www.youtube.com/watch?v=k6Gm5L-xXps",
       "metrics": {
-        "views": 16641,
-        "likes": 509,
-        "comments": 30
+        "views": 50338,
+        "likes": 794,
+        "comments": 36
       },
-      "category": "10",
+      "category": "20",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 16641
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "fnBOqyVUnL4",
-      "title": "LE FILS DE DOOM DANS CE NOUVEAU TEASER AVENGERS DOOMSDAY (Réaction + Analyse)",
-      "url": "https://www.youtube.com/watch?v=fnBOqyVUnL4",
-      "metrics": {
-        "views": 13906,
-        "likes": 323,
-        "comments": 67
-      },
-      "category": "24",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 13906
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "zz08iV_PPjw",
-      "title": "À Contre-Sens 3 : Londres - Teaser Officiel | Prime Video",
-      "url": "https://www.youtube.com/watch?v=zz08iV_PPjw",
-      "metrics": {
-        "views": 13846,
-        "likes": 702,
-        "comments": 10
-      },
-      "category": "24",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 13846
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "CCNK1GiM-so",
-      "title": "Grizzly",
-      "url": "https://www.youtube.com/watch?v=CCNK1GiM-so",
-      "metrics": {
-        "views": 13234,
-        "likes": 657,
-        "comments": 0
-      },
-      "category": "10",
-      "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 13234
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 50338
     },
     {
       "platform": "Youtube",
@@ -732,15 +492,175 @@
       "title": "ISS - ZAKARIA (Clip Officiel)",
       "url": "https://www.youtube.com/watch?v=lTGwMvP3H9I",
       "metrics": {
-        "views": 11329,
-        "likes": 834,
-        "comments": 46
+        "views": 46943,
+        "likes": 1200,
+        "comments": 59
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.178Z",
-      "views": 11329
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 46943
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HJUZ_C3vS0E",
+      "title": "Lenaïg - Poupée (Lyrics Video)",
+      "url": "https://www.youtube.com/watch?v=HJUZ_C3vS0E",
+      "metrics": {
+        "views": 46882,
+        "likes": 3961,
+        "comments": 430
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 46882
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "03w36hbpGdg",
+      "title": "Rim'K - Pour toi",
+      "url": "https://www.youtube.com/watch?v=03w36hbpGdg",
+      "metrics": {
+        "views": 45131,
+        "likes": 1890,
+        "comments": 99
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 45131
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QZSU5uJXtYY",
+      "title": "MIKL Feat. Léa Churros - Doudou An Mwen (Clip officiel)",
+      "url": "https://www.youtube.com/watch?v=QZSU5uJXtYY",
+      "metrics": {
+        "views": 40730,
+        "likes": 1777,
+        "comments": 55
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 40730
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mWRlxbMDAT4",
+      "title": "La reine des archères évolutive !",
+      "url": "https://www.youtube.com/watch?v=mWRlxbMDAT4",
+      "metrics": {
+        "views": 36623,
+        "likes": 1328,
+        "comments": 121
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 36623
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zGMeFeTgid0",
+      "title": "LECYA - J'aimerais m'aimer (Clip Officiel)",
+      "url": "https://www.youtube.com/watch?v=zGMeFeTgid0",
+      "metrics": {
+        "views": 34943,
+        "likes": 3027,
+        "comments": 595
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 34943
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mu3N1trMPzg",
+      "title": "SOUKA EST COINCÉ DANS GTA 6 !",
+      "url": "https://www.youtube.com/watch?v=mu3N1trMPzg",
+      "metrics": {
+        "views": 34681,
+        "likes": 753,
+        "comments": 26
+      },
+      "category": "20",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 34681
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dF0drf7unV4",
+      "title": "LA CITÉ (feat. Mous-K)",
+      "url": "https://www.youtube.com/watch?v=dF0drf7unV4",
+      "metrics": {
+        "views": 32090,
+        "likes": 1074,
+        "comments": 27
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 32090
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "8IkOqRDm2ww",
+      "title": "I PLAY ROCKY Bande Annonce VF (2026) Nouvelle",
+      "url": "https://www.youtube.com/watch?v=8IkOqRDm2ww",
+      "metrics": {
+        "views": 31162,
+        "likes": 458,
+        "comments": 36
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 31162
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rCsqFTDY1Bs",
+      "title": "Marine - Si j'étais Marin (Audio)",
+      "url": "https://www.youtube.com/watch?v=rCsqFTDY1Bs",
+      "metrics": {
+        "views": 27649,
+        "likes": 561,
+        "comments": 33
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 27649
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zz08iV_PPjw",
+      "title": "À Contre-Sens 3 : Londres - Teaser Officiel | Prime Video",
+      "url": "https://www.youtube.com/watch?v=zz08iV_PPjw",
+      "metrics": {
+        "views": 27589,
+        "likes": 904,
+        "comments": 12
+      },
+      "category": "24",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 27589
     },
     {
       "platform": "Youtube",
@@ -748,31 +668,63 @@
       "title": "JKSN - FKK (Clip Officiel)",
       "url": "https://www.youtube.com/watch?v=if_eL_4FA9w",
       "metrics": {
-        "views": 8866,
-        "likes": 787,
-        "comments": 39
+        "views": 25747,
+        "likes": 1282,
+        "comments": 52
       },
       "category": "10",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 8866
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 25747
     },
     {
       "platform": "Youtube",
-      "topicId": "Qu_KMVcQQlo",
-      "title": "J'ai compris un truc ÉNORME sur AVENGERS DOOMSDAY en jouant au Monopoly !",
-      "url": "https://www.youtube.com/watch?v=Qu_KMVcQQlo",
+      "topicId": "1EjP4W-6w5k",
+      "title": "SELECT",
+      "url": "https://www.youtube.com/watch?v=1EjP4W-6w5k",
       "metrics": {
-        "views": 7791,
-        "likes": 247,
-        "comments": 114
+        "views": 24258,
+        "likes": 1406,
+        "comments": 33
+      },
+      "category": "10",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 24258
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "fnBOqyVUnL4",
+      "title": "LE FILS DE DOOM DANS CE NOUVEAU TEASER AVENGERS DOOMSDAY (Réaction + Analyse)",
+      "url": "https://www.youtube.com/watch?v=fnBOqyVUnL4",
+      "metrics": {
+        "views": 19799,
+        "likes": 393,
+        "comments": 81
       },
       "category": "24",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 7791
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 19799
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "zFGf8I9nv5c",
+      "title": "THE PENDRAGON CYCLE Bande Annonce VF (2026)",
+      "url": "https://www.youtube.com/watch?v=zFGf8I9nv5c",
+      "metrics": {
+        "views": 11900,
+        "likes": 95,
+        "comments": 5
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 11900
     },
     {
       "platform": "Youtube",
@@ -780,15 +732,31 @@
       "title": "Bande-annonce : la semaine du 30 au 4 décembre 2026",
       "url": "https://www.youtube.com/watch?v=kmKiYxCOxs8",
       "metrics": {
-        "views": 5611,
-        "likes": 119,
-        "comments": 8
+        "views": 10556,
+        "likes": 137,
+        "comments": 10
       },
       "category": "24",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 5611
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 10556
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "qZMg6HmXm8Q",
+      "title": "ROMA ELASTICA Bande Annonce (2026) Marion Cotillard",
+      "url": "https://www.youtube.com/watch?v=qZMg6HmXm8Q",
+      "metrics": {
+        "views": 6748,
+        "likes": 46,
+        "comments": 3
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 6748
     },
     {
       "platform": "Youtube",
@@ -796,22 +764,38 @@
       "title": "DOOM va MASSACRER STEVE ! Le DERNIER TRAILER D'AVENGERS DOOMSDAY. (Réaction, Analyses...)",
       "url": "https://www.youtube.com/watch?v=PKMBFqZ1YMw",
       "metrics": {
-        "views": 5388,
-        "likes": 151,
-        "comments": 22
+        "views": 6483,
+        "likes": 182,
+        "comments": 27
       },
       "category": "1",
       "regionCode": "FR",
-      "timestamp": "2026-11-27T21:18:49.177Z",
-      "fetchedAt": "2026-11-27T21:18:49.177Z",
-      "views": 5388
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 6483
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "bMANq9xjckE",
+      "title": "Unity V Trailer",
+      "url": "https://www.youtube.com/watch?v=bMANq9xjckE",
+      "metrics": {
+        "views": 4244,
+        "likes": 184,
+        "comments": 29
+      },
+      "category": "1",
+      "regionCode": "FR",
+      "timestamp": "2026-11-28T07:51:03.215Z",
+      "fetchedAt": "2026-11-28T07:51:03.215Z",
+      "views": 4244
     }
   ],
   "meta": {
     "region": "FR",
-    "generatedAt": "2026-11-27T21:18:49.732Z",
-    "fetchedAt": "2026-11-27T21:18:49.178Z",
-    "videoCount": 50,
+    "generatedAt": "2026-11-28T07:51:03.751Z",
+    "fetchedAt": "2026-11-28T07:51:03.215Z",
+    "videoCount": 49,
     "cached": false,
     "source": "render-backend"
   }

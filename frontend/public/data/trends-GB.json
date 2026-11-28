@@ -4,7 +4,7 @@
   "refreshed": true,
   "page": 1,
   "limit": 50,
-  "count": 50,
+  "count": 48,
   "data": [
     {
       "platform": "Youtube",
@@ -12,31 +12,15 @@
       "title": "Daddy Cool (KING Version) | Shah Rukh Khan, Kareena | Sachin-Jigar, Arijit, Boney M, Shilpa, Kumaar",
       "url": "https://www.youtube.com/watch?v=2pIRdpQhvpU",
       "metrics": {
-        "views": 6274222,
-        "likes": 128146,
-        "comments": 9610
+        "views": 11440328,
+        "likes": 173751,
+        "comments": 11602
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 6274222
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "HRab8doJNDQ",
-      "title": "PMGC 2026 | The Gauntlet Day 2 - WATCHPARTY WITH SNAX",
-      "url": "https://www.youtube.com/watch?v=HRab8doJNDQ",
-      "metrics": {
-        "views": 4946928,
-        "likes": 172458,
-        "comments": 265
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 4946928
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 11440328
     },
     {
       "platform": "Youtube",
@@ -44,31 +28,15 @@
       "title": "Brownie (Official Music Video) Cheema Y | Gur Sidhu",
       "url": "https://www.youtube.com/watch?v=RA6R22nedK0",
       "metrics": {
-        "views": 4713641,
-        "likes": 79067,
-        "comments": 2468
+        "views": 5853118,
+        "likes": 111509,
+        "comments": 2690
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 4713641
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DzgorMtx38c",
-      "title": "Avengers Doomsday | Magneto vs Doom | Get Your Tickets at TGV Now",
-      "url": "https://www.youtube.com/watch?v=DzgorMtx38c",
-      "metrics": {
-        "views": 2967783,
-        "likes": 28336,
-        "comments": 1255
-      },
-      "category": "22",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 2967783
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 5853118
     },
     {
       "platform": "Youtube",
@@ -76,15 +44,15 @@
       "title": "Train - Official Trailer | Vijay Sethupathi | Mysskin | Shruti Haasan | Kalaippuli S Thanu",
       "url": "https://www.youtube.com/watch?v=RpjvbsqyUUQ",
       "metrics": {
-        "views": 2756278,
-        "likes": 18413,
-        "comments": 648
+        "views": 3519084,
+        "likes": 24393,
+        "comments": 783
       },
       "category": "24",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 2756278
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 3519084
     },
     {
       "platform": "Youtube",
@@ -92,47 +60,15 @@
       "title": "Jamie Miller - Babydoll (Official Music Video)",
       "url": "https://www.youtube.com/watch?v=HQoB61gvVOw",
       "metrics": {
-        "views": 2570020,
-        "likes": 50891,
-        "comments": 1823
+        "views": 2978294,
+        "likes": 55750,
+        "comments": 1962
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 2570020
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "dnGJmIrdbls",
-      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
-      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
-      "metrics": {
-        "views": 1530993,
-        "likes": 9299,
-        "comments": 807
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 1530993
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "M-QUgdcBpZU",
-      "title": "Cherry Time! Special Presentation - November 2026",
-      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU",
-      "metrics": {
-        "views": 1326541,
-        "likes": 129062,
-        "comments": 7543
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 1326541
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 2978294
     },
     {
       "platform": "Youtube",
@@ -140,15 +76,47 @@
       "title": "Avengers: Doomsday | TV SPOT “REDEMPTION” CONCEPT | Marvel Studios",
       "url": "https://www.youtube.com/watch?v=FYHvlRJXG2A",
       "metrics": {
-        "views": 1226115,
-        "likes": 14753,
-        "comments": 363
+        "views": 2162532,
+        "likes": 21815,
+        "comments": 516
       },
       "category": "24",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 1226115
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 2162532
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "M-QUgdcBpZU",
+      "title": "Cherry Time! Special Presentation - November 2026",
+      "url": "https://www.youtube.com/watch?v=M-QUgdcBpZU",
+      "metrics": {
+        "views": 1733970,
+        "likes": 142799,
+        "comments": 7997
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 1733970
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "dnGJmIrdbls",
+      "title": "AVENGERS: DOOMSDAY \"Magneto Removes Doctor Doom's Mask\" TV Spot Trailer (2026)",
+      "url": "https://www.youtube.com/watch?v=dnGJmIrdbls",
+      "metrics": {
+        "views": 1699303,
+        "likes": 9996,
+        "comments": 872
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 1699303
     },
     {
       "platform": "Youtube",
@@ -156,31 +124,15 @@
       "title": "Luxury",
       "url": "https://www.youtube.com/watch?v=mXpvbLDEVgQ",
       "metrics": {
-        "views": 1067585,
-        "likes": 37516,
-        "comments": 470
+        "views": 1598650,
+        "likes": 46954,
+        "comments": 634
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 1067585
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Gxf0DWE5lxc",
-      "title": "Have Yourself A Merry Little Christmas (Official Lyric Video) | Snoopy Presents: 12 Days of Snoopy",
-      "url": "https://www.youtube.com/watch?v=Gxf0DWE5lxc",
-      "metrics": {
-        "views": 1057633,
-        "likes": 4640,
-        "comments": 66
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 1057633
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 1598650
     },
     {
       "platform": "Youtube",
@@ -188,319 +140,15 @@
       "title": "GTA 6 - 30+ GAME CHANGING Mechanics I Wish I Knew Sooner",
       "url": "https://www.youtube.com/watch?v=4WutklK2SS4",
       "metrics": {
-        "views": 999709,
-        "likes": 20526,
-        "comments": 1100
+        "views": 1363589,
+        "likes": 26806,
+        "comments": 1372
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 999709
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "L2z-NKaTA7E",
-      "title": "AVENGERS DOOMSDAY TRAILER BREAKDOWN | International Promo | Steve & Thor in Latveria & TVA!",
-      "url": "https://www.youtube.com/watch?v=L2z-NKaTA7E",
-      "metrics": {
-        "views": 907885,
-        "likes": 16747,
-        "comments": 887
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 907885
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "c1YVm3jHwGI",
-      "title": "Moonwalk Tamil Trailer | AR Rahman | Prabhudeva | Yogi Babu | Aju Varghese | Arjun Ashokan |Manoj NS",
-      "url": "https://www.youtube.com/watch?v=c1YVm3jHwGI",
-      "metrics": {
-        "views": 709277,
-        "likes": 8285,
-        "comments": 195
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 709277
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "qe5Fr9lw3FE",
-      "title": "Avengers: Doomsday All Trailers | IN ORDER THEY APPEAR",
-      "url": "https://www.youtube.com/watch?v=qe5Fr9lw3FE",
-      "metrics": {
-        "views": 661312,
-        "likes": 3153,
-        "comments": 118
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 661312
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "UDArNnG_t3M",
-      "title": "Avengers: Doomsday | Extinction",
-      "url": "https://www.youtube.com/watch?v=UDArNnG_t3M",
-      "metrics": {
-        "views": 594060,
-        "likes": 7055,
-        "comments": 245
-      },
-      "category": "1",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 594060
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "QA2EwT8jlNE",
-      "title": "AVENGERS DOOMSDAY Doctor Doom vs Magneto Trailer & New Powers Breakdown!",
-      "url": "https://www.youtube.com/watch?v=QA2EwT8jlNE",
-      "metrics": {
-        "views": 544888,
-        "likes": 6648,
-        "comments": 797
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 544888
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "xJy1bCLx_Kc",
-      "title": "OUT OF MY MIND",
-      "url": "https://www.youtube.com/watch?v=xJy1bCLx_Kc",
-      "metrics": {
-        "views": 458245,
-        "likes": 27069,
-        "comments": 1869
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 458245
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "sFSFMBy7zkw",
-      "title": "I Followed An NPC In GTA 6 For 24 Hours..",
-      "url": "https://www.youtube.com/watch?v=sFSFMBy7zkw",
-      "metrics": {
-        "views": 412736,
-        "likes": 2993,
-        "comments": 307
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 412736
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "7tYnGWUbMmM",
-      "title": "Best Christmas Hits 2027 🎅 Top Christmas Songs ✨ Best Holiday Songs",
-      "url": "https://www.youtube.com/watch?v=7tYnGWUbMmM",
-      "metrics": {
-        "views": 350971,
-        "likes": 656,
-        "comments": 25
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 350971
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "HenqTsQhFu0",
-      "title": "From POOR to RICH Island in Minecraft!",
-      "url": "https://www.youtube.com/watch?v=HenqTsQhFu0",
-      "metrics": {
-        "views": 339134,
-        "likes": 3405,
-        "comments": 507
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 339134
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "nTjepm4xbc8",
-      "title": "Justice - Flower In A Hurricane [Lyrics] feat. Tame Impala, SZA, King Gizzard & The Lizard Wizard)",
-      "url": "https://www.youtube.com/watch?v=nTjepm4xbc8",
-      "metrics": {
-        "views": 336159,
-        "likes": 4579,
-        "comments": 317
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 336159
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "-l237RK1icA",
-      "title": "AVENGERS 5: DOOMSDAY Official “Magneto Removes Doctor Dooms Mask” Teaser Trailer (2026) Marvel",
-      "url": "https://www.youtube.com/watch?v=-l237RK1icA",
-      "metrics": {
-        "views": 315967,
-        "likes": 2032,
-        "comments": 122
-      },
-      "category": "24",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 315967
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "X-vvVENSuhk",
-      "title": "I Watched Avengers: Doomsday FINAL TRAILER in 0.25x Speed and Here's What I Found",
-      "url": "https://www.youtube.com/watch?v=X-vvVENSuhk",
-      "metrics": {
-        "views": 296414,
-        "likes": 10071,
-        "comments": 780
-      },
-      "category": "22",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 296414
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "y15qKwTqRWU",
-      "title": "ROBLOX IN THIS WORLD..??",
-      "url": "https://www.youtube.com/watch?v=y15qKwTqRWU",
-      "metrics": {
-        "views": 289517,
-        "likes": 4161,
-        "comments": 516
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 289517
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Z0uXHadf_VE",
-      "title": "ROBLOX RAGDOLL SOCCER..",
-      "url": "https://www.youtube.com/watch?v=Z0uXHadf_VE",
-      "metrics": {
-        "views": 286252,
-        "likes": 3275,
-        "comments": 726
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 286252
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "wwMZiEEWPsE",
-      "title": "Avengers Doomsday Steve Rogers TV Spot Trailer",
-      "url": "https://www.youtube.com/watch?v=wwMZiEEWPsE",
-      "metrics": {
-        "views": 263502,
-        "likes": 1071,
-        "comments": 55
-      },
-      "category": "1",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 263502
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "QE-egKoAnAo",
-      "title": "FINAL LIFE: Episode 5 - ACCEPT YOUR FATE",
-      "url": "https://www.youtube.com/watch?v=QE-egKoAnAo",
-      "metrics": {
-        "views": 260819,
-        "likes": 13990,
-        "comments": 776
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 260819
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Gpy4TTGSTq8",
-      "title": "The Side Character Starter Pokémon",
-      "url": "https://www.youtube.com/watch?v=Gpy4TTGSTq8",
-      "metrics": {
-        "views": 212572,
-        "likes": 9882,
-        "comments": 747
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 212572
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mKyt2nd-Jj0",
-      "title": "Strength SMP: Official Trailer",
-      "url": "https://www.youtube.com/watch?v=mKyt2nd-Jj0",
-      "metrics": {
-        "views": 194850,
-        "likes": 6138,
-        "comments": 610
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 194850
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hyHSJtwfuPw",
-      "title": "Leo de la Rosiori - Nebunu 2 (Official Video)",
-      "url": "https://www.youtube.com/watch?v=hyHSJtwfuPw",
-      "metrics": {
-        "views": 194558,
-        "likes": 5211,
-        "comments": 99
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 194558
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 1363589
     },
     {
       "platform": "Youtube",
@@ -508,31 +156,207 @@
       "title": "if you don't TIP you DIE",
       "url": "https://www.youtube.com/watch?v=1qa9PrPY3kk",
       "metrics": {
-        "views": 180893,
-        "likes": 22827,
-        "comments": 1993
+        "views": 1122502,
+        "likes": 56238,
+        "comments": 3943
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 180893
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 1122502
     },
     {
       "platform": "Youtube",
-      "topicId": "r5prR7x4aj4",
-      "title": "I Joined Manchester United...",
-      "url": "https://www.youtube.com/watch?v=r5prR7x4aj4",
+      "topicId": "c1YVm3jHwGI",
+      "title": "Moonwalk Tamil Trailer | AR Rahman | Prabhudeva | Yogi Babu | Aju Varghese | Arjun Ashokan |Manoj NS",
+      "url": "https://www.youtube.com/watch?v=c1YVm3jHwGI",
       "metrics": {
-        "views": 174188,
-        "likes": 8258,
-        "comments": 644
+        "views": 978133,
+        "likes": 11224,
+        "comments": 256
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 978133
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "qe5Fr9lw3FE",
+      "title": "Avengers: Doomsday All Trailers | IN ORDER THEY APPEAR",
+      "url": "https://www.youtube.com/watch?v=qe5Fr9lw3FE",
+      "metrics": {
+        "views": 875857,
+        "likes": 3992,
+        "comments": 139
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 875857
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "xJy1bCLx_Kc",
+      "title": "OUT OF MY MIND",
+      "url": "https://www.youtube.com/watch?v=xJy1bCLx_Kc",
+      "metrics": {
+        "views": 794394,
+        "likes": 38692,
+        "comments": 2411
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 794394
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HenqTsQhFu0",
+      "title": "From POOR to RICH Island in Minecraft!",
+      "url": "https://www.youtube.com/watch?v=HenqTsQhFu0",
+      "metrics": {
+        "views": 692661,
+        "likes": 5063,
+        "comments": 672
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 692661
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "uqG4tlffbpk",
+      "title": "The Greatest Chess Game You Have Never Seen",
+      "url": "https://www.youtube.com/watch?v=uqG4tlffbpk",
+      "metrics": {
+        "views": 691916,
+        "likes": 15846,
+        "comments": 905
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 691916
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "stRCl66hBLk",
+      "title": "DOORS: ???",
+      "url": "https://www.youtube.com/watch?v=stRCl66hBLk",
+      "metrics": {
+        "views": 652182,
+        "likes": 46688,
+        "comments": 7632
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 174188
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 652182
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "LZXpJbiNyaM",
+      "title": "Final Life: Episode 5 - ABSOLUTE CHAOS!",
+      "url": "https://www.youtube.com/watch?v=LZXpJbiNyaM",
+      "metrics": {
+        "views": 641695,
+        "likes": 33897,
+        "comments": 2277
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 641695
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "JB1emuC56bk",
+      "title": "I Finally Figured Out the Doctor Doom Tony Stark Connection + X-Men Clue!",
+      "url": "https://www.youtube.com/watch?v=JB1emuC56bk",
+      "metrics": {
+        "views": 583499,
+        "likes": 12605,
+        "comments": 952
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 583499
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "QE-egKoAnAo",
+      "title": "FINAL LIFE: Episode 5 - ACCEPT YOUR FATE",
+      "url": "https://www.youtube.com/watch?v=QE-egKoAnAo",
+      "metrics": {
+        "views": 532689,
+        "likes": 19732,
+        "comments": 1011
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 532689
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "X-vvVENSuhk",
+      "title": "I Watched Avengers: Doomsday FINAL TRAILER in 0.25x Speed and Here's What I Found",
+      "url": "https://www.youtube.com/watch?v=X-vvVENSuhk",
+      "metrics": {
+        "views": 522993,
+        "likes": 14027,
+        "comments": 1042
+      },
+      "category": "22",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 522993
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Bw0OCkYjzq0",
+      "title": "Total War Warhammer 3 IS A PERFECTLY BALANCED GAME WITH NO EXPLOITS",
+      "url": "https://www.youtube.com/watch?v=Bw0OCkYjzq0",
+      "metrics": {
+        "views": 501222,
+        "likes": 11280,
+        "comments": 498
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 501222
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "7tYnGWUbMmM",
+      "title": "Best Christmas Hits 2027 🎅 Top Christmas Songs ✨ Best Holiday Songs",
+      "url": "https://www.youtube.com/watch?v=7tYnGWUbMmM",
+      "metrics": {
+        "views": 482288,
+        "likes": 867,
+        "comments": 39
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 482288
     },
     {
       "platform": "Youtube",
@@ -540,63 +364,95 @@
       "title": "4 Secret Rooms Grandma Will Never Find!",
       "url": "https://www.youtube.com/watch?v=wCF1HuctBPU",
       "metrics": {
-        "views": 173417,
-        "likes": 2330,
-        "comments": 264
+        "views": 453922,
+        "likes": 3797,
+        "comments": 370
       },
       "category": "22",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 173417
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 453922
     },
     {
       "platform": "Youtube",
-      "topicId": "FbFOYOT2hUI",
-      "title": "A Peaceful Path Forward! FINAL LIFE #5",
-      "url": "https://www.youtube.com/watch?v=FbFOYOT2hUI",
+      "topicId": "nTjepm4xbc8",
+      "title": "Justice - Flower In A Hurricane [Lyrics] feat. Tame Impala, SZA, King Gizzard & The Lizard Wizard)",
+      "url": "https://www.youtube.com/watch?v=nTjepm4xbc8",
       "metrics": {
-        "views": 131128,
-        "likes": 9686,
-        "comments": 505
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 131128
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "rkhpk8m3Yh4",
-      "title": "Mecha Base Trailer | Tower Defense Simulator",
-      "url": "https://www.youtube.com/watch?v=rkhpk8m3Yh4",
-      "metrics": {
-        "views": 129465,
-        "likes": 5724,
-        "comments": 955
-      },
-      "category": "1",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 129465
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "tkLOcBHZNmY",
-      "title": "Florin Cercel - Cum te-am iubit [Official Video] 2026",
-      "url": "https://www.youtube.com/watch?v=tkLOcBHZNmY",
-      "metrics": {
-        "views": 115428,
-        "likes": 4235,
-        "comments": 176
+        "views": 366191,
+        "likes": 4995,
+        "comments": 361
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 115428
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 366191
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "-l237RK1icA",
+      "title": "AVENGERS 5: DOOMSDAY Official “Magneto Removes Doctor Dooms Mask” Teaser Trailer (2026) Marvel",
+      "url": "https://www.youtube.com/watch?v=-l237RK1icA",
+      "metrics": {
+        "views": 342385,
+        "likes": 2113,
+        "comments": 125
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 342385
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "BKj8cNrWH1o",
+      "title": "AVENGERS DOOMSDAY Doctor Doom Wife & Son Trailer Breakdown!",
+      "url": "https://www.youtube.com/watch?v=BKj8cNrWH1o",
+      "metrics": {
+        "views": 291640,
+        "likes": 4238,
+        "comments": 422
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 291640
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "c0IuugkSxX4",
+      "title": "Grand Theft Auto 6 is on a completely different level...",
+      "url": "https://www.youtube.com/watch?v=c0IuugkSxX4",
+      "metrics": {
+        "views": 264080,
+        "likes": 4774,
+        "comments": 414
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 264080
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mKyt2nd-Jj0",
+      "title": "Strength SMP: Official Trailer",
+      "url": "https://www.youtube.com/watch?v=mKyt2nd-Jj0",
+      "metrics": {
+        "views": 252322,
+        "likes": 7209,
+        "comments": 679
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 252322
     },
     {
       "platform": "Youtube",
@@ -604,79 +460,31 @@
       "title": "Our Fault: London - Official Teaser | Prime Video",
       "url": "https://www.youtube.com/watch?v=omRDTMT9cv8",
       "metrics": {
-        "views": 115293,
-        "likes": 3032,
-        "comments": 93
+        "views": 251781,
+        "likes": 4396,
+        "comments": 122
       },
       "category": "24",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 115293
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 251781
     },
     {
       "platform": "Youtube",
-      "topicId": "iV21_kvo5B0",
-      "title": "Christmas Song Playlist 🎅🏻 Top Christmas Songs of All Time 🎄 Best Christmas Music Playlist",
-      "url": "https://www.youtube.com/watch?v=iV21_kvo5B0",
+      "topicId": "2vaaguFslmk",
+      "title": "Avengers: Doomsday | Steve Rogers Taking Flight with Mjlonir | Get Your Tickets at TGV Now",
+      "url": "https://www.youtube.com/watch?v=2vaaguFslmk",
       "metrics": {
-        "views": 112772,
-        "likes": 300,
-        "comments": 28
+        "views": 239882,
+        "likes": 3075,
+        "comments": 144
       },
-      "category": "10",
+      "category": "22",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 112772
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "AflhB81SRVQ",
-      "title": "They SACRIFICED me To The Boogeyman!– Final Life: Episode 5",
-      "url": "https://www.youtube.com/watch?v=AflhB81SRVQ",
-      "metrics": {
-        "views": 107722,
-        "likes": 5887,
-        "comments": 392
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 107722
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "0mIhJqtknOI",
-      "title": "I Trusted Them... | Final Life | Ep.5",
-      "url": "https://www.youtube.com/watch?v=0mIhJqtknOI",
-      "metrics": {
-        "views": 93216,
-        "likes": 7248,
-        "comments": 404
-      },
-      "category": "20",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 93216
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "ZVvlCy99AQg",
-      "title": "James Blunt - Another Year (Official Music Video)",
-      "url": "https://www.youtube.com/watch?v=ZVvlCy99AQg",
-      "metrics": {
-        "views": 86582,
-        "likes": 4268,
-        "comments": 333
-      },
-      "category": "10",
-      "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 86582
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 239882
     },
     {
       "platform": "Youtube",
@@ -684,31 +492,79 @@
       "title": "My Minion Etho :: Final Life",
       "url": "https://www.youtube.com/watch?v=qKxiq_HH3U4",
       "metrics": {
-        "views": 83502,
-        "likes": 5963,
-        "comments": 394
+        "views": 208616,
+        "likes": 10156,
+        "comments": 622
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 83502
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 208616
     },
     {
       "platform": "Youtube",
-      "topicId": "irxm57cBFO8",
-      "title": "James Marriott - Kiss (Official Music Video)",
-      "url": "https://www.youtube.com/watch?v=irxm57cBFO8",
+      "topicId": "iV21_kvo5B0",
+      "title": "Christmas Song Playlist 🎅🏻 Top Christmas Songs of All Time 🎄 Best Christmas Music Playlist",
+      "url": "https://www.youtube.com/watch?v=iV21_kvo5B0",
       "metrics": {
-        "views": 75389,
-        "likes": 6656,
-        "comments": 412
+        "views": 206324,
+        "likes": 469,
+        "comments": 42
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 75389
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 206324
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "0mIhJqtknOI",
+      "title": "I Trusted Them... | Final Life | Ep.5",
+      "url": "https://www.youtube.com/watch?v=0mIhJqtknOI",
+      "metrics": {
+        "views": 202882,
+        "likes": 11445,
+        "comments": 567
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 202882
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "rkhpk8m3Yh4",
+      "title": "Mecha Base Trailer | Tower Defense Simulator",
+      "url": "https://www.youtube.com/watch?v=rkhpk8m3Yh4",
+      "metrics": {
+        "views": 177944,
+        "likes": 6590,
+        "comments": 1045
+      },
+      "category": "1",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 177944
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ZVvlCy99AQg",
+      "title": "James Blunt - Another Year (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=ZVvlCy99AQg",
+      "metrics": {
+        "views": 168807,
+        "likes": 5587,
+        "comments": 447
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 168807
     },
     {
       "platform": "Youtube",
@@ -716,31 +572,63 @@
       "title": "Grand Theft Auto 6 Evolution: Pre-Release Trailers vs Final Game",
       "url": "https://www.youtube.com/watch?v=3cvt6p4eCrk",
       "metrics": {
-        "views": 65340,
-        "likes": 1678,
-        "comments": 366
+        "views": 162313,
+        "likes": 2934,
+        "comments": 539
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 65340
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 162313
     },
     {
       "platform": "Youtube",
-      "topicId": "4crX5CYSnTE",
-      "title": "Tiny Boost - IDGAF",
-      "url": "https://www.youtube.com/watch?v=4crX5CYSnTE",
+      "topicId": "tkLOcBHZNmY",
+      "title": "Florin Cercel - Cum te-am iubit [Official Video] 2026",
+      "url": "https://www.youtube.com/watch?v=tkLOcBHZNmY",
       "metrics": {
-        "views": 25136,
-        "likes": 1299,
-        "comments": 85
+        "views": 149517,
+        "likes": 4826,
+        "comments": 195
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 25136
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 149517
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "5tafPui5Pvg",
+      "title": "GTA 6 - Finding ALL of Randy's Supercars (Car Wish List Location Guide)",
+      "url": "https://www.youtube.com/watch?v=5tafPui5Pvg",
+      "metrics": {
+        "views": 139139,
+        "likes": 2622,
+        "comments": 201
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 139139
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "ttzzRghZpK4",
+      "title": "THE HYPE IS AT AN ALL-TIME HIGH! (Doomsday Final Trailer Reaction + Krillion)",
+      "url": "https://www.youtube.com/watch?v=ttzzRghZpK4",
+      "metrics": {
+        "views": 111014,
+        "likes": 3121,
+        "comments": 425
+      },
+      "category": "20",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 111014
     },
     {
       "platform": "Youtube",
@@ -748,15 +636,79 @@
       "title": "Stonebwoy - Marry You [Official Music Video]",
       "url": "https://www.youtube.com/watch?v=d3Kh9r9ty4k",
       "metrics": {
-        "views": 22927,
-        "likes": 6297,
-        "comments": 924
+        "views": 108648,
+        "likes": 11187,
+        "comments": 1487
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 22927
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 108648
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "irxm57cBFO8",
+      "title": "James Marriott - Kiss (Official Music Video)",
+      "url": "https://www.youtube.com/watch?v=irxm57cBFO8",
+      "metrics": {
+        "views": 102625,
+        "likes": 7488,
+        "comments": 432
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 102625
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "snQCxnCSM1k",
+      "title": "Theophilus Sunday ft Dunsin Oyekan - Jesus (Official Video)",
+      "url": "https://www.youtube.com/watch?v=snQCxnCSM1k",
+      "metrics": {
+        "views": 64301,
+        "likes": 6418,
+        "comments": 391
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 64301
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "pmV6jWuiuhc",
+      "title": "I Played Fake Movie Trailers in Theaters",
+      "url": "https://www.youtube.com/watch?v=pmV6jWuiuhc",
+      "metrics": {
+        "views": 48001,
+        "likes": 2803,
+        "comments": 248
+      },
+      "category": "24",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 48001
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "sIeQ4MWpArY",
+      "title": "Sunmisola Agbebi, Mrs. D.A. Fasoyin and Oba - Ese Olore (Official Video)",
+      "url": "https://www.youtube.com/watch?v=sIeQ4MWpArY",
+      "metrics": {
+        "views": 44521,
+        "likes": 4243,
+        "comments": 287
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 44521
     },
     {
       "platform": "Youtube",
@@ -764,15 +716,15 @@
       "title": "RuneScape: Dragonwilds - Luminance World Trailer",
       "url": "https://www.youtube.com/watch?v=eriuXTZAwjA",
       "metrics": {
-        "views": 10372,
-        "likes": 813,
-        "comments": 79
+        "views": 34978,
+        "likes": 1336,
+        "comments": 130
       },
       "category": "20",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 10372
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 34978
     },
     {
       "platform": "Youtube",
@@ -780,38 +732,54 @@
       "title": "Sugababes - Love Language",
       "url": "https://www.youtube.com/watch?v=IS3d9m_1WdI",
       "metrics": {
-        "views": 8334,
-        "likes": 1297,
-        "comments": 266
+        "views": 22208,
+        "likes": 1941,
+        "comments": 350
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 8334
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 22208
     },
     {
       "platform": "Youtube",
-      "topicId": "F_gZNLB1h6g",
-      "title": "Hollywood",
-      "url": "https://www.youtube.com/watch?v=F_gZNLB1h6g",
+      "topicId": "QHYALmQ140s",
+      "title": "The Dappy \"On The Radar\" Freestyle (UK EDITION 🇬🇧)",
+      "url": "https://www.youtube.com/watch?v=QHYALmQ140s",
       "metrics": {
-        "views": 5686,
-        "likes": 243,
-        "comments": 16
+        "views": 12592,
+        "likes": 560,
+        "comments": 75
       },
       "category": "10",
       "regionCode": "GB",
-      "timestamp": "2026-11-27T21:18:38.836Z",
-      "fetchedAt": "2026-11-27T21:18:38.836Z",
-      "views": 5686
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 12592
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "D-n9NPdkBEg",
+      "title": "Large in the Streets",
+      "url": "https://www.youtube.com/watch?v=D-n9NPdkBEg",
+      "metrics": {
+        "views": 11480,
+        "likes": 417,
+        "comments": 12
+      },
+      "category": "10",
+      "regionCode": "GB",
+      "timestamp": "2026-11-28T07:50:53.225Z",
+      "fetchedAt": "2026-11-28T07:50:53.225Z",
+      "views": 11480
     }
   ],
   "meta": {
     "region": "GB",
-    "generatedAt": "2026-11-27T21:18:39.445Z",
-    "fetchedAt": "2026-11-27T21:18:38.836Z",
-    "videoCount": 50,
+    "generatedAt": "2026-11-28T07:50:53.756Z",
+    "fetchedAt": "2026-11-28T07:50:53.225Z",
+    "videoCount": 48,
     "cached": false,
     "source": "render-backend"
   }
