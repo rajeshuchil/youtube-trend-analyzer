@@ -8,19 +8,35 @@
   "data": [
     {
       "platform": "Youtube",
+      "topicId": "CCswyXGo4B0",
+      "title": "【DAY1】配信者ハイパーゲーム大会FINAL",
+      "url": "https://www.youtube.com/watch?v=CCswyXGo4B0",
+      "metrics": {
+        "views": 5440020,
+        "likes": 37962,
+        "comments": 3875
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 5440020
+    },
+    {
+      "platform": "Youtube",
       "topicId": "1THMm8vHYPM",
       "title": "timelesz ｢本当のことを言うと｣ (YouTube ver.)",
       "url": "https://www.youtube.com/watch?v=1THMm8vHYPM",
       "metrics": {
-        "views": 2191152,
-        "likes": 51883,
-        "comments": 8170
+        "views": 2562482,
+        "likes": 52765,
+        "comments": 8644
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 2191152
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 2562482
     },
     {
       "platform": "Youtube",
@@ -28,47 +44,15 @@
       "title": "【GTA6】善良な市民 ヒカキンのグラセフ6実況生配信 【Day3】〜手配度６目指すぞ〜",
       "url": "https://www.youtube.com/watch?v=Wme2UD8Q1Eo",
       "metrics": {
-        "views": 1500648,
-        "likes": 14278,
-        "comments": 97
+        "views": 1589252,
+        "likes": 14567,
+        "comments": 115
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 1500648
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mG4G1nIWkQI",
-      "title": "にじさんじDAYZ:ONE LIFE│主催/神視点 #にじONELIFE",
-      "url": "https://www.youtube.com/watch?v=mG4G1nIWkQI",
-      "metrics": {
-        "views": 1394101,
-        "likes": 19244,
-        "comments": 331
-      },
-      "category": "24",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 1394101
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "jtwW6KH4w-Q",
-      "title": "「ストリートファイターリーグ JAPAN 2026」Division F 第8節　☆☆18時40分より初心者必見！SFリーグ: ウォームアップ☆☆",
-      "url": "https://www.youtube.com/watch?v=jtwW6KH4w-Q",
-      "metrics": {
-        "views": 976793,
-        "likes": 6361,
-        "comments": 168
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 976793
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 1589252
     },
     {
       "platform": "Youtube",
@@ -76,15 +60,31 @@
       "title": "One Day feat. VIGORMAN / 舐達麻 (Beat by Uyama Hiroto)",
       "url": "https://www.youtube.com/watch?v=Wc1XvAvyl0U",
       "metrics": {
-        "views": 946726,
-        "likes": 16852,
-        "comments": 2205
+        "views": 1061753,
+        "likes": 17634,
+        "comments": 2286
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 946726
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 1061753
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jtwW6KH4w-Q",
+      "title": "「ストリートファイターリーグ JAPAN 2026」Division F 第8節　☆☆18時40分より初心者必見！SFリーグ: ウォームアップ☆☆",
+      "url": "https://www.youtube.com/watch?v=jtwW6KH4w-Q",
+      "metrics": {
+        "views": 1000513,
+        "likes": 6504,
+        "comments": 186
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 1000513
     },
     {
       "platform": "Youtube",
@@ -92,31 +92,15 @@
       "title": "【マインクラフト】列を見極めて上手にお買い物しましょう【日常組】",
       "url": "https://www.youtube.com/watch?v=l26gpROmqc4",
       "metrics": {
-        "views": 659409,
-        "likes": 14356,
-        "comments": 387
+        "views": 803210,
+        "likes": 15864,
+        "comments": 405
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 659409
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "vTPblYn96NQ",
-      "title": "サカナクション / 新宝島 from「SAKANAQUARIUM 2025 “怪獣”」【期間限定公開】",
-      "url": "https://www.youtube.com/watch?v=vTPblYn96NQ",
-      "metrics": {
-        "views": 569551,
-        "likes": 8633,
-        "comments": 236
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 569551
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 803210
     },
     {
       "platform": "Youtube",
@@ -124,111 +108,31 @@
       "title": "DECO*27 - ジェスチャ feat. 初音ミク",
       "url": "https://www.youtube.com/watch?v=hDz5oUodoTY",
       "metrics": {
-        "views": 526801,
-        "likes": 30618,
-        "comments": 1064
+        "views": 694220,
+        "likes": 35576,
+        "comments": 1152
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 526801
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 694220
     },
     {
       "platform": "Youtube",
-      "topicId": "zUXxqOW5m8U",
-      "title": "6万個のジャガイモを剥くまで帰れません！『Potato Please』ぺこ！【ホロライブ/兎田ぺこら】",
-      "url": "https://www.youtube.com/watch?v=zUXxqOW5m8U",
+      "topicId": "IAJJ_ESIcOI",
+      "title": "【ホロドリ】自分完凸させるにぇえええええええええええ‼【ホロライブ/さくらみこ】",
+      "url": "https://www.youtube.com/watch?v=IAJJ_ESIcOI",
       "metrics": {
-        "views": 524319,
-        "likes": 10542,
-        "comments": 128
+        "views": 558431,
+        "likes": 13062,
+        "comments": 115
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 524319
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "8yLLeJAKdFw",
-      "title": "GTA6のNPCを24時間尾行してみたら..",
-      "url": "https://www.youtube.com/watch?v=8yLLeJAKdFw",
-      "metrics": {
-        "views": 462530,
-        "likes": 3730,
-        "comments": 287
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 462530
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "h1UaM_d-a6E",
-      "title": "Aぇ! group - 「JACKPOT」from 「LIVE TOUR 2026 Runway」",
-      "url": "https://www.youtube.com/watch?v=h1UaM_d-a6E",
-      "metrics": {
-        "views": 448092,
-        "likes": 28655,
-        "comments": 2509
-      },
-      "category": "24",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 448092
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mfByGtRr4UU",
-      "title": "ハイゲ自チームの壊滅的すぎるめっちゃカメレオンに絶望するSHAKA【めっちゃカメレオン】",
-      "url": "https://www.youtube.com/watch?v=mfByGtRr4UU",
-      "metrics": {
-        "views": 420516,
-        "likes": 2153,
-        "comments": 117
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 420516
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "9GCzJNsK0Mw",
-      "title": "【Ado】『Adoの歌ってみたアルバムその2』クロスフェード",
-      "url": "https://www.youtube.com/watch?v=9GCzJNsK0Mw",
-      "metrics": {
-        "views": 404799,
-        "likes": 37506,
-        "comments": 2715
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 404799
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "2PNX5yw_KdM",
-      "title": "うちに来た『ベビーシッター』が何かおかしい…………【マイクラ】【たまちゃん】",
-      "url": "https://www.youtube.com/watch?v=2PNX5yw_KdM",
-      "metrics": {
-        "views": 399750,
-        "likes": 4914,
-        "comments": 449
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 399750
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 558431
     },
     {
       "platform": "Youtube",
@@ -236,31 +140,47 @@
       "title": "たった１人で手作業から始めるピラミッド建設",
       "url": "https://www.youtube.com/watch?v=y7t0iCyFiHo",
       "metrics": {
-        "views": 398006,
-        "likes": 2628,
-        "comments": 148
+        "views": 516034,
+        "likes": 3097,
+        "comments": 173
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 398006
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 516034
     },
     {
       "platform": "Youtube",
-      "topicId": "WnvB150bGXc",
-      "title": "【マイクラ建築】共通のお題はなんでしょう？マイクラ建築連想ゲーム【マイクラ】",
-      "url": "https://www.youtube.com/watch?v=WnvB150bGXc",
+      "topicId": "TC_BqJdg03E",
+      "title": "『劇場版 陰の実力者になりたくて！ 残響編』予告映像｜2027.05 ROADSHOW",
+      "url": "https://www.youtube.com/watch?v=TC_BqJdg03E",
       "metrics": {
-        "views": 371528,
-        "likes": 7784,
-        "comments": 290
+        "views": 514062,
+        "likes": 11005,
+        "comments": 629
       },
-      "category": "20",
+      "category": "1",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 371528
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 514062
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "h1UaM_d-a6E",
+      "title": "Aぇ! group - 「JACKPOT」from 「LIVE TOUR 2026 Runway」",
+      "url": "https://www.youtube.com/watch?v=h1UaM_d-a6E",
+      "metrics": {
+        "views": 499122,
+        "likes": 29454,
+        "comments": 2588
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 499122
     },
     {
       "platform": "Youtube",
@@ -268,287 +188,31 @@
       "title": "桑田佳祐 - 神々の襷(たすき) [Official Music Video]",
       "url": "https://www.youtube.com/watch?v=97EC8q_wKxs",
       "metrics": {
-        "views": 369961,
-        "likes": 7057,
-        "comments": 334
+        "views": 469423,
+        "likes": 7780,
+        "comments": 357
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 369961
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 469423
     },
     {
       "platform": "Youtube",
-      "topicId": "dola3oQnslA",
-      "title": "返礼品でぶっ倒せ！ふるさと納税PVP",
-      "url": "https://www.youtube.com/watch?v=dola3oQnslA",
+      "topicId": "K52lKbQymHg",
+      "title": "YOASOBI「KILLA」Official Music Video",
+      "url": "https://www.youtube.com/watch?v=K52lKbQymHg",
       "metrics": {
-        "views": 327033,
-        "likes": 11032,
-        "comments": 609
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 327033
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "6STrHAqwvw8",
-      "title": "【22視点】イブラヒム主催参加50人↑●んだら即終了サバイバルにじさんじDayZ/ドラマだらけの多視点まとめ【にじさんじ切り抜き/イブラヒム/葛葉/風楽奏斗/千凛あゆむ/卯月コウ】#にじONELIFE",
-      "url": "https://www.youtube.com/watch?v=6STrHAqwvw8",
-      "metrics": {
-        "views": 326434,
-        "likes": 3829,
-        "comments": 101
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 326434
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "kMGWOyHvOi0",
-      "title": "初星学園 「アンバランス」Official Music Video (HATSUBOSHI GAKUEN - Unbalance)",
-      "url": "https://www.youtube.com/watch?v=kMGWOyHvOi0",
-      "metrics": {
-        "views": 285092,
-        "likes": 11802,
-        "comments": 457
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 285092
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "OQyYIDBSPCA",
-      "title": "Masato Hayashi, SEEDA & RYKEY - 紙とペンと俺とお前 [Official Music Video] ",
-      "url": "https://www.youtube.com/watch?v=OQyYIDBSPCA",
-      "metrics": {
-        "views": 273839,
-        "likes": 5440,
-        "comments": 385
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 273839
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "f7zX9Xd2CNI",
-      "title": "Closer",
-      "url": "https://www.youtube.com/watch?v=f7zX9Xd2CNI",
-      "metrics": {
-        "views": 264924,
-        "likes": 18631,
-        "comments": 864
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 264924
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "KICPy5v0IvA",
-      "title": "パワプロ元プロのたいじに挑んだ結果、その実力に驚愕する関優太【パワフルプロ野球2026-2027】",
-      "url": "https://www.youtube.com/watch?v=KICPy5v0IvA",
-      "metrics": {
-        "views": 263606,
-        "likes": 793,
-        "comments": 111
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 263606
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "q_lNkzv0eA4",
-      "title": "B&ZAI【Braver】LIVE TOUR 2026 -ROCK’N’DOL- in 日本武道館 より",
-      "url": "https://www.youtube.com/watch?v=q_lNkzv0eA4",
-      "metrics": {
-        "views": 256402,
-        "likes": 12474,
-        "comments": 6670
+        "views": 454525,
+        "likes": 13887,
+        "comments": 914
       },
       "category": "24",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 256402
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Y7JOPS8uzC4",
-      "title": "【解説】ロトムってなんでず～～～～っと強いの？？？",
-      "url": "https://www.youtube.com/watch?v=Y7JOPS8uzC4",
-      "metrics": {
-        "views": 244172,
-        "likes": 1792,
-        "comments": 231
-      },
-      "category": "22",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 244172
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mNo_C2zKFkA",
-      "title": "【人生ゲーム for Nintendo Switch】オリエンスはどう生きる？ガチ人生ドキュメンタリー【 Oriens / にじさんじ 】",
-      "url": "https://www.youtube.com/watch?v=mNo_C2zKFkA",
-      "metrics": {
-        "views": 213577,
-        "likes": 9095,
-        "comments": 76
-      },
-      "category": "24",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 213577
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "jHvw-VUKTPg",
-      "title": "G PLANTS \" STAY GOLD \" Prod.STUTS 【OFFICIAL MUSIC VIDEO】",
-      "url": "https://www.youtube.com/watch?v=jHvw-VUKTPg",
-      "metrics": {
-        "views": 201344,
-        "likes": 5116,
-        "comments": 439
-      },
-      "category": "22",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 201344
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "F6IWPEtw9_w",
-      "title": "『ダーウィンズゲーム』予告【2027年3月12日（金）全国公開】",
-      "url": "https://www.youtube.com/watch?v=F6IWPEtw9_w",
-      "metrics": {
-        "views": 198647,
-        "likes": 2542,
-        "comments": 103
-      },
-      "category": "1",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 198647
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "GFsWQ_ee5rM",
-      "title": "カヤックで色々検証しながら、大暴れする動画　【GTA6】",
-      "url": "https://www.youtube.com/watch?v=GFsWQ_ee5rM",
-      "metrics": {
-        "views": 197067,
-        "likes": 1563,
-        "comments": 192
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 197067
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "FmzbRzpLx-Y",
-      "title": "HYPER!!",
-      "url": "https://www.youtube.com/watch?v=FmzbRzpLx-Y",
-      "metrics": {
-        "views": 185101,
-        "likes": 5116,
-        "comments": 315
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 185101
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "4CdZlSBywFA",
-      "title": "デスキチガイハードモード",
-      "url": "https://www.youtube.com/watch?v=4CdZlSBywFA",
-      "metrics": {
-        "views": 180433,
-        "likes": 7175,
-        "comments": 841
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 180433
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "GMHCxS63RQA",
-      "title": "ASH ISLAND - 'GOOD MOURNING (Feat. BE'O)' M/V",
-      "url": "https://www.youtube.com/watch?v=GMHCxS63RQA",
-      "metrics": {
-        "views": 169089,
-        "likes": 0,
-        "comments": 134
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 169089
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "7PkLI-WeOiU",
-      "title": "RAN & YOUTEE | Dance Collaboration [MAZZEL COLOR #まぜいろ]",
-      "url": "https://www.youtube.com/watch?v=7PkLI-WeOiU",
-      "metrics": {
-        "views": 165007,
-        "likes": 11087,
-        "comments": 902
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 165007
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "c-OtklTHFIA",
-      "title": "【マリメ2】危険な状態に陥りながらも最後はこれまでのトンパへ感謝の解放を行う布団ちゃん【2026/11/27】",
-      "url": "https://www.youtube.com/watch?v=c-OtklTHFIA",
-      "metrics": {
-        "views": 163385,
-        "likes": 784,
-        "comments": 172
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 163385
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 454525
     },
     {
       "platform": "Youtube",
@@ -556,79 +220,431 @@
       "title": "【樽美酒研二】ケツのヒーロー",
       "url": "https://www.youtube.com/watch?v=kJobe51L1lo",
       "metrics": {
-        "views": 160353,
-        "likes": 4981,
-        "comments": 531
+        "views": 449184,
+        "likes": 7918,
+        "comments": 725
       },
       "category": "24",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 160353
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 449184
     },
     {
       "platform": "Youtube",
-      "topicId": "EtYVfWrNrKo",
-      "title": "ハイゲ前日に最後の息抜きをするたいじ【スーパーマリオメーカー2】【スプラトゥーン3】",
-      "url": "https://www.youtube.com/watch?v=EtYVfWrNrKo",
+      "topicId": "f7zX9Xd2CNI",
+      "title": "Closer",
+      "url": "https://www.youtube.com/watch?v=f7zX9Xd2CNI",
       "metrics": {
-        "views": 130990,
-        "likes": 521,
-        "comments": 101
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 130990
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "hmuNKoHX7Ek",
-      "title": "シンガポールの駅ピアノで日本人が超絶クラシックを弾いたら人が集まりすぎて大変なことに…【海外ストリートピアノ】ドヴォルザーク:交響曲第9番「新世界より」",
-      "url": "https://www.youtube.com/watch?v=hmuNKoHX7Ek",
-      "metrics": {
-        "views": 120568,
-        "likes": 1424,
-        "comments": 100
+        "views": 435306,
+        "likes": 23926,
+        "comments": 1179
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 120568
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 435306
     },
     {
       "platform": "Youtube",
-      "topicId": "wXawXA2cEuM",
-      "title": "【にじさんじDAYZ:ONE LIFE】生への執着を見たがるイブラヒム主催のデスゲームで、なぜかスローライフを満喫し始める葛葉達【葛葉/にじさんじ/切り抜き】",
-      "url": "https://www.youtube.com/watch?v=wXawXA2cEuM",
+      "topicId": "R_zS-kDsong",
+      "title": "【#ホロじゃん】ホロライブの野郎が新作アプリを出したらしいので調査！ぺこ！【ホロライブ/兎田ぺこら】",
+      "url": "https://www.youtube.com/watch?v=R_zS-kDsong",
       "metrics": {
-        "views": 110012,
-        "likes": 2304,
-        "comments": 49
+        "views": 414648,
+        "likes": 9310,
+        "comments": 98
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 110012
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 414648
     },
     {
       "platform": "Youtube",
-      "topicId": "bfFazhAI1jM",
-      "title": "【ハイゲ】息抜き中に偽もこうが乱入し過去一爆笑するLaz【ARC/スプラトゥーン3/OW】",
-      "url": "https://www.youtube.com/watch?v=bfFazhAI1jM",
+      "topicId": "kMGWOyHvOi0",
+      "title": "初星学園 「アンバランス」Official Music Video (HATSUBOSHI GAKUEN - Unbalance)",
+      "url": "https://www.youtube.com/watch?v=kMGWOyHvOi0",
       "metrics": {
-        "views": 109703,
+        "views": 374431,
+        "likes": 13652,
+        "comments": 509
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 374431
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "q_lNkzv0eA4",
+      "title": "B&ZAI【Braver】LIVE TOUR 2026 -ROCK’N’DOL- in 日本武道館 より",
+      "url": "https://www.youtube.com/watch?v=q_lNkzv0eA4",
+      "metrics": {
+        "views": 372241,
+        "likes": 13951,
+        "comments": 8359
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 372241
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "G1EekMnDRoo",
+      "title": "【狭すぎる】赤い円がランダムに出現する世界でエンドラ討伐【マイクラ】",
+      "url": "https://www.youtube.com/watch?v=G1EekMnDRoo",
+      "metrics": {
+        "views": 338639,
+        "likes": 6826,
+        "comments": 205
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 338639
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "h7P8OcuYcJU",
+      "title": "みんなでEXゲーマーズ表を作ろう！  | みんなでティア表!【にじさんじ/叶】",
+      "url": "https://www.youtube.com/watch?v=h7P8OcuYcJU",
+      "metrics": {
+        "views": 335538,
+        "likes": 0,
+        "comments": 73
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 335538
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "HBLg_U0oo6g",
+      "title": "ペーパードライバーのサーヤが運転を教える",
+      "url": "https://www.youtube.com/watch?v=HBLg_U0oo6g",
+      "metrics": {
+        "views": 321316,
+        "likes": 4568,
+        "comments": 289
+      },
+      "category": "23",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 321316
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "39ZhrwfZHDk",
+      "title": "にじさんじDAYZ:ONE LIFE│神による振り返りぶり返し",
+      "url": "https://www.youtube.com/watch?v=39ZhrwfZHDk",
+      "metrics": {
+        "views": 318367,
+        "likes": 6517,
+        "comments": 62
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 318367
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "4qG7lKDrX5k",
+      "title": "防犯意識が高すぎるラーメン屋やってます【Japanese Ramen Simulator】",
+      "url": "https://www.youtube.com/watch?v=4qG7lKDrX5k",
+      "metrics": {
+        "views": 318338,
+        "likes": 4765,
+        "comments": 337
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 318338
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "GMHCxS63RQA",
+      "title": "ASH ISLAND - 'GOOD MOURNING (Feat. BE'O)' M/V",
+      "url": "https://www.youtube.com/watch?v=GMHCxS63RQA",
+      "metrics": {
+        "views": 303612,
+        "likes": 0,
+        "comments": 159
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 303612
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "4CdZlSBywFA",
+      "title": "デスキチガイハードモード",
+      "url": "https://www.youtube.com/watch?v=4CdZlSBywFA",
+      "metrics": {
+        "views": 300822,
+        "likes": 9364,
+        "comments": 952
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 300822
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "jHvw-VUKTPg",
+      "title": "G PLANTS \" STAY GOLD \" Prod.STUTS 【OFFICIAL MUSIC VIDEO】",
+      "url": "https://www.youtube.com/watch?v=jHvw-VUKTPg",
+      "metrics": {
+        "views": 275227,
+        "likes": 6005,
+        "comments": 488
+      },
+      "category": "22",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 275227
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "yyDIDvxZuew",
+      "title": "本当に怖いと話題の無限ループするプールに閉じ込められるホラーゲーム『POOL LOOP』",
+      "url": "https://www.youtube.com/watch?v=yyDIDvxZuew",
+      "metrics": {
+        "views": 217859,
+        "likes": 2767,
+        "comments": 165
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 217859
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "93uysY6hnww",
+      "title": "【Super Bunny Man】ジャーニーとステゴがゲーム実況だ！",
+      "url": "https://www.youtube.com/watch?v=93uysY6hnww",
+      "metrics": {
+        "views": 211806,
+        "likes": 8087,
+        "comments": 664
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 211806
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "FmzbRzpLx-Y",
+      "title": "HYPER!!",
+      "url": "https://www.youtube.com/watch?v=FmzbRzpLx-Y",
+      "metrics": {
+        "views": 209946,
+        "likes": 5416,
+        "comments": 320
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 209946
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "EnZ0SJOzqS8",
+      "title": "MAZZEL / Touch -Special Live Performance-",
+      "url": "https://www.youtube.com/watch?v=EnZ0SJOzqS8",
+      "metrics": {
+        "views": 205920,
+        "likes": 16415,
+        "comments": 811
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 205920
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "_D04Ypaxmgw",
+      "title": "AIが考えるおばあちゃんゲーム３【Pollo AI】",
+      "url": "https://www.youtube.com/watch?v=_D04Ypaxmgw",
+      "metrics": {
+        "views": 205734,
+        "likes": 3164,
+        "comments": 372
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 205734
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "45wrw-v0LFM",
+      "title": "初めてワックスをつけた中2の夏",
+      "url": "https://www.youtube.com/watch?v=45wrw-v0LFM",
+      "metrics": {
+        "views": 189807,
+        "likes": 5155,
+        "comments": 282
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 189807
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "izRSTYjI5yg",
+      "title": "【マイクラ】オリジナル進捗70個達成するまで終われません！【70万人記念】",
+      "url": "https://www.youtube.com/watch?v=izRSTYjI5yg",
+      "metrics": {
+        "views": 167028,
+        "likes": 3437,
+        "comments": 7
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 167028
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "6ss8eITCGVE",
+      "title": "Perspectiva suferinței (Rugăciune) (feat. Cristian Barbosu)",
+      "url": "https://www.youtube.com/watch?v=6ss8eITCGVE",
+      "metrics": {
+        "views": 158902,
+        "likes": 329,
+        "comments": 14
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 158902
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "L6I2Nu25jf0",
+      "title": "【Among Us#367】早々に負けが確定した2人！結末が全く気にならない試合の幕開け【ゆっくり実況】",
+      "url": "https://www.youtube.com/watch?v=L6I2Nu25jf0",
+      "metrics": {
+        "views": 156411,
+        "likes": 5999,
+        "comments": 247
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 156411
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "B7zZpKATwLA",
+      "title": "感情豊かなNPCたちにさまざまな嫌がらせをしてみた【GTA6】",
+      "url": "https://www.youtube.com/watch?v=B7zZpKATwLA",
+      "metrics": {
+        "views": 150936,
+        "likes": 945,
+        "comments": 85
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 150936
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "tajj1Gdj1o4",
+      "title": "全追憶ボス撃破するなら『暗月の大剣』で誓いを果たせ！！｜今更解説するエルデンリング",
+      "url": "https://www.youtube.com/watch?v=tajj1Gdj1o4",
+      "metrics": {
+        "views": 145211,
+        "likes": 2463,
+        "comments": 311
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 145211
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "AjWQ1WR7V2M",
+      "title": "超かっこいいモブキャラ現る　【GTA6ストーリー実況】#2",
+      "url": "https://www.youtube.com/watch?v=AjWQ1WR7V2M",
+      "metrics": {
+        "views": 123458,
         "likes": 1054,
-        "comments": 87
+        "comments": 108
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 109703
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 123458
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "m2uG1dAZvlY",
+      "title": "たまちゃん vs おかん 最強のプロ料理人になれるのはどっち！？【マイクラ / マインクラフト】",
+      "url": "https://www.youtube.com/watch?v=m2uG1dAZvlY",
+      "metrics": {
+        "views": 117764,
+        "likes": 3289,
+        "comments": 211
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 117764
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "Lo4ExVGrjp0",
+      "title": "ナポリの男たち、サンリオパーティランドで遊ぶ｜サンリオ パーティランド",
+      "url": "https://www.youtube.com/watch?v=Lo4ExVGrjp0",
+      "metrics": {
+        "views": 116662,
+        "likes": 2692,
+        "comments": 31
+      },
+      "category": "20",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 116662
     },
     {
       "platform": "Youtube",
@@ -636,143 +652,31 @@
       "title": "Kis-My-Ft2 / MASHUP from Kis-My-Ft2 LIVE TOUR 2026 fan IS ･･････",
       "url": "https://www.youtube.com/watch?v=mJuxxfs4pc4",
       "metrics": {
-        "views": 78930,
-        "likes": 6161,
-        "comments": 463
+        "views": 110344,
+        "likes": 7115,
+        "comments": 498
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 78930
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 110344
     },
     {
       "platform": "Youtube",
-      "topicId": "P6bicRNHQC4",
-      "title": "【予告編】#永野芽郁 主演・初プロデュース『ヒマチの嬢王』 夜の街でトップへ駆け上がる痛快サクセスエンターテインメント｜DMM TV",
-      "url": "https://www.youtube.com/watch?v=P6bicRNHQC4",
+      "topicId": "eYITmyHOTRw",
+      "title": "【R.E.P.O.】【４人ホラー】この中に１１３１万４２９２円溶かした人がいます。【ゆっくり実況】",
+      "url": "https://www.youtube.com/watch?v=eYITmyHOTRw",
       "metrics": {
-        "views": 74584,
-        "likes": 483,
-        "comments": 50
-      },
-      "category": "24",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 74584
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DjyEYqGyIsc",
-      "title": "スタンミ・らいじんから互いの衝撃エピソード聞き大爆笑するバトラ【マリメコーチング-らいじん編】【2026/11/27】",
-      "url": "https://www.youtube.com/watch?v=DjyEYqGyIsc",
-      "metrics": {
-        "views": 73739,
-        "likes": 562,
-        "comments": 153
-      },
-      "category": "24",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 73739
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Kq4GA3q5gRM",
-      "title": "【ゼンゼロ】限定S級「サンブリンガー」は強いのか？解説します。性能/音動機/ドライバ/PT編成…全てが分かる！【ゼンレスゾーンゼロ】",
-      "url": "https://www.youtube.com/watch?v=Kq4GA3q5gRM",
-      "metrics": {
-        "views": 68929,
-        "likes": 2154,
-        "comments": 176
+        "views": 107698,
+        "likes": 3660,
+        "comments": 169
       },
       "category": "20",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 68929
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "DRxgYkukAhk",
-      "title": "【ハイシン -Haishin-】配信してたら幽霊が映ったｗｗｗｗ",
-      "url": "https://www.youtube.com/watch?v=DRxgYkukAhk",
-      "metrics": {
-        "views": 67249,
-        "likes": 1591,
-        "comments": 113
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 67249
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "Jn5gxq3swkU",
-      "title": "【マイクラ】プレイヤーの行動が全チャンクにコピーされるスカイブロック..  〜全てのチャンクが連動するモードで浮島を本気で発展させた結果〜 【マインクラフト】【まいくら】【検証】",
-      "url": "https://www.youtube.com/watch?v=Jn5gxq3swkU",
-      "metrics": {
-        "views": 61555,
-        "likes": 1629,
-        "comments": 165
-      },
-      "category": "20",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 61555
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "nbhJMHwe62c",
-      "title": "[MV] SUPER★DRAGON / 本能 Performance ver.",
-      "url": "https://www.youtube.com/watch?v=nbhJMHwe62c",
-      "metrics": {
-        "views": 57776,
-        "likes": 4771,
-        "comments": 337
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 57776
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "vgYWnRoueTA",
-      "title": "VAMPY",
-      "url": "https://www.youtube.com/watch?v=vgYWnRoueTA",
-      "metrics": {
-        "views": 36065,
-        "likes": 1871,
-        "comments": 47
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 36065
-    },
-    {
-      "platform": "Youtube",
-      "topicId": "mSyoO-QjuQ4",
-      "title": "打首獄門同好会「最近、健康診断行きましたか」",
-      "url": "https://www.youtube.com/watch?v=mSyoO-QjuQ4",
-      "metrics": {
-        "views": 25464,
-        "likes": 1573,
-        "comments": 151
-      },
-      "category": "10",
-      "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 25464
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 107698
     },
     {
       "platform": "Youtube",
@@ -780,37 +684,133 @@
       "title": "緑黄色社会『うたまご』Official Video / Ryokuoushoku Shakai - Utamago",
       "url": "https://www.youtube.com/watch?v=wwPqigsdfbw",
       "metrics": {
-        "views": 25059,
-        "likes": 1534,
-        "comments": 94
+        "views": 85249,
+        "likes": 2576,
+        "comments": 143
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 25059
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 85249
     },
     {
       "platform": "Youtube",
-      "topicId": "-1upF22jVks",
-      "title": "セーブポイント",
-      "url": "https://www.youtube.com/watch?v=-1upF22jVks",
+      "topicId": "nbhJMHwe62c",
+      "title": "[MV] SUPER★DRAGON / 本能 Performance ver.",
+      "url": "https://www.youtube.com/watch?v=nbhJMHwe62c",
       "metrics": {
-        "views": 7089,
-        "likes": 269,
-        "comments": 11
+        "views": 84742,
+        "likes": 5623,
+        "comments": 360
       },
       "category": "10",
       "regionCode": "JP",
-      "timestamp": "2026-11-28T07:50:55.107Z",
-      "fetchedAt": "2026-11-28T07:50:55.107Z",
-      "views": 7089
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 84742
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "mSyoO-QjuQ4",
+      "title": "打首獄門同好会「最近、健康診断行きましたか」",
+      "url": "https://www.youtube.com/watch?v=mSyoO-QjuQ4",
+      "metrics": {
+        "views": 79555,
+        "likes": 2937,
+        "comments": 245
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 79555
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "aNTahHdNQ38",
+      "title": "「Recollect with ナツキ・スバル」（Live is Anison Collection+）#鈴木このみ #小林裕介 #リゼロ",
+      "url": "https://www.youtube.com/watch?v=aNTahHdNQ38",
+      "metrics": {
+        "views": 57126,
+        "likes": 1836,
+        "comments": 48
+      },
+      "category": "24",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 57126
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "vgYWnRoueTA",
+      "title": "VAMPY",
+      "url": "https://www.youtube.com/watch?v=vgYWnRoueTA",
+      "metrics": {
+        "views": 55914,
+        "likes": 2372,
+        "comments": 51
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 55914
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "d32Z29Do4h8",
+      "title": "【EL6】CocktaiL / Element Sicks【歌ってみた】",
+      "url": "https://www.youtube.com/watch?v=d32Z29Do4h8",
+      "metrics": {
+        "views": 42478,
+        "likes": 5652,
+        "comments": 987
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 42478
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "aH81kM9V2mE",
+      "title": "ポルノグラフィティ『残響』MUSIC VIDEO",
+      "url": "https://www.youtube.com/watch?v=aH81kM9V2mE",
+      "metrics": {
+        "views": 42445,
+        "likes": 2170,
+        "comments": 103
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 42445
+    },
+    {
+      "platform": "Youtube",
+      "topicId": "VDGAwKyxHbw",
+      "title": "反照は背理",
+      "url": "https://www.youtube.com/watch?v=VDGAwKyxHbw",
+      "metrics": {
+        "views": 12880,
+        "likes": 1199,
+        "comments": 73
+      },
+      "category": "10",
+      "regionCode": "JP",
+      "timestamp": "2026-11-28T20:04:46.110Z",
+      "fetchedAt": "2026-11-28T20:04:46.110Z",
+      "views": 12880
     }
   ],
   "meta": {
     "region": "JP",
-    "generatedAt": "2026-11-28T07:50:55.814Z",
-    "fetchedAt": "2026-11-28T07:50:55.107Z",
+    "generatedAt": "2026-11-28T20:04:46.736Z",
+    "fetchedAt": "2026-11-28T20:04:46.110Z",
     "videoCount": 50,
     "cached": false,
     "source": "render-backend"
